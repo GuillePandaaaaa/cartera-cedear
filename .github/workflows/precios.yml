@@ -1,0 +1,43 @@
+name: Actualizar precios y publicar
+on:
+  push:
+    branches: [main]
+  schedule:
+    # Lunes a viernes, cada 5 min entre 11:00 y 17:55 hora argentina, y un cierre 18:15.
+    - cron: "*/5 14-20 * * 1-5"
+    - cron: "15 21 * * 1-5"
+  workflow_dispatch:
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+concurrency:
+  group: precios
+  cancel-in-progress: false
+jobs:
+  actualizar:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - name: Bajar precios y MEP
+        run: python scripts/actualizar.py
+        continue-on-error: ${{ github.event_name == 'push' }}
+      - name: Guardar cambios
+        run: |
+          git config user.name "actualizador"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/mercado.json
+          git diff --cached --quiet || (git commit -m "Precios $(TZ=America/Argentina/Buenos_Aires date '+%d/%m %H:%M')" && git push)
+      - uses: actions/configure-pages@v5
+        if: github.event_name != 'schedule'
+      - uses: actions/upload-pages-artifact@v3
+        if: github.event_name != 'schedule'
+        with: { path: "." }
+      - id: deploy
+        if: github.event_name != 'schedule'
+        uses: actions/deploy-pages@v4
