@@ -1,0 +1,1105 @@
+<!doctype html>
+<html lang="es-AR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#EDEFF1" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0D1317" media="(prefers-color-scheme: dark)">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icons/icon-192.png">
+<link rel="apple-touch-icon" href="icons/icon-192.png">
+<title>Cartera CEDEAR</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+:root{
+  color-scheme: light;
+  --bg:#EDEFF1; --surface:#FFFFFF; --surface-2:#F6F8F9; --surface-3:#EAEEF0;
+  --ink:#0F1A21; --ink-2:#37474F; --muted:#5C6E7A; --line:#D3DBE0;
+  --accent:#0C6660; --accent-ink:#0C6660; --accent-soft:#DFEFED;
+  --pos:#0C7440; --neg:#AB2A25;
+  --s1:#2563EB; --s2:#F97316; --s3:#16A34A; --s4:#DC2626; --s5:#7C3AED; --s6:#EAB308; --s7:#0891B2; --s8:#DB2777; --s9:#8296a3; --s10:#92400E; --s11:#65A30D; --s12:#1E3A8A; --s13:#C084FC; --s14:#0F766E; --s15:#FB7185;
+  --shadow:0 1px 2px rgba(16,32,42,.06), 0 8px 24px -16px rgba(16,32,42,.30);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    color-scheme: dark;
+    --bg:#0D1317; --surface:#151E24; --surface-2:#1B252C; --surface-3:#222E36;
+    --ink:#E6EEF2; --ink-2:#C2D0D8; --muted:#8FA3AE; --line:#29353E;
+    --accent:#47B9AF; --accent-ink:#5FCCC2; --accent-soft:#14302E;
+    --pos:#4FC489; --neg:#EF7B73;
+    --s1:#3B82F6; --s2:#FB923C; --s3:#22C55E; --s4:#EF4444; --s5:#A78BFA; --s6:#FACC15; --s7:#22D3EE; --s8:#F472B6; --s9:#7b8c98; --s10:#D97706; --s11:#A3E635; --s12:#818CF8; --s13:#E879F9; --s14:#2DD4BF; --s15:#FDA4AF;
+    --shadow:0 1px 2px rgba(0,0,0,.4), 0 10px 28px -18px rgba(0,0,0,.8);
+  }
+}
+:root[data-theme="dark"]{
+  color-scheme: dark;
+  --bg:#0D1317; --surface:#151E24; --surface-2:#1B252C; --surface-3:#222E36;
+  --ink:#E6EEF2; --ink-2:#C2D0D8; --muted:#8FA3AE; --line:#29353E;
+  --accent:#47B9AF; --accent-ink:#5FCCC2; --accent-soft:#14302E;
+  --pos:#4FC489; --neg:#EF7B73;
+  --s1:#3B82F6; --s2:#FB923C; --s3:#22C55E; --s4:#EF4444; --s5:#A78BFA; --s6:#FACC15; --s7:#22D3EE; --s8:#F472B6; --s9:#7b8c98; --s10:#D97706; --s11:#A3E635; --s12:#818CF8; --s13:#E879F9; --s14:#2DD4BF; --s15:#FDA4AF;
+  --shadow:0 1px 2px rgba(0,0,0,.4), 0 10px 28px -18px rgba(0,0,0,.8);
+}
+
+*{box-sizing:border-box}
+body{
+  background:var(--bg); color:var(--ink);
+  font-family:"IBM Plex Sans", system-ui, -apple-system, Segoe UI, sans-serif;
+  font-size:15px; line-height:1.5;
+}
+.wrap{max-width:1080px; margin:0 auto; padding-inline:16px; padding-block:28px 56px;
+  display:flex; flex-direction:column; gap:22px}
+.num{font-family:Tahoma, Verdana, Geneva, "DejaVu Sans", sans-serif;
+  font-variant-numeric:tabular-nums; letter-spacing:.005em}
+
+/* header */
+header{display:flex; flex-wrap:wrap; align-items:flex-end; justify-content:space-between; gap:14px}
+h1{font-family:"Fraunces", Georgia, serif; font-weight:700; font-size:34px;
+  line-height:1.1; margin:0; letter-spacing:-.01em; text-wrap:balance}
+.sub{color:var(--muted); font-size:13.5px; margin:5px 0 0}
+.mep{display:flex; align-items:center; gap:10px; background:var(--surface);
+  border:1px solid var(--line); border-radius:10px; padding:9px 13px; box-shadow:var(--shadow)}
+.mep .lbl{font-size:10.5px; letter-spacing:.09em; text-transform:uppercase; color:var(--muted)}
+.mep .val{font-size:18px; font-weight:700}
+.mep .stamp{font-size:11px; color:var(--muted)}
+
+/* tiles */
+.tiles{display:grid; grid-template-columns:repeat(4,1fr); gap:12px}
+.tile{background:var(--surface); border:1px solid var(--line); border-radius:12px;
+  padding:14px 15px; box-shadow:var(--shadow); display:flex; flex-direction:column; gap:5px; min-width:0}
+.tile .k{font-size:10.5px; letter-spacing:.09em; text-transform:uppercase; color:var(--muted)}
+.tile .v{font-size:23px; font-weight:600; letter-spacing:-.01em; overflow-wrap:anywhere}
+.tile .d{font-size:12.5px; color:var(--muted)}
+.pos{color:var(--pos)} .neg{color:var(--neg)}
+
+/* panels */
+.panel{background:var(--surface); border:1px solid var(--line); border-radius:12px;
+  box-shadow:var(--shadow); overflow:hidden}
+.panel-h{display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between;
+  gap:10px; padding:13px 16px; border-bottom:1px solid var(--line); background:var(--surface-2)}
+.panel-h h2{font-size:13px; font-weight:600; margin:0; letter-spacing:.02em}
+.panel-b{padding:16px}
+
+/* form */
+form.add{display:grid; gap:12px;
+  grid-template-columns:minmax(180px,2.2fr) repeat(3, minmax(100px,1fr)) auto; align-items:end}
+.field{display:flex; flex-direction:column; gap:5px; min-width:0}
+.field label{font-size:11px; letter-spacing:.06em; text-transform:uppercase; color:var(--muted)}
+.field .hint{font-size:11px; color:var(--muted); text-transform:none; letter-spacing:0}
+input, select{
+  font:inherit; color:var(--ink); background:var(--surface-2);
+  border:1px solid var(--line); border-radius:8px; padding:9px 10px; width:100%; min-width:0}
+input.num-in{font-family:Tahoma, Verdana, Geneva, "DejaVu Sans", sans-serif; font-variant-numeric:tabular-nums}
+input:focus-visible, select:focus-visible, button:focus-visible{
+  outline:2px solid var(--accent); outline-offset:2px}
+button{font:inherit; cursor:pointer; border-radius:8px; border:1px solid transparent; padding:9px 16px}
+.btn-main{background:var(--accent); color:#fff; font-weight:600}
+.btn-main:hover{filter:brightness(1.08)}
+.btn-ghost{background:transparent; border-color:var(--line); color:var(--ink-2); padding:6px 10px; font-size:12.5px}
+.btn-ghost:hover{background:var(--surface-3)}
+.err{color:var(--neg); font-size:12.5px; min-height:1.2em}
+
+/* table */
+.tbl-scroll{overflow-x:auto}
+td:last-child, th:last-child{position:sticky; right:0; background:var(--surface);
+  box-shadow:-8px 0 8px -8px rgba(16,32,42,.18); padding-left:12px}
+tbody tr:hover td:last-child{background:var(--surface-2)}
+th:last-child{background:var(--surface-2)}
+table{border-collapse:collapse; width:100%; font-size:13.5px}
+th{font-size:10.5px; letter-spacing:.08em; text-transform:uppercase; color:var(--muted);
+  font-weight:600; text-align:right; padding:10px 10px; border-bottom:1px solid var(--line); white-space:nowrap}
+th:first-child{text-align:left}
+td{padding:9px 10px; border-bottom:1px solid var(--line); text-align:right; white-space:nowrap}
+td .sub2{font-size:11px; opacity:.78; margin-top:1px}
+td .muted2{color:var(--muted); opacity:1}
+th.c, td.c{text-align:center}
+td.acts{display:flex; align-items:center; justify-content:flex-end; gap:8px}
+td:first-child{text-align:left; white-space:normal}
+tbody tr:last-child td{border-bottom:none}
+tbody tr:hover{background:var(--surface-2)}
+tr.edit-row td, tr.edit-row:hover td{position:static; box-shadow:none; background:var(--surface-2); white-space:normal; text-align:left}
+.edit{position:sticky; left:0; max-width:min(640px, calc(100vw - 72px)); display:flex; flex-wrap:wrap; gap:10px; align-items:flex-end; padding:4px 0}
+.edit .ttl{flex-basis:100%; font-size:13px; color:var(--ink-2)}
+.edit .ttl b{color:var(--ink)}
+.edit .field{flex:1 1 150px}
+.edit .btns{display:flex; gap:8px}
+.edit .err{flex-basis:100%}
+.info{color:var(--accent-ink); font-size:12.5px; min-height:1.2em}
+.tk{display:flex; align-items:center; gap:9px}
+.swatch{width:9px; height:26px; border-radius:3px; flex:none}
+.tk b{font-weight:600; font-size:13.5px}
+.tk .nm{color:var(--muted); font-size:11.5px; display:block; max-width:26ch; overflow:hidden; text-overflow:ellipsis; white-space:nowrap}
+.ratio{color:var(--muted); font-size:11.5px}
+td:nth-child(2){text-align:center}
+.dv{display:inline-block; min-width:2.2em; font-weight:600; font-size:12.5px; cursor:help;
+  border-bottom:1px dotted currentColor; padding-bottom:1px}
+.dv.no{color:var(--muted); font-weight:500; border-bottom:none; cursor:default}
+.dv.na{color:var(--muted); font-weight:400; border-bottom:none; cursor:default}
+.dv.si{color:var(--accent-ink)}
+.ico{display:inline-flex; align-items:center; justify-content:center; width:24px; height:24px;
+  border-radius:50%; border:1px solid var(--line); color:var(--muted); text-decoration:none}
+.ico:hover{border-color:var(--accent); color:var(--accent-ink); background:var(--accent-soft)}
+.ico svg{width:14px; height:14px}
+#tip{position:fixed; z-index:50; max-width:260px; background:var(--ink); color:var(--bg);
+  font-size:12.5px; line-height:1.45; padding:8px 11px; border-radius:8px; pointer-events:none;
+  box-shadow:0 8px 24px -10px rgba(0,0,0,.55); opacity:0; transform:translateY(3px);
+  transition:opacity .12s ease, transform .12s ease}
+#tip.on{opacity:1; transform:translateY(0)}
+.empty{padding:30px 16px; text-align:center; color:var(--muted); font-size:13.5px}
+.demo-note{background:var(--accent-soft); color:var(--accent-ink); font-size:12.5px;
+  padding:9px 16px; border-bottom:1px solid var(--line)}
+.warn{font-size:11.5px; color:var(--neg)}
+
+/* chart */
+.chart-grid{display:grid; grid-template-columns:260px 1fr; gap:24px; align-items:center}
+.donut{width:100%; max-width:260px; aspect-ratio:1/1; display:block; margin-inline:auto}
+.donut path{transition:opacity .12s ease}
+.donut path.dim{opacity:.32}
+.legend{display:flex; flex-direction:column; gap:1px; min-width:0}
+.lg{display:grid; grid-template-columns:auto 1fr auto auto; gap:10px; align-items:center;
+  padding:6px 8px; border-radius:7px; cursor:default}
+.lg:hover{background:var(--surface-2)}
+.lg .dot{width:11px; height:11px; border-radius:3px; flex:none}
+.lg .nm{overflow:hidden; text-overflow:ellipsis; white-space:nowrap; font-size:13px}
+.lg .lg-tk{color:var(--muted); font-size:12px}
+.lg .amt{font-size:13px; color:var(--ink-2); text-align:right}
+.lg .amt.dbl{display:flex; flex-direction:column; line-height:1.25}
+.lg .amt .us{font-size:12px; color:var(--muted)}
+.lg .pct{font-size:13px; font-weight:600; min-width:4.2em; text-align:right}
+.seg{display:inline-flex; background:var(--surface-3); border-radius:8px; padding:3px; gap:3px}
+.seg button{border:none; background:transparent; color:var(--muted); font-size:12.5px;
+  padding:6px 11px; border-radius:6px; font-weight:500}
+.seg button[aria-pressed="true"]{background:var(--surface); color:var(--ink); box-shadow:var(--shadow)}
+.center-lbl{text-align:center}
+.center-lbl .k{font-size:10px; letter-spacing:.09em; text-transform:uppercase; fill:var(--muted)}
+
+.cal{width:100%; height:auto; display:block; overflow:visible}
+.cal rect.seg{transition:opacity .12s ease}
+.cal rect.seg.dim{opacity:.3}
+.cal-legend{display:flex; flex-wrap:wrap; gap:6px 16px; margin-top:12px}
+.cal-legend .it{display:flex; align-items:center; gap:7px; font-size:12.5px}
+.cal-legend .dot{width:10px; height:10px; border-radius:3px; flex:none}
+.yield-wrap{margin-top:20px; overflow-x:auto; border-top:1px solid var(--line); padding-top:4px}
+.yield-tbl{width:100%; border-collapse:collapse; font-size:13.5px}
+.yield-tbl th{font-size:10.5px; letter-spacing:.08em; text-transform:uppercase; color:var(--muted);
+  font-weight:600; text-align:right; padding:10px 10px; border-bottom:1px solid var(--line); white-space:nowrap}
+.yield-tbl th:first-child{text-align:left}
+.yield-tbl td{padding:8px 10px; border-bottom:1px solid var(--line); text-align:right; white-space:nowrap}
+.yield-tbl td:first-child{text-align:left}
+.yield-tbl tbody tr:last-child td{border-bottom:none}
+.yield-tbl tr.tot td{font-weight:600; border-top:1px solid var(--line)}
+.cal-note{color:var(--muted); font-size:12px; margin:14px 0 0; line-height:1.6}
+footer{color:var(--muted); font-size:12px; line-height:1.65}
+footer b{color:var(--ink-2); font-weight:600}
+@media (max-width:820px){
+  .tiles{grid-template-columns:repeat(2,1fr)}
+  form.add{grid-template-columns:1fr 1fr}
+  form.add .f-tk{grid-column:1 / -1}
+  form.add .f-btn{grid-column:1 / -1}
+  form.add .f-btn button{width:100%}
+  .chart-grid{grid-template-columns:1fr}
+}
+@media (max-width:430px){
+  h1{font-size:27px}
+  .tiles{grid-template-columns:1fr}
+}
+@media (prefers-reduced-motion: reduce){*{transition:none !important}}
+body{background:var(--bg); margin:0}
+.wrap{padding-top:calc(28px + env(safe-area-inset-top)); padding-bottom:calc(56px + env(safe-area-inset-bottom))}
+.backup{display:flex; gap:8px; flex-wrap:wrap; margin-top:8px}
+.backup .btn-ghost{border:1px solid var(--line)}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div>
+      <h1>Cartera CEDEAR</h1>
+      <p class="sub">Cuántas acciones tenés detrás de cada CEDEAR, cuánto valen en dólares y cómo venís.</p>
+    </div>
+    <div class="mep">
+      <div>
+        <div class="lbl">Dólar MEP</div>
+        <div class="val num" id="mepVal">—</div>
+      </div>
+      <div class="stamp" id="mepStamp"></div>
+    </div>
+  </header>
+
+  <section class="tiles">
+    <div class="tile"><span class="k">Valor de cartera</span><span class="v num" id="tTotAr">—</span><span class="d" id="tTotArD">en pesos</span></div>
+    <div class="tile"><span class="k">Equivale a</span><span class="v num" id="tTotUs">—</span><span class="d">dólares MEP</span></div>
+    <div class="tile"><span class="k">Ganancia en pesos</span><span class="v num" id="tGanAr">—</span><span class="d" id="tGanArD">&nbsp;</span></div>
+    <div class="tile"><span class="k">Ganancia en dólares</span><span class="v num" id="tGanUs">—</span><span class="d" id="tGanUsD">&nbsp;</span></div>
+  </section>
+
+  <section class="panel">
+    <div class="panel-h"><h2>Agregar posición</h2><span class="sub" id="dbState"></span></div>
+    <div class="panel-b">
+      <form class="add" id="addForm" autocomplete="off">
+        <div class="field f-tk">
+          <label for="fTicker">CEDEAR</label>
+          <input id="fTicker" list="cedearList" placeholder="Escribí ticker o nombre — ej. AAPL" required>
+          <datalist id="cedearList"></datalist>
+        </div>
+        <div class="field">
+          <label for="fQty">Cantidad</label>
+          <input id="fQty" class="num-in" type="number" inputmode="decimal" min="0" step="any" placeholder="120" required>
+        </div>
+        <div class="field">
+          <label for="fPpc">Precio prom. compra</label>
+          <input id="fPpc" class="num-in" type="number" inputmode="decimal" min="0" step="any" placeholder="en pesos" required>
+        </div>
+        <div class="field">
+          <label for="fMep">MEP de compra <span class="hint">(opcional)</span></label>
+          <input id="fMep" class="num-in" type="number" inputmode="decimal" min="0" step="any" placeholder="dejá vacío si no lo sabés">
+        </div>
+        <div class="field f-btn"><button class="btn-main" type="submit" id="addBtn">Agregar</button></div>
+      </form>
+      <div class="err" id="formErr"></div>
+    </div>
+  </section>
+
+  <section class="panel">
+    <div class="panel-h">
+      <h2>Posiciones</h2>
+      <span class="sub" id="pxStamp"></span>
+    </div>
+    <div id="demoNote" class="demo-note" hidden>Estas tres posiciones son un ejemplo para que veas cómo queda. Agregá la tuya y desaparecen.</div>
+    <div class="tbl-scroll">
+      <table>
+        <thead><tr>
+          <th>CEDEAR</th><th class="c" title="Paga dividendos">D</th><th>Cantidad</th><th>Acciones</th>
+          <th>Precio hoy</th><th>Valor</th><th>PPC</th><th>Ganancia ARS</th><th>Gan. USD</th><th></th>
+        </tr></thead>
+        <tbody id="tbody"></tbody>
+      </table>
+    </div>
+    <div class="empty" id="emptyRow" hidden>Todavía no cargaste ninguna posición.</div>
+  </section>
+
+  <section class="panel">
+    <div class="panel-h">
+      <h2>Distribución de la cartera</h2>
+      <div class="seg" id="modeSeg">
+        <button type="button" data-mode="valor" aria-pressed="true">Por valor</button>
+        <button type="button" data-mode="cant" aria-pressed="false">Por cantidad</button>
+        <button type="button" data-mode="sector" aria-pressed="false">Por sector</button>
+      </div>
+    </div>
+    <div class="panel-b">
+      <div class="chart-grid">
+        <svg class="donut" id="donut" viewBox="0 0 200 200" role="img" aria-labelledby="donutTitle">
+          <title id="donutTitle">Distribución de la cartera</title>
+        </svg>
+        <div class="legend" id="legend"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="panel">
+    <div class="panel-h">
+      <h2>Calendario de dividendos</h2>
+      <span class="sub" id="divTot"></span>
+    </div>
+    <div class="panel-b">
+      <svg class="cal" id="cal" viewBox="0 0 640 230" role="img" aria-labelledby="calTitle">
+        <title id="calTitle">Dividendos estimados por mes</title>
+      </svg>
+      <div class="cal-legend" id="calLegend"></div>
+      <div class="yield-wrap">
+        <table class="yield-tbl">
+          <thead><tr><th>CEDEAR</th><th>Div. por acción</th><th>Dividend yield</th><th>Cobrás al año</th></tr></thead>
+          <tbody id="yieldBody"></tbody>
+        </table>
+      </div>
+      <p class="cal-note" id="calNote"></p>
+    </div>
+  </section>
+
+  <footer>
+    <p><b>Cómo se calcula.</b> Acciones = cantidad de CEDEARs × el ratio de conversión del papel (por ejemplo, 20 CEDEARs de AAPL equivalen a 1 acción). El valor en dólares usa el MEP de arriba. La ganancia en pesos compara tu precio promedio de compra contra la cotización de hoy.</p>
+    <p><b>Sobre la ganancia en dólares.</b> Si cargás el MEP al que compraste, se calcula de verdad en dólares: cuántos USD pusiste contra cuántos valen hoy. Si lo dejás vacío, es la ganancia en pesos convertida al MEP de hoy, así que el porcentaje da igual que el de pesos.</p>
+    <p><b>La columna D</b> dice si la empresa o el ETF paga dividendos. Pasá el cursor por encima de un SI y te muestra en qué meses suele pagarlos; son los meses habituales del ciclo y pueden correrse una o dos semanas. El CEDEAR cobra ese dividendo en pesos, neto de retenciones. <b>El botón de información</b> abre la ficha del CEDEAR en TradingView, en una pestaña nueva.</p>
+    <p id="fuente"></p>
+    <p><b>Respaldo.</b> Tus posiciones se guardan en este celular. Copiá el respaldo de vez en cuando (por ejemplo, a un chat de WhatsApp con vos mismo) para poder recuperarlas si cambiás de teléfono.</p>
+    <div class="backup">
+      <button type="button" class="btn-ghost" id="bkCopy">Copiar respaldo</button>
+      <button type="button" class="btn-ghost" id="bkLoad">Restaurar respaldo</button>
+      <button type="button" class="btn-ghost" id="bkRefresh">Actualizar precios</button>
+    </div>
+  </footer>
+</div>
+
+<script>
+const DATA = {"cedears":[{"t":"AAPL","n":"Apple","a":20,"b":1,"s":"tec"},{"t":"MSFT","n":"Microsoft","a":30,"b":1,"s":"tec"},{"t":"GOOGL","n":"Alphabet","a":58,"b":1,"s":"com"},{"t":"AMZN","n":"Amazon","a":144,"b":1,"s":"cons"},{"t":"META","n":"Meta Platforms","a":24,"b":1,"s":"com"},{"t":"NFLX","n":"Netflix","a":48,"b":1,"s":"com"},{"t":"ORCL","n":"Oracle","a":3,"b":1,"s":"tec"},{"t":"CRM","n":"Salesforce","a":18,"b":1,"s":"tec"},{"t":"ADBE","n":"Adobe","a":44,"b":1,"s":"tec"},{"t":"IBM","n":"IBM","a":15,"b":1,"s":"tec"},{"t":"CSCO","n":"Cisco Systems","a":5,"b":1,"s":"tec"},{"t":"ACN","n":"Accenture","a":75,"b":1,"s":"tec"},{"t":"NOW","n":"ServiceNow","a":172,"b":1,"s":"tec"},{"t":"SNOW","n":"Snowflake","a":30,"b":1,"s":"tec"},{"t":"PLTR","n":"Palantir Technologies","a":3,"b":1,"s":"tec"},{"t":"CRWD","n":"CrowdStrike","a":79,"b":1,"s":"tec"},{"t":"PANW","n":"Palo Alto Networks","a":50,"b":1,"s":"tec"},{"t":"TEAM","n":"Atlassian","a":47,"b":1,"s":"tec"},{"t":"ZM","n":"Zoom Communications","a":47,"b":1,"s":"tec"},{"t":"DOCU","n":"DocuSign","a":22,"b":1,"s":"tec"},{"t":"PATH","n":"UiPath","a":2,"b":1,"s":"tec"},{"t":"TWLO","n":"Twilio","a":36,"b":1,"s":"tec"},{"t":"SHOP","n":"Shopify","a":107,"b":1,"s":"tec"},{"t":"SPOT","n":"Spotify","a":28,"b":1,"s":"com"},{"t":"UBER","n":"Uber Technologies","a":2,"b":1,"s":"ind"},{"t":"ABNB","n":"Airbnb","a":15,"b":1,"s":"cons"},{"t":"RBLX","n":"Roblox","a":2,"b":1,"s":"com"},{"t":"EA","n":"Electronic Arts","a":14,"b":1,"s":"com"},{"t":"PINS","n":"Pinterest","a":7,"b":1,"s":"com"},{"t":"SNAP","n":"Snap","a":1,"b":1,"s":"com"},{"t":"ROKU","n":"Roku","a":13,"b":1,"s":"com"},{"t":"ETSY","n":"Etsy","a":16,"b":1,"s":"cons"},{"t":"EBAY","n":"eBay","a":2,"b":1,"s":"cons"},{"t":"YELP","n":"Yelp","a":2,"b":1,"s":"com"},{"t":"TRIP","n":"Tripadvisor","a":2,"b":1,"s":"cons"},{"t":"GLOB","n":"Globant","a":18,"b":1,"s":"tec"},{"t":"MELI","n":"MercadoLibre","a":120,"b":1,"s":"cons"},{"t":"SE","n":"Sea Limited","a":32,"b":1,"s":"cons"},{"t":"NBIS","n":"Nebius Group","a":27,"b":1,"s":"tec"},{"t":"CRWV","n":"CoreWeave","a":27,"b":1,"s":"tec"},{"t":"AI","n":"C3.ai","a":5,"b":1,"s":"tec"},{"t":"TEM","n":"Tempus AI","a":12,"b":1,"s":"salud"},{"t":"HPQ","n":"HP","a":1,"b":1,"s":"tec"},{"t":"XROX","n":"Xerox","a":1,"b":1,"s":"tec"},{"t":"BB","n":"BlackBerry","a":3,"b":1,"s":"tec"},{"t":"UPST","n":"Upstart","a":5,"b":1,"s":"fin"},{"t":"VRSN","n":"VeriSign","a":6,"b":1,"s":"tec"},{"t":"EFX","n":"Equifax","a":16,"b":1,"s":"tec"},{"t":"ADP","n":"Automatic Data Processing","a":6,"b":1,"s":"tec"},{"t":"MSI","n":"Motorola Solutions","a":20,"b":1,"s":"tec"},{"t":"GLW","n":"Corning","a":41,"b":1,"s":"tec"},{"t":"GRMN","n":"Garmin","a":3,"b":1,"s":"tec"},{"t":"ANET","n":"Arista Networks","a":29,"b":1,"s":"tec"},{"t":"DELL","n":"Dell Technologies","a":8,"b":1,"s":"tec"},{"t":"IBKR","n":"Interactive Brokers","a":5,"b":1,"s":"fin"},{"t":"MSTR","n":"Strategy / MicroStrategy","a":20,"b":1,"s":"cripto"},{"t":"XYZ","n":"Block","a":20,"b":1,"s":"fin"},{"t":"PYPL","n":"PayPal","a":8,"b":1,"s":"fin"},{"t":"FISV","n":"Fiserv","a":11,"b":1,"s":"fin"},{"t":"ONDS","n":"Ondas Holdings","a":2,"b":1,"s":"ind"},{"t":"SATL","n":"Satellogic","a":1,"b":1,"s":"ind"},{"t":"RKLB","n":"Rocket Lab","a":12,"b":1,"s":"ind"},{"t":"ASTS","n":"AST SpaceMobile","a":15,"b":1,"s":"com"},{"t":"RGTI","n":"Rigetti Computing","a":2,"b":1,"s":"tec"},{"t":"SDA","n":"SunCar Technology","a":2,"b":1,"s":"tec"},{"t":"JMIA","n":"Jumia Technologies","a":1,"b":1,"s":"cons"},{"t":"SPCE","n":"Virgin Galactic","a":1,"b":2,"s":"ind"},{"t":"NVDA","n":"NVIDIA","a":24,"b":1,"s":"semi"},{"t":"AMD","n":"Advanced Micro Devices","a":10,"b":1,"s":"semi"},{"t":"INTC","n":"Intel","a":5,"b":1,"s":"semi"},{"t":"TSM","n":"Taiwan Semiconductor","a":9,"b":1,"s":"semi"},{"t":"AVGO","n":"Broadcom","a":39,"b":1,"s":"semi"},{"t":"QCOM","n":"Qualcomm","a":11,"b":1,"s":"semi"},{"t":"TXN","n":"Texas Instruments","a":5,"b":1,"s":"semi"},{"t":"MU","n":"Micron Technology","a":5,"b":1,"s":"semi"},{"t":"AMAT","n":"Applied Materials","a":5,"b":1,"s":"semi"},{"t":"LRCX","n":"Lam Research","a":56,"b":1,"s":"semi"},{"t":"KLAC","n":"KLA Corporation","a":30,"b":1,"s":"semi"},{"t":"ADI","n":"Analog Devices","a":15,"b":1,"s":"semi"},{"t":"MRVL","n":"Marvell Technology","a":14,"b":1,"s":"semi"},{"t":"SWKS","n":"Skyworks Solutions","a":21,"b":1,"s":"semi"},{"t":"ASML","n":"ASML Holding","a":146,"b":1,"s":"semi"},{"t":"ARM","n":"Arm Holdings","a":27,"b":1,"s":"semi"},{"t":"ALAB","n":"Astera Labs","a":44,"b":1,"s":"semi"},{"t":"SNDK","n":"SanDisk","a":170,"b":1,"s":"semi"},{"t":"CLS","n":"Celestica","a":20,"b":1,"s":"semi"},{"t":"DISN","n":"Walt Disney","a":12,"b":1,"s":"com"},{"t":"T","n":"AT&T","a":3,"b":1,"s":"com"},{"t":"VZ","n":"Verizon","a":4,"b":1,"s":"com"},{"t":"TMUS","n":"T-Mobile US","a":33,"b":1,"s":"com"},{"t":"NOKA","n":"Nokia","a":1,"b":1,"s":"tec"},{"t":"ERIC","n":"Ericsson","a":2,"b":1,"s":"tec"},{"t":"ORAN","n":"Orange","a":1,"b":1,"s":"com"},{"t":"VOD","n":"Vodafone Group","a":1,"b":1,"s":"com"},{"t":"TEFO","n":"Telefónica","a":8,"b":1,"s":"com"},{"t":"DTEA","n":"Deutsche Telekom","a":3,"b":1,"s":"com"},{"t":"TILAY","n":"Telecom Italia","a":1,"b":1,"s":"com"},{"t":"AMX","n":"América Móvil","a":1,"b":1,"s":"com"},{"t":"VIV","n":"Telefônica Brasil","a":1,"b":1,"s":"com"},{"t":"TIMB","n":"TIM","a":1,"b":1,"s":"com"},{"t":"TV","n":"Grupo Televisa","a":3,"b":1,"s":"com"},{"t":"WBO","n":"Weibo","a":6,"b":1,"s":"com"},{"t":"JOYY","n":"JOYY","a":5,"b":1,"s":"com"},{"t":"NTES","n":"NetEase","a":14,"b":1,"s":"com"},{"t":"BIDU","n":"Baidu","a":11,"b":1,"s":"com"},{"t":"XOM","n":"Exxon Mobil","a":10,"b":1,"s":"ene"},{"t":"CVX","n":"Chevron","a":16,"b":1,"s":"ene"},{"t":"COP","n":"ConocoPhillips","a":25,"b":1,"s":"ene"},{"t":"OXY","n":"Occidental Petroleum","a":5,"b":1,"s":"ene"},{"t":"PSX","n":"Phillips 66","a":6,"b":1,"s":"ene"},{"t":"SLB","n":"SLB - Schlumberger","a":3,"b":1,"s":"ene"},{"t":"HAL","n":"Halliburton","a":2,"b":1,"s":"ene"},{"t":"BKR","n":"Baker Hughes","a":7,"b":1,"s":"ene"},{"t":"BP","n":"BP","a":5,"b":1,"s":"ene"},{"t":"SHEL","n":"Shell","a":2,"b":1,"s":"ene"},{"t":"TTE","n":"TotalEnergies","a":3,"b":1,"s":"ene"},{"t":"E","n":"Eni","a":4,"b":1,"s":"ene"},{"t":"EQNR","n":"Equinor","a":6,"b":1,"s":"ene"},{"t":"PBR","n":"Petrobras","a":1,"b":1,"s":"ene"},{"t":"PETR3","n":"Petrobras ON","a":1,"b":1,"s":"ene"},{"t":"VIST","n":"Vista Energy","a":3,"b":1,"s":"ene"},{"t":"GPRK","n":"GeoPark","a":1,"b":1,"s":"ene"},{"t":"TEN","n":"Tenaris","a":1,"b":1,"s":"ene"},{"t":"GLNG","n":"Golar LNG","a":10,"b":1,"s":"ene"},{"t":"PTR","n":"PetroChina","a":4,"b":1,"s":"ene"},{"t":"SNP","n":"Sinopec","a":3,"b":1,"s":"ene"},{"t":"PRIO3","n":"PetroRio","a":2,"b":1,"s":"ene"},{"t":"USO","n":"United States Oil Fund","a":15,"b":1,"s":"etf"},{"t":"XLE","n":"Energy Select Sector SPDR","a":2,"b":1,"s":"etf"},{"t":"NEE","n":"NextEra Energy","a":19,"b":1,"s":"util"},{"t":"CEG","n":"Constellation Energy","a":45,"b":1,"s":"util"},{"t":"VST","n":"Vistra","a":26,"b":1,"s":"util"},{"t":"GEV","n":"GE Vernova","a":30,"b":1,"s":"util"},{"t":"OKLO","n":"Oklo","a":28,"b":1,"s":"util"},{"t":"NGG","n":"National Grid","a":2,"b":1,"s":"util"},{"t":"EOAN","n":"E.ON","a":6,"b":1,"s":"util"},{"t":"KEP","n":"Korea Electric Power","a":1,"b":1,"s":"util"},{"t":"EBR","n":"Eletrobras","a":1,"b":4,"s":"util"},{"t":"ELPC","n":"Copel","a":1,"b":13,"s":"util"},{"t":"SBS","n":"Sabesp","a":1,"b":2,"s":"util"},{"t":"SBSP3","n":"Sabesp ON","a":1,"b":1,"s":"util"},{"t":"HNPIY","n":"Huaneng Power","a":1,"b":1,"s":"util"},{"t":"XLU","n":"Utilities Select Sector SPDR","a":15,"b":1,"s":"etf"},{"t":"B","n":"Barrick Mining","a":2,"b":1,"s":"mat"},{"t":"NEM","n":"Newmont","a":3,"b":1,"s":"mat"},{"t":"AEM","n":"Agnico Eagle Mines","a":6,"b":1,"s":"mat"},{"t":"GFI","n":"Gold Fields","a":1,"b":1,"s":"mat"},{"t":"HMY","n":"Harmony Gold Mining","a":1,"b":1,"s":"mat"},{"t":"KGC","n":"Kinross Gold","a":1,"b":1,"s":"mat"},{"t":"PAAS","n":"Pan American Silver","a":3,"b":1,"s":"mat"},{"t":"HL","n":"Hecla Mining","a":1,"b":1,"s":"mat"},{"t":"CDE","n":"Coeur Mining","a":1,"b":1,"s":"mat"},{"t":"MUX","n":"McEwen","a":2,"b":1,"s":"mat"},{"t":"NG","n":"NovaGold Resources","a":1,"b":4,"s":"mat"},{"t":"FCX","n":"Freeport-McMoRan","a":3,"b":1,"s":"mat"},{"t":"SCCO","n":"Southern Copper","a":2,"b":1,"s":"mat"},{"t":"BHP","n":"BHP Group","a":2,"b":1,"s":"mat"},{"t":"RIO","n":"Rio Tinto","a":8,"b":1,"s":"mat"},{"t":"VALE","n":"Vale","a":2,"b":1,"s":"mat"},{"t":"VALE3","n":"Vale ON","a":1,"b":1,"s":"mat"},{"t":"GGB","n":"Gerdau","a":1,"b":4,"s":"mat"},{"t":"SID","n":"Companhia Siderúrgica Nacional","a":1,"b":8,"s":"mat"},{"t":"CSNA3","n":"Cia. Siderúrgica Nacional ON","a":1,"b":1,"s":"mat"},{"t":"TXR","n":"Ternium","a":4,"b":1,"s":"mat"},{"t":"NUE","n":"Nucor","a":16,"b":1,"s":"mat"},{"t":"PKS","n":"POSCO Holdings","a":3,"b":1,"s":"mat"},{"t":"MP","n":"MP Materials","a":10,"b":1,"s":"mat"},{"t":"LAC","n":"Lithium Americas","a":1,"b":1,"s":"mat"},{"t":"LAR","n":"Lithium Americas Argentina","a":1,"b":1,"s":"mat"},{"t":"CCJ","n":"Cameco","a":23,"b":1,"s":"mat"},{"t":"NXE","n":"NexGen Energy","a":1,"b":1,"s":"mat"},{"t":"MOS","n":"Mosaic","a":5,"b":1,"s":"mat"},{"t":"DD","n":"DuPont de Nemours","a":5,"b":1,"s":"mat"},{"t":"DOW","n":"Dow","a":6,"b":1,"s":"mat"},{"t":"LIN","n":"Linde","a":40,"b":1,"s":"mat"},{"t":"ECL","n":"Ecolab","a":56,"b":1,"s":"mat"},{"t":"IFF","n":"Intl. Flavors & Fragrances","a":12,"b":1,"s":"mat"},{"t":"IP","n":"International Paper","a":4,"b":1,"s":"mat"},{"t":"AVY","n":"Avery Dennison","a":18,"b":1,"s":"mat"},{"t":"SUZ","n":"Suzano","a":1,"b":1,"s":"mat"},{"t":"SUZB3","n":"Suzano ON","a":1,"b":1,"s":"mat"},{"t":"BAK","n":"Braskem","a":2,"b":1,"s":"mat"},{"t":"CX","n":"Cemex","a":1,"b":1,"s":"mat"},{"t":"BAS","n":"BASF","a":2,"b":1,"s":"mat"},{"t":"BAYN","n":"Bayer","a":3,"b":1,"s":"salud"},{"t":"JPM","n":"JPMorgan Chase","a":15,"b":1,"s":"fin"},{"t":"BA.C","n":"Bank of America","a":41,"b":1,"s":"fin"},{"t":"WFC","n":"Wells Fargo","a":5,"b":1,"s":"fin"},{"t":"C","n":"Citigroup","a":3,"b":1,"s":"fin"},{"t":"GS","n":"Goldman Sachs","a":13,"b":1,"s":"fin"},{"t":"MS","n":"Morgan Stanley","a":13,"b":1,"s":"fin"},{"t":"USB","n":"U.S. Bancorp","a":5,"b":1,"s":"fin"},{"t":"BNY","n":"BNY Mellon","a":2,"b":1,"s":"fin"},{"t":"SCHW","n":"Charles Schwab","a":13,"b":1,"s":"fin"},{"t":"BX","n":"Blackstone","a":30,"b":1,"s":"fin"},{"t":"BRKB","n":"Berkshire Hathaway B","a":22,"b":1,"s":"fin"},{"t":"V","n":"Visa","a":18,"b":1,"s":"fin"},{"t":"MA","n":"Mastercard","a":33,"b":1,"s":"fin"},{"t":"AXP","n":"American Express","a":15,"b":1,"s":"fin"},{"t":"AIG","n":"American Intl. Group","a":5,"b":1,"s":"fin"},{"t":"TRVV","n":"Travelers","a":6,"b":1,"s":"fin"},{"t":"MRSH","n":"Marsh & McLennan","a":16,"b":1,"s":"fin"},{"t":"SPGI","n":"S&P Global","a":45,"b":1,"s":"fin"},{"t":"HOOD","n":"Robinhood Markets","a":29,"b":1,"s":"fin"},{"t":"COIN","n":"Coinbase Global","a":27,"b":1,"s":"cripto"},{"t":"O","n":"Realty Income","a":13,"b":1,"s":"fin"},{"t":"FNMA","n":"Fannie Mae","a":1,"b":1,"s":"fin"},{"t":"BBV","n":"BBVA","a":1,"b":1,"s":"fin"},{"t":"SAN","n":"Banco Santander","a":1,"b":4,"s":"fin"},{"t":"BCS","n":"Barclays","a":1,"b":1,"s":"fin"},{"t":"HSBC","n":"HSBC Holdings","a":2,"b":1,"s":"fin"},{"t":"LYG","n":"Lloyds Banking Group","a":2,"b":1,"s":"fin"},{"t":"ING","n":"ING Groep","a":3,"b":1,"s":"fin"},{"t":"AEG","n":"Aegon","a":1,"b":1,"s":"fin"},{"t":"MUFG","n":"Mitsubishi UFJ Financial","a":1,"b":1,"s":"fin"},{"t":"MFG","n":"Mizuho Financial Group","a":1,"b":1,"s":"fin"},{"t":"NMR","n":"Nomura Holdings","a":1,"b":1,"s":"fin"},{"t":"KB","n":"KB Financial Group","a":2,"b":1,"s":"fin"},{"t":"HDB","n":"HDFC Bank","a":2,"b":1,"s":"fin"},{"t":"IBN","n":"ICICI Bank","a":1,"b":1,"s":"fin"},{"t":"LFC","n":"China Life Insurance","a":2,"b":1,"s":"fin"},{"t":"ITUB","n":"Itaú Unibanco","a":1,"b":1,"s":"fin"},{"t":"ITUB3","n":"Itaú Unibanco ON","a":1,"b":1,"s":"fin"},{"t":"BBD","n":"Banco Bradesco","a":1,"b":1,"s":"fin"},{"t":"BBDC3","n":"Banco Bradesco ON","a":1,"b":1,"s":"fin"},{"t":"BBAS3","n":"Banco do Brasil","a":21,"b":1,"s":"fin"},{"t":"BSBR","n":"Banco Santander Brasil","a":1,"b":1,"s":"fin"},{"t":"NU","n":"Nu Holdings","a":2,"b":1,"s":"fin"},{"t":"XP","n":"XP Inc.","a":4,"b":1,"s":"fin"},{"t":"STNE","n":"StoneCo","a":3,"b":1,"s":"fin"},{"t":"PAGS","n":"PagSeguro Digital","a":3,"b":1,"s":"fin"},{"t":"JNJ","n":"Johnson & Johnson","a":15,"b":1,"s":"salud"},{"t":"LLY","n":"Eli Lilly","a":56,"b":1,"s":"salud"},{"t":"PFE","n":"Pfizer","a":4,"b":1,"s":"salud"},{"t":"MRK","n":"Merck & Co.","a":5,"b":1,"s":"salud"},{"t":"ABBV","n":"AbbVie","a":10,"b":1,"s":"salud"},{"t":"ABT","n":"Abbott Laboratories","a":4,"b":1,"s":"salud"},{"t":"BMY","n":"Bristol-Myers Squibb","a":3,"b":1,"s":"salud"},{"t":"AMGN","n":"Amgen","a":30,"b":1,"s":"salud"},{"t":"GILD","n":"Gilead Sciences","a":4,"b":1,"s":"salud"},{"t":"BIIB","n":"Biogen","a":13,"b":1,"s":"salud"},{"t":"MRNA","n":"Moderna","a":19,"b":1,"s":"salud"},{"t":"VRTX","n":"Vertex Pharmaceuticals","a":101,"b":1,"s":"salud"},{"t":"NTRA","n":"Natera","a":30,"b":1,"s":"salud"},{"t":"TMO","n":"Thermo Fisher Scientific","a":22,"b":1,"s":"salud"},{"t":"DHR","n":"Danaher","a":54,"b":1,"s":"salud"},{"t":"MDT","n":"Medtronic","a":4,"b":1,"s":"salud"},{"t":"ISRG","n":"Intuitive Surgical","a":90,"b":1,"s":"salud"},{"t":"UNH","n":"UnitedHealth Group","a":33,"b":1,"s":"salud"},{"t":"CVS","n":"CVS Health","a":15,"b":1,"s":"salud"},{"t":"CAH","n":"Cardinal Health","a":3,"b":1,"s":"salud"},{"t":"WBA","n":"Walgreens Boots Alliance","a":3,"b":1,"s":"salud"},{"t":"AZN","n":"AstraZeneca","a":4,"b":1,"s":"salud"},{"t":"GSK","n":"GSK","a":4,"b":1,"s":"salud"},{"t":"NVS","n":"Novartis","a":4,"b":1,"s":"salud"},{"t":"NVO","n":"Novo Nordisk","a":7,"b":1,"s":"salud"},{"t":"PHG","n":"Koninklijke Philips","a":5,"b":1,"s":"salud"},{"t":"HIMS","n":"Hims & Hers Health","a":4,"b":1,"s":"salud"},{"t":"HAPV3","n":"Hapvida","a":1,"b":1,"s":"salud"},{"t":"KO","n":"Coca-Cola","a":5,"b":1,"s":"alim"},{"t":"PEP","n":"PepsiCo","a":18,"b":1,"s":"alim"},{"t":"MDLZ","n":"Mondelez","a":15,"b":1,"s":"alim"},{"t":"HSY","n":"Hershey","a":21,"b":1,"s":"alim"},{"t":"SYY","n":"Sysco","a":8,"b":1,"s":"alim"},{"t":"BNG","n":"Bunge Global","a":5,"b":1,"s":"alim"},{"t":"ADGO","n":"Adecoagro","a":1,"b":1,"s":"alim"},{"t":"BIOX","n":"Bioceres Crop Solutions","a":1,"b":1,"s":"alim"},{"t":"LND","n":"BrasilAgro","a":1,"b":1,"s":"alim"},{"t":"BRFS","n":"BRF","a":1,"b":3,"s":"alim"},{"t":"ABEV","n":"Ambev","a":1,"b":3,"s":"alim"},{"t":"ABEV3","n":"Ambev ON","a":1,"b":1,"s":"alim"},{"t":"DEO","n":"Diageo","a":6,"b":1,"s":"alim"},{"t":"BSN","n":"Danone","a":20,"b":1,"s":"alim"},{"t":"UL","n":"Unilever","a":3,"b":1,"s":"alim"},{"t":"FMX","n":"Fomento Económico Mexicano","a":6,"b":1,"s":"alim"},{"t":"KOFM","n":"Coca-Cola FEMSA","a":2,"b":1,"s":"alim"},{"t":"AKO.B","n":"Embotelladora Andina B","a":1,"b":1,"s":"alim"},{"t":"ARCO","n":"Arcos Dorados","a":1,"b":2,"s":"alim"},{"t":"MCD","n":"McDonald's","a":24,"b":1,"s":"alim"},{"t":"SBUX","n":"Starbucks","a":12,"b":1,"s":"alim"},{"t":"MO","n":"Altria Group","a":4,"b":1,"s":"alim"},{"t":"PM","n":"Philip Morris Intl.","a":18,"b":1,"s":"alim"},{"t":"CORN","n":"Teucrium Corn Fund","a":15,"b":1,"s":"etf"},{"t":"WMT","n":"Walmart","a":18,"b":1,"s":"cons"},{"t":"COST","n":"Costco Wholesale","a":48,"b":1,"s":"cons"},{"t":"TGT","n":"Target","a":24,"b":1,"s":"cons"},{"t":"HD","n":"Home Depot","a":32,"b":1,"s":"cons"},{"t":"TJX","n":"TJX Companies","a":22,"b":1,"s":"cons"},{"t":"ROST","n":"Ross Stores","a":41,"b":1,"s":"cons"},{"t":"PG","n":"Procter & Gamble","a":15,"b":1,"s":"cons"},{"t":"CL","n":"Colgate-Palmolive","a":3,"b":1,"s":"cons"},{"t":"KMB","n":"Kimberly-Clark","a":6,"b":1,"s":"cons"},{"t":"NKE","n":"Nike","a":12,"b":1,"s":"cons"},{"t":"ADS","n":"adidas","a":22,"b":1,"s":"cons"},{"t":"DECK","n":"Deckers Outdoor","a":25,"b":1,"s":"cons"},{"t":"ANF","n":"Abercrombie & Fitch","a":1,"b":1,"s":"cons"},{"t":"URBN","n":"Urban Outfitters","a":2,"b":1,"s":"cons"},{"t":"LREN3","n":"Lojas Renner","a":1,"b":1,"s":"cons"},{"t":"MGLU3","n":"Magazine Luiza","a":1,"b":1,"s":"cons"},{"t":"NATU3","n":"Natura &Co","a":1,"b":1,"s":"cons"},{"t":"CBRD","n":"Cia. Brasileira de Distribucion","a":1,"b":1,"s":"cons"},{"t":"BABA","n":"Alibaba Group","a":9,"b":1,"s":"cons"},{"t":"JD","n":"JD.com","a":4,"b":1,"s":"cons"},{"t":"PDD","n":"PDD Holdings","a":25,"b":1,"s":"cons"},{"t":"TCOM","n":"Trip.com Group","a":2,"b":1,"s":"cons"},{"t":"BKNG","n":"Booking Holdings","a":700,"b":1,"s":"cons"},{"t":"LVS","n":"Las Vegas Sands","a":2,"b":1,"s":"cons"},{"t":"CCL","n":"Carnival","a":3,"b":1,"s":"cons"},{"t":"AAP","n":"Advance Auto Parts","a":14,"b":1,"s":"cons"},{"t":"ORLY","n":"O'Reilly Automotive","a":222,"b":1,"s":"cons"},{"t":"PBI","n":"Pitney Bowes","a":1,"b":1,"s":"ind"},{"t":"PSO","n":"Pearson","a":1,"b":1,"s":"com"},{"t":"SNA","n":"Snap-on","a":6,"b":1,"s":"ind"},{"t":"TSLA","n":"Tesla","a":15,"b":1,"s":"ind"},{"t":"GM","n":"General Motors","a":6,"b":1,"s":"ind"},{"t":"F","n":"Ford Motor","a":1,"b":1,"s":"ind"},{"t":"TM","n":"Toyota Motor","a":15,"b":1,"s":"ind"},{"t":"HMC","n":"Honda Motor","a":1,"b":1,"s":"ind"},{"t":"NSAN","n":"Nissan Motor","a":1,"b":1,"s":"ind"},{"t":"RACE","n":"Ferrari","a":83,"b":1,"s":"ind"},{"t":"STLA","n":"Stellantis","a":5,"b":1,"s":"ind"},{"t":"MBG","n":"Mercedes-Benz Group","a":4,"b":1,"s":"ind"},{"t":"NIO","n":"NIO","a":4,"b":1,"s":"ind"},{"t":"XPEV","n":"XPeng","a":4,"b":1,"s":"ind"},{"t":"TTM","n":"Tata Motors","a":1,"b":1,"s":"ind"},{"t":"HOG","n":"Harley-Davidson","a":3,"b":1,"s":"ind"},{"t":"GT","n":"Goodyear Tire & Rubber","a":2,"b":1,"s":"ind"},{"t":"BA","n":"Boeing","a":24,"b":1,"s":"ind"},{"t":"LMT","n":"Lockheed Martin","a":20,"b":1,"s":"ind"},{"t":"RTX","n":"RTX","a":5,"b":1,"s":"ind"},{"t":"HWM","n":"Howmet Aerospace","a":1,"b":1,"s":"ind"},{"t":"HON","n":"Honeywell International","a":8,"b":1,"s":"ind"},{"t":"GE","n":"GE Aerospace","a":8,"b":1,"s":"ind"},{"t":"MMM","n":"3M","a":10,"b":1,"s":"ind"},{"t":"CAT","n":"Caterpillar","a":20,"b":1,"s":"ind"},{"t":"DE","n":"Deere & Co.","a":40,"b":1,"s":"ind"},{"t":"PCAR","n":"PACCAR","a":3,"b":1,"s":"ind"},{"t":"JCI","n":"Johnson Controls","a":2,"b":1,"s":"ind"},{"t":"UNP","n":"Union Pacific","a":20,"b":1,"s":"ind"},{"t":"FDX","n":"FedEx","a":10,"b":1,"s":"ind"},{"t":"DAL","n":"Delta Air Lines","a":8,"b":1,"s":"ind"},{"t":"AAL","n":"American Airlines","a":2,"b":1,"s":"ind"},{"t":"UAL","n":"United Airlines","a":5,"b":1,"s":"ind"},{"t":"CAR","n":"Avis Budget Group","a":26,"b":1,"s":"ind"},{"t":"ERJ","n":"Embraer","a":1,"b":1,"s":"ind"},{"t":"CAAP","n":"Corporación América Airports","a":1,"b":4,"s":"ind"},{"t":"ASR","n":"Grupo Aeroportuario del Sureste","a":20,"b":1,"s":"ind"},{"t":"PAC","n":"Grupo Aeroportuario del Pacífico","a":16,"b":1,"s":"ind"},{"t":"UGP","n":"Ultrapar Participações","a":1,"b":1,"s":"ene"},{"t":"RENT3","n":"Localiza Rent a Car","a":2,"b":1,"s":"ind"},{"t":"WEGE3","n":"WEG","a":1,"b":1,"s":"ind"},{"t":"SIEGY","n":"Siemens","a":3,"b":1,"s":"ind"},{"t":"CAJ","n":"Canon","a":2,"b":1,"s":"tec"},{"t":"SONY","n":"Sony Group","a":8,"b":1,"s":"tec"},{"t":"PCRF","n":"Panasonic Holdings","a":2,"b":1,"s":"tec"},{"t":"HHPD","n":"Hon Hai Precision - Foxconn","a":2,"b":1,"s":"tec"},{"t":"SMSN","n":"Samsung Electronics","a":14,"b":1,"s":"tec"},{"t":"NECI","n":"NEC","a":1,"b":3,"s":"tec"},{"t":"INFY","n":"Infosys","a":1,"b":1,"s":"tec"},{"t":"SAP","n":"SAP","a":6,"b":1,"s":"tec"},{"t":"FSLR","n":"First Solar","a":18,"b":1,"s":"ene"},{"t":"IBIT","n":"iShares Bitcoin Trust","a":10,"b":1,"s":"cripto"},{"t":"ETHA","n":"iShares Ethereum Trust","a":5,"b":1,"s":"cripto"},{"t":"RIOT","n":"Riot Platforms","a":3,"b":1,"s":"cripto"},{"t":"HUT","n":"Hut 8","a":5,"b":1,"s":"cripto"},{"t":"IREN","n":"IREN","a":12,"b":1,"s":"cripto"},{"t":"BMNR","n":"BitMine Immersion","a":8,"b":1,"s":"cripto"},{"t":"KEEL","n":"Bitfarms","a":1,"b":5,"s":"cripto"},{"t":"SPY","n":"SPDR S&P 500 ETF","a":60,"b":1,"s":"etf"},{"t":"IVV","n":"iShares Core S&P 500 ETF","a":692,"b":1,"s":"etf"},{"t":"QQQ","n":"Invesco QQQ Trust","a":20,"b":1,"s":"etf"},{"t":"DIA","n":"SPDR Dow Jones Industrial","a":20,"b":1,"s":"etf"},{"t":"IWM","n":"iShares Russell 2000 ETF","a":10,"b":1,"s":"etf"},{"t":"EEM","n":"iShares MSCI Emerging Markets","a":5,"b":1,"s":"etf"},{"t":"IEMG","n":"iShares Core MSCI EM","a":12,"b":1,"s":"etf"},{"t":"EFA","n":"iShares MSCI EAFE ETF","a":18,"b":1,"s":"etf"},{"t":"EWZ","n":"iShares MSCI Brazil ETF","a":2,"b":1,"s":"etf"},{"t":"EWJ","n":"iShares MSCI Japan ETF","a":14,"b":1,"s":"etf"},{"t":"EWY","n":"iShares MSCI South Korea ETF","a":50,"b":1,"s":"etf"},{"t":"FXI","n":"iShares China Large-Cap ETF","a":5,"b":1,"s":"etf"},{"t":"ILF","n":"iShares Latin America 40","a":6,"b":1,"s":"etf"},{"t":"IEUR","n":"iShares Core MSCI Europe","a":11,"b":1,"s":"etf"},{"t":"VEA","n":"Vanguard FTSE Developed Mkts","a":10,"b":1,"s":"etf"},{"t":"ACWI","n":"iShares MSCI ACWI ETF","a":26,"b":1,"s":"etf"},{"t":"ARKK","n":"ARK Innovation ETF","a":10,"b":1,"s":"etf"},{"t":"BBAX","n":"JPMorgan BetaBuilders Japan","a":10,"b":1,"s":"etf"},{"t":"BBCA","n":"JPMorgan BetaBuilders Canada","a":10,"b":1,"s":"etf"},{"t":"XLK","n":"Technology Select Sector SPDR","a":46,"b":1,"s":"etf"},{"t":"XLF","n":"Financial Select Sector SPDR","a":2,"b":1,"s":"etf"},{"t":"XLV","n":"Health Care Select Sector SPDR","a":29,"b":1,"s":"etf"},{"t":"XLI","n":"Industrial Select Sector SPDR","a":28,"b":1,"s":"etf"},{"t":"XLP","n":"Consumer Staples Select SPDR","a":16,"b":1,"s":"etf"},{"t":"XLY","n":"Consumer Discret. Select SPDR","a":43,"b":1,"s":"etf"},{"t":"XLB","n":"Materials Select Sector SPDR","a":18,"b":1,"s":"etf"},{"t":"XLC","n":"Communication Services SPDR","a":19,"b":1,"s":"etf"},{"t":"XLRE","n":"Real Estate Select Sector SPDR","a":9,"b":1,"s":"etf"},{"t":"XME","n":"SPDR S&P Metals & Mining","a":30,"b":1,"s":"etf"},{"t":"SMH","n":"VanEck Semiconductor ETF","a":50,"b":1,"s":"etf"},{"t":"IBB","n":"iShares Biotechnology ETF","a":27,"b":1,"s":"etf"},{"t":"CIBR","n":"First Trust NASDAQ Cybersecurity","a":10,"b":1,"s":"etf"},{"t":"ICLN","n":"iShares Global Clean Energy","a":5,"b":1,"s":"etf"},{"t":"URA","n":"Global X Uranium ETF","a":5,"b":1,"s":"etf"},{"t":"COPX","n":"Global X Copper Miners ETF","a":14,"b":1,"s":"etf"},{"t":"GDX","n":"VanEck Gold Miners ETF","a":10,"b":1,"s":"etf"},{"t":"GLD","n":"SPDR Gold Shares","a":50,"b":1,"s":"etf"},{"t":"SLV","n":"iShares Silver Trust","a":6,"b":1,"s":"etf"},{"t":"GSG","n":"iShares S&P GSCI Commodity","a":10,"b":1,"s":"etf"},{"t":"IJH","n":"iShares Core S&P Mid-Cap","a":12,"b":1,"s":"etf"},{"t":"IVE","n":"iShares S&P 500 Value ETF","a":40,"b":1,"s":"etf"},{"t":"IVW","n":"iShares S&P 500 Growth ETF","a":20,"b":1,"s":"etf"},{"t":"RSP","n":"Invesco S&P 500 Equal Weight","a":30,"b":1,"s":"etf"},{"t":"SPHQ","n":"Invesco S&P 500 Quality ETF","a":14,"b":1,"s":"etf"},{"t":"ESGU","n":"iShares ESG Aware MSCI USA","a":30,"b":1,"s":"etf"},{"t":"VIG","n":"Vanguard Dividend Appreciation","a":39,"b":1,"s":"etf"},{"t":"ITA","n":"iShares U.S. Aerospace & Defense","a":50,"b":1,"s":"etf"},{"t":"TQQQ","n":"ProShares UltraPro QQQ","a":25,"b":1,"s":"etf"},{"t":"SPXL","n":"Direxion Daily S&P 500 Bull 3X","a":25,"b":1,"s":"etf"},{"t":"PSQ","n":"ProShares Short QQQ","a":8,"b":1,"s":"etf"},{"t":"SH","n":"ProShares Short S&P 500","a":8,"b":1,"s":"etf"},{"t":"VXX","n":"iPath Series B S&P 500 VIX","a":5,"b":1,"s":"etf"}],"precios":{},"mep":null,"fecha":"","div":{"AAPL":[2,5,8,11],"MSFT":[3,6,9,12],"GOOGL":[3,6,9,12],"AMZN":null,"META":[3,6,9,12],"NFLX":null,"ORCL":[1,4,7,10],"CRM":[1,4,7,10],"ADBE":null,"IBM":[3,6,9,12],"CSCO":[1,4,7,10],"ACN":[2,5,8,11],"NOW":null,"SNOW":null,"PLTR":null,"CRWD":null,"PANW":null,"TEAM":null,"ZM":null,"DOCU":null,"PATH":null,"TWLO":null,"SHOP":null,"SPOT":null,"UBER":null,"ABNB":null,"RBLX":null,"EA":[3,6,9,12],"PINS":null,"SNAP":null,"ROKU":null,"ETSY":null,"EBAY":[3,6,9,12],"YELP":null,"TRIP":null,"GLOB":null,"MELI":null,"SE":null,"NBIS":null,"CRWV":null,"AI":null,"TEM":null,"HPQ":[1,4,7,10],"XROX":[1,4,7,10],"BB":null,"UPST":null,"VRSN":null,"EFX":[3,6,9,12],"ADP":[1,4,7,10],"MSI":[1,4,7,10],"GLW":[3,6,9,12],"GRMN":[3,6,9,12],"ANET":null,"DELL":[1,4,7,10],"IBKR":[3,6,9,12],"MSTR":null,"XYZ":null,"PYPL":null,"FISV":null,"ONDS":null,"SATL":null,"RKLB":null,"ASTS":null,"RGTI":null,"SDA":null,"JMIA":null,"SPCE":null,"NVDA":[3,6,9,12],"AMD":null,"INTC":null,"TSM":[1,4,7,10],"AVGO":[3,6,9,12],"QCOM":[3,6,9,12],"TXN":[2,5,8,11],"MU":[1,4,7,10],"AMAT":[3,6,9,12],"LRCX":[1,4,7,10],"KLAC":[3,6,9,12],"ADI":[3,6,9,12],"MRVL":[3,6,9,12],"SWKS":[3,6,9,12],"ASML":[2,5,8,11],"ARM":null,"ALAB":null,"SNDK":null,"CLS":null,"DISN":[1,7],"T":[2,5,8,11],"VZ":[2,5,8,11],"TMUS":[3,6,9,12],"NOKA":[],"ERIC":[],"ORAN":[6,12],"VOD":[2,8],"TEFO":[6,12],"DTEA":[4],"TILAY":null,"AMX":[6,12],"VIV":[],"TIMB":[],"TV":[],"WBO":[],"JOYY":[],"NTES":[3,6,9,12],"BIDU":null,"XOM":[3,6,9,12],"CVX":[3,6,9,12],"COP":[3,6,9,12],"OXY":[1,4,7,10],"PSX":[3,6,9,12],"SLB":[1,4,7,10],"HAL":[3,6,9,12],"BKR":[2,5,8,11],"BP":[3,6,9,12],"SHEL":[3,6,9,12],"TTE":[1,4,7,10],"E":[3,9],"EQNR":[2,5,8,11],"PBR":[],"PETR3":[],"VIST":null,"GPRK":[3,6,9,12],"TEN":[5,11],"GLNG":[3,6,9,12],"PTR":[],"SNP":[],"PRIO3":null,"USO":null,"XLE":[3,6,9,12],"NEE":[3,6,9,12],"CEG":[3,6,9,12],"VST":[3,6,9,12],"GEV":[1,4,7,10],"OKLO":null,"NGG":[1,8],"EOAN":[5],"KEP":[],"EBR":[],"ELPC":[],"SBS":[],"SBSP3":[],"HNPIY":[],"XLU":[3,6,9,12],"B":[3,6,9,12],"NEM":[3,6,9,12],"AEM":[3,6,9,12],"GFI":[4,9],"HMY":[4,10],"KGC":[3,6,9,12],"PAAS":[3,6,9,12],"HL":[3,6,9,12],"CDE":null,"MUX":null,"NG":null,"FCX":[2,5,8,11],"SCCO":[2,5,8,11],"BHP":[3,9],"RIO":[4,9],"VALE":[3,9],"VALE3":[3,9],"GGB":[],"SID":[],"CSNA3":[],"TXR":[5,11],"NUE":[2,5,8,11],"PKS":[],"MP":null,"LAC":null,"LAR":null,"CCJ":[1],"NXE":null,"MOS":[3,6,9,12],"DD":[3,6,9,12],"DOW":[3,6,9,12],"LIN":[3,6,9,12],"ECL":[1,4,7,10],"IFF":[1,4,7,10],"IP":[3,6,9,12],"AVY":[3,6,9,12],"SUZ":[],"SUZB3":[],"BAK":[],"CX":[],"BAS":[5],"BAYN":[5],"JPM":[1,4,7,10],"BA.C":[3,6,9,12],"WFC":[3,6,9,12],"C":[2,5,8,11],"GS":[3,6,9,12],"MS":[2,5,8,11],"USB":[1,4,7,10],"BNY":[2,5,8,11],"SCHW":[2,5,8,11],"BX":[2,5,8,11],"BRKB":null,"V":[3,6,9,12],"MA":[2,5,8,11],"AXP":[2,5,8,11],"AIG":[3,6,9,12],"TRVV":[3,6,9,12],"MRSH":[2,5,8,11],"SPGI":[3,6,9,12],"HOOD":null,"COIN":null,"O":[1,2,3,4,5,6,7,8,9,10,11,12],"FNMA":null,"BBV":[4,10],"SAN":[5,11],"BCS":[4,9],"HSBC":[1,4,7,10],"LYG":[5,9],"ING":[4,8],"AEG":[3,9],"MUFG":[6,12],"MFG":[6,12],"NMR":[6,12],"KB":[4],"HDB":[8],"IBN":[8],"LFC":[7],"ITUB":[],"ITUB3":[],"BBD":[],"BBDC3":[],"BBAS3":[],"BSBR":[],"NU":null,"XP":[],"STNE":null,"PAGS":null,"JNJ":[3,6,9,12],"LLY":[3,6,9,12],"PFE":[3,6,9,12],"MRK":[1,4,7,10],"ABBV":[2,5,8,11],"ABT":[2,5,8,11],"BMY":[2,5,8,11],"AMGN":[3,6,9,12],"GILD":[3,6,9,12],"BIIB":null,"MRNA":null,"VRTX":null,"NTRA":null,"TMO":[1,4,7,10],"DHR":[1,4,7,10],"MDT":[1,4,7,10],"ISRG":null,"UNH":[3,6,9,12],"CVS":[2,5,8,11],"CAH":[1,4,7,10],"WBA":[3,6,9,12],"AZN":[3,9],"GSK":[1,4,7,10],"NVS":[3],"NVO":[3,8],"PHG":[8],"HIMS":null,"HAPV3":null,"KO":[4,7,10,12],"PEP":[1,3,6,9],"MDLZ":[1,4,7,10],"HSY":[3,6,9,12],"SYY":[1,4,7,10],"BNG":[3,6,9,12],"ADGO":[5],"BIOX":null,"LND":[],"BRFS":null,"ABEV":[],"ABEV3":[],"DEO":[4,10],"BSN":[5],"UL":[3,6,9,12],"FMX":[5,11],"KOFM":[5,11],"AKO.B":[],"ARCO":[],"MCD":[3,6,9,12],"SBUX":[2,5,8,11],"MO":[1,4,7,10],"PM":[1,4,7,10],"CORN":null,"WMT":[1,4,6,9],"COST":[2,5,8,11],"TGT":[3,6,9,12],"HD":[3,6,9,12],"TJX":[3,6,9,12],"ROST":[3,6,9,12],"PG":[2,5,8,11],"CL":[2,5,8,11],"KMB":[1,4,7,10],"NKE":[1,4,7,10],"ADS":[6],"DECK":null,"ANF":null,"URBN":null,"LREN3":[],"MGLU3":null,"NATU3":null,"CBRD":null,"BABA":[1],"JD":[1,8],"PDD":null,"TCOM":null,"BKNG":[3,6,9,12],"LVS":[3,6,9,12],"CCL":[3,6,9,12],"AAP":[1,4,7,10],"ORLY":null,"PBI":[3,6,9,12],"PSO":[6,9],"SNA":[3,6,9,12],"TSLA":null,"GM":[3,6,9,12],"F":[3,6,9,12],"TM":[6,12],"HMC":[6,12],"NSAN":[],"RACE":[4],"STLA":[5],"MBG":[5],"NIO":null,"XPEV":null,"TTM":[7],"HOG":[3,6,9,12],"GT":null,"BA":null,"LMT":[3,6,9,12],"RTX":[3,6,9,12],"HWM":[2,5,8,11],"HON":[3,6,9,12],"GE":[1,4,7,10],"MMM":[3,6,9,12],"CAT":[2,5,8,11],"DE":[2,5,8,11],"PCAR":[3,6,9,12],"JCI":[1,4,7,10],"UNP":[3,6,9,12],"FDX":[1,4,7,10],"DAL":[3,6,9,12],"AAL":null,"UAL":null,"CAR":null,"ERJ":null,"CAAP":null,"ASR":[],"PAC":[],"UGP":[],"RENT3":[],"WEGE3":[],"SIEGY":[2],"CAJ":[],"SONY":[],"PCRF":[],"HHPD":[],"SMSN":[],"NECI":[],"INFY":[],"SAP":[5],"FSLR":null,"IBIT":null,"ETHA":null,"RIOT":null,"HUT":null,"IREN":null,"BMNR":null,"KEEL":null,"SPY":[3,6,9,12],"IVV":[3,6,9,12],"QQQ":[3,6,9,12],"DIA":[1,2,3,4,5,6,7,8,9,10,11,12],"IWM":[3,6,9,12],"EEM":[6,12],"IEMG":[6,12],"EFA":[6,12],"EWZ":[6,12],"EWJ":[6,12],"EWY":[6,12],"FXI":[6,12],"ILF":[6,12],"IEUR":[6,12],"VEA":[3,6,9,12],"ACWI":[6,12],"ARKK":null,"BBAX":[6,12],"BBCA":[6,12],"XLK":[3,6,9,12],"XLF":[3,6,9,12],"XLV":[3,6,9,12],"XLI":[3,6,9,12],"XLP":[3,6,9,12],"XLY":[3,6,9,12],"XLB":[3,6,9,12],"XLC":[3,6,9,12],"XLRE":[3,6,9,12],"XME":[3,6,9,12],"SMH":[3,6,9,12],"IBB":[3,6,9,12],"CIBR":[3,6,9,12],"ICLN":[6,12],"URA":[6,12],"COPX":[6,12],"GDX":[12],"GLD":null,"SLV":null,"GSG":null,"IJH":[3,6,9,12],"IVE":[3,6,9,12],"IVW":[3,6,9,12],"RSP":[3,6,9,12],"SPHQ":[3,6,9,12],"ESGU":[3,6,9,12],"VIG":[3,6,9,12],"ITA":[3,6,9,12],"TQQQ":[3,6,9,12],"SPXL":[3,6,9,12],"PSQ":[3,6,9,12],"SH":[3,6,9,12],"VXX":null},"dps":{"O":3.258,"KO":2.04,"MSFT":3.64,"PG":4.2272,"VZ":2.76,"PFE":1.72,"NVDA":1.0,"SPY":7.254,"AAPL":1.0,"CVX":6.84,"T":1.11,"WMT":0.94,"HD":9.0,"MCD":7.44,"CSCO":1.64,"IBM":6.72,"V":2.68,"TXN":5.2,"MRK":3.08}};
+const SECTORES = {"tec":"Tecnología","semi":"Semiconductores","com":"Comunicación y Medios","ene":"Energía","util":"Servicios Públicos","mat":"Materiales y Minería","fin":"Financiero","salud":"Salud","alim":"Alimentos y Bebidas","cons":"Consumo y Retail","ind":"Industria y Transporte","etf":"ETFs e Índices","cripto":"Cripto y Blockchain"};
+
+const SERIES = ["--s1","--s2","--s3","--s4","--s5","--s6","--s7","--s8","--s10","--s11","--s12","--s13","--s14","--s15"];
+const OTHER = "--s9";
+const cssv = n => getComputedStyle(document.documentElement).getPropertyValue(n).trim();
+
+const BY_TICKER = new Map(DATA.cedears.map(c => [c.t, c]));
+
+let state = {
+  precios: Object.assign({}, DATA.precios),
+  dps: Object.assign({}, DATA.dps),
+  mep: DATA.mep,
+  fechaPx: DATA.fecha,
+  fechaMep: DATA.fecha,
+  pos: [],
+  demo: true,
+  mode: "valor",
+  editing: null,
+  db: null,
+  canWrite: true
+};
+
+const DEMO = [
+  {id:"demo1", ticker:"AAPL", cantidad:120, ppc:19800, mepCompra:null},
+  {id:"demo2", ticker:"KO",   cantidad:60,  ppc:24100, mepCompra:null},
+  {id:"demo3", ticker:"SPY",  cantidad:25,  ppc:16400, mepCompra:null}
+];
+
+/* ---------- formato ---------- */
+const nfArs = new Intl.NumberFormat("es-AR",{maximumFractionDigits:0});
+const nfArs2 = new Intl.NumberFormat("es-AR",{minimumFractionDigits:2,maximumFractionDigits:2});
+const nfUsd = new Intl.NumberFormat("es-AR",{minimumFractionDigits:2,maximumFractionDigits:2});
+const ars = v => "$ " + nfArs.format(Math.round(v));
+const arsSigned = v => (v>=0?"+ $ ":"− $ ") + nfArs.format(Math.abs(Math.round(v)));
+const usd = v => "US$ " + nfUsd.format(v);
+const usdSigned = v => (v>=0?"+ US$ ":"− US$ ") + nfUsd.format(Math.abs(v));
+const pct = v => (v>=0?"+":"−") + nfArs2.format(Math.abs(v*100)) + " %";
+const acc = v => v>=100 ? nfArs.format(v) : nfArs2.format(v);
+
+/* ---------- cálculo ---------- */
+function compute(){
+  const rows = state.pos.map(p => {
+    const c = BY_TICKER.get(p.ticker);
+    if(!c) return null;
+    const px = state.precios[p.ticker];
+    const acciones = p.cantidad * c.b / c.a;
+    const costoAr = p.cantidad * p.ppc;
+    const valAr = px ? p.cantidad * px : null;
+    const valUs = valAr !== null && state.mep ? valAr / state.mep : null;
+    const mepC = p.mepCompra && p.mepCompra > 0 ? p.mepCompra : null;
+    const costoUs = mepC ? costoAr / mepC : (state.mep ? costoAr / state.mep : null);
+    const ganAr = valAr !== null ? valAr - costoAr : null;
+    const ganUs = (valUs !== null && costoUs !== null) ? valUs - costoUs : null;
+    return {
+      ...p, c, px, acciones, costoAr, valAr, valUs, costoUs, ganAr, ganUs, mepReal: !!mepC,
+      ganArPct: (ganAr !== null && costoAr>0) ? ganAr/costoAr : null,
+      ganUsPct: (ganUs !== null && costoUs>0) ? ganUs/costoUs : null
+    };
+  }).filter(Boolean);
+  rows.sort((x,y) => (y.valAr ?? -1) - (x.valAr ?? -1));
+  const tot = rows.reduce((a,r)=>({
+    valAr: a.valAr + (r.valAr ?? 0),
+    valUs: a.valUs + (r.valUs ?? 0),
+    costoAr: a.costoAr + (r.valAr !== null ? r.costoAr : 0),
+    costoUs: a.costoUs + (r.valUs !== null ? (r.costoUs ?? 0) : 0)
+  }), {valAr:0, valUs:0, costoAr:0, costoUs:0});
+  return {rows, tot};
+}
+
+/* ---------- render ---------- */
+function render(){
+  const {rows, tot} = compute();
+
+  document.getElementById("mepVal").textContent = state.mep ? "$ " + nfArs2.format(state.mep) : "—";
+  document.getElementById("mepStamp").textContent = state.fechaMep || "";
+  document.getElementById("pxStamp").textContent = state.fechaPx ? "Precios al " + state.fechaPx : "";
+  document.getElementById("fuente").innerHTML =
+    "<b>Los precios</b> son la última cotización disponible en BYMA al " + (state.fechaPx||"—") +
+    ", y el MEP sale de la cotización de bonos del mismo panel (fuente: data912 / BYMA). Se actualizan solos cada 5 minutos en horario de mercado.";
+
+  const ganAr = tot.valAr - tot.costoAr;
+  const ganUs = tot.valUs - tot.costoUs;
+  document.getElementById("tTotAr").textContent = ars(tot.valAr);
+  document.getElementById("tTotArD").textContent = rows.length + (rows.length===1?" posición":" posiciones");
+  document.getElementById("tTotUs").textContent = usd(tot.valUs);
+  const gA = document.getElementById("tGanAr"), gU = document.getElementById("tGanUs");
+  gA.textContent = arsSigned(ganAr); gA.className = "v num " + (ganAr>=0?"pos":"neg");
+  document.getElementById("tGanArD").textContent = tot.costoAr>0 ? pct(ganAr/tot.costoAr) + " sobre lo invertido" : " ";
+  gU.textContent = usdSigned(ganUs); gU.className = "v num " + (ganUs>=0?"pos":"neg");
+  document.getElementById("tGanUsD").textContent = tot.costoUs>0 ? pct(ganUs/tot.costoUs) + " sobre lo invertido" : " ";
+
+  document.getElementById("demoNote").hidden = !state.demo || rows.length===0;
+  document.getElementById("emptyRow").hidden = rows.length>0;
+
+  const colorOf = buildColorMap(rows);
+  const tb = document.getElementById("tbody");
+  tb.textContent = "";
+  rows.forEach(r => {
+    const tr = document.createElement("tr");
+    tr.appendChild(cellTicker(r, colorOf));
+    tr.appendChild(cellDiv(r.ticker));
+    tr.appendChild(td(nfArs.format(r.cantidad), "num"));
+    tr.appendChild(td(acc(r.acciones), "num"));
+    tr.appendChild(r.px ? td(ars(r.px), "num") : tdWarn("sin precio"));
+    tr.appendChild(cellValor(r));
+    tr.appendChild(td(ars(r.ppc), "num"));
+    tr.appendChild(r.ganAr!==null ? tdSigned(arsSigned(r.ganAr), r.ganAr, pct(r.ganArPct)) : td("—","num"));
+    tr.appendChild(r.ganUs!==null ? tdSigned(usdSigned(r.ganUs), r.ganUs, r.mepReal ? pct(r.ganUsPct) : "aprox.") : td("—","num"));
+    const act = document.createElement("td"); act.className = "acts";
+    act.appendChild(infoLink(r.ticker));
+    const add = document.createElement("button");
+    add.className = "btn-ghost"; add.type = "button"; add.textContent = "Sumar";
+    add.setAttribute("aria-label", "Sumar CEDEARs de " + r.ticker);
+    add.setAttribute("aria-expanded", String(state.editing === r.id));
+    add.addEventListener("click", () => { state.editing = (state.editing === r.id ? null : r.id); render(); });
+    act.appendChild(add);
+    const del = document.createElement("button");
+    del.className = "btn-ghost"; del.type = "button"; del.textContent = "Quitar";
+    del.setAttribute("aria-label", "Quitar " + r.ticker);
+    del.addEventListener("click", () => removePos(r.id));
+    act.appendChild(del); tr.appendChild(act);
+    tb.appendChild(tr);
+    if(state.editing === r.id) tb.appendChild(editRow(r));
+  });
+
+  drawChart(rows, tot);
+  drawCalendario(rows);
+}
+
+const MESES = ["","Ene","Feb","Mar","Abr","May","Jun","Jul","Ago","Sep","Oct","Nov","Dic"];
+function cellDiv(ticker){
+  const e = document.createElement("td");
+  const m = DATA.div[ticker];
+  const s = document.createElement("span");
+  if(m === undefined){ s.className = "dv na"; s.textContent = "—"; e.appendChild(s); return e; }
+  if(m === null){ s.className = "dv no"; s.textContent = "NO"; e.appendChild(s); return e; }
+  s.className = "dv si"; s.textContent = "SI"; s.tabIndex = 0;
+  let txt;
+  if(!m.length) txt = "Paga dividendos, pero no tengo confirmado en qué meses.";
+  else if(m.length === 12) txt = "Paga todos los meses.";
+  else txt = "Paga en " + m.map(x => MESES[x]).join(" · ") + ".";
+  s.dataset.tip = txt;
+  e.appendChild(s); return e;
+}
+function cellValor(r){
+  const e = document.createElement("td"); e.className = "num";
+  const top = document.createElement("div");
+  top.textContent = r.valAr !== null ? ars(r.valAr) : "—";
+  e.appendChild(top);
+  const bot = document.createElement("div");
+  bot.className = "sub2 muted2";
+  bot.textContent = r.valUs !== null ? usd(r.valUs) : "";
+  e.appendChild(bot);
+  return e;
+}
+// Solo en la app propia (GitHub Pages): dentro de claude.ai el navegador bloquea abrir otras apps.
+const ES_ANDROID = /Android/i.test(navigator.userAgent) && /github\.io$|^localhost$/.test(location.hostname);
+function infoLink(ticker){
+  const a = document.createElement("a");
+  a.className = "ico";
+  const web = "https://www.tradingview.com/symbols/BCBA-" + encodeURIComponent(ticker) + "/";
+  // En Android abre directo la app de TradingView; si no está instalada, cae a la web.
+  a.href = ES_ANDROID
+    ? "intent://www.tradingview.com/symbols/BCBA-" + encodeURIComponent(ticker) + "/#Intent;scheme=https;package=com.tradingview.tradingviewapp;S.browser_fallback_url=" + encodeURIComponent(web) + ";end"
+    : web;
+  a.target = "_blank"; a.rel = "noopener noreferrer";
+  a.setAttribute("aria-label", "Ver " + ticker + " en TradingView");
+  a.dataset.tip = "Abrir " + ticker + " en TradingView";
+  a.innerHTML = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9.2"/><path d="M12 11v6"/><path d="M12 7.6v.1"/></svg>';
+  return a;
+}
+/* ---------- sumar CEDEARs a una posición ---------- */
+function editRow(r){
+  const tr = document.createElement("tr"); tr.className = "edit-row";
+  const cell = document.createElement("td"); cell.colSpan = 10;
+  const box = document.createElement("form"); box.className = "edit"; box.autocomplete = "off";
+  const ttl = document.createElement("div"); ttl.className = "ttl";
+  ttl.innerHTML = "Sumar a <b></b> · hoy tenés <span class='num'></span>";
+  ttl.querySelector("b").textContent = r.ticker;
+  ttl.querySelector("span").textContent = nfArs.format(r.cantidad) + " CEDEARs";
+  const f1 = document.createElement("div"); f1.className = "field";
+  f1.innerHTML = '<label>Cantidad que compraste</label><input class="num-in" type="number" inputmode="decimal" min="0" step="any" required>';
+  const f2 = document.createElement("div"); f2.className = "field";
+  f2.innerHTML = '<label>Nuevo precio promedio <span class="hint">(el de tu broker)</span></label><input class="num-in" type="number" inputmode="decimal" min="0" step="any" required>';
+  const qIn = f1.querySelector("input"), pIn = f2.querySelector("input");
+  pIn.placeholder = "hoy: " + nfArs2.format(r.ppc);
+  const btns = document.createElement("div"); btns.className = "btns";
+  const ok = document.createElement("button"); ok.type = "submit"; ok.className = "btn-main"; ok.textContent = "Guardar";
+  const no = document.createElement("button"); no.type = "button"; no.className = "btn-ghost"; no.textContent = "Cancelar";
+  no.addEventListener("click", () => { state.editing = null; render(); });
+  btns.append(ok, no);
+  const err = document.createElement("div"); err.className = "err";
+  box.append(ttl, f1, f2, btns, err);
+  box.addEventListener("submit", async ev => {
+    ev.preventDefault();
+    const q = parseFloat(qIn.value), np = parseFloat(pIn.value);
+    if(!(q>0)){ err.textContent = "Poné cuántos CEDEARs compraste."; return; }
+    if(!(np>0)){ err.textContent = "Poné el nuevo precio promedio que te muestra el broker."; return; }
+    state.editing = null;
+    await updatePos(r.id, r.cantidad + q, np);
+  });
+  cell.appendChild(box); tr.appendChild(cell);
+  setTimeout(() => qIn.focus({preventScroll:true}), 0);
+  return tr;
+}
+
+function td(txt, cls){ const e=document.createElement("td"); if(cls) e.className=cls; e.textContent=txt; return e; }
+function tdWarn(txt){ const e=document.createElement("td"); e.className="warn"; e.textContent=txt; return e; }
+function tdSigned(txt, v, note){
+  const e=document.createElement("td"); e.className="num " + (v>=0?"pos":"neg");
+  const top=document.createElement("div"); top.textContent=txt; e.appendChild(top);
+  if(note){ const s=document.createElement("div"); s.className="sub2"; s.textContent=note; e.appendChild(s); }
+  return e;
+}
+function cellTicker(r, colorOf){
+  const e=document.createElement("td");
+  const w=document.createElement("div"); w.className="tk";
+  const sw=document.createElement("span"); sw.className="swatch";
+  sw.style.background = cssv(colorOf(r.ticker));
+  const box=document.createElement("div");
+  const b=document.createElement("b"); b.textContent=r.ticker;
+  const nm=document.createElement("span"); nm.className="nm";
+  nm.textContent=r.c.n + " · " + r.c.a + ":" + r.c.b;
+  box.append(b, nm); w.append(sw, box); e.appendChild(w); return e;
+}
+
+/* ---------- colores estables por ticker ---------- */
+// Colores elegidos a mano por Guille; el resto se reparte en orden con los que quedan libres.
+const COLOR_FIJO = {MSFT:"--s1", KO:"--s3"};
+const LIBRES = SERIES.filter(s => !Object.values(COLOR_FIJO).includes(s));
+let colorMapCache = new Map();
+let libresUsados = 0;
+function buildColorMap(rows){
+  rows.forEach(r => {
+    if(!colorMapCache.has(r.ticker)){
+      const c = COLOR_FIJO[r.ticker] || LIBRES[libresUsados++ % LIBRES.length];
+      colorMapCache.set(r.ticker, c);
+    }
+  });
+  return t => colorMapCache.get(t) || OTHER;
+}
+
+/* ---------- donut ---------- */
+function slicesFor(rows, tot){
+  if(state.mode === "sector"){
+    const m = new Map();
+    rows.forEach(r => {
+      if(r.valAr===null) return;
+      const e = m.get(r.c.s) || {value:0, us:0, tickers:[]};
+      e.value += r.valAr;
+      e.us += r.valUs || 0;
+      e.tickers.push({t:r.ticker, v:r.valAr});
+      m.set(r.c.s, e);
+    });
+    const arr = [...m.entries()].map(([k,e]) => ({
+      key:k, label:SECTORES[k]||k, value:e.value, us:e.us,
+      tickers: e.tickers.sort((a,b)=>b.v-a.v).map(x=>x.t)
+    }));
+    arr.sort((a,b)=>b.value-a.value);
+    return {arr, total: arr.reduce((a,x)=>a+x.value,0), totalUs: arr.reduce((a,x)=>a+x.us,0), unit:"ars"};
+  }
+  if(state.mode === "cant"){
+    const arr = rows.filter(r=>r.acciones>0).map(r => ({key:r.ticker, label:r.ticker, value:r.acciones}));
+    arr.sort((a,b)=>b.value-a.value);
+    return {arr, total: arr.reduce((a,x)=>a+x.value,0), unit:"acc"};
+  }
+  const arr = rows.filter(r=>r.valAr!==null).map(r => ({key:r.ticker, label:r.ticker, value:r.valAr, us:r.valUs||0}));
+  arr.sort((a,b)=>b.value-a.value);
+  return {arr, total: arr.reduce((a,x)=>a+x.value,0), totalUs: arr.reduce((a,x)=>a+x.us,0), unit:"ars"};
+}
+
+function drawChart(rows, tot){
+  const svg = document.getElementById("donut");
+  const legend = document.getElementById("legend");
+  svg.textContent = ""; legend.textContent = "";
+  const t = document.createElementNS("http://www.w3.org/2000/svg","title");
+  t.id = "donutTitle"; t.textContent = "Distribución de la cartera";
+  svg.appendChild(t);
+
+  let {arr, total, totalUs, unit} = slicesFor(rows, tot);
+  if(!arr.length || total <= 0){
+    const txt = document.createElementNS("http://www.w3.org/2000/svg","text");
+    txt.setAttribute("x",100); txt.setAttribute("y",104); txt.setAttribute("text-anchor","middle");
+    txt.setAttribute("font-size","11"); txt.setAttribute("fill", cssv("--muted"));
+    txt.textContent = "Sin datos todavía";
+    svg.appendChild(txt); return;
+  }
+
+  if(state.mode === "sector" && arr.length > 8){
+    const head = arr.slice(0,7);
+    const rest = arr.slice(7).reduce((a,x)=>a+x.value,0);
+    const restTk = arr.slice(7).flatMap(x => x.tickers || [x.key]);
+    const restUs = arr.slice(7).reduce((a,x)=>a+(x.us||0),0);
+    arr = head.concat([{key:"__otros__", label:"Otros", value:rest, us:restUs, tickers:restTk}]);
+  }
+
+  const cmap = state.mode==="sector"
+    ? (k,i) => SERIES[i % SERIES.length]
+    : (k,i) => (k==="__otros__" ? OTHER : (colorMapCache.get(k) || SERIES[i % SERIES.length]));
+
+  const cx=100, cy=100, rOut=88, rIn=56;
+  let a0 = -Math.PI/2;
+  const paths = [];
+  arr.forEach((s,i) => {
+    const frac = s.value/total;
+    const a1 = a0 + frac*Math.PI*2;
+    const p = document.createElementNS("http://www.w3.org/2000/svg","path");
+    p.setAttribute("d", donutArc(cx,cy,rOut,rIn,a0,a1));
+    p.setAttribute("fill", cssv(s.key==="__otros__" ? OTHER : cmap(s.key,i)));
+    p.setAttribute("stroke", cssv("--surface"));
+    p.setAttribute("stroke-width","2");
+    p.setAttribute("stroke-linejoin","round");
+    svg.appendChild(p); paths.push(p);
+    a0 = a1;
+  });
+
+  const kTxt = document.createElementNS("http://www.w3.org/2000/svg","text");
+  kTxt.setAttribute("x",cx); kTxt.setAttribute("y",cy-6); kTxt.setAttribute("text-anchor","middle");
+  kTxt.setAttribute("font-size","8.5"); kTxt.setAttribute("letter-spacing","1");
+  kTxt.setAttribute("fill", cssv("--muted"));
+  kTxt.textContent = unit==="acc" ? "ACCIONES" : "TOTAL ARS";
+  svg.appendChild(kTxt);
+  const vTxt = document.createElementNS("http://www.w3.org/2000/svg","text");
+  vTxt.setAttribute("x",cx); vTxt.setAttribute("y",cy+14); vTxt.setAttribute("text-anchor","middle");
+  vTxt.setAttribute("font-size","16"); vTxt.setAttribute("font-weight","600");
+  vTxt.setAttribute("font-family",'Tahoma, Verdana, Geneva, sans-serif');
+  vTxt.setAttribute("fill", cssv("--ink"));
+  vTxt.textContent = unit==="acc" ? acc(total) : nfArs.format(Math.round(total));
+  svg.appendChild(vTxt);
+  if(state.mode !== "cant" && totalUs){
+    const uTxt = document.createElementNS("http://www.w3.org/2000/svg","text");
+    uTxt.setAttribute("x",cx); uTxt.setAttribute("y",cy+30); uTxt.setAttribute("text-anchor","middle");
+    uTxt.setAttribute("font-size","10"); uTxt.setAttribute("font-family",'Tahoma, Verdana, Geneva, sans-serif');
+    uTxt.setAttribute("fill", cssv("--muted"));
+    uTxt.textContent = usd(totalUs);
+    svg.appendChild(uTxt);
+  }
+
+  arr.forEach((s,i) => {
+    const row = document.createElement("div"); row.className = "lg";
+    const dot = document.createElement("span"); dot.className = "dot";
+    dot.style.background = cssv(s.key==="__otros__" ? OTHER : cmap(s.key,i));
+    const nm = document.createElement("span"); nm.className = "nm";
+    if(state.mode === "sector" || s.key === "__otros__"){
+      nm.textContent = s.label;
+      if(s.tickers && s.tickers.length){
+        const tk = document.createElement("span"); tk.className = "lg-tk";
+        tk.textContent = " (" + s.tickers.join(", ") + ")";
+        nm.appendChild(tk);
+      }
+    } else {
+      nm.textContent = s.label + " · " + (BY_TICKER.get(s.key)?.n || "");
+    }
+    const amt = document.createElement("span"); amt.className = "amt num";
+    if(unit === "acc"){
+      amt.textContent = acc(s.value) + (s.value===1 ? " acción" : " acciones");
+    } else if(state.mode === "valor" || state.mode === "sector"){
+      amt.classList.add("dbl");
+      const a1 = document.createElement("span"); a1.textContent = ars(s.value);
+      const a2 = document.createElement("span"); a2.className = "us"; a2.textContent = usd(s.us);
+      amt.append(a1, a2);
+    } else {
+      amt.textContent = ars(s.value);
+    }
+    const pc = document.createElement("span"); pc.className = "pct num";
+    pc.textContent = nfArs2.format(s.value/total*100) + " %";
+    row.append(dot, nm, amt, pc);
+    row.addEventListener("mouseenter", () => paths.forEach((p,j)=>p.classList.toggle("dim", j!==i)));
+    row.addEventListener("mouseleave", () => paths.forEach(p=>p.classList.remove("dim")));
+    legend.appendChild(row);
+  });
+}
+
+/* ---------- calendario de dividendos ---------- */
+function divRows(rows){
+  return rows.map(r => {
+    const dps = state.dps[r.ticker];
+    const meses = DATA.div[r.ticker];
+    if(!dps || !(dps > 0)) return null;
+    const precioAccUsd = (r.px && state.mep) ? (r.px * r.c.a / r.c.b) / state.mep : null;
+    const rentaAnual = dps * r.acciones;
+    return {
+      ticker: r.ticker, nombre: r.c.n, dps, meses: Array.isArray(meses) ? meses : [],
+      acciones: r.acciones, rentaAnual,
+      yld: precioAccUsd ? dps / precioAccUsd : null
+    };
+  }).filter(Boolean);
+}
+
+function drawCalendario(rows){
+  const svg = document.getElementById("cal");
+  const legend = document.getElementById("calLegend");
+  const body = document.getElementById("yieldBody");
+  const note = document.getElementById("calNote");
+  svg.textContent = ""; legend.textContent = ""; body.textContent = "";
+  const t = document.createElementNS("http://www.w3.org/2000/svg","title");
+  t.id = "calTitle"; t.textContent = "Dividendos estimados por mes";
+  svg.appendChild(t);
+
+  const dr = divRows(rows);
+  const conCal = dr.filter(x => x.meses.length > 0);
+  const sinCal = dr.filter(x => x.meses.length === 0);
+  const sinDato = rows.filter(r => Array.isArray(DATA.div[r.ticker]) && !state.dps[r.ticker]);
+
+  const porMes = Array.from({length:12}, () => []);
+  conCal.forEach(x => {
+    const cuota = x.rentaAnual / x.meses.length;
+    x.meses.forEach(m => porMes[m-1].push({ticker:x.ticker, monto:cuota}));
+  });
+  const totMes = porMes.map(a => a.reduce((s,y)=>s+y.monto, 0));
+  const maxMes = Math.max(...totMes, 0);
+  const totalAnual = dr.reduce((s,x)=>s+x.rentaAnual, 0);
+
+  document.getElementById("divTot").textContent =
+    totalAnual > 0 ? "≈ " + usd(totalAnual) + " al año" : "";
+
+  const W = 640, H = 230, padL = 52, padR = 8, padT = 14, padB = 34;
+  const plotW = W - padL - padR, plotH = H - padT - padB;
+
+  if(maxMes <= 0){
+    const tx = document.createElementNS("http://www.w3.org/2000/svg","text");
+    tx.setAttribute("x", W/2); tx.setAttribute("y", H/2); tx.setAttribute("text-anchor","middle");
+    tx.setAttribute("font-size","12"); tx.setAttribute("fill", cssv("--muted"));
+    tx.textContent = "Ninguna de tus posiciones paga dividendos con calendario conocido.";
+    svg.appendChild(tx);
+  } else {
+    const nice = niceMax(maxMes);
+    const y = v => padT + plotH - (v / nice) * plotH;
+    // grilla
+    for(let i = 0; i <= 3; i++){
+      const v = nice * i / 3;
+      const gy = y(v);
+      const ln = document.createElementNS("http://www.w3.org/2000/svg","line");
+      ln.setAttribute("x1", padL); ln.setAttribute("x2", W - padR);
+      ln.setAttribute("y1", gy); ln.setAttribute("y2", gy);
+      ln.setAttribute("stroke", cssv("--line")); ln.setAttribute("stroke-width", i===0 ? "1" : "1");
+      svg.appendChild(ln);
+      const lb = document.createElementNS("http://www.w3.org/2000/svg","text");
+      lb.setAttribute("x", padL - 8); lb.setAttribute("y", gy + 3.5);
+      lb.setAttribute("text-anchor","end"); lb.setAttribute("font-size","9.5");
+      lb.setAttribute("font-family","Tahoma, Verdana, sans-serif");
+      lb.setAttribute("fill", cssv("--muted"));
+      lb.textContent = "US$ " + (nice >= 30 ? nfArs.format(Math.round(v)) : nfArs2.format(v));
+      svg.appendChild(lb);
+    }
+    const step = plotW / 12, bw = Math.min(30, step - 10);
+    porMes.forEach((segs, i) => {
+      const x = padL + step*i + (step - bw)/2;
+      let acumulado = 0;
+      segs.sort((a,b)=>b.monto-a.monto);
+      segs.forEach(sg => {
+        const y1 = y(acumulado + sg.monto), y0 = y(acumulado);
+        const alto = Math.max(1, y0 - y1 - (acumulado > 0 ? 2 : 0));
+        const rc = document.createElementNS("http://www.w3.org/2000/svg","rect");
+        rc.setAttribute("class","seg"); rc.setAttribute("x", x); rc.setAttribute("width", bw);
+        rc.setAttribute("y", y1); rc.setAttribute("height", alto);
+        rc.setAttribute("rx", 3);
+        rc.setAttribute("fill", cssv(colorMapCache.get(sg.ticker) || OTHER));
+        rc.dataset.tip = sg.ticker + " · " + MESES[i+1] + " · " + usd(sg.monto);
+        svg.appendChild(rc);
+        acumulado += sg.monto;
+      });
+      const ml = document.createElementNS("http://www.w3.org/2000/svg","text");
+      ml.setAttribute("x", padL + step*i + step/2); ml.setAttribute("y", H - padB + 16);
+      ml.setAttribute("text-anchor","middle"); ml.setAttribute("font-size","10.5");
+      ml.setAttribute("fill", totMes[i] > 0 ? cssv("--ink-2") : cssv("--muted"));
+      ml.textContent = MESES[i+1];
+      svg.appendChild(ml);
+      if(totMes[i] > 0){
+        const vl = document.createElementNS("http://www.w3.org/2000/svg","text");
+        vl.setAttribute("x", padL + step*i + step/2); vl.setAttribute("y", y(totMes[i]) - 6);
+        vl.setAttribute("text-anchor","middle"); vl.setAttribute("font-size","9.5");
+        vl.setAttribute("font-family","Tahoma, Verdana, sans-serif");
+        vl.setAttribute("fill", cssv("--muted"));
+        vl.textContent = nfArs2.format(totMes[i]);
+        svg.appendChild(vl);
+      }
+    });
+  }
+
+  const enCal = [...new Set(conCal.map(x=>x.ticker))];
+  enCal.forEach(tk => {
+    const it = document.createElement("span"); it.className = "it";
+    const dot = document.createElement("span"); dot.className = "dot";
+    dot.style.background = cssv(colorMapCache.get(tk) || OTHER);
+    const nm = document.createElement("span"); nm.textContent = tk;
+    it.append(dot, nm); legend.appendChild(it);
+  });
+
+  dr.sort((a,b)=>b.rentaAnual-a.rentaAnual).forEach(x => {
+    const tr = document.createElement("tr");
+    const c1 = document.createElement("td");
+    const b = document.createElement("b"); b.textContent = x.ticker;
+    c1.appendChild(b);
+    c1.appendChild(document.createTextNode(" "));
+    const sp = document.createElement("span"); sp.className = "ratio"; sp.textContent = x.nombre;
+    c1.appendChild(sp);
+    tr.appendChild(c1);
+    tr.appendChild(td("US$ " + nfArs2.format(x.dps), "num"));
+    tr.appendChild(td(x.yld !== null ? nfArs2.format(x.yld*100) + " %" : "—", "num"));
+    tr.appendChild(td(usd(x.rentaAnual), "num"));
+    body.appendChild(tr);
+  });
+  if(dr.length){
+    const tr = document.createElement("tr"); tr.className = "tot";
+    tr.appendChild(td("Total", ""));
+    tr.appendChild(td("", ""));
+    const valCartera = rows.reduce((s,r)=>s+(r.valUs ?? 0), 0);
+    tr.appendChild(td(valCartera > 0 ? nfArs2.format(totalAnual/valCartera*100) + " %" : "—", "num"));
+    tr.appendChild(td(usd(totalAnual), "num"));
+    body.appendChild(tr);
+  }
+
+  const partes = [];
+  if(sinCal.length) partes.push("De " + sinCal.map(x=>x.ticker).join(", ") + " sé el monto pero no el calendario, así que no " + (sinCal.length===1?"entra":"entran") + " en las barras.");
+  if(sinDato.length) partes.push(sinDato.map(r=>r.ticker).join(", ") + ": pagan dividendos pero todavía no tengo cargado el monto por acción.");
+  partes.push("Los montos son estimados: tomo el último dividendo declarado por acción y lo proyecto al año. El yield se calcula contra el precio de hoy, así que se mueve con la cotización.");
+  note.textContent = partes.join(" ");
+}
+
+function niceMax(v){
+  if(v <= 0) return 1;
+  const e = Math.pow(10, Math.floor(Math.log10(v)));
+  const m = v / e;
+  const s = m <= 1.2 ? 1.5 : m <= 2 ? 2 : m <= 3 ? 3 : m <= 5 ? 5 : m <= 7.5 ? 7.5 : 10;
+  return s * e;
+}
+
+function donutArc(cx,cy,rO,rI,a0,a1){
+  const full = (a1-a0) >= Math.PI*2 - 1e-6;
+  if(full){
+    return `M ${cx-rO} ${cy} A ${rO} ${rO} 0 1 1 ${cx+rO} ${cy} A ${rO} ${rO} 0 1 1 ${cx-rO} ${cy} Z
+            M ${cx-rI} ${cy} A ${rI} ${rI} 0 1 0 ${cx+rI} ${cy} A ${rI} ${rI} 0 1 0 ${cx-rI} ${cy} Z`;
+  }
+  const large = (a1-a0) > Math.PI ? 1 : 0;
+  const x0=cx+rO*Math.cos(a0), y0=cy+rO*Math.sin(a0);
+  const x1=cx+rO*Math.cos(a1), y1=cy+rO*Math.sin(a1);
+  const x2=cx+rI*Math.cos(a1), y2=cy+rI*Math.sin(a1);
+  const x3=cx+rI*Math.cos(a0), y3=cy+rI*Math.sin(a0);
+  return `M ${x0} ${y0} A ${rO} ${rO} 0 ${large} 1 ${x1} ${y1} L ${x2} ${y2} A ${rI} ${rI} 0 ${large} 0 ${x3} ${y3} Z`;
+}
+
+/* ---------- tooltip ---------- */
+const tip = document.createElement("div"); tip.id = "tip"; tip.setAttribute("role","tooltip");
+document.body.appendChild(tip);
+let tipFor = null;
+function showTip(el){
+  const t = el.dataset.tip; if(!t) return;
+  tip.textContent = t; tip.classList.add("on"); tipFor = el;
+  const r = el.getBoundingClientRect();
+  tip.style.left = "0px"; tip.style.top = "0px";
+  const w = tip.offsetWidth, hgt = tip.offsetHeight;
+  let x = r.left + r.width/2 - w/2;
+  x = Math.max(8, Math.min(x, window.innerWidth - w - 8));
+  let y = r.top - hgt - 8;
+  if(y < 8) y = r.bottom + 8;
+  tip.style.left = x + "px"; tip.style.top = y + "px";
+}
+function hideTip(){ tip.classList.remove("on"); tipFor = null; }
+document.addEventListener("mouseover", e => {
+  const el = e.target.closest("[data-tip]");
+  if(el){ if(el !== tipFor) showTip(el); } else if(tipFor) hideTip();
+});
+document.addEventListener("focusin", e => {
+  const el = e.target.closest("[data-tip]"); if(el) showTip(el); else hideTip();
+});
+document.addEventListener("focusout", hideTip);
+document.addEventListener("click", e => {
+  const el = e.target.closest("[data-tip]");
+  if(el && el.tagName !== "A"){ e.preventDefault(); (tipFor === el) ? hideTip() : showTip(el); }
+  else if(!el) hideTip();
+});
+window.addEventListener("scroll", hideTip, true);
+
+/* ---------- datalist ---------- */
+(function fillList(){
+  const dl = document.getElementById("cedearList");
+  const frag = document.createDocumentFragment();
+  DATA.cedears.forEach(c => {
+    const o = document.createElement("option");
+    o.value = c.t; o.label = c.t + " — " + c.n;
+    o.textContent = c.n;
+    frag.appendChild(o);
+  });
+  dl.appendChild(frag);
+})();
+
+/* ---------- persistencia ---------- */
+const LS = "cedear_pos_v1";
+function saveLocal(){
+  try{ localStorage.setItem(LS, JSON.stringify(state.pos)); }catch(e){}
+}
+function loadLocal(){
+  try{ const r = localStorage.getItem(LS); if(r){ const a = JSON.parse(r); if(Array.isArray(a)) return a; } }catch(e){}
+  return null;
+}
+
+async function addPos(p){
+  state.demo = false;
+  if(state.db && state.canWrite){
+    try{
+      const ref = state.db.collection("posiciones").doc();
+      await ref.set({ticker:p.ticker, cantidad:p.cantidad, ppc:p.ppc, mepCompra:p.mepCompra, creado:new Date().toISOString()});
+      return;
+    }catch(e){ state.canWrite = false; showDbState("No pude guardar en la base; queda guardado en este navegador."); }
+  }
+  state.pos = state.pos.concat([{...p, id:"l"+Date.now()}]);
+  saveLocal(); render();
+}
+
+async function updatePos(id, nq, np){
+  const p = state.pos.find(x => x.id === id);
+  if(!p) return;
+  const esDemo = String(id).startsWith("demo");
+  if(!esDemo && state.db && state.canWrite && !String(id).startsWith("l")){
+    try{ await state.db.collection("posiciones").doc(id).update({cantidad:nq, ppc:np}); render(); return; }
+    catch(e){ showDbState("No pude guardar en la base; queda guardado en este navegador."); }
+  }
+  p.cantidad = nq; p.ppc = np;
+  if(!esDemo) saveLocal();
+  render();
+}
+
+async function removePos(id){
+  state.pos = state.pos.filter(x => x.id !== id);
+  if(String(id).startsWith("demo")){ state.demo = state.pos.some(x=>String(x.id).startsWith("demo")); render(); return; }
+  if(state.db && state.canWrite && !String(id).startsWith("l")){
+    try{ await state.db.collection("posiciones").doc(id).delete(); return; }catch(e){}
+  }
+  saveLocal(); render();
+}
+
+function showDbState(msg){ document.getElementById("dbState").textContent = msg || ""; }
+
+/* ---------- form ---------- */
+document.getElementById("addForm").addEventListener("submit", async ev => {
+  ev.preventDefault();
+  const err = document.getElementById("formErr"); err.textContent = ""; err.className = "err";
+  const raw = document.getElementById("fTicker").value.trim().toUpperCase();
+  let c = BY_TICKER.get(raw);
+  if(!c){
+    const hit = DATA.cedears.find(x => x.n.toUpperCase() === raw)
+             || DATA.cedears.find(x => x.n.toUpperCase().startsWith(raw) && raw.length>=3);
+    c = hit;
+  }
+  if(!c){ err.textContent = "No encuentro ese CEDEAR. Probá con el ticker, por ejemplo AAPL."; return; }
+  const cant = parseFloat(document.getElementById("fQty").value);
+  const ppc = parseFloat(document.getElementById("fPpc").value);
+  const mepC = parseFloat(document.getElementById("fMep").value);
+  if(!(cant>0)){ err.textContent = "La cantidad tiene que ser mayor que cero."; return; }
+  if(!(ppc>0)){ err.textContent = "El precio promedio de compra tiene que ser mayor que cero."; return; }
+  const existing = state.pos.find(p => p.ticker === c.t && !String(p.id).startsWith("demo"));
+  if(existing){
+    await updatePos(existing.id, existing.cantidad + cant, ppc);
+    err.className = "info";
+    err.textContent = "Ya tenías " + c.t + ": sumé " + nfArs.format(cant) + " y el precio promedio quedó en $ " + nfArs2.format(ppc) + ".";
+    setTimeout(() => { err.textContent = ""; err.className = "err"; }, 6000);
+  } else {
+    await addPos({ticker:c.t, cantidad:cant, ppc:ppc, mepCompra: mepC>0 ? mepC : null});
+  }
+  ev.target.reset();
+  document.getElementById("fTicker").focus();
+});
+
+document.getElementById("modeSeg").addEventListener("click", ev => {
+  const b = ev.target.closest("button[data-mode]"); if(!b) return;
+  state.mode = b.dataset.mode;
+  [...ev.currentTarget.querySelectorAll("button")].forEach(x =>
+    x.setAttribute("aria-pressed", String(x === b)));
+  render();
+});
+
+/* ---------- arranque ---------- */
+// Importar posiciones desde un link #import=... (una sola vez)
+(function importarDesdeLink(){
+  const m = location.hash.match(/import=([^&]+)/);
+  if(!m) return;
+  try{
+    const arr = JSON.parse(decodeURIComponent(escape(atob(decodeURIComponent(m[1])))));
+    if(Array.isArray(arr) && arr.length){
+      const pos = arr.map((p,k) => ({id:"l"+Date.now()+k, ticker:p.t, cantidad:+p.q, ppc:+p.p, mepCompra:p.m?+p.m:null}))
+                     .filter(p => BY_TICKER.has(p.ticker) && p.cantidad>0);
+      localStorage.setItem(LS, JSON.stringify(pos));
+    }
+  }catch(e){}
+  history.replaceState(null, "", location.pathname);
+})();
+
+const local = loadLocal();
+if(local && local.length){ state.pos = local; state.demo = false; }
+else { state.pos = DEMO.slice(); state.demo = true; }
+showDbState("Guardado en este celular.");
+render();
+
+const MK = "cedear_mercado_v1";
+try{
+  const c = JSON.parse(localStorage.getItem(MK) || "null");
+  if(c){ aplicarMercado(c); }
+}catch(e){}
+
+function aplicarMercado(d){
+  if(d.precios) state.precios = Object.assign({}, d.precios);
+  if(d.mep) state.mep = d.mep;
+  state.fechaPx = d.fechaPx || state.fechaPx;
+  state.fechaMep = d.fechaMep || state.fechaMep;
+  render();
+}
+// En GitHub Pages leemos los datos directo del repo (se actualizan cada 5 min sin re-publicar la app).
+function urlsMercado(){
+  const u = ["data/mercado.json?t=" + Date.now()];
+  const m = location.hostname.match(/^([^.]+)\.github\.io$/);
+  const repo = location.pathname.split("/").filter(Boolean)[0];
+  if(m && repo) u.unshift("https://raw.githubusercontent.com/" + m[1] + "/" + repo + "/main/data/mercado.json?t=" + Date.now());
+  return u;
+}
+async function bajarMercado(){
+  for(const url of urlsMercado()){
+    try{ const r = await fetch(url, {cache:"no-store"}); if(r.ok) return r; }catch(e){}
+  }
+  throw 0;
+}
+async function cargarMercado(){
+  try{
+    const r = await bajarMercado();
+    if(!r.ok) throw 0;
+    const d = await r.json();
+    aplicarMercado(d);
+    try{ localStorage.setItem(MK, JSON.stringify(d)); }catch(e){}
+    return true;
+  }catch(e){ return false; }
+}
+cargarMercado();
+document.addEventListener("visibilitychange", () => { if(!document.hidden) cargarMercado(); });
+setInterval(() => { if(!document.hidden) cargarMercado(); }, 2*60*1000);
+
+document.getElementById("bkRefresh").addEventListener("click", async ev => {
+  const b = ev.currentTarget; b.textContent = "Actualizando…";
+  const ok = await cargarMercado();
+  b.textContent = ok ? "Listo ✓" : "Sin conexión";
+  setTimeout(() => b.textContent = "Actualizar precios", 1800);
+});
+document.getElementById("bkCopy").addEventListener("click", async ev => {
+  const mine = state.pos.filter(p => !String(p.id).startsWith("demo"));
+  const code = btoa(unescape(encodeURIComponent(JSON.stringify(
+    mine.map(p => ({t:p.ticker, q:p.cantidad, p:p.ppc, m:p.mepCompra||0}))))));
+  const link = location.origin + location.pathname + "#import=" + encodeURIComponent(code);
+  const b = ev.currentTarget;
+  try{ await navigator.clipboard.writeText(link); b.textContent = "Copiado ✓"; }
+  catch(e){ window.prompt("Copiá este link:", link); }
+  setTimeout(() => b.textContent = "Copiar respaldo", 1800);
+});
+document.getElementById("bkLoad").addEventListener("click", () => {
+  const t = window.prompt("Pegá el link de respaldo:");
+  if(!t) return;
+  const m = t.match(/import=([^&\s]+)/);
+  if(!m){ alert("Ese link no parece un respaldo."); return; }
+  if(!confirm("Esto reemplaza las posiciones actuales. ¿Seguimos?")) return;
+  location.hash = "import=" + m[1];
+  location.reload();
+});
+
+if("serviceWorker" in navigator){
+  window.addEventListener("load", () => navigator.serviceWorker.register("sw.js").catch(()=>{}));
+}
+</script>
+
+</body>
+</html>
