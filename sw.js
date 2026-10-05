@@ -1,5 +1,5 @@
 // Red primero (para tener siempre precios frescos); si no hay conexión, usa lo guardado.
-const CACHE = "cedear-v1";
+const CACHE = "cedear-v2";
 const BASE = ["./", "index.html", "manifest.webmanifest", "data/mercado.json",
               "icons/icon-192.png", "icons/icon-512.png"];
 self.addEventListener("install", e => {

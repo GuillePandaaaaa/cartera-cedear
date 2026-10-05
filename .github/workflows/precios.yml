@@ -27,12 +27,15 @@ jobs:
       - name: Bajar precios y MEP
         run: python scripts/actualizar.py
         continue-on-error: ${{ github.event_name == 'push' }}
+      - name: Dólar e históricos
+        run: python scripts/historicos.py
+        continue-on-error: true
       - name: Guardar cambios
         run: |
           git config user.name "actualizador"
           git config user.email "actions@users.noreply.github.com"
-          git add data/mercado.json
-          git diff --cached --quiet || (git commit -m "Precios $(TZ=America/Argentina/Buenos_Aires date '+%d/%m %H:%M')" && git push)
+          git add -A data
+          git diff --cached --quiet || (git commit -m "Precios $(TZ=America/Argentina/Buenos_Aires date '+%d/%m %H:%M')" && (git push || (git pull --rebase origin main && git push)))
       - uses: actions/configure-pages@v5
         if: github.event_name != 'schedule'
       - uses: actions/upload-pages-artifact@v3

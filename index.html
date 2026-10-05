@@ -21,6 +21,7 @@
   --pos:#0C7440; --neg:#AB2A25;
   --s1:#2563EB; --s2:#F97316; --s3:#16A34A; --s4:#DC2626; --s5:#7C3AED; --s6:#EAB308; --s7:#0891B2; --s8:#DB2777; --s9:#8296a3; --s10:#92400E; --s11:#65A30D; --s12:#1E3A8A; --s13:#C084FC; --s14:#0F766E; --s15:#FB7185;
   --shadow:0 1px 2px rgba(16,32,42,.06), 0 8px 24px -16px rgba(16,32,42,.30);
+  --d-mep:#2563EB; --d-ccl:#DB2777; --d-of:#92400E;
 }
 @media (prefers-color-scheme: dark){
   :root:not([data-theme="light"]){
@@ -31,6 +32,7 @@
     --pos:#4FC489; --neg:#EF7B73;
     --s1:#3B82F6; --s2:#FB923C; --s3:#22C55E; --s4:#EF4444; --s5:#A78BFA; --s6:#FACC15; --s7:#22D3EE; --s8:#F472B6; --s9:#7b8c98; --s10:#D97706; --s11:#A3E635; --s12:#818CF8; --s13:#E879F9; --s14:#2DD4BF; --s15:#FDA4AF;
     --shadow:0 1px 2px rgba(0,0,0,.4), 0 10px 28px -18px rgba(0,0,0,.8);
+  --d-mep:#3B82F6; --d-ccl:#EC4899; --d-of:#D97706;
   }
 }
 :root[data-theme="dark"]{
@@ -41,6 +43,7 @@
   --pos:#4FC489; --neg:#EF7B73;
   --s1:#3B82F6; --s2:#FB923C; --s3:#22C55E; --s4:#EF4444; --s5:#A78BFA; --s6:#FACC15; --s7:#22D3EE; --s8:#F472B6; --s9:#7b8c98; --s10:#D97706; --s11:#A3E635; --s12:#818CF8; --s13:#E879F9; --s14:#2DD4BF; --s15:#FDA4AF;
   --shadow:0 1px 2px rgba(0,0,0,.4), 0 10px 28px -18px rgba(0,0,0,.8);
+  --d-mep:#3B82F6; --d-ccl:#EC4899; --d-of:#D97706;
 }
 
 *{box-sizing:border-box}
@@ -210,6 +213,68 @@ body{background:var(--bg); margin:0}
 .wrap{padding-top:calc(28px + env(safe-area-inset-top)); padding-bottom:calc(56px + env(safe-area-inset-bottom))}
 .backup{display:flex; gap:8px; flex-wrap:wrap; margin-top:8px}
 .backup .btn-ghost{border:1px solid var(--line)}
+
+/* pestañas */
+.tabs{position:sticky; top:0; z-index:20; display:flex; gap:4px; overflow-x:auto; scrollbar-width:none;
+  background:var(--surface-3); border-radius:10px; padding:4px; margin-block:-6px;
+  box-shadow:0 0 0 6px var(--bg)}
+.tabs::-webkit-scrollbar{display:none}
+.tabs button{flex:1 0 auto; border:none; background:transparent; color:var(--muted); font-size:13px;
+  font-weight:500; padding:8px 12px; border-radius:7px; white-space:nowrap}
+.tabs button[aria-pressed="true"]{background:var(--surface); color:var(--ink); box-shadow:var(--shadow)}
+.tab{display:flex; flex-direction:column; gap:22px}
+.tab[hidden]{display:none}
+.pad{padding:0 16px 16px}
+.btn-sell{color:var(--neg)}
+
+/* historial */
+.ops{list-style:none; margin:0; padding:0}
+.ops li{display:flex; flex-wrap:wrap; align-items:baseline; gap:4px 10px; padding:10px 16px;
+  border-bottom:1px solid var(--line); font-size:13.5px}
+.ops li:last-child{border-bottom:none}
+.ops .when{color:var(--muted); font-size:12.5px}
+.ops .tipo{font-weight:700; font-size:12px; letter-spacing:.06em}
+.ops .tipo.C{color:var(--pos)} .ops .tipo.V{color:var(--neg)}
+.ops .sep{color:var(--line)}
+.ops .us{color:var(--muted)}
+
+/* rendimientos */
+.rend-tbl td .sub2{font-size:11.5px}
+.rend-tbl tr.tot td{font-weight:600; border-top:1px solid var(--line); background:var(--surface-2)}
+.rend-tbl td:last-child, .rend-tbl th:last-child{position:static; box-shadow:none}
+.rend-tbl td.na{color:var(--muted)}
+.rend-tbl th, .rend-tbl td{padding-inline:8px}
+.rend-tbl td:first-child{min-width:5.5em}
+.rend-tbl td:first-child .ratio{display:block; font-size:11px}
+@media (max-width:430px){ .rend-tbl td:first-child .rnm{display:none} .rend-tbl{font-size:13px} }
+
+/* dólar */
+.tiles3{grid-template-columns:repeat(3,1fr)}
+.tile .dl-dot{display:inline-block; width:10px; height:10px; border-radius:3px; margin-right:6px; vertical-align:baseline}
+.dl-chart{width:100%; height:auto; display:block; overflow:visible; touch-action:pan-y}
+.dl-legend{display:flex; flex-wrap:wrap; gap:6px 16px; margin-bottom:8px}
+.dl-legend .it{display:flex; align-items:center; gap:7px; font-size:12.5px}
+.dl-legend .ln{width:16px; height:3px; border-radius:2px; flex:none}
+.dl-legend .v{color:var(--ink-2)}
+
+/* noticias */
+.news-g{border-bottom:1px solid var(--line)}
+.news-g:last-child{border-bottom:none}
+.news-g summary{display:flex; align-items:center; gap:10px; padding:12px 16px; cursor:pointer; list-style:none}
+.news-g summary::-webkit-details-marker{display:none}
+.news-g summary::after{content:"▸"; margin-left:auto; color:var(--muted); transition:transform .12s ease}
+.news-g[open] summary::after{transform:rotate(90deg)}
+.news-g summary b{font-size:14px}
+.news-g summary .nm{color:var(--muted); font-size:12.5px}
+.news-g summary .cnt{color:var(--muted); font-size:12px}
+.news-it{padding:2px 16px 14px 35px}
+.news-it h3{font-size:14px; font-weight:600; margin:0 0 3px; line-height:1.35}
+.news-it h3 a{color:var(--ink); text-decoration:none}
+.news-it h3 a:hover{color:var(--accent-ink); text-decoration:underline}
+.news-it p{margin:0 0 4px; color:var(--ink-2); font-size:13.5px}
+.news-it .meta{color:var(--muted); font-size:12px}
+@media (max-width:820px){ .tiles3{grid-template-columns:1fr 1fr 1fr} }
+@media (max-width:430px){ .tiles3{grid-template-columns:1fr} .news-it{padding-left:16px} }
 </style>
 </head>
 <body>
@@ -228,6 +293,15 @@ body{background:var(--bg); margin:0}
     </div>
   </header>
 
+  <nav class="tabs" id="tabs" aria-label="Secciones">
+    <button type="button" data-tab="cartera" aria-pressed="true">Cartera</button>
+    <button type="button" data-tab="rend" aria-pressed="false">Rendimientos</button>
+    <button type="button" data-tab="hist" aria-pressed="false">Historial</button>
+    <button type="button" data-tab="dolar" aria-pressed="false">Dólar</button>
+    <button type="button" data-tab="news" aria-pressed="false">Noticias</button>
+  </nav>
+
+  <div class="tab" data-tab="cartera">
   <section class="tiles">
     <div class="tile"><span class="k">Valor de cartera</span><span class="v num" id="tTotAr">—</span><span class="d" id="tTotArD">en pesos</span></div>
     <div class="tile"><span class="k">Equivale a</span><span class="v num" id="tTotUs">—</span><span class="d">dólares MEP</span></div>
@@ -318,13 +392,76 @@ body{background:var(--bg); margin:0}
       <p class="cal-note" id="calNote"></p>
     </div>
   </section>
+  </div>
+
+  <div class="tab" data-tab="rend" hidden>
+  <section class="panel">
+    <div class="panel-h">
+      <h2>Rendimientos</h2>
+      <span class="sub">Tu ganancia, en pesos y en dólares MEP</span>
+    </div>
+    <div class="tbl-scroll">
+      <table class="rend-tbl">
+        <thead><tr><th>CEDEAR</th><th>30 días</th><th>180 días</th><th>365 días</th></tr></thead>
+        <tbody id="rendBody"></tbody>
+      </table>
+    </div>
+    <div class="empty" id="rendEmpty" hidden>Todavía no hay posiciones para calcular rendimientos.</div>
+    <p class="cal-note pad" id="rendNote"></p>
+  </section>
+  </div>
+
+  <div class="tab" data-tab="hist" hidden>
+  <section class="panel">
+    <div class="panel-h">
+      <h2>Historial de operaciones</h2>
+      <span class="sub" id="histCount"></span>
+    </div>
+    <ul class="ops" id="opsList"></ul>
+    <div class="empty" id="opsEmpty" hidden>Todavía no hay operaciones. Se anotan solas cada vez que agregás, sumás o vendés.</div>
+  </section>
+  </div>
+
+  <div class="tab" data-tab="dolar" hidden>
+  <section class="tiles tiles3" id="dolarTiles"></section>
+  <section class="panel">
+    <div class="panel-h">
+      <h2>Evolución del dólar</h2>
+      <div class="seg" id="rangoSeg">
+        <button type="button" data-r="30" aria-pressed="false">1M</button>
+        <button type="button" data-r="182" aria-pressed="false">6M</button>
+        <button type="button" data-r="365" aria-pressed="true">1A</button>
+        <button type="button" data-r="1826" aria-pressed="false">5A</button>
+        <button type="button" data-r="0" aria-pressed="false">Todo</button>
+      </div>
+    </div>
+    <div class="panel-b">
+      <div class="dl-legend" id="dolarLegend"></div>
+      <svg class="dl-chart" id="dolarChart" viewBox="0 0 640 260" role="img" aria-labelledby="dolarTitle">
+        <title id="dolarTitle">Evolución del dólar MEP, CCL y oficial</title>
+      </svg>
+      <p class="cal-note" id="dolarNote"></p>
+    </div>
+  </section>
+  </div>
+
+  <div class="tab" data-tab="news" hidden>
+  <section class="panel">
+    <div class="panel-h">
+      <h2>Noticias</h2>
+      <span class="sub" id="newsStamp"></span>
+    </div>
+    <div id="newsBody"></div>
+    <div class="empty" id="newsEmpty" hidden>Todavía no hay noticias. Se actualizan solas cada día hábil a la mañana.</div>
+  </section>
+  </div>
 
   <footer>
     <p><b>Cómo se calcula.</b> Acciones = cantidad de CEDEARs × el ratio de conversión del papel (por ejemplo, 20 CEDEARs de AAPL equivalen a 1 acción). El valor en dólares usa el MEP de arriba. La ganancia en pesos compara tu precio promedio de compra contra la cotización de hoy.</p>
     <p><b>Sobre la ganancia en dólares.</b> Si cargás el MEP al que compraste, se calcula de verdad en dólares: cuántos USD pusiste contra cuántos valen hoy. Si lo dejás vacío, es la ganancia en pesos convertida al MEP de hoy, así que el porcentaje da igual que el de pesos.</p>
     <p><b>La columna D</b> dice si la empresa o el ETF paga dividendos. Pasá el cursor por encima de un SI y te muestra en qué meses suele pagarlos; son los meses habituales del ciclo y pueden correrse una o dos semanas. El CEDEAR cobra ese dividendo en pesos, neto de retenciones. <b>El botón de información</b> abre la ficha del CEDEAR en TradingView, en una pestaña nueva.</p>
     <p id="fuente"></p>
-    <p><b>Respaldo.</b> Tus posiciones se guardan en este celular. Copiá el respaldo de vez en cuando (por ejemplo, a un chat de WhatsApp con vos mismo) para poder recuperarlas si cambiás de teléfono.</p>
+    <p><b>Respaldo.</b> Tus posiciones y el historial de operaciones se guardan en este celular. Copiá el respaldo de vez en cuando (por ejemplo, a un chat de WhatsApp con vos mismo) para poder recuperarlas si cambiás de teléfono.</p>
     <div class="backup">
       <button type="button" class="btn-ghost" id="bkCopy">Copiar respaldo</button>
       <button type="button" class="btn-ghost" id="bkLoad">Restaurar respaldo</button>
@@ -350,6 +487,11 @@ let state = {
   fechaPx: DATA.fecha,
   fechaMep: DATA.fecha,
   pos: [],
+  ops: [],        // historial de operaciones {id, f, k:"C"|"V", t, q, p, m}
+  bases: [],      // posiciones que ya había antes del historial {t, q, p, m}; cuentan desde FECHA_BASE
+  hist: {},       // cierres diarios por ticker (data/hist/<T>.json)
+  dolar: null,
+  noticias: null,
   demo: true,
   mode: "valor",
   editing: null,
@@ -448,21 +590,26 @@ function render(){
     const add = document.createElement("button");
     add.className = "btn-ghost"; add.type = "button"; add.textContent = "Sumar";
     add.setAttribute("aria-label", "Sumar CEDEARs de " + r.ticker);
-    add.setAttribute("aria-expanded", String(state.editing === r.id));
-    add.addEventListener("click", () => { state.editing = (state.editing === r.id ? null : r.id); render(); });
+    add.setAttribute("aria-expanded", String(editando(r.id, "sumar")));
+    add.addEventListener("click", () => { state.editing = editando(r.id, "sumar") ? null : {id:r.id, modo:"sumar"}; render(); });
     act.appendChild(add);
     const del = document.createElement("button");
-    del.className = "btn-ghost"; del.type = "button"; del.textContent = "Quitar";
-    del.setAttribute("aria-label", "Quitar " + r.ticker);
-    del.addEventListener("click", () => removePos(r.id));
+    del.className = "btn-ghost btn-sell"; del.type = "button"; del.textContent = "Vender";
+    del.setAttribute("aria-label", "Vender CEDEARs de " + r.ticker);
+    del.setAttribute("aria-expanded", String(editando(r.id, "vender")));
+    del.addEventListener("click", () => { state.editing = editando(r.id, "vender") ? null : {id:r.id, modo:"vender"}; render(); });
     act.appendChild(del); tr.appendChild(act);
     tb.appendChild(tr);
-    if(state.editing === r.id) tb.appendChild(editRow(r));
+    if(editando(r.id, "sumar")) tb.appendChild(editRow(r));
+    if(editando(r.id, "vender")) tb.appendChild(ventaRow(r));
   });
 
   drawChart(rows, tot);
   drawCalendario(rows);
+  renderHistorial();
+  renderRendimientos();
 }
+function editando(id, modo){ return !!state.editing && state.editing.id === id && state.editing.modo === modo; }
 
 const MESES = ["","Ene","Feb","Mar","Abr","May","Jun","Jul","Ago","Sep","Oct","Nov","Dic"];
 function cellDiv(ticker){
@@ -534,7 +681,46 @@ function editRow(r){
     if(!(q>0)){ err.textContent = "Poné cuántos CEDEARs compraste."; return; }
     if(!(np>0)){ err.textContent = "Poné el nuevo precio promedio que te muestra el broker."; return; }
     state.editing = null;
-    await updatePos(r.id, r.cantidad + q, np);
+    await sumarPos(r.id, q, np);
+  });
+  cell.appendChild(box); tr.appendChild(cell);
+  setTimeout(() => qIn.focus({preventScroll:true}), 0);
+  return tr;
+}
+
+/* ---------- vender CEDEARs de una posición ---------- */
+function ventaRow(r){
+  const tr = document.createElement("tr"); tr.className = "edit-row";
+  const cell = document.createElement("td"); cell.colSpan = 10;
+  const box = document.createElement("form"); box.className = "edit"; box.autocomplete = "off";
+  const ttl = document.createElement("div"); ttl.className = "ttl";
+  ttl.innerHTML = "Vender <b></b> · hoy tenés <span class='num'></span>";
+  ttl.querySelector("b").textContent = r.ticker;
+  ttl.querySelector("span").textContent = nfArs.format(r.cantidad) + " CEDEARs";
+  const f1 = document.createElement("div"); f1.className = "field";
+  f1.innerHTML = '<label>Cantidad que vendiste</label><input class="num-in" type="number" inputmode="decimal" min="0" step="any" required>';
+  const f2 = document.createElement("div"); f2.className = "field";
+  f2.innerHTML = '<label>Precio de venta <span class="hint">(el de hoy; corregilo si fue otro)</span></label><input class="num-in" type="number" inputmode="decimal" min="0" step="any" required>';
+  const qIn = f1.querySelector("input"), pIn = f2.querySelector("input");
+  qIn.max = r.cantidad; qIn.placeholder = "hasta " + nfArs.format(r.cantidad);
+  if(r.px) pIn.value = r.px;
+  const btns = document.createElement("div"); btns.className = "btns";
+  const todo = document.createElement("button"); todo.type = "button"; todo.className = "btn-ghost"; todo.textContent = "Todo";
+  todo.addEventListener("click", () => { qIn.value = r.cantidad; qIn.focus(); });
+  const ok = document.createElement("button"); ok.type = "submit"; ok.className = "btn-main"; ok.textContent = "Vender";
+  const no = document.createElement("button"); no.type = "button"; no.className = "btn-ghost"; no.textContent = "Cancelar";
+  no.addEventListener("click", () => { state.editing = null; render(); });
+  btns.append(todo, ok, no);
+  const err = document.createElement("div"); err.className = "err";
+  box.append(ttl, f1, f2, btns, err);
+  box.addEventListener("submit", async ev => {
+    ev.preventDefault();
+    const q = parseFloat(qIn.value), px = parseFloat(pIn.value);
+    if(!(q>0)){ err.textContent = "Poné cuántos CEDEARs vendiste."; return; }
+    if(q > r.cantidad + 1e-9){ err.textContent = "Tenés " + nfArs.format(r.cantidad) + ", no podés vender más que eso."; return; }
+    if(!(px>0)){ err.textContent = "Poné el precio al que vendiste."; return; }
+    state.editing = null;
+    await venderPos(r.id, q, px);
   });
   cell.appendChild(box); tr.appendChild(cell);
   setTimeout(() => qIn.focus({preventScroll:true}), 0);
@@ -877,14 +1063,387 @@ function donutArc(cx,cy,rO,rI,a0,a1){
   return `M ${x0} ${y0} A ${rO} ${rO} 0 ${large} 1 ${x1} ${y1} L ${x2} ${y2} A ${rI} ${rI} 0 ${large} 0 ${x3} ${y3} Z`;
 }
 
+/* ---------- historial ---------- */
+function fechaHora(f){   // "2026-10-05T14:32" -> "05/10/2026 14:32"
+  const [d, h] = String(f).split("T");
+  const [y, m, dd] = d.split("-");
+  return dd + "/" + m + "/" + y + (h ? " " + h : "");
+}
+function renderHistorial(){
+  const ul = document.getElementById("opsList");
+  ul.textContent = "";
+  // La más reciente arriba (dentro del mismo minuto, la última anotada).
+  const ops = state.ops.map((o, i) => [o, i]).sort((a, b) => (b[0].f < a[0].f ? -1 : b[0].f > a[0].f ? 1 : b[1] - a[1])).map(x => x[0]);
+  document.getElementById("opsEmpty").hidden = ops.length > 0;
+  document.getElementById("histCount").textContent = ops.length ? ops.length + (ops.length===1 ? " operación" : " operaciones") : "";
+  ops.forEach(o => {
+    const li = document.createElement("li");
+    const valor = o.q * o.p;
+    const partes = [
+      ["when num", fechaHora(o.f)],
+      ["tipo " + o.k, o.k === "C" ? "COMPRA" : "VENTA"],
+      ["tk", o.t],
+      ["num", nfArs.format(o.q) + (o.q === 1 ? " CEDEAR" : " CEDEARs")],
+      ["num", ars(valor)],
+      ["num us", o.m ? usd(valor / o.m) : "US$ —"]
+    ];
+    partes.forEach(([cls, txt], i) => {
+      if(i){ const sp = document.createElement("span"); sp.className = "sep"; sp.textContent = "·"; li.appendChild(sp); }
+      const e = document.createElement(cls === "tk" ? "b" : "span");
+      e.className = cls; e.textContent = txt;
+      li.appendChild(e);
+    });
+    li.dataset.tip = "Precio " + ars(o.p) + (o.m ? " · MEP $ " + nfArs2.format(o.m) : "");
+    ul.appendChild(li);
+  });
+}
+
+/* ---------- datos del repo (dólar, históricos, noticias) ---------- */
+// En GitHub Pages leemos los datos directo del repo (se actualizan sin re-publicar la app).
+function urlsDato(ruta){
+  const u = [ruta + "?t=" + Date.now()];
+  const m = location.hostname.match(/^([^.]+)\.github\.io$/);
+  const repo = location.pathname.split("/").filter(Boolean)[0];
+  if(m && repo) u.unshift("https://raw.githubusercontent.com/" + m[1] + "/" + repo + "/main/" + ruta + "?t=" + Date.now());
+  return u;
+}
+async function bajarDato(ruta){
+  for(const url of urlsDato(ruta)){
+    try{ const r = await fetch(url, {cache:"no-store"}); if(r.ok) return await r.json(); }catch(e){}
+  }
+  return null;
+}
+
+/* ---------- rendimientos ---------- */
+function restarDias(fecha, n){
+  const [y, m, d] = fecha.split("-").map(Number);
+  return fechaLocal(new Date(y, m-1, d - n));
+}
+// Último valor de una serie [[fecha, valor], ...] con fecha anterior a `antes`.
+function valorAntes(serie, antes){
+  let v = null;
+  for(const [d, x] of serie || []){ if(d < antes) v = x; else break; }
+  return v;
+}
+function mepAntes(antes){
+  const d = state.dolar;
+  if(!d || !d.fechas) return null;
+  let v = null;
+  for(let i = 0; i < d.fechas.length && d.fechas[i] < antes; i++) if(d.mep[i]) v = d.mep[i];
+  return v;
+}
+// Compras y ventas por ticker: las bases (posiciones previas) más el historial.
+function flujos(){
+  const m = new Map();
+  const add = (t, x) => { if(!m.has(t)) m.set(t, []); m.get(t).push(x); };
+  const mepBase = mepAntes(restarDias(FECHA_BASE, -1));
+  state.bases.forEach(b => add(b.t, {d:FECHA_BASE, s:1, q:b.q, p:b.p, m:b.m || mepBase || state.mep}));
+  state.ops.forEach(o => add(o.t, {d:String(o.f).slice(0,10), s:o.k === "C" ? 1 : -1, q:o.q, p:o.p, m:o.m || state.mep}));
+  return m;
+}
+// Ganancia en la ventana: (valor hoy + ventas − valor al inicio − compras) / (valor al inicio + compras).
+// Si la ventana empieza antes de tener el papel, el valor al inicio es 0 y queda contra el costo.
+function rendVentana(t, fl, dias, hoy){
+  const t0 = restarDias(hoy, dias);
+  let q0 = 0, C = 0, Cu = 0, S = 0, Su = 0;
+  fl.forEach(x => {
+    if(x.d < t0) q0 += x.s * x.q;
+    else if(x.s > 0){ C += x.q * x.p; Cu += x.q * x.p / x.m; }
+    else { S += x.q * x.p; Su += x.q * x.p / x.m; }
+  });
+  let V0 = 0, V0u = 0;
+  if(q0 > 1e-9){
+    const px0 = valorAntes(state.hist[t], t0), m0 = mepAntes(t0);
+    if(!px0 || !m0) return null;
+    V0 = q0 * px0; V0u = V0 / m0;
+  }
+  const pos = state.pos.find(p => p.ticker === t && !esDemo(p.id));
+  const qh = pos ? pos.cantidad : 0, pxh = state.precios[t];
+  if(qh > 0 && !pxh) return null;
+  if(!state.mep) return null;
+  const Vh = qh * (pxh || 0), Vhu = Vh / state.mep;
+  return {n: Vh + S - V0 - C, d: V0 + C, nu: Vhu + Su - V0u - Cu, du: V0u + Cu};
+}
+const VENTANAS = [30, 180, 365];
+function celdaRend(x){
+  const e = document.createElement("td"); e.className = "num";
+  if(!x || !(x.d > 0)){ e.classList.add("na"); e.textContent = "—"; return e; }
+  const ra = x.n / x.d, ru = x.du > 0 ? x.nu / x.du : null;
+  const top = document.createElement("div"); top.className = ra >= 0 ? "pos" : "neg"; top.textContent = pct(ra);
+  const bot = document.createElement("div"); bot.className = "sub2 " + (ru === null ? "muted2" : ru >= 0 ? "pos" : "neg");
+  bot.textContent = ru === null ? "US$ —" : "US$ " + pct(ru);
+  e.dataset.tip = "En pesos: " + arsSigned(x.n) + " sobre " + ars(x.d) + (ru !== null ? " · En dólares: " + usdSigned(x.nu) + " sobre " + usd(x.du) : "");
+  e.append(top, bot);
+  return e;
+}
+function renderRendimientos(){
+  const body = document.getElementById("rendBody");
+  body.textContent = "";
+  const fl = state.demo ? new Map() : flujos();
+  const hoy = fechaLocal(new Date());
+  const orden = state.pos.filter(p => !esDemo(p.id))
+    .map(p => ({t:p.ticker, v:p.cantidad * (state.precios[p.ticker] || 0)}))
+    .sort((a,b) => b.v - a.v).map(x => x.t);
+  const tickers = [...new Set(orden.concat([...fl.keys()]))].filter(t => fl.has(t));
+  const tot = VENTANAS.map(() => ({n:0, d:0, nu:0, du:0, ok:true}));
+  let filas = 0;
+  tickers.forEach(t => {
+    const res = VENTANAS.map(w => rendVentana(t, fl.get(t), w, hoy));
+    if(res.every(x => !x || !(x.d > 0))) return;   // vendido antes de todas las ventanas
+    res.forEach((x, i) => {
+      if(!x){ tot[i].ok = false; return; }
+      tot[i].n += x.n; tot[i].d += x.d; tot[i].nu += x.nu; tot[i].du += x.du;
+    });
+    const tr = document.createElement("tr");
+    const c1 = document.createElement("td");
+    const b = document.createElement("b"); b.textContent = t;
+    const nm = document.createElement("span"); nm.className = "ratio rnm"; nm.textContent = BY_TICKER.get(t)?.n || "";
+    c1.append(b, nm);
+    if(!state.pos.some(p => p.ticker === t)){
+      const v = document.createElement("span"); v.className = "ratio"; v.textContent = "vendido"; c1.appendChild(v);
+    }
+    tr.appendChild(c1);
+    res.forEach(x => tr.appendChild(celdaRend(x)));
+    body.appendChild(tr);
+    filas++;
+  });
+  if(filas){
+    const tr = document.createElement("tr"); tr.className = "tot";
+    tr.appendChild(td("Cartera", ""));
+    tot.forEach(x => tr.appendChild(celdaRend(x.ok ? x : null)));
+    body.appendChild(tr);
+  }
+  document.getElementById("rendEmpty").hidden = filas > 0;
+  document.getElementById("rendNote").textContent =
+    "Es tu ganancia, no la variación del precio del papel: compara lo que vale hoy (más lo que vendiste) contra lo que valía al empezar la ventana (más lo que compraste en ese tiempo). " +
+    "Las posiciones que ya tenías cuentan desde el 25/09/2026 con su precio promedio como costo. Si tenés un CEDEAR hace menos días que la ventana, el rendimiento es contra lo que pagaste, igual a la ganancia total; por eso, durante un tiempo, las tres columnas van a dar parecido. " +
+    "En dólares, cada compra y venta usa el MEP de ese momento y el valor de hoy usa el MEP de hoy.";
+}
+
+// Baja los cierres diarios de los papeles que aparecen en las posiciones o el historial.
+async function cargarHistoricos(){
+  if(state.demo) return;
+  const ts = [...flujos().keys()].filter(t => !state.hist[t]);
+  if(!ts.length) return;
+  const res = await Promise.all(ts.map(t => bajarDato("data/hist/" + encodeURIComponent(t) + ".json")));
+  ts.forEach((t, i) => { if(Array.isArray(res[i])) state.hist[t] = res[i]; });
+  renderRendimientos();
+}
+
+/* ---------- dólar ---------- */
+const DL_SERIES = [
+  {k:"mep", nombre:"MEP", color:"--d-mep"},
+  {k:"ccl", nombre:"CCL", color:"--d-ccl"},
+  {k:"oficial", nombre:"Oficial", color:"--d-of"}
+];
+let rangoDolar = 365;
+function renderDolarTiles(){
+  const box = document.getElementById("dolarTiles");
+  box.textContent = "";
+  const d = state.dolar, act = (d && d.actual) || {};
+  const of = act.oficial && act.oficial.venta;
+  DL_SERIES.forEach(sr => {
+    const a = act[sr.k];
+    const tile = document.createElement("div"); tile.className = "tile";
+    const k = document.createElement("span"); k.className = "k";
+    const dot = document.createElement("span"); dot.className = "dl-dot"; dot.style.background = cssv(sr.color);
+    k.append(dot, document.createTextNode("Dólar " + sr.nombre));
+    const v = document.createElement("span"); v.className = "v num";
+    v.textContent = a && a.venta ? "$ " + nfArs2.format(a.venta) : "—";
+    const dd = document.createElement("span"); dd.className = "d num";
+    const partes = [];
+    if(a && a.compra) partes.push("compra $ " + nfArs2.format(a.compra));
+    if(a && a.venta && of && sr.k !== "oficial") partes.push("brecha " + pct(a.venta / of - 1));
+    dd.textContent = partes.join(" · ") || " ";
+    tile.append(k, v, dd); box.appendChild(tile);
+  });
+}
+function drawDolar(){
+  renderDolarTiles();
+  const svg = document.getElementById("dolarChart");
+  const legend = document.getElementById("dolarLegend");
+  const note = document.getElementById("dolarNote");
+  svg.textContent = ""; legend.textContent = "";
+  const ns = "http://www.w3.org/2000/svg";
+  const el = (tag, at) => { const e = document.createElementNS(ns, tag); for(const k in at) e.setAttribute(k, at[k]); return e; };
+  const t = el("title", {id:"dolarTitle"}); t.textContent = "Evolución del dólar MEP, CCL y oficial"; svg.appendChild(t);
+  const d = state.dolar;
+  // El viewBox sigue el ancho real para que los textos no se achiquen en el celular.
+  const W = Math.max(300, Math.round(svg.clientWidth || 640)), H = W < 500 ? 230 : 280;
+  const padL = 54, padR = 10, padT = 12, padB = 28;
+  svg.setAttribute("viewBox", "0 0 " + W + " " + H);
+  if(!d || !d.fechas || !d.fechas.length){
+    const tx = el("text", {x:W/2, y:H/2, "text-anchor":"middle", "font-size":12, fill:cssv("--muted")});
+    tx.textContent = "Todavía no hay datos del dólar.";
+    svg.appendChild(tx); note.textContent = ""; return;
+  }
+  const hoy = fechaLocal(new Date());
+  const desde = rangoDolar ? restarDias(hoy, rangoDolar) : "0000";
+  let i0 = d.fechas.findIndex(f => f >= desde); if(i0 < 0) i0 = 0;
+  const fechas = d.fechas.slice(i0);
+  const n = fechas.length;
+  const ser = DL_SERIES.map(sr => ({...sr, v:(d[sr.k] || []).slice(i0)}));
+  let lo = Infinity, hi = -Infinity;
+  ser.forEach(sr => sr.v.forEach(v => { if(v){ lo = Math.min(lo, v); hi = Math.max(hi, v); } }));
+  if(!isFinite(lo)){ note.textContent = ""; return; }
+  // Escala lineal con márgenes redondos
+  const span = hi - lo || hi * 0.1;
+  const paso = (() => { const r = span / 4, e = Math.pow(10, Math.floor(Math.log10(r))), m = r / e;
+    return (m <= 1 ? 1 : m <= 2 ? 2 : m <= 2.5 ? 2.5 : m <= 5 ? 5 : 10) * e; })();
+  const yMin = rangoDolar === 0 ? 0 : Math.floor(lo / paso) * paso, yMax = Math.ceil(hi / paso) * paso;
+  const plotW = W - padL - padR, plotH = H - padT - padB;
+  const x = i => padL + (n <= 1 ? plotW / 2 : i / (n - 1) * plotW);
+  const y = v => padT + plotH - (v - yMin) / (yMax - yMin) * plotH;
+  for(let v = yMin; v <= yMax + 1e-9; v += paso){
+    svg.appendChild(el("line", {x1:padL, x2:W-padR, y1:y(v), y2:y(v), stroke:cssv("--line"), "stroke-width":1}));
+    const lb = el("text", {x:padL-8, y:y(v)+3.5, "text-anchor":"end", "font-size":9.5, "font-family":"Tahoma, Verdana, sans-serif", fill:cssv("--muted")});
+    lb.textContent = "$ " + nfArs.format(v); svg.appendChild(lb);
+  }
+  // Marcas de tiempo: meses o años según el rango
+  const largo = n > 400;
+  let ultimo = "";
+  const marcas = [];
+  fechas.forEach((f, i) => {
+    const clave = largo ? f.slice(0,4) : f.slice(0,7);
+    if(clave !== ultimo){ marcas.push([i, clave]); ultimo = clave; }
+  });
+  const salto = Math.max(1, Math.ceil(marcas.length / (W < 500 ? 4 : 7)));
+  marcas.forEach(([i, clave], j) => {
+    if(i === 0 && marcas.length > 1 && j % salto) return;
+    if(j % salto) return;
+    const lb = el("text", {x:x(i), y:H-padB+16, "text-anchor":"middle", "font-size":10, fill:cssv("--muted")});
+    lb.textContent = largo ? clave : MESES[+clave.slice(5,7)] + (clave.endsWith("-01") || j === 0 ? " " + clave.slice(2,4) : "");
+    svg.appendChild(lb);
+  });
+  // Líneas (orden fijo: oficial abajo, MEP arriba)
+  ser.slice().reverse().forEach(sr => {
+    let dpath = "", abierto = false;
+    sr.v.forEach((v, i) => {
+      if(v){ dpath += (abierto ? "L" : "M") + x(i).toFixed(1) + " " + y(v).toFixed(1) + " "; abierto = true; }
+      else abierto = false;
+    });
+    svg.appendChild(el("path", {d:dpath, fill:"none", stroke:cssv(sr.color), "stroke-width":2, "stroke-linejoin":"round", "stroke-linecap":"round"}));
+  });
+  // Leyenda con el último valor
+  ser.forEach(sr => {
+    const ult = [...sr.v].reverse().find(Boolean);
+    const it = document.createElement("span"); it.className = "it";
+    const ln = document.createElement("span"); ln.className = "ln"; ln.style.background = cssv(sr.color);
+    const nm = document.createElement("span"); nm.textContent = sr.nombre;
+    const v = document.createElement("span"); v.className = "v num"; v.textContent = ult ? "$ " + nfArs2.format(ult) : "—";
+    it.append(ln, nm, v); legend.appendChild(it);
+  });
+  // Cursor: línea vertical + puntos + tooltip con los tres valores
+  const guia = el("line", {y1:padT, y2:padT+plotH, stroke:cssv("--muted"), "stroke-width":1, "stroke-dasharray":"3 3", visibility:"hidden"});
+  svg.appendChild(guia);
+  const puntos = ser.map(sr => { const c = el("circle", {r:4.5, fill:cssv(sr.color), stroke:cssv("--surface"), "stroke-width":2, visibility:"hidden"}); svg.appendChild(c); return c; });
+  const zona = el("rect", {x:padL, y:padT, width:plotW, height:plotH, fill:"transparent"});
+  svg.appendChild(zona);
+  const mover = ev => {
+    const r = svg.getBoundingClientRect();
+    const px = (ev.clientX - r.left) / r.width * W;
+    const i = Math.max(0, Math.min(n - 1, Math.round((px - padL) / plotW * (n - 1))));
+    guia.setAttribute("x1", x(i)); guia.setAttribute("x2", x(i)); guia.setAttribute("visibility", "visible");
+    const txt = [fechaHora(fechas[i])];
+    ser.forEach((sr, j) => {
+      const v = sr.v[i];
+      if(v){ puntos[j].setAttribute("cx", x(i)); puntos[j].setAttribute("cy", y(v)); puntos[j].setAttribute("visibility", "visible"); }
+      else puntos[j].setAttribute("visibility", "hidden");
+      txt.push(sr.nombre + " " + (v ? "$ " + nfArs2.format(v) : "—"));
+    });
+    const pt = puntos.find(p => p.getAttribute("visibility") === "visible") || zona;
+    showTipAt(txt.join(" · "), pt.getBoundingClientRect());
+  };
+  const salir = () => { guia.setAttribute("visibility", "hidden"); puntos.forEach(p => p.setAttribute("visibility", "hidden")); hideTip(); };
+  zona.addEventListener("pointermove", mover);
+  zona.addEventListener("pointerdown", mover);
+  zona.addEventListener("pointerleave", salir);
+  note.textContent = "Cotización de venta de cada día. Histórico: argentinadatos.com; hoy: dolarapi.com" +
+    (d.fechaActual ? " (al " + d.fechaActual + ")" : "") + ". MEP = dólar bolsa; CCL = contado con liquidación.";
+}
+
+/* ---------- noticias ---------- */
+function renderNoticias(){
+  const box = document.getElementById("newsBody");
+  box.textContent = "";
+  const d = state.noticias;
+  const grupos = [];
+  if(d && Array.isArray(d.cedears)){
+    const mias = state.pos.filter(p => !esDemo(p.id)).map(p => p.ticker);
+    const valor = t => { const p = state.pos.find(x => x.ticker === t); return p ? p.cantidad * (state.precios[t] || 0) : -1; };
+    d.cedears.filter(g => g && g.noticias && g.noticias.length)
+      .sort((a,b) => (mias.includes(b.ticker) - mias.includes(a.ticker)) || (valor(b.ticker) - valor(a.ticker)))
+      .forEach(g => grupos.push({titulo:g.ticker, nombre:g.nombre || BY_TICKER.get(g.ticker)?.n || "", items:g.noticias}));
+  }
+  if(d && Array.isArray(d.dolar) && d.dolar.length) grupos.push({titulo:"Dólar", nombre:"Argentina", items:d.dolar});
+  document.getElementById("newsEmpty").hidden = grupos.length > 0;
+  document.getElementById("newsStamp").textContent = d && d.actualizado ? "Actualizadas el " + fechaHora(String(d.actualizado).slice(0,16)) : "";
+  grupos.forEach((g, gi) => {
+    const det = document.createElement("details"); det.className = "news-g";
+    if(gi === 0) det.open = true;
+    const sum = document.createElement("summary");
+    const b = document.createElement("b"); b.textContent = g.titulo;
+    const nm = document.createElement("span"); nm.className = "nm"; nm.textContent = g.nombre;
+    const cnt = document.createElement("span"); cnt.className = "cnt"; cnt.textContent = "· " + g.items.length;
+    sum.append(b, nm, cnt); det.appendChild(sum);
+    g.items.forEach(it => {
+      const art = document.createElement("article"); art.className = "news-it";
+      const h = document.createElement("h3");
+      const a = document.createElement("a");
+      a.textContent = it.titulo || "(sin título)";
+      if(/^https?:\/\//.test(it.url || "")){ a.href = it.url; a.target = "_blank"; a.rel = "noopener noreferrer"; }
+      h.appendChild(a);
+      const pr = document.createElement("p"); pr.textContent = it.resumen || "";
+      const meta = document.createElement("div"); meta.className = "meta";
+      meta.textContent = [it.fuente, it.fecha ? fechaHora(it.fecha) : ""].filter(Boolean).join(" · ");
+      art.append(h, pr, meta); det.appendChild(art);
+    });
+    box.appendChild(det);
+  });
+}
+
+async function cargarExtras(){
+  const [dl, nw] = await Promise.all([bajarDato("data/dolar.json"), bajarDato("data/noticias.json")]);
+  if(dl){ state.dolar = dl; drawDolar(); renderRendimientos(); }
+  if(nw){ state.noticias = nw; renderNoticias(); }
+}
+
+/* ---------- pestañas ---------- */
+const LS_TAB = "cedear_tab";
+function mostrarTab(nombre){
+  if(!document.querySelector('.tab[data-tab="' + nombre + '"]')) nombre = "cartera";
+  document.querySelectorAll(".tab").forEach(t => t.hidden = t.dataset.tab !== nombre);
+  document.querySelectorAll("#tabs button").forEach(b => b.setAttribute("aria-pressed", String(b.dataset.tab === nombre)));
+  try{ localStorage.setItem(LS_TAB, nombre); }catch(e){}
+  if(nombre === "dolar") drawDolar();
+}
+let anchoDolar = 0;
+window.addEventListener("resize", () => {
+  const w = document.getElementById("dolarChart").clientWidth;
+  if(w && Math.abs(w - anchoDolar) > 20){ anchoDolar = w; drawDolar(); }
+});
+document.getElementById("tabs").addEventListener("click", ev => {
+  const b = ev.target.closest("button[data-tab]"); if(!b) return;
+  mostrarTab(b.dataset.tab); hideTip();
+});
+document.getElementById("rangoSeg").addEventListener("click", ev => {
+  const b = ev.target.closest("button[data-r]"); if(!b) return;
+  rangoDolar = +b.dataset.r;
+  [...ev.currentTarget.querySelectorAll("button")].forEach(x => x.setAttribute("aria-pressed", String(x === b)));
+  drawDolar();
+});
+
 /* ---------- tooltip ---------- */
 const tip = document.createElement("div"); tip.id = "tip"; tip.setAttribute("role","tooltip");
 document.body.appendChild(tip);
 let tipFor = null;
 function showTip(el){
   const t = el.dataset.tip; if(!t) return;
-  tip.textContent = t; tip.classList.add("on"); tipFor = el;
-  const r = el.getBoundingClientRect();
+  tipFor = el;
+  showTipAt(t, el.getBoundingClientRect());
+}
+function showTipAt(t, r){
+  tip.textContent = t; tip.classList.add("on");
   tip.style.left = "0px"; tip.style.top = "0px";
   const w = tip.offsetWidth, hgt = tip.offsetHeight;
   let x = r.left + r.width/2 - w/2;
@@ -905,7 +1464,7 @@ document.addEventListener("focusout", hideTip);
 document.addEventListener("click", e => {
   const el = e.target.closest("[data-tip]");
   if(el && el.tagName !== "A"){ e.preventDefault(); (tipFor === el) ? hideTip() : showTip(el); }
-  else if(!el) hideTip();
+  else if(!el && !e.target.closest("#dolarChart")) hideTip();
 });
 window.addEventListener("scroll", hideTip, true);
 
@@ -924,46 +1483,67 @@ window.addEventListener("scroll", hideTip, true);
 
 /* ---------- persistencia ---------- */
 const LS = "cedear_pos_v1";
+const LS_OPS = "cedear_ops_v1";
+const LS_BASE = "cedear_base_v1";
+// Las posiciones cargadas antes de que existiera el historial cuentan desde acá, con su PPC como costo.
+const FECHA_BASE = "2026-09-25";
 function saveLocal(){
-  try{ localStorage.setItem(LS, JSON.stringify(state.pos)); }catch(e){}
+  try{
+    localStorage.setItem(LS, JSON.stringify(state.pos));
+    localStorage.setItem(LS_OPS, JSON.stringify(state.ops));
+    localStorage.setItem(LS_BASE, JSON.stringify(state.bases));
+  }catch(e){}
 }
-function loadLocal(){
-  try{ const r = localStorage.getItem(LS); if(r){ const a = JSON.parse(r); if(Array.isArray(a)) return a; } }catch(e){}
+function loadArr(key){
+  try{ const r = localStorage.getItem(key); if(r){ const a = JSON.parse(r); if(Array.isArray(a)) return a; } }catch(e){}
   return null;
+}
+function loadLocal(){ return loadArr(LS); }
+
+const esDemo = id => String(id).startsWith("demo");
+const pad2 = n => String(n).padStart(2, "0");
+function fechaLocal(d){ return d.getFullYear() + "-" + pad2(d.getMonth()+1) + "-" + pad2(d.getDate()); }
+function ahoraLocal(){ const d = new Date(); return fechaLocal(d) + "T" + pad2(d.getHours()) + ":" + pad2(d.getMinutes()); }
+
+// Anota una compra o venta en el historial, con el MEP de ese momento.
+function registrarOp(k, t, q, p, m){
+  if(!(q>0) || !(p>0)) return;
+  state.ops.push({id:"o"+Date.now()+Math.random().toString(36).slice(2,6), f:ahoraLocal(), k, t, q, p, m: m>0 ? m : (state.mep || null)});
+}
+
+function quitarDemo(){
+  if(state.demo){ state.pos = state.pos.filter(x => !esDemo(x.id)); state.demo = false; state.editing = null; }
 }
 
 async function addPos(p){
-  state.demo = false;
-  if(state.db && state.canWrite){
-    try{
-      const ref = state.db.collection("posiciones").doc();
-      await ref.set({ticker:p.ticker, cantidad:p.cantidad, ppc:p.ppc, mepCompra:p.mepCompra, creado:new Date().toISOString()});
-      return;
-    }catch(e){ state.canWrite = false; showDbState("No pude guardar en la base; queda guardado en este navegador."); }
-  }
+  quitarDemo();
   state.pos = state.pos.concat([{...p, id:"l"+Date.now()}]);
-  saveLocal(); render();
+  registrarOp("C", p.ticker, p.cantidad, p.ppc, p.mepCompra);
+  saveLocal(); render(); cargarHistoricos();
 }
 
-async function updatePos(id, nq, np){
+// Compra sobre una posición que ya existe: el broker da el nuevo PPC y de ahí sale el precio de esta compra.
+async function sumarPos(id, q, nuevoPpc){
   const p = state.pos.find(x => x.id === id);
   if(!p) return;
-  const esDemo = String(id).startsWith("demo");
-  if(!esDemo && state.db && state.canWrite && !String(id).startsWith("l")){
-    try{ await state.db.collection("posiciones").doc(id).update({cantidad:nq, ppc:np}); render(); return; }
-    catch(e){ showDbState("No pude guardar en la base; queda guardado en este navegador."); }
+  if(!esDemo(id)){
+    const precio = ((p.cantidad + q) * nuevoPpc - p.cantidad * p.ppc) / q;
+    registrarOp("C", p.ticker, q, precio > 0 ? precio : nuevoPpc, null);
   }
-  p.cantidad = nq; p.ppc = np;
-  if(!esDemo) saveLocal();
+  p.cantidad += q; p.ppc = nuevoPpc;
+  if(!esDemo(id)) saveLocal();
   render();
 }
 
-async function removePos(id){
-  state.pos = state.pos.filter(x => x.id !== id);
-  if(String(id).startsWith("demo")){ state.demo = state.pos.some(x=>String(x.id).startsWith("demo")); render(); return; }
-  if(state.db && state.canWrite && !String(id).startsWith("l")){
-    try{ await state.db.collection("posiciones").doc(id).delete(); return; }catch(e){}
-  }
+// Venta parcial o total. El PPC no cambia; si vende todo, la posición desaparece.
+async function venderPos(id, q, precio){
+  const p = state.pos.find(x => x.id === id);
+  if(!p) return;
+  const resto = p.cantidad - q;
+  if(resto <= 1e-9) state.pos = state.pos.filter(x => x.id !== id);
+  else p.cantidad = resto;
+  if(esDemo(id)){ state.demo = state.pos.some(x => esDemo(x.id)); render(); return; }
+  registrarOp("V", p.ticker, q, precio, null);
   saveLocal(); render();
 }
 
@@ -986,9 +1566,9 @@ document.getElementById("addForm").addEventListener("submit", async ev => {
   const mepC = parseFloat(document.getElementById("fMep").value);
   if(!(cant>0)){ err.textContent = "La cantidad tiene que ser mayor que cero."; return; }
   if(!(ppc>0)){ err.textContent = "El precio promedio de compra tiene que ser mayor que cero."; return; }
-  const existing = state.pos.find(p => p.ticker === c.t && !String(p.id).startsWith("demo"));
+  const existing = state.pos.find(p => p.ticker === c.t && !esDemo(p.id));
   if(existing){
-    await updatePos(existing.id, existing.cantidad + cant, ppc);
+    await sumarPos(existing.id, cant, ppc);
     err.className = "info";
     err.textContent = "Ya tenías " + c.t + ": sumé " + nfArs.format(cant) + " y el precio promedio quedó en $ " + nfArs2.format(ppc) + ".";
     setTimeout(() => { err.textContent = ""; err.className = "err"; }, 6000);
@@ -1013,21 +1593,40 @@ document.getElementById("modeSeg").addEventListener("click", ev => {
   const m = location.hash.match(/import=([^&]+)/);
   if(!m) return;
   try{
-    const arr = JSON.parse(decodeURIComponent(escape(atob(decodeURIComponent(m[1])))));
-    if(Array.isArray(arr) && arr.length){
-      const pos = arr.map((p,k) => ({id:"l"+Date.now()+k, ticker:p.t, cantidad:+p.q, ppc:+p.p, mepCompra:p.m?+p.m:null}))
-                     .filter(p => BY_TICKER.has(p.ticker) && p.cantidad>0);
+    // Formato viejo: lista de posiciones. Formato nuevo: {p: posiciones, h: historial, b: bases}.
+    const dato = JSON.parse(decodeURIComponent(escape(atob(decodeURIComponent(m[1])))));
+    const arr = Array.isArray(dato) ? dato : (dato && dato.p) || [];
+    const pos = arr.map((p,k) => ({id:"l"+Date.now()+k, ticker:p.t, cantidad:+p.q, ppc:+p.p, mepCompra:p.m?+p.m:null}))
+                   .filter(p => BY_TICKER.has(p.ticker) && p.cantidad>0);
+    if(pos.length || !Array.isArray(dato)){
       localStorage.setItem(LS, JSON.stringify(pos));
+      const ops = Array.isArray(dato) ? [] : (dato.h || []).map((o,k) => ({id:"o"+Date.now()+k, f:o.f, k:o.k, t:o.t, q:+o.q, p:+o.p, m:o.m?+o.m:null}));
+      const bases = Array.isArray(dato)
+        ? pos.map(p => ({t:p.ticker, q:p.cantidad, p:p.ppc, m:p.mepCompra}))
+        : (dato.b || []).map(b => ({t:b.t, q:+b.q, p:+b.p, m:b.m?+b.m:null}));
+      localStorage.setItem(LS_OPS, JSON.stringify(ops));
+      localStorage.setItem(LS_BASE, JSON.stringify(bases));
     }
   }catch(e){}
   history.replaceState(null, "", location.pathname);
 })();
 
 const local = loadLocal();
-if(local && local.length){ state.pos = local; state.demo = false; }
-else { state.pos = DEMO.slice(); state.demo = true; }
+if(local && local.length){ state.pos = local.filter(p => !esDemo(p.id)); state.demo = false; }
+else { state.pos = DEMO.map(p => ({...p})); state.demo = true; }
+state.ops = loadArr(LS_OPS) || [];
+const basesGuardadas = loadArr(LS_BASE);
+if(basesGuardadas) state.bases = basesGuardadas;
+else {
+  // Primera vez con historial: lo que ya tenía cuenta desde FECHA_BASE con su PPC actual.
+  state.bases = state.demo ? [] : state.pos.map(p => ({t:p.ticker, q:p.cantidad, p:p.ppc, m:p.mepCompra || null}));
+  if(!state.demo) saveLocal();
+}
 showDbState("Guardado en este celular.");
 render();
+try{ mostrarTab(localStorage.getItem(LS_TAB) || "cartera"); }catch(e){ mostrarTab("cartera"); }
+drawDolar(); renderNoticias();
+cargarExtras(); cargarHistoricos();
 
 const MK = "cedear_mercado_v1";
 try{
@@ -1042,16 +1641,8 @@ function aplicarMercado(d){
   state.fechaMep = d.fechaMep || state.fechaMep;
   render();
 }
-// En GitHub Pages leemos los datos directo del repo (se actualizan cada 5 min sin re-publicar la app).
-function urlsMercado(){
-  const u = ["data/mercado.json?t=" + Date.now()];
-  const m = location.hostname.match(/^([^.]+)\.github\.io$/);
-  const repo = location.pathname.split("/").filter(Boolean)[0];
-  if(m && repo) u.unshift("https://raw.githubusercontent.com/" + m[1] + "/" + repo + "/main/data/mercado.json?t=" + Date.now());
-  return u;
-}
 async function bajarMercado(){
-  for(const url of urlsMercado()){
+  for(const url of urlsDato("data/mercado.json")){
     try{ const r = await fetch(url, {cache:"no-store"}); if(r.ok) return r; }catch(e){}
   }
   throw 0;
@@ -1067,19 +1658,23 @@ async function cargarMercado(){
   }catch(e){ return false; }
 }
 cargarMercado();
-document.addEventListener("visibilitychange", () => { if(!document.hidden) cargarMercado(); });
+document.addEventListener("visibilitychange", () => { if(!document.hidden){ cargarMercado(); cargarExtras(); } });
 setInterval(() => { if(!document.hidden) cargarMercado(); }, 2*60*1000);
 
 document.getElementById("bkRefresh").addEventListener("click", async ev => {
   const b = ev.currentTarget; b.textContent = "Actualizando…";
   const ok = await cargarMercado();
+  cargarExtras();
   b.textContent = ok ? "Listo ✓" : "Sin conexión";
   setTimeout(() => b.textContent = "Actualizar precios", 1800);
 });
 document.getElementById("bkCopy").addEventListener("click", async ev => {
-  const mine = state.pos.filter(p => !String(p.id).startsWith("demo"));
-  const code = btoa(unescape(encodeURIComponent(JSON.stringify(
-    mine.map(p => ({t:p.ticker, q:p.cantidad, p:p.ppc, m:p.mepCompra||0}))))));
+  const mine = state.pos.filter(p => !esDemo(p.id));
+  const code = btoa(unescape(encodeURIComponent(JSON.stringify({
+    p: mine.map(p => ({t:p.ticker, q:p.cantidad, p:p.ppc, m:p.mepCompra||0})),
+    h: state.ops.map(o => ({f:o.f, k:o.k, t:o.t, q:o.q, p:+o.p.toFixed(4), m:o.m||0})),
+    b: state.bases.map(b => ({t:b.t, q:b.q, p:b.p, m:b.m||0}))
+  }))));
   const link = location.origin + location.pathname + "#import=" + encodeURIComponent(code);
   const b = ev.currentTarget;
   try{ await navigator.clipboard.writeText(link); b.textContent = "Copiado ✓"; }
@@ -1091,7 +1686,7 @@ document.getElementById("bkLoad").addEventListener("click", () => {
   if(!t) return;
   const m = t.match(/import=([^&\s]+)/);
   if(!m){ alert("Ese link no parece un respaldo."); return; }
-  if(!confirm("Esto reemplaza las posiciones actuales. ¿Seguimos?")) return;
+  if(!confirm("Esto reemplaza las posiciones y el historial actuales. ¿Seguimos?")) return;
   location.hash = "import=" + m[1];
   location.reload();
 });
