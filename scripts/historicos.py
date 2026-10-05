@@ -116,7 +116,12 @@ for t in seguidos:
         continue
     try:
         filas = bajar(f"https://data912.com/historical/cedears/{t}")
+        if not isinstance(filas, list):      # data912 no tiene histórico de algunos papeles (VZ, PG, O)
+            print(f"Histórico {t}: data912 no lo tiene; se arma con los cierres diarios")
+            continue
         for f in filas:
+            if not isinstance(f, dict):
+                continue
             d, c = str(f.get("date", ""))[:10], num(f.get("c"))
             if len(d) == 10 and c and d >= DESDE and d not in h:
                 h[d] = c
