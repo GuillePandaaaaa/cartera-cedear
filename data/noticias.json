@@ -1,10 +1,17 @@
 {
- "actualizado": "2026-10-05T08:28-03:00",
+ "actualizado": "2026-10-06T08:29-03:00",
  "cedears": [
   {
    "ticker": "NVDA",
    "nombre": "Nvidia",
    "noticias": [
+    {
+     "titulo": "Nvidia vuelve a hacer récord y el mercado de opciones apuesta a los US$6 billones",
+     "resumen": "La acción subió el lunes a un nuevo máximo histórico, después de que BNP Paribas elevara su precio objetivo de US$285 a US$345. Los operadores de opciones ven cerca de 50% de chances de que Nvidia supere los US$6 billones de valor antes de fin de octubre.",
+     "fuente": "CNBC",
+     "fecha": "2026-10-05",
+     "url": "https://www.cnbc.com/2026/10/05/nvidias-6-trillion-milestone-looms-heres-when-options-traders-see-it-happening.html"
+    },
     {
      "titulo": "Nvidia toca récord y su valor de mercado se acerca a US$6 billones",
      "resumen": "La acción cerró en máximo histórico por primera vez desde mayo y la compañía quedó valuada en torno a US$5,7 billones. Extiende un rally de 23% desde el piso de fines de julio, cuando pesaban los temores sobre la demanda de IA.",
@@ -18,13 +25,6 @@
      "fuente": "Yahoo Finance",
      "fecha": "2026-10-02",
      "url": "https://finance.yahoo.com/markets/stocks/articles/nvda-stock-back-morgan-stanley-124934015.html"
-    },
-    {
-     "titulo": "Nvidia amplía su recompra de acciones en US$150.000 millones",
-     "resumen": "Es la mayor ampliación de recompra de su historia y lleva la autorización total a unos US$235.000 millones. Para el mercado, es una señal de que la empresa considera barata su propia acción.",
-     "fuente": "CNBC",
-     "fecha": "2026-09-29",
-     "url": "https://www.cnbc.com/2026/09/29/nvidia-buyback-shows-chipmaker-stock-is-too-cheap-for-huang-to-resist.html"
     }
    ]
   },
@@ -73,6 +73,13 @@
    "nombre": "Microsoft",
    "noticias": [
     {
+     "titulo": "Melius sube a Microsoft a 'compra' con objetivo de US$665",
+     "resumen": "El analista Ben Reitzes mejoró la recomendación de 'mantener' a 'compra' y argumenta que Microsoft tiene ventaja en IA a medida que la seguridad pasa a primer plano. La acción subía más de 1% el lunes con la noticia.",
+     "fuente": "Yahoo Finance",
+     "fecha": "2026-10-05",
+     "url": "https://finance.yahoo.com/markets/stocks/articles/melius-research-upgrades-microsoft-stock-173111124.html"
+    },
+    {
      "titulo": "Ryan Roslansky, ex jefe de LinkedIn, deja Microsoft",
      "resumen": "Satya Nadella anunció en un memo que Roslansky se va a fin de 2026; había quedado a cargo de parte de Microsoft 365 y Copilot. Se suma a otras salidas recientes de ejecutivos de la compañía.",
      "fuente": "CNBC",
@@ -98,11 +105,11 @@
    "nombre": "S&P 500 (ETF)",
    "noticias": [
     {
-     "titulo": "Futuros de Wall Street levemente abajo en el arranque de la semana",
-     "resumen": "Los futuros del Dow caían 0,2% y los del S&P 500 0,1% el lunes, con el bono a 10 años en 5,28% y el Brent arriba de US$100. El mercado mira las minutas de la Fed del miércoles y el inicio de la temporada de balances.",
-     "fuente": "Yahoo Finance",
+     "titulo": "El S&P 500 queda cerca de su récord y el Nasdaq cierra en máximo histórico",
+     "resumen": "El lunes el S&P 500 subió 0,66% hasta 7.773,95 y quedó a 0,3% de su máximo; el Nasdaq ganó 1,05% y marcó récord, empujado por la tecnología. La tasa a 10 años subió a 5,31%.",
+     "fuente": "Bloomberg",
      "fecha": "2026-10-05",
-     "url": "https://finance.yahoo.com/markets/live/stock-market-today-monday-october-5-dow-sp-500-nasdaq-081220790.html"
+     "url": "https://bloomberg.com/news/articles/2026-10-05/s-p-500-closes-in-on-record-high-as-tech-rallies-markets-wrap"
     },
     {
      "titulo": "Wall Street sube tras un dato de empleo flojo que enfría la chance de suba de tasas",
@@ -124,6 +131,13 @@
    "ticker": "MELI",
    "nombre": "MercadoLibre",
    "noticias": [
+    {
+     "titulo": "Fuerte suba de las acciones brasileñas tras la sorpresa electoral de Flávio Bolsonaro",
+     "resumen": "Las acciones de Brasil se dispararon el lunes después de que Flávio Bolsonaro tomara una ventaja ajustada e inesperada en la primera vuelta. MercadoLibre, con gran parte de su negocio en Brasil, subió con fuerza en esa ola.",
+     "fuente": "Yahoo Finance",
+     "fecha": "2026-10-05",
+     "url": "https://finance.yahoo.com/markets/article/brazilian-stocks-soar-as-flavio-bolsonaro-takes-surprise-election-lead-160951504.html"
+    },
     {
      "titulo": "El regulador sanitario de Brasil revisa el marketplace de farmacias de MercadoLibre",
      "resumen": "Anvisa, el regulador sanitario de Brasil, dijo que está revisando el plan de MercadoLibre de lanzar en la segunda mitad de octubre un marketplace online de farmacias, lo que complica su avance en la venta de medicamentos con receta.",
@@ -169,25 +183,25 @@
  ],
  "dolar": [
   {
-   "titulo": "Dólar hoy: a cuánto cotiza este lunes 5 de octubre",
-   "resumen": "El oficial abre la semana en $1.490/$1.540 en el Banco Nación y el mayorista en $1.520. El MEP cotiza a $1.549 (brecha de 1,9%) y el CCL a $1.625 (6,9%).",
+   "titulo": "Dólar hoy: a cuánto cotiza este martes 6 de octubre",
+   "resumen": "El oficial sigue en $1.490/$1.540 en el Banco Nación y el mayorista en $1.520. El MEP baja a $1.538 (brecha de 1,2%) y el CCL a $1.603 (5,4%).",
+   "fuente": "Ámbito",
+   "fecha": "2026-10-06",
+   "url": "https://www.ambito.com/finanzas/dolar-hoy-cuanto-cotiza-este-martes-6-octubre-n6330431"
+  },
+  {
+   "titulo": "El dólar blue registró su mayor caída en casi dos meses",
+   "resumen": "El blue cerró el lunes en $1.530/$1.550, $10 por debajo del viernes. El mayorista terminó sin cambios en $1.520.",
    "fuente": "Ámbito",
    "fecha": "2026-10-05",
-   "url": "https://www.ambito.com/finanzas/dolar-hoy-cuanto-cotiza-este-lunes-5-octubre-n6330014"
+   "url": "https://www.ambito.com/finanzas/el-dolar-blue-registro-su-mayor-caida-casi-dos-meses-n6330312"
   },
   {
-   "titulo": "El BCRA aceleró la compra de dólares: sumó u$s369 millones en la semana",
-   "resumen": "Es la mayor cifra semanal desde julio; el viernes compró u$s35 millones. Las reservas brutas subieron u$s364 millones y cerraron en u$s48.653 millones.",
-   "fuente": "Ámbito",
-   "fecha": "2026-10-02",
-   "url": "https://www.ambito.com/finanzas/el-bcra-acelero-su-compra-dolares-sumo-us369-millones-la-semana-la-mayor-cifra-julio-n6329587"
-  },
-  {
-   "titulo": "El dólar blue borró la caída previa y acumuló cuatro semanas sin retrocesos",
-   "resumen": "El blue cerró el viernes en $1.540/$1.560 y encadenó un mes sin bajas semanales, mientras la brecha con el oficial sigue acotada.",
-   "fuente": "Ámbito",
-   "fecha": "2026-10-02",
-   "url": "https://www.ambito.com/finanzas/el-dolar-blue-borro-la-caida-la-jornada-previa-y-acumulo-cuatro-semanas-retrocesos-n6329573"
+   "titulo": "Tras el paso del FMI, el Banco Central aceleró la compra de reservas",
+   "resumen": "El BCRA compró u$s14 millones el lunes y las reservas brutas subieron u$s144 millones hasta u$s48.797 millones. La nota analiza el 'poder de fuego' que busca juntar Caputo de cara a las elecciones.",
+   "fuente": "Infobae",
+   "fecha": "2026-10-05",
+   "url": "https://www.infobae.com/economia/2026/10/05/tras-el-paso-del-fmi-el-banco-central-acelero-la-compra-de-reservas-a-que-poder-de-fuego-aspira-caputo-para-las-elecciones/"
   }
  ]
 }
