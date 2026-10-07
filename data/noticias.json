@@ -1,10 +1,17 @@
 {
- "actualizado": "2026-10-06T08:29-03:00",
+ "actualizado": "2026-10-07T08:29-03:00",
  "cedears": [
   {
    "ticker": "NVDA",
    "nombre": "Nvidia",
    "noticias": [
+    {
+     "titulo": "Nvidia vuelve a récord y queda al borde de los US$6 billones",
+     "resumen": "La acción marcó un nuevo máximo histórico el martes y su valor de mercado quedó apenas por debajo de US$5,8 billones. Acumula una suba de 28% en el año, que le sumó US$1,2 billones de capitalización.",
+     "fuente": "Bloomberg",
+     "fecha": "2026-10-06",
+     "url": "https://www.bloomberg.com/news/articles/2026-10-06/nvidia-heads-for-6-trillion-value-with-chipmaker-back-at-record"
+    },
     {
      "titulo": "Nvidia vuelve a hacer récord y el mercado de opciones apuesta a los US$6 billones",
      "resumen": "La acción subió el lunes a un nuevo máximo histórico, después de que BNP Paribas elevara su precio objetivo de US$285 a US$345. Los operadores de opciones ven cerca de 50% de chances de que Nvidia supere los US$6 billones de valor antes de fin de octubre.",
@@ -18,13 +25,6 @@
      "fuente": "Bloomberg",
      "fecha": "2026-10-02",
      "url": "https://www.bloomberg.com/news/articles/2026-10-02/nvidia-hits-first-record-since-may-as-value-nears-6-trillion"
-    },
-    {
-     "titulo": "Morgan Stanley vuelve a poner a Nvidia como su acción favorita en chips",
-     "resumen": "El banco la repuso como 'Top Pick' del sector tras reunirse con Jensen Huang y Colette Kress, con rating Overweight y precio objetivo de US$300. Destaca su base de clientes diversa y una valuación que considera poco exigente.",
-     "fuente": "Yahoo Finance",
-     "fecha": "2026-10-02",
-     "url": "https://finance.yahoo.com/markets/stocks/articles/nvda-stock-back-morgan-stanley-124934015.html"
     }
    ]
   },
@@ -73,11 +73,11 @@
    "nombre": "Microsoft",
    "noticias": [
     {
-     "titulo": "Melius sube a Microsoft a 'compra' con objetivo de US$665",
-     "resumen": "El analista Ben Reitzes mejoró la recomendación de 'mantener' a 'compra' y argumenta que Microsoft tiene ventaja en IA a medida que la seguridad pasa a primer plano. La acción subía más de 1% el lunes con la noticia.",
+     "titulo": "Microsoft sube 1,9% con mejoras de analistas: Melius apunta a US$665 y Wells Fargo a US$725",
+     "resumen": "La acción cerró en torno a US$535 el martes después de que Melius subiera su precio objetivo de US$465 a US$665. Además, Wells Fargo la sumó a sus ideas tácticas del cuarto trimestre con un objetivo de US$725, el más alto del mercado.",
      "fuente": "Yahoo Finance",
-     "fecha": "2026-10-05",
-     "url": "https://finance.yahoo.com/markets/stocks/articles/melius-research-upgrades-microsoft-stock-173111124.html"
+     "fecha": "2026-10-06",
+     "url": "https://finance.yahoo.com/markets/stocks/articles/microsoft-stocks-jump-1-9-165344891.html"
     },
     {
      "titulo": "Ryan Roslansky, ex jefe de LinkedIn, deja Microsoft",
@@ -105,18 +105,18 @@
    "nombre": "S&P 500 (ETF)",
    "noticias": [
     {
+     "titulo": "El S&P 500 y el Nasdaq 100 marcan nuevos récords con la baja del petróleo y las tasas",
+     "resumen": "El martes el S&P 500 subió 0,58% hasta 7.818,93, su primer cierre por encima de 7.800, y el Nasdaq también cerró en máximo. Empujaron los chips (AMD, Broadcom, Marvell) y la baja del crudo y de los rendimientos de los bonos.",
+     "fuente": "Yahoo Finance",
+     "fecha": "2026-10-06",
+     "url": "https://finance.yahoo.com/markets/stocks/articles/p-500-nasdaq-100-post-135932585.html"
+    },
+    {
      "titulo": "El S&P 500 queda cerca de su récord y el Nasdaq cierra en máximo histórico",
      "resumen": "El lunes el S&P 500 subió 0,66% hasta 7.773,95 y quedó a 0,3% de su máximo; el Nasdaq ganó 1,05% y marcó récord, empujado por la tecnología. La tasa a 10 años subió a 5,31%.",
      "fuente": "Bloomberg",
      "fecha": "2026-10-05",
      "url": "https://bloomberg.com/news/articles/2026-10-05/s-p-500-closes-in-on-record-high-as-tech-rallies-markets-wrap"
-    },
-    {
-     "titulo": "Wall Street sube tras un dato de empleo flojo que enfría la chance de suba de tasas",
-     "resumen": "El S&P 500 ganó 0,7% el viernes y el Nasdaq 1,2% con récord intradiario, liderado por la tecnología. El mercado pasó a descontar que la Fed se queda quieta en octubre en lugar de subir la tasa.",
-     "fuente": "Yahoo Finance",
-     "fecha": "2026-10-02",
-     "url": "https://finance.yahoo.com/markets/live/stock-market-today-friday-october-2-dow-sp-500-nasdaq-september-jobs-report-080623878.html"
     },
     {
      "titulo": "EE.UU. creó solo 29.000 empleos en septiembre",
@@ -152,6 +152,13 @@
    "nombre": "Pfizer",
    "noticias": [
     {
+     "titulo": "La vacuna de Vaxcyte iguala a Prevnar 20 y amenaza una franquicia clave de Pfizer",
+     "resumen": "En un estudio de fase 3 con 4.047 personas, la VAX-31 de Vaxcyte igualó a Prevnar 20 en los 20 serotipos que comparten. Prevnar es una franquicia de US$6.490 millones para Pfizer, y su acción cayó 1,4% con la noticia.",
+     "fuente": "Yahoo Finance",
+     "fecha": "2026-10-06",
+     "url": "https://finance.yahoo.com/healthcare/articles/pfizer-6-49-billion-prevnar-053805663.html"
+    },
+    {
      "titulo": "Florida demanda a Pfizer y a su CEO por la vacuna contra el COVID",
      "resumen": "El fiscal general de Florida acusa a Pfizer de engañar a los consumidores sobre los riesgos de la vacuna. Pide una medida cautelar, multas de hasta US$10.000 por infracción y la devolución de ganancias, citando más de US$80.000 millones en ventas.",
      "fuente": "Yahoo Finance",
@@ -183,25 +190,25 @@
  ],
  "dolar": [
   {
-   "titulo": "Dólar hoy: a cuánto cotiza este martes 6 de octubre",
-   "resumen": "El oficial sigue en $1.490/$1.540 en el Banco Nación y el mayorista en $1.520. El MEP baja a $1.538 (brecha de 1,2%) y el CCL a $1.603 (5,4%).",
+   "titulo": "Dólar hoy: a cuánto cotiza este miércoles 7 de octubre",
+   "resumen": "El oficial se mantiene en $1.490/$1.540 en el Banco Nación y el blue en $1.530/$1.550. El MEP cotiza a $1.541 (brecha de 1,4%) y el CCL a $1.613 (6,2%).",
+   "fuente": "Ámbito",
+   "fecha": "2026-10-07",
+   "url": "https://www.ambito.com/finanzas/dolar-hoy-cuanto-cotiza-este-miercoles-7-octubre-n6330937"
+  },
+  {
+   "titulo": "Las reservas del BCRA tocaron un máximo de dos semanas y volvieron a superar los u$s49.000 millones",
+   "resumen": "El Central compró u$s41 millones el martes y el stock bruto subió u$s326 millones, hasta u$s49.123 millones. El mayorista cerró en $1.520 y sumó tres ruedas sin subas.",
    "fuente": "Ámbito",
    "fecha": "2026-10-06",
-   "url": "https://www.ambito.com/finanzas/dolar-hoy-cuanto-cotiza-este-martes-6-octubre-n6330431"
+   "url": "https://www.ambito.com/finanzas/las-reservas-del-bcra-tocaron-un-maximo-dos-semanas-y-volvieron-superar-los-us49000-millones-n6330816"
   },
   {
-   "titulo": "El dólar blue registró su mayor caída en casi dos meses",
-   "resumen": "El blue cerró el lunes en $1.530/$1.550, $10 por debajo del viernes. El mayorista terminó sin cambios en $1.520.",
+   "titulo": "El dólar blue cayó a mínimos de un mes y la brecha con el oficial tocó su menor nivel desde mediados de año",
+   "resumen": "El blue bajó a su menor valor en un mes y la brecha con el oficial quedó en el nivel más bajo desde mediados de año. Es una señal de calma en el mercado paralelo.",
    "fuente": "Ámbito",
-   "fecha": "2026-10-05",
-   "url": "https://www.ambito.com/finanzas/el-dolar-blue-registro-su-mayor-caida-casi-dos-meses-n6330312"
-  },
-  {
-   "titulo": "Tras el paso del FMI, el Banco Central aceleró la compra de reservas",
-   "resumen": "El BCRA compró u$s14 millones el lunes y las reservas brutas subieron u$s144 millones hasta u$s48.797 millones. La nota analiza el 'poder de fuego' que busca juntar Caputo de cara a las elecciones.",
-   "fuente": "Infobae",
-   "fecha": "2026-10-05",
-   "url": "https://www.infobae.com/economia/2026/10/05/tras-el-paso-del-fmi-el-banco-central-acelero-la-compra-de-reservas-a-que-poder-de-fuego-aspira-caputo-para-las-elecciones/"
+   "fecha": "2026-10-06",
+   "url": "https://www.ambito.com/finanzas/el-dolar-blue-cayo-minimos-un-mes-y-la-brecha-el-oficial-toco-su-menor-nivel-mediados-ano-n6330799"
   }
  ]
 }
