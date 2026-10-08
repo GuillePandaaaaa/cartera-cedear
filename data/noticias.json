@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-10-07T08:29-03:00",
+ "actualizado": "2026-10-08T08:29-03:00",
  "cedears": [
   {
    "ticker": "NVDA",
@@ -32,13 +32,6 @@
    "ticker": "KO",
    "nombre": "Coca-Cola",
    "noticias": [
-    {
-     "titulo": "Coca-Cola evalúa presentar en diciembre la salida a bolsa de su embotelladora en India",
-     "resumen": "La compañía considera presentar en diciembre el prospecto preliminar para una IPO de alrededor de US$1.000 millones de Hindustan Coca-Cola Beverages, y sumó a Axis Capital e IIFL a los bancos colocadores.",
-     "fuente": "Bloomberg",
-     "fecha": "2026-09-30",
-     "url": "https://bloomberg.com/news/articles/2026-09-30/coca-cola-is-said-to-consider-december-filing-for-india-unit-s-1-billion-ipo"
-    },
     {
      "titulo": "Coca-Cola pagó su dividendo trimestral de US$0,53",
      "resumen": "El 1 de octubre los accionistas cobraron US$0,53 por acción, tras la suba desde US$0,51 aplicada en 2026. La empresa acumula más de seis décadas seguidas aumentando el dividendo.",
@@ -73,6 +66,13 @@
    "nombre": "Microsoft",
    "noticias": [
     {
+     "titulo": "Microsoft y Nvidia presentan la Surface Laptop Ultra y un Windows pensado para agentes de IA",
+     "resumen": "En su evento de San Francisco, Nadella y Jensen Huang lanzaron una notebook con chips RTX Spark de Nvidia a US$2.599, que sale a la venta el 16 de octubre. Microsoft también mostró un Windows renovado para agentes de IA, en un negocio de dispositivos que cayó 7% en el último trimestre.",
+     "fuente": "Yahoo Finance",
+     "fecha": "2026-10-07",
+     "url": "https://finance.yahoo.com/technology/article/microsoft-debuts-nvidia-powered-surface-laptop-ultra-as-it-aims-for-ai-market-185630649.html"
+    },
+    {
      "titulo": "Microsoft sube 1,9% con mejoras de analistas: Melius apunta a US$665 y Wells Fargo a US$725",
      "resumen": "La acción cerró en torno a US$535 el martes después de que Melius subiera su precio objetivo de US$465 a US$665. Además, Wells Fargo la sumó a sus ideas tácticas del cuarto trimestre con un objetivo de US$725, el más alto del mercado.",
      "fuente": "Yahoo Finance",
@@ -85,25 +85,33 @@
      "fuente": "CNBC",
      "fecha": "2026-10-01",
      "url": "https://www.cnbc.com/2026/10/01/linkedin-chief-roslansky-microsoft-exit.html"
-    },
-    {
-     "titulo": "Microsoft tuvo su mejor trimestre bursátil desde 1998",
-     "resumen": "La acción fue la de mejor desempeño entre las 'Siete Magníficas' en el tercer trimestre, impulsada por la reactivación de Azure y el optimismo con la IA. El próximo test son los resultados del 27 de octubre.",
-     "fuente": "Yahoo Finance",
-     "fecha": "2026-10-01",
-     "url": "https://finance.yahoo.com/markets/stocks/articles/msft-stock-posts-best-quarter-084616308.html"
     }
    ]
   },
   {
    "ticker": "PG",
    "nombre": "Procter & Gamble",
-   "noticias": []
+   "noticias": [
+    {
+     "titulo": "Evercore ISI sube a P&G a 'Outperform' con objetivo de US$166",
+     "resumen": "La correduría mejoró la recomendación de la acción y fijó un precio objetivo de US$166, casi 13% arriba de los niveles previos. Llega a dos semanas del balance del 22 de octubre.",
+     "fuente": "Yahoo Finance",
+     "fecha": "2026-10-06",
+     "url": "https://finance.yahoo.com/markets/stocks/articles/analyst-just-upgraded-procter-gamble-135418685.html"
+    }
+   ]
   },
   {
    "ticker": "SPY",
    "nombre": "S&P 500 (ETF)",
    "noticias": [
+    {
+     "titulo": "Wall Street retrocede desde récords por la suba de tasas y unas minutas 'halcón' de la Fed",
+     "resumen": "El miércoles el S&P 500 cayó 0,22% y el Dow 0,66%, con los rendimientos de los bonos en máximos de más de dos décadas. Las minutas mostraron que la mayoría de la Fed ve probable otra suba de tasas antes de fin de año, aunque sin fecha.",
+     "fuente": "Yahoo Finance",
+     "fecha": "2026-10-07",
+     "url": "https://finance.yahoo.com/markets/live/stock-market-today-wednesday-october-7-dow-sp-500-nasdaq-080241833.html"
+    },
     {
      "titulo": "El S&P 500 y el Nasdaq 100 marcan nuevos récords con la baja del petróleo y las tasas",
      "resumen": "El martes el S&P 500 subió 0,58% hasta 7.818,93, su primer cierre por encima de 7.800, y el Nasdaq también cerró en máximo. Empujaron los chips (AMD, Broadcom, Marvell) y la baja del crudo y de los rendimientos de los bonos.",
@@ -117,13 +125,6 @@
      "fuente": "Bloomberg",
      "fecha": "2026-10-05",
      "url": "https://bloomberg.com/news/articles/2026-10-05/s-p-500-closes-in-on-record-high-as-tech-rallies-markets-wrap"
-    },
-    {
-     "titulo": "EE.UU. creó solo 29.000 empleos en septiembre",
-     "resumen": "El dato quedó muy por debajo de los 90.000 esperados y el desempleo subió a 4,2%. Es la principal señal de enfriamiento del mercado laboral que mira la Fed.",
-     "fuente": "Yahoo Finance",
-     "fecha": "2026-10-02",
-     "url": "https://finance.yahoo.com/economy/live/september-jobs-report-live-updates-labor-market-adds-29000-124648123.html"
     }
    ]
   },
@@ -137,13 +138,6 @@
      "fuente": "Yahoo Finance",
      "fecha": "2026-10-05",
      "url": "https://finance.yahoo.com/markets/article/brazilian-stocks-soar-as-flavio-bolsonaro-takes-surprise-election-lead-160951504.html"
-    },
-    {
-     "titulo": "El regulador sanitario de Brasil revisa el marketplace de farmacias de MercadoLibre",
-     "resumen": "Anvisa, el regulador sanitario de Brasil, dijo que está revisando el plan de MercadoLibre de lanzar en la segunda mitad de octubre un marketplace online de farmacias, lo que complica su avance en la venta de medicamentos con receta.",
-     "fuente": "Bloomberg",
-     "fecha": "2026-09-30",
-     "url": "https://www.bloomberg.com/news/articles/2026-09-30/mercadolibre-s-brazil-drug-marketplace-faces-regulator-review"
     }
    ]
   },
@@ -190,25 +184,25 @@
  ],
  "dolar": [
   {
-   "titulo": "Dólar hoy: a cuánto cotiza este miércoles 7 de octubre",
-   "resumen": "El oficial se mantiene en $1.490/$1.540 en el Banco Nación y el blue en $1.530/$1.550. El MEP cotiza a $1.541 (brecha de 1,4%) y el CCL a $1.613 (6,2%).",
+   "titulo": "Dólar hoy: a cuánto cotiza este jueves 8 de octubre",
+   "resumen": "El oficial sigue en $1.490/$1.540 en el Banco Nación y el mayorista en $1.517. El MEP cotiza a $1.539 y el CCL a $1.609 (brecha de 6,1%).",
+   "fuente": "Ámbito",
+   "fecha": "2026-10-08",
+   "url": "https://www.ambito.com/finanzas/dolar-hoy-cuanto-cotiza-este-jueves-8-octubre-n6331412"
+  },
+  {
+   "titulo": "El BCRA ya acumuló compras por u$s100 millones en la semana y las reservas volvieron a subir",
+   "resumen": "El Central compró u$s45 millones el miércoles, cerca del 11% del volumen operado, y el promedio diario de octubre está en u$s46 millones. El mayorista bajó $3 a $1.517 y sumó cuatro ruedas sin subas.",
    "fuente": "Ámbito",
    "fecha": "2026-10-07",
-   "url": "https://www.ambito.com/finanzas/dolar-hoy-cuanto-cotiza-este-miercoles-7-octubre-n6330937"
+   "url": "https://www.ambito.com/finanzas/el-bcra-ya-acumulo-compras-us100-millones-la-semana-y-las-reservas-volvieron-subir-n6331305"
   },
   {
-   "titulo": "Las reservas del BCRA tocaron un máximo de dos semanas y volvieron a superar los u$s49.000 millones",
-   "resumen": "El Central compró u$s41 millones el martes y el stock bruto subió u$s326 millones, hasta u$s49.123 millones. El mayorista cerró en $1.520 y sumó tres ruedas sin subas.",
+   "titulo": "El dólar blue pegó el mayor salto diario en más de un mes",
+   "resumen": "El blue subió $15 (cerca de 1%) el miércoles y cerró en $1.535/$1.555, después de haber tocado mínimos de un mes. El MEP terminó en $1.538 y el CCL en $1.609.",
    "fuente": "Ámbito",
-   "fecha": "2026-10-06",
-   "url": "https://www.ambito.com/finanzas/las-reservas-del-bcra-tocaron-un-maximo-dos-semanas-y-volvieron-superar-los-us49000-millones-n6330816"
-  },
-  {
-   "titulo": "El dólar blue cayó a mínimos de un mes y la brecha con el oficial tocó su menor nivel desde mediados de año",
-   "resumen": "El blue bajó a su menor valor en un mes y la brecha con el oficial quedó en el nivel más bajo desde mediados de año. Es una señal de calma en el mercado paralelo.",
-   "fuente": "Ámbito",
-   "fecha": "2026-10-06",
-   "url": "https://www.ambito.com/finanzas/el-dolar-blue-cayo-minimos-un-mes-y-la-brecha-el-oficial-toco-su-menor-nivel-mediados-ano-n6330799"
+   "fecha": "2026-10-07",
+   "url": "https://ambito.com/finanzas/el-dolar-blue-pego-el-mayor-salto-diario-mas-un-mes-y-volvio-superar-un-nivel-simbolico-n6331291"
   }
  ]
 }
