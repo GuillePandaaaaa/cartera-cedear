@@ -1,0 +1,27 @@
+{
+ "actualizado": "2026-10-09",
+ "nota": "Dividendo anual por acción en USD (último declarado × pagos por año).",
+ "dps": {
+  "O": 3.258,
+  "KO": 2.04,
+  "MSFT": 3.64,
+  "PG": 4.2272,
+  "VZ": 2.76,
+  "PFE": 1.72,
+  "NVDA": 1.0,
+  "SPY": 7.254,
+  "AAPL": 1.0,
+  "CVX": 6.84,
+  "T": 1.11,
+  "WMT": 0.94,
+  "HD": 9.0,
+  "MCD": 7.44,
+  "CSCO": 1.64,
+  "IBM": 6.72,
+  "V": 2.68,
+  "TXN": 5.2,
+  "MRK": 3.08,
+  "XOM": 4.12,
+  "JNJ": 5.36
+ }
+}
