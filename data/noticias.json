@@ -42,26 +42,6 @@
    ]
   },
   {
-   "ticker": "VZ",
-   "nombre": "Verizon",
-   "noticias": [
-    {
-     "titulo": "La compra de espectro de SpaceX hunde a Verizon, AT&T y T-Mobile",
-     "resumen": "SpaceX acordó comprar un portafolio nacional de espectro a Grain Management para llevar Starlink a la telefonía móvil en EE.UU., sujeto a aprobación de la FCC. Verizon cayó más de 6% fuera de hora, igual que sus rivales, por el temor a más competencia.",
-     "fuente": "CNBC",
-     "fecha": "2026-10-08",
-     "url": "https://www.cnbc.com/2026/10/08/spacex-spectrum-license-att-verizon-tmobile.html"
-    },
-    {
-     "titulo": "Scotiabank recorta precios objetivo de las telecos por SpaceX y la IA",
-     "resumen": "El banco bajó el objetivo de Verizon de US$52,50 a US$51,50, aunque mantuvo la recomendación de compra. Señala que la competencia de SpaceX en telefonía móvil y la disrupción de la IA vienen presionando las valuaciones del sector.",
-     "fuente": "Yahoo Finance",
-     "fecha": "2026-10-02",
-     "url": "https://finance.yahoo.com/markets/stocks/articles/spacex-ai-weigh-telecom-valuations-152939772.html"
-    }
-   ]
-  },
-  {
    "ticker": "MSFT",
    "nombre": "Microsoft",
    "noticias": [
@@ -131,33 +111,6 @@
      "fuente": "Yahoo Finance",
      "fecha": "2026-10-05",
      "url": "https://finance.yahoo.com/markets/article/brazilian-stocks-soar-as-flavio-bolsonaro-takes-surprise-election-lead-160951504.html"
-    }
-   ]
-  },
-  {
-   "ticker": "PFE",
-   "nombre": "Pfizer",
-   "noticias": [
-    {
-     "titulo": "Cantor sube el objetivo de Pfizer a US$28 pero duda del crecimiento",
-     "resumen": "Cantor Fitzgerald elevó el precio objetivo de US$27 a US$28 y mantuvo la recomendación neutral, con dudas sobre el crecimiento de largo plazo y el dividendo. Para el corto plazo, todo depende del estudio de fase 3 de mevrometostat contra el cáncer de próstata, con resultados esperados para fin de año.",
-     "fuente": "Yahoo Finance",
-     "fecha": "2026-10-08",
-     "url": "https://finance.yahoo.com/healthcare/articles/pfe-lly-mrk-stocks-focus-133552788.html"
-    },
-    {
-     "titulo": "Pfizer declara su dividendo del cuarto trimestre: US$0,43 por acción",
-     "resumen": "El directorio aprobó un dividendo trimestral de US$0,43 por acción, pagadero el 7 de diciembre. Es una señal de continuidad del pago para quienes tienen la acción por renta.",
-     "fuente": "Yahoo Finance",
-     "fecha": "2026-10-06",
-     "url": "https://finance.yahoo.com/healthcare/articles/pfizer-declares-fourth-quarter-2026-140000650.html"
-    },
-    {
-     "titulo": "La vacuna de Vaxcyte iguala a Prevnar 20 y amenaza una franquicia clave de Pfizer",
-     "resumen": "En un estudio de fase 3 con 4.047 personas, la VAX-31 de Vaxcyte igualó a Prevnar 20 en los 20 serotipos que comparten. Prevnar es una franquicia de US$6.490 millones para Pfizer, y su acción cayó 1,4% con la noticia.",
-     "fuente": "Yahoo Finance",
-     "fecha": "2026-10-06",
-     "url": "https://finance.yahoo.com/healthcare/articles/pfizer-6-49-billion-prevnar-053805663.html"
     }
    ]
   },
