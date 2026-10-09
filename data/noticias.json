@@ -1,10 +1,17 @@
 {
- "actualizado": "2026-10-08T08:29-03:00",
+ "actualizado": "2026-10-09T08:29-03:00",
  "cedears": [
   {
    "ticker": "NVDA",
    "nombre": "Nvidia",
    "noticias": [
+    {
+     "titulo": "Caen los chips por un informe de ingresos de OpenAI por debajo de lo esperado",
+     "resumen": "El Nasdaq 100 cerró en baja el jueves después de un reporte de que los ingresos anualizados de OpenAI quedaron muy por debajo de lo estimado, lo que golpeó a los fabricantes de chips. El índice de semiconductores de Filadelfia cayó 3,4% y Nvidia, muy expuesta a la demanda de IA, quedó en el foco.",
+     "fuente": "Yahoo Finance",
+     "fecha": "2026-10-08",
+     "url": "https://finance.yahoo.com/markets/stocks/articles/nasdaq-100-ends-lower-report-225519360.html"
+    },
     {
      "titulo": "Nvidia vuelve a récord y queda al borde de los US$6 billones",
      "resumen": "La acción marcó un nuevo máximo histórico el martes y su valor de mercado quedó apenas por debajo de US$5,8 billones. Acumula una suba de 28% en el año, que le sumó US$1,2 billones de capitalización.",
@@ -18,13 +25,6 @@
      "fuente": "CNBC",
      "fecha": "2026-10-05",
      "url": "https://www.cnbc.com/2026/10/05/nvidias-6-trillion-milestone-looms-heres-when-options-traders-see-it-happening.html"
-    },
-    {
-     "titulo": "Nvidia toca récord y su valor de mercado se acerca a US$6 billones",
-     "resumen": "La acción cerró en máximo histórico por primera vez desde mayo y la compañía quedó valuada en torno a US$5,7 billones. Extiende un rally de 23% desde el piso de fines de julio, cuando pesaban los temores sobre la demanda de IA.",
-     "fuente": "Bloomberg",
-     "fecha": "2026-10-02",
-     "url": "https://www.bloomberg.com/news/articles/2026-10-02/nvidia-hits-first-record-since-may-as-value-nears-6-trillion"
     }
    ]
   },
@@ -46,18 +46,18 @@
    "nombre": "Verizon",
    "noticias": [
     {
+     "titulo": "La compra de espectro de SpaceX hunde a Verizon, AT&T y T-Mobile",
+     "resumen": "SpaceX acordó comprar un portafolio nacional de espectro a Grain Management para llevar Starlink a la telefonía móvil en EE.UU., sujeto a aprobación de la FCC. Verizon cayó más de 6% fuera de hora, igual que sus rivales, por el temor a más competencia.",
+     "fuente": "CNBC",
+     "fecha": "2026-10-08",
+     "url": "https://www.cnbc.com/2026/10/08/spacex-spectrum-license-att-verizon-tmobile.html"
+    },
+    {
      "titulo": "Scotiabank recorta precios objetivo de las telecos por SpaceX y la IA",
      "resumen": "El banco bajó el objetivo de Verizon de US$52,50 a US$51,50, aunque mantuvo la recomendación de compra. Señala que la competencia de SpaceX en telefonía móvil y la disrupción de la IA vienen presionando las valuaciones del sector.",
      "fuente": "Yahoo Finance",
      "fecha": "2026-10-02",
      "url": "https://finance.yahoo.com/markets/stocks/articles/spacex-ai-weigh-telecom-valuations-152939772.html"
-    },
-    {
-     "titulo": "Verizon, AT&T y T-Mobile formalizan su joint venture satelital",
-     "resumen": "Las tres operadoras pusieron en marcha la sociedad para ofrecer conexión directa del satélite al celular y cubrir zonas sin señal en EE.UU., poniendo en común espectro e inversión. Se lee como una respuesta a Starlink.",
-     "fuente": "Yahoo Finance",
-     "fecha": "2026-10-01",
-     "url": "https://finance.yahoo.com/markets/stocks/articles/verizon-joins-rivals-satellite-venture-101607697.html"
     }
    ]
   },
@@ -78,13 +78,6 @@
      "fuente": "Yahoo Finance",
      "fecha": "2026-10-06",
      "url": "https://finance.yahoo.com/markets/stocks/articles/microsoft-stocks-jump-1-9-165344891.html"
-    },
-    {
-     "titulo": "Ryan Roslansky, ex jefe de LinkedIn, deja Microsoft",
-     "resumen": "Satya Nadella anunció en un memo que Roslansky se va a fin de 2026; había quedado a cargo de parte de Microsoft 365 y Copilot. Se suma a otras salidas recientes de ejecutivos de la compañía.",
-     "fuente": "CNBC",
-     "fecha": "2026-10-01",
-     "url": "https://www.cnbc.com/2026/10/01/linkedin-chief-roslansky-microsoft-exit.html"
     }
    ]
   },
@@ -106,6 +99,13 @@
    "nombre": "S&P 500 (ETF)",
    "noticias": [
     {
+     "titulo": "El S&P 500 y el Nasdaq caen por segundo día por un golpe al negocio de la IA",
+     "resumen": "El jueves el S&P 500 bajó 0,47% hasta 7.765 y el Nasdaq 1,25%, mientras el Dow subió levemente. Pesaron un informe de ingresos de OpenAI peor a lo esperado, la suba del petróleo y los rendimientos de los bonos.",
+     "fuente": "Yahoo Finance",
+     "fecha": "2026-10-08",
+     "url": "https://finance.yahoo.com/markets/live/stock-market-today-thursday-october-8-dow-sp-500-nasdaq-080537884.html"
+    },
+    {
      "titulo": "Wall Street retrocede desde récords por la suba de tasas y unas minutas 'halcón' de la Fed",
      "resumen": "El miércoles el S&P 500 cayó 0,22% y el Dow 0,66%, con los rendimientos de los bonos en máximos de más de dos décadas. Las minutas mostraron que la mayoría de la Fed ve probable otra suba de tasas antes de fin de año, aunque sin fecha.",
      "fuente": "Yahoo Finance",
@@ -118,13 +118,6 @@
      "fuente": "Yahoo Finance",
      "fecha": "2026-10-06",
      "url": "https://finance.yahoo.com/markets/stocks/articles/p-500-nasdaq-100-post-135932585.html"
-    },
-    {
-     "titulo": "El S&P 500 queda cerca de su récord y el Nasdaq cierra en máximo histórico",
-     "resumen": "El lunes el S&P 500 subió 0,66% hasta 7.773,95 y quedó a 0,3% de su máximo; el Nasdaq ganó 1,05% y marcó récord, empujado por la tecnología. La tasa a 10 años subió a 5,31%.",
-     "fuente": "Bloomberg",
-     "fecha": "2026-10-05",
-     "url": "https://bloomberg.com/news/articles/2026-10-05/s-p-500-closes-in-on-record-high-as-tech-rallies-markets-wrap"
     }
    ]
   },
@@ -146,63 +139,55 @@
    "nombre": "Pfizer",
    "noticias": [
     {
+     "titulo": "Cantor sube el objetivo de Pfizer a US$28 pero duda del crecimiento",
+     "resumen": "Cantor Fitzgerald elevó el precio objetivo de US$27 a US$28 y mantuvo la recomendación neutral, con dudas sobre el crecimiento de largo plazo y el dividendo. Para el corto plazo, todo depende del estudio de fase 3 de mevrometostat contra el cáncer de próstata, con resultados esperados para fin de año.",
+     "fuente": "Yahoo Finance",
+     "fecha": "2026-10-08",
+     "url": "https://finance.yahoo.com/healthcare/articles/pfe-lly-mrk-stocks-focus-133552788.html"
+    },
+    {
+     "titulo": "Pfizer declara su dividendo del cuarto trimestre: US$0,43 por acción",
+     "resumen": "El directorio aprobó un dividendo trimestral de US$0,43 por acción, pagadero el 7 de diciembre. La acción rinde cerca de 6% anual por dividendos.",
+     "fuente": "Yahoo Finance",
+     "fecha": "2026-10-06",
+     "url": "https://finance.yahoo.com/healthcare/articles/pfizer-declares-fourth-quarter-2026-140000650.html"
+    },
+    {
      "titulo": "La vacuna de Vaxcyte iguala a Prevnar 20 y amenaza una franquicia clave de Pfizer",
      "resumen": "En un estudio de fase 3 con 4.047 personas, la VAX-31 de Vaxcyte igualó a Prevnar 20 en los 20 serotipos que comparten. Prevnar es una franquicia de US$6.490 millones para Pfizer, y su acción cayó 1,4% con la noticia.",
      "fuente": "Yahoo Finance",
      "fecha": "2026-10-06",
      "url": "https://finance.yahoo.com/healthcare/articles/pfizer-6-49-billion-prevnar-053805663.html"
-    },
-    {
-     "titulo": "Florida demanda a Pfizer y a su CEO por la vacuna contra el COVID",
-     "resumen": "El fiscal general de Florida acusa a Pfizer de engañar a los consumidores sobre los riesgos de la vacuna. Pide una medida cautelar, multas de hasta US$10.000 por infracción y la devolución de ganancias, citando más de US$80.000 millones en ventas.",
-     "fuente": "Yahoo Finance",
-     "fecha": "2026-10-01",
-     "url": "https://finance.yahoo.com/markets/stocks/articles/pfizer-eczema-drug-hit-61-153720868.html"
-    },
-    {
-     "titulo": "Tilrekimig, el fármaco de Pfizer para dermatitis atópica, cumplió su objetivo en fase 2",
-     "resumen": "Todas las dosis lograron una mejora significativa de la piel (EASI-75) a la semana 16 frente al placebo. Pfizer ya inició la fase 3 en dermatitis atópica y asma.",
-     "fuente": "Yahoo Finance",
-     "fecha": "2026-10-01",
-     "url": "https://finance.yahoo.com/healthcare/articles/pfizers-tilrekimig-shows-significant-skin-063000652.html"
     }
    ]
   },
   {
    "ticker": "O",
    "nombre": "Realty Income",
-   "noticias": [
-    {
-     "titulo": "Realty Income presentará sus resultados del tercer trimestre el 2 de noviembre",
-     "resumen": "La REIT publicará los resultados después del cierre del NYSE el 2 de noviembre. Llega con la acción presionada por la suba de tasas y con una guía de AFFO para 2026 de US$4,44-4,45 por acción.",
-     "fuente": "Yahoo Finance",
-     "fecha": "2026-10-01",
-     "url": "https://sg.finance.yahoo.com/news/realty-income-announces-third-quarter-200500242.html"
-    }
-   ]
+   "noticias": []
   }
  ],
  "dolar": [
   {
-   "titulo": "Dólar hoy: a cuánto cotiza este jueves 8 de octubre",
-   "resumen": "El oficial sigue en $1.490/$1.540 en el Banco Nación y el mayorista en $1.517. El MEP cotiza a $1.539 y el CCL a $1.609 (brecha de 6,1%).",
+   "titulo": "Dólar hoy: a cuánto cotiza este viernes 9 de octubre",
+   "resumen": "El oficial se mantiene en $1.490/$1.540 en el Banco Nación y el mayorista en $1.515,50. El blue cotiza a $1.520/$1.540, el MEP a $1.538 y el CCL a $1.609.",
+   "fuente": "Ámbito",
+   "fecha": "2026-10-09",
+   "url": "https://www.ambito.com/finanzas/dolar-hoy-cuanto-cotiza-este-viernes-9-octubre-n6331869"
+  },
+  {
+   "titulo": "El dólar oficial cayó a mínimos de dos semanas y la city anticipa a cuánto llegará a fin de año",
+   "resumen": "El mayorista bajó $1,50 el jueves hasta $1.515,50, su menor nivel en dos semanas. Lejos del techo de la banda cambiaria, el mercado ya proyecta dónde terminará el año.",
    "fuente": "Ámbito",
    "fecha": "2026-10-08",
-   "url": "https://www.ambito.com/finanzas/dolar-hoy-cuanto-cotiza-este-jueves-8-octubre-n6331412"
+   "url": "https://www.ambito.com/finanzas/el-dolar-oficial-cayo-minimos-dos-semanas-y-la-city-anticipa-cuanto-llegara-fin-ano-n6331441"
   },
   {
-   "titulo": "El BCRA ya acumuló compras por u$s100 millones en la semana y las reservas volvieron a subir",
-   "resumen": "El Central compró u$s45 millones el miércoles, cerca del 11% del volumen operado, y el promedio diario de octubre está en u$s46 millones. El mayorista bajó $3 a $1.517 y sumó cuatro ruedas sin subas.",
+   "titulo": "El dólar blue bajó con fuerza y borró el salto de la jornada previa",
+   "resumen": "El blue cayó $15 el jueves y cerró en $1.520/$1.540, devolviendo toda la suba del miércoles. El MEP terminó en $1.538 y el CCL en $1.609.",
    "fuente": "Ámbito",
-   "fecha": "2026-10-07",
-   "url": "https://www.ambito.com/finanzas/el-bcra-ya-acumulo-compras-us100-millones-la-semana-y-las-reservas-volvieron-subir-n6331305"
-  },
-  {
-   "titulo": "El dólar blue pegó el mayor salto diario en más de un mes",
-   "resumen": "El blue subió $15 (cerca de 1%) el miércoles y cerró en $1.535/$1.555, después de haber tocado mínimos de un mes. El MEP terminó en $1.538 y el CCL en $1.609.",
-   "fuente": "Ámbito",
-   "fecha": "2026-10-07",
-   "url": "https://ambito.com/finanzas/el-dolar-blue-pego-el-mayor-salto-diario-mas-un-mes-y-volvio-superar-un-nivel-simbolico-n6331291"
+   "fecha": "2026-10-08",
+   "url": "https://www.ambito.com/finanzas/el-dolar-blue-fuerza-y-borro-el-salto-la-jornada-previsa-n6331750"
   }
  ]
 }
