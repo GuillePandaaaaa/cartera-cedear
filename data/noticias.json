@@ -1,10 +1,17 @@
 {
- "actualizado": "2026-10-09T08:29-03:00",
+ "actualizado": "2026-10-12T08:29-03:00",
  "cedears": [
   {
    "ticker": "NVDA",
    "nombre": "Nvidia",
    "noticias": [
+    {
+     "titulo": "Una apuesta gigante a la baja contra Nvidia con opciones",
+     "resumen": "Un operador compró 100.000 puts de Nvidia con precio de ejercicio de US$180 y vencimiento el 15 de enero, por unos US$21 millones. Para ganar, la acción tendría que caer cerca de 22%, en un momento de dudas sobre cuánto puede durar el gasto en IA.",
+     "fuente": "CNBC",
+     "fecha": "2026-10-09",
+     "url": "https://www.cnbc.com/2026/10/09/two-massive-trades-just-happened-in-micron-and-nvidia-what-they-could-mean-for-chips.html"
+    },
     {
      "titulo": "Caen los chips por un informe de ingresos de OpenAI por debajo de lo esperado",
      "resumen": "El Nasdaq 100 cerró en baja el jueves después de un reporte de que los ingresos anualizados de OpenAI quedaron muy por debajo de lo estimado, lo que golpeó a los fabricantes de chips. El índice de semiconductores de Filadelfia cayó 3,4% y Nvidia, muy expuesta a la demanda de IA, quedó en el foco.",
@@ -18,28 +25,13 @@
      "fuente": "Bloomberg",
      "fecha": "2026-10-06",
      "url": "https://www.bloomberg.com/news/articles/2026-10-06/nvidia-heads-for-6-trillion-value-with-chipmaker-back-at-record"
-    },
-    {
-     "titulo": "Nvidia vuelve a hacer récord y el mercado de opciones apuesta a los US$6 billones",
-     "resumen": "La acción subió el lunes a un nuevo máximo histórico, después de que BNP Paribas elevara su precio objetivo de US$285 a US$345. Los operadores de opciones ven cerca de 50% de chances de que Nvidia supere los US$6 billones de valor antes de fin de octubre.",
-     "fuente": "CNBC",
-     "fecha": "2026-10-05",
-     "url": "https://www.cnbc.com/2026/10/05/nvidias-6-trillion-milestone-looms-heres-when-options-traders-see-it-happening.html"
     }
    ]
   },
   {
    "ticker": "KO",
    "nombre": "Coca-Cola",
-   "noticias": [
-    {
-     "titulo": "Coca-Cola pagó su dividendo trimestral de US$0,53",
-     "resumen": "El 1 de octubre los accionistas cobraron US$0,53 por acción, tras la suba desde US$0,51 aplicada en 2026. La empresa acumula más de seis décadas seguidas aumentando el dividendo.",
-     "fuente": "Yahoo Finance",
-     "fecha": "2026-10-02",
-     "url": "https://finance.yahoo.com/markets/stocks/articles/coca-cola-investors-another-sip-125047461.html"
-    }
-   ]
+   "noticias": []
   },
   {
    "ticker": "MSFT",
@@ -79,6 +71,13 @@
    "nombre": "S&P 500 (ETF)",
    "noticias": [
     {
+     "titulo": "Wall Street sube el viernes y cierra una semana positiva antes de los balances",
+     "resumen": "El S&P 500 ganó cerca de 0,6% hasta 7.811 y el Dow 0,8%, y los tres índices terminaron la semana en alza pese a la volatilidad por los bonos y el petróleo. Esta semana arrancan los balances de los grandes bancos y se conocen datos de inflación.",
+     "fuente": "Yahoo Finance",
+     "fecha": "2026-10-09",
+     "url": "https://finance.yahoo.com/markets/live/stock-market-today-friday-october-9-dow-sp-500-nasdaq-080148117.html"
+    },
+    {
      "titulo": "El S&P 500 y el Nasdaq caen por segundo día por un golpe al negocio de la IA",
      "resumen": "El jueves el S&P 500 bajó 0,47% hasta 7.765 y el Nasdaq 1,25%, mientras el Dow subió levemente. Pesaron un informe de ingresos de OpenAI peor a lo esperado, la suba del petróleo y los rendimientos de los bonos.",
      "fuente": "Yahoo Finance",
@@ -91,13 +90,6 @@
      "fuente": "Yahoo Finance",
      "fecha": "2026-10-07",
      "url": "https://finance.yahoo.com/markets/live/stock-market-today-wednesday-october-7-dow-sp-500-nasdaq-080241833.html"
-    },
-    {
-     "titulo": "El S&P 500 y el Nasdaq 100 marcan nuevos récords con la baja del petróleo y las tasas",
-     "resumen": "El martes el S&P 500 subió 0,58% hasta 7.818,93, su primer cierre por encima de 7.800, y el Nasdaq también cerró en máximo. Empujaron los chips (AMD, Broadcom, Marvell) y la baja del crudo y de los rendimientos de los bonos.",
-     "fuente": "Yahoo Finance",
-     "fecha": "2026-10-06",
-     "url": "https://finance.yahoo.com/markets/stocks/articles/p-500-nasdaq-100-post-135932585.html"
     }
    ]
   },
@@ -118,29 +110,67 @@
    "ticker": "O",
    "nombre": "Realty Income",
    "noticias": []
+  },
+  {
+   "ticker": "XOM",
+   "nombre": "ExxonMobil",
+   "noticias": [
+    {
+     "titulo": "Exxon bloqueó una propuesta para cerrar la disputa de US$5.000 millones en Kazajistán",
+     "resumen": "Según fuentes, ExxonMobil frenó la propuesta de los socios del yacimiento Kashagan de llegar a un acuerdo con el gobierno por una multa ambiental de US$5.000 millones. La empresa condiciona una posible inversión de US$80.000 millones en el campo a resolver esa disputa.",
+     "fuente": "Bloomberg",
+     "fecha": "2026-10-09",
+     "url": "https://bloomberg.com/news/articles/2026-10-09/exxon-blocked-proposal-to-settle-5-billion-kashagan-dispute"
+    },
+    {
+     "titulo": "La SEC advierte a inversores activistas tras la campaña climática en Exxon",
+     "resumen": "La SEC advirtió a gestoras e inversores activistas sobre sus obligaciones de información vinculadas a la campaña de 2021 contra el directorio de Exxon por temas climáticos. Es una señal regulatoria a favor de las empresas frente al activismo.",
+     "fuente": "Bloomberg",
+     "fecha": "2026-10-07",
+     "url": "https://www.bloomberg.com/news/articles/2026-10-07/sec-warns-activist-investors-after-climate-push-at-exxon-mobil"
+    }
+   ]
+  },
+  {
+   "ticker": "JNJ",
+   "nombre": "Johnson & Johnson",
+   "noticias": []
+  },
+  {
+   "ticker": "V",
+   "nombre": "Visa",
+   "noticias": [
+    {
+     "titulo": "Visa sube 2,8% y cierra en máximo histórico",
+     "resumen": "La acción cerró el viernes en US$385,45, por encima del avance del S&P 500. Visa presenta su balance del cuarto trimestre fiscal el 27 de octubre.",
+     "fuente": "Yahoo Finance",
+     "fecha": "2026-10-09",
+     "url": "https://finance.yahoo.com/markets/stocks/articles/visa-v-beats-stock-market-204507760.html"
+    }
+   ]
   }
  ],
  "dolar": [
   {
-   "titulo": "Dólar hoy: a cuánto cotiza este viernes 9 de octubre",
-   "resumen": "El oficial se mantiene en $1.490/$1.540 en el Banco Nación y el mayorista en $1.515,50. El blue cotiza a $1.520/$1.540, el MEP a $1.538 y el CCL a $1.609.",
+   "titulo": "Dólar hoy: a cuánto cotiza este lunes 12 de octubre",
+   "resumen": "Es feriado en Argentina, así que no opera el mercado y rigen los valores del viernes: mayorista en $1.517, blue en $1.520/$1.540, MEP en $1.539 y CCL en $1.611.",
+   "fuente": "Ámbito",
+   "fecha": "2026-10-12",
+   "url": "https://www.ambito.com/finanzas/dolar-hoy-cuanto-cotiza-este-lunes-12-octubre-n6332655"
+  },
+  {
+   "titulo": "El BCRA acumuló compras por más de u$s200 millones en la semana",
+   "resumen": "El Central compró u$s69 millones el viernes y sumó u$s212 millones en la semana, el mejor inicio de mes desde julio, con diez ruedas seguidas de compras. Las reservas brutas subieron u$s380 millones hasta u$s49.701 millones.",
    "fuente": "Ámbito",
    "fecha": "2026-10-09",
-   "url": "https://www.ambito.com/finanzas/dolar-hoy-cuanto-cotiza-este-viernes-9-octubre-n6331869"
+   "url": "https://www.ambito.com/finanzas/el-bcra-acumulo-compras-mas-us200-millones-la-semana-y-consolido-el-mejor-inicio-mes-julio-n6332205"
   },
   {
-   "titulo": "El dólar oficial cayó a mínimos de dos semanas y la city anticipa a cuánto llegará a fin de año",
-   "resumen": "El mayorista bajó $1,50 el jueves hasta $1.515,50, su menor nivel en dos semanas. Lejos del techo de la banda cambiaria, el mercado ya proyecta dónde terminará el año.",
+   "titulo": "El dólar blue registró su mayor retroceso semanal en dos meses y ya vale casi lo mismo que el oficial",
+   "resumen": "El blue cerró el viernes en $1.540 para la venta, prácticamente igual que el oficial del Banco Nación. Fue su mayor baja semanal en dos meses.",
    "fuente": "Ámbito",
-   "fecha": "2026-10-08",
-   "url": "https://www.ambito.com/finanzas/el-dolar-oficial-cayo-minimos-dos-semanas-y-la-city-anticipa-cuanto-llegara-fin-ano-n6331441"
-  },
-  {
-   "titulo": "El dólar blue bajó con fuerza y borró el salto de la jornada previa",
-   "resumen": "El blue cayó $15 el jueves y cerró en $1.520/$1.540, devolviendo toda la suba del miércoles. El MEP terminó en $1.538 y el CCL en $1.609.",
-   "fuente": "Ámbito",
-   "fecha": "2026-10-08",
-   "url": "https://www.ambito.com/finanzas/el-dolar-blue-fuerza-y-borro-el-salto-la-jornada-previsa-n6331750"
+   "fecha": "2026-10-09",
+   "url": "https://www.ambito.com/finanzas/el-dolar-blue-registro-su-mayor-retroceso-semanal-dos-meses-y-ya-vale-casi-lo-mismo-que-el-oficial-n6332253"
   }
  ]
 }
