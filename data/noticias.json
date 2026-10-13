@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-10-12T08:29-03:00",
+ "actualizado": "2026-10-13T08:28-03:00",
  "cedears": [
   {
    "ticker": "NVDA",
@@ -38,6 +38,13 @@
    "nombre": "Microsoft",
    "noticias": [
     {
+     "titulo": "Microsoft vuelve a valer US$4 billones tras presentar su chip de IA Maia 300",
+     "resumen": "Microsoft mostró su chip Azure Maia 300 para inteligencia artificial y la acción subió hasta recuperar los US$4 billones de valor de mercado. Busca depender menos de los chips de Nvidia y AMD; el despliegue en producción arranca en 2027.",
+     "fuente": "Yahoo Finance",
+     "fecha": "2026-10-12",
+     "url": "https://finance.yahoo.com/technology/article/microsoft-reclaims-4-trillion-market-cap-142243356.html"
+    },
+    {
      "titulo": "Microsoft y Nvidia presentan la Surface Laptop Ultra y un Windows pensado para agentes de IA",
      "resumen": "En su evento de San Francisco, Nadella y Jensen Huang lanzaron una notebook con chips RTX Spark de Nvidia a US$2.599, que sale a la venta el 16 de octubre. Microsoft también mostró un Windows renovado para agentes de IA, en un negocio de dispositivos que cayó 7% en el último trimestre.",
      "fuente": "Yahoo Finance",
@@ -71,6 +78,13 @@
    "nombre": "S&P 500 (ETF)",
    "noticias": [
     {
+     "titulo": "El S&P 500 cierra casi plano por la suba del petróleo y la caída de los chips de memoria",
+     "resumen": "El lunes el S&P 500 bajó 0,06% hasta 7.807 y el Nasdaq 0,44%, arrastrado por Micron, mientras el Dow subió 0,38%. El petróleo saltó casi US$2 tras ataques a un aeropuerto saudí; esta semana arrancan los balances de los grandes bancos.",
+     "fuente": "CNBC",
+     "fecha": "2026-10-12",
+     "url": "https://www.cnbc.com/2026/10/11/stock-market-today-live-updates.html"
+    },
+    {
      "titulo": "Wall Street sube el viernes y cierra una semana positiva antes de los balances",
      "resumen": "El S&P 500 ganó cerca de 0,6% hasta 7.811 y el Dow 0,8%, y los tres índices terminaron la semana en alza pese a la volatilidad por los bonos y el petróleo. Esta semana arrancan los balances de los grandes bancos y se conocen datos de inflación.",
      "fuente": "Yahoo Finance",
@@ -83,28 +97,13 @@
      "fuente": "Yahoo Finance",
      "fecha": "2026-10-08",
      "url": "https://finance.yahoo.com/markets/live/stock-market-today-thursday-october-8-dow-sp-500-nasdaq-080537884.html"
-    },
-    {
-     "titulo": "Wall Street retrocede desde récords por la suba de tasas y unas minutas 'halcón' de la Fed",
-     "resumen": "El miércoles el S&P 500 cayó 0,22% y el Dow 0,66%, con los rendimientos de los bonos en máximos de más de dos décadas. Las minutas mostraron que la mayoría de la Fed ve probable otra suba de tasas antes de fin de año, aunque sin fecha.",
-     "fuente": "Yahoo Finance",
-     "fecha": "2026-10-07",
-     "url": "https://finance.yahoo.com/markets/live/stock-market-today-wednesday-october-7-dow-sp-500-nasdaq-080241833.html"
     }
    ]
   },
   {
    "ticker": "MELI",
    "nombre": "MercadoLibre",
-   "noticias": [
-    {
-     "titulo": "Fuerte suba de las acciones brasileñas tras la sorpresa electoral de Flávio Bolsonaro",
-     "resumen": "Las acciones de Brasil se dispararon el lunes después de que Flávio Bolsonaro tomara una ventaja ajustada e inesperada en la primera vuelta. MercadoLibre, con gran parte de su negocio en Brasil, subió con fuerza en esa ola.",
-     "fuente": "Yahoo Finance",
-     "fecha": "2026-10-05",
-     "url": "https://finance.yahoo.com/markets/article/brazilian-stocks-soar-as-flavio-bolsonaro-takes-surprise-election-lead-160951504.html"
-    }
-   ]
+   "noticias": []
   },
   {
    "ticker": "O",
@@ -152,11 +151,11 @@
  ],
  "dolar": [
   {
-   "titulo": "Dólar hoy: a cuánto cotiza este lunes 12 de octubre",
-   "resumen": "Es feriado en Argentina, así que no opera el mercado y rigen los valores del viernes: mayorista en $1.517, blue en $1.520/$1.540, MEP en $1.539 y CCL en $1.611.",
+   "titulo": "Dólar hoy: a cuánto cotiza este martes 13 de octubre",
+   "resumen": "Tras el feriado, el oficial reabre en $1.485/$1.535 en el Banco Nación y el blue en $1.520/$1.540. El MEP ronda los $1.539 y el CCL los $1.600, con una brecha de 5,5%.",
    "fuente": "Ámbito",
-   "fecha": "2026-10-12",
-   "url": "https://www.ambito.com/finanzas/dolar-hoy-cuanto-cotiza-este-lunes-12-octubre-n6332655"
+   "fecha": "2026-10-13",
+   "url": "https://www.ambito.com/finanzas/dolar-hoy-cuanto-cotiza-este-martes-13-octubre-n6332946"
   },
   {
    "titulo": "El BCRA acumuló compras por más de u$s200 millones en la semana",
