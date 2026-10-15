@@ -1,10 +1,17 @@
 {
- "actualizado": "2026-10-14T08:28-03:00",
+ "actualizado": "2026-10-15T08:29-03:00",
  "cedears": [
   {
    "ticker": "NVDA",
    "nombre": "Nvidia",
    "noticias": [
+    {
+     "titulo": "Nvidia cae cerca de 3% en una ola de ventas de chips tras el dato de inflación",
+     "resumen": "La acción bajó alrededor de 3% el miércoles, en una caída general de los semiconductores por la suba de los rendimientos de los bonos y el temor a que la Fed tenga que subir tasas tras una inflación más alta de lo esperado.",
+     "fuente": "Yahoo Finance",
+     "fecha": "2026-10-14",
+     "url": "https://finance.yahoo.com/markets/stocks/article/nvidia-stock-sinks-as-chip-sell-off-deepens-on-hot-inflation-data-203235137.html"
+    },
     {
      "titulo": "Una apuesta gigante a la baja contra Nvidia con opciones",
      "resumen": "Un operador compró 100.000 puts de Nvidia con precio de ejercicio de US$180 y vencimiento el 15 de enero, por unos US$21 millones. Para ganar, la acción tendría que caer cerca de 22%, en un momento de dudas sobre cuánto puede durar el gasto en IA.",
@@ -31,30 +38,45 @@
    "nombre": "Microsoft",
    "noticias": [
     {
+     "titulo": "Microsoft marca su primer récord en casi un año tras un rally de US$1,4 billones",
+     "resumen": "La acción cerró el martes en máximo histórico por primera vez en casi 12 meses, impulsada por el optimismo con la IA y el lanzamiento de su chip Maia 300. Presenta su balance el 28 de octubre.",
+     "fuente": "Bloomberg",
+     "fecha": "2026-10-13",
+     "url": "https://www.bloomberg.com/news/articles/2026-10-13/microsoft-eyes-first-record-in-nearly-a-year-as-ai-rally-builds"
+    },
+    {
      "titulo": "Microsoft vuelve a valer US$4 billones tras presentar su chip de IA Maia 300",
      "resumen": "Microsoft mostró su chip Azure Maia 300 para inteligencia artificial y la acción subió hasta recuperar los US$4 billones de valor de mercado. Busca depender menos de los chips de Nvidia y AMD; el despliegue en producción arranca en 2027.",
      "fuente": "Yahoo Finance",
      "fecha": "2026-10-12",
      "url": "https://finance.yahoo.com/technology/article/microsoft-reclaims-4-trillion-market-cap-142243356.html"
-    },
-    {
-     "titulo": "Microsoft y Nvidia presentan la Surface Laptop Ultra y un Windows pensado para agentes de IA",
-     "resumen": "En su evento de San Francisco, Nadella y Jensen Huang lanzaron una notebook con chips RTX Spark de Nvidia a US$2.599, que sale a la venta el 16 de octubre. Microsoft también mostró un Windows renovado para agentes de IA, en un negocio de dispositivos que cayó 7% en el último trimestre.",
-     "fuente": "Yahoo Finance",
-     "fecha": "2026-10-07",
-     "url": "https://finance.yahoo.com/technology/article/microsoft-debuts-nvidia-powered-surface-laptop-ultra-as-it-aims-for-ai-market-185630649.html"
     }
    ]
   },
   {
    "ticker": "PG",
    "nombre": "Procter & Gamble",
-   "noticias": []
+   "noticias": [
+    {
+     "titulo": "P&G declara un dividendo trimestral de US$1,0885 por acción",
+     "resumen": "El directorio mantuvo el dividendo en US$1,0885, pagadero desde el 16 de noviembre a quienes tengan la acción al 23 de octubre. En la asamblea también se reeligieron los 12 directores.",
+     "fuente": "Yahoo Finance",
+     "fecha": "2026-10-13",
+     "url": "https://finance.yahoo.com/markets/stocks/articles/p-g-declares-quarterly-dividend-135700713.html"
+    }
+   ]
   },
   {
    "ticker": "SPY",
    "nombre": "S&P 500 (ETF)",
    "noticias": [
+    {
+     "titulo": "El S&P 500 cae 1,1% por una inflación más alta de lo esperado y ventas en acciones de IA",
+     "resumen": "El miércoles el S&P 500 bajó 1,11% hasta 7.719 y el Nasdaq 1,88%, su peor día desde julio. La inflación de septiembre fue de 3,7% anual, por encima del 3,6% esperado, y reavivó el temor a otra suba de tasas de la Fed.",
+     "fuente": "CNBC",
+     "fecha": "2026-10-14",
+     "url": "https://www.cnbc.com/2026/10/13/stock-market-today-live-updates-.html"
+    },
     {
      "titulo": "El S&P 500 cierra casi plano en el arranque de los balances de los grandes bancos",
      "resumen": "El martes el S&P 500 bajó 0,02% hasta 7.805 y el Dow 0,35%. JPMorgan quedó por debajo de lo esperado pero subió su guía de ingresos por intereses, mientras Citigroup y Wells Fargo cayeron y los chips de memoria siguieron en baja.",
@@ -68,13 +90,6 @@
      "fuente": "CNBC",
      "fecha": "2026-10-12",
      "url": "https://www.cnbc.com/2026/10/11/stock-market-today-live-updates.html"
-    },
-    {
-     "titulo": "Wall Street sube el viernes y cierra una semana positiva antes de los balances",
-     "resumen": "El S&P 500 ganó cerca de 0,6% hasta 7.811 y el Dow 0,8%, y los tres índices terminaron la semana en alza pese a la volatilidad por los bonos y el petróleo. Esta semana arrancan los balances de los grandes bancos y se conocen datos de inflación.",
-     "fuente": "Yahoo Finance",
-     "fecha": "2026-10-09",
-     "url": "https://finance.yahoo.com/markets/live/stock-market-today-friday-october-9-dow-sp-500-nasdaq-080148117.html"
     }
    ]
   },
@@ -98,13 +113,6 @@
      "fuente": "Bloomberg",
      "fecha": "2026-10-09",
      "url": "https://bloomberg.com/news/articles/2026-10-09/exxon-blocked-proposal-to-settle-5-billion-kashagan-dispute"
-    },
-    {
-     "titulo": "La SEC advierte a inversores activistas tras la campaña climática en Exxon",
-     "resumen": "La SEC advirtió a gestoras e inversores activistas sobre sus obligaciones de información vinculadas a la campaña de 2021 contra el directorio de Exxon por temas climáticos. Es una señal regulatoria a favor de las empresas frente al activismo.",
-     "fuente": "Bloomberg",
-     "fecha": "2026-10-07",
-     "url": "https://www.bloomberg.com/news/articles/2026-10-07/sec-warns-activist-investors-after-climate-push-at-exxon-mobil"
     }
    ]
   },
@@ -112,6 +120,13 @@
    "ticker": "JNJ",
    "nombre": "Johnson & Johnson",
    "noticias": [
+    {
+     "titulo": "La acción de J&J cae cerca de 6% pese al buen balance, por la debilidad de MedTech",
+     "resumen": "Aunque cumplió con lo esperado y subió su guía 2026, la acción bajó alrededor de 6% el martes por ventas de dispositivos médicos más flojas. RBC calificó la caída como 'excesiva'.",
+     "fuente": "Yahoo Finance",
+     "fecha": "2026-10-13",
+     "url": "https://finance.yahoo.com/markets/article/johnson--johnson-stock-falls-despite-strong-earnings-as-investors-focus-on-medtech-unit-161450981.html"
+    },
     {
      "titulo": "J&J supera la estimación de ganancias, queda corta en ventas y mejora su guía anual",
      "resumen": "En el tercer trimestre ganó US$2,59 ajustado por acción, por encima de lo esperado, con ventas de US$25.400 millones (+5,9%), algo por debajo de lo previsto por la debilidad de MedTech y de algunos oncológicos. Subió su guía de ganancia ajustada 2026 a US$11,05-11,15 por acción.",
@@ -144,25 +159,25 @@
  ],
  "dolar": [
   {
-   "titulo": "Dólar hoy: a cuánto cotiza este miércoles 14 de octubre",
-   "resumen": "El oficial sigue en $1.485/$1.535 en el Banco Nación y el mayorista bajó a $1.512. El blue cotiza a $1.530/$1.550, el MEP a $1.540 (brecha de 1,8%) y el CCL a $1.612.",
+   "titulo": "Dólar hoy: a cuánto cotiza este jueves 15 de octubre",
+   "resumen": "El oficial sigue en $1.485/$1.535 en el Banco Nación y el mayorista en $1.513. El blue cotiza a $1.530/$1.550, el MEP a $1.535 y el CCL a $1.613.",
+   "fuente": "Ámbito",
+   "fecha": "2026-10-15",
+   "url": "https://www.ambito.com/finanzas/dolar-hoy-cuanto-cotiza-este-jueves-15-octubre-n6333948"
+  },
+  {
+   "titulo": "El BCRA compró más de u$s100 millones, pero las reservas cayeron por primera vez en 9 ruedas",
+   "resumen": "El Central compró u$s101 millones el miércoles, pero las reservas brutas bajaron u$s117 millones hasta u$s49.722 millones por pagos a organismos y la valuación de activos. El mayorista subió $0,50 a $1.513.",
    "fuente": "Ámbito",
    "fecha": "2026-10-14",
-   "url": "https://www.ambito.com/finanzas/dolar-hoy-cuanto-cotiza-este-miercoles-14-octubre-n6333448"
+   "url": "https://www.ambito.com/finanzas/el-bcra-compro-mas-us100-millones-pero-las-reservas-cayeron-primera-vez-9-ruedas-n6333844"
   },
   {
-   "titulo": "El BCRA concretó la mayor compra diaria en casi tres meses y ya acumuló más de u$s15.000 millones en 2026",
-   "resumen": "El Central compró u$s291 millones el martes, su mayor compra desde julio, y suma u$s632 millones en octubre. Las reservas brutas subieron u$s138 millones hasta u$s49.839 millones.",
+   "titulo": "El dólar blue encadenó tres ruedas sin bajas, pero acumula una pérdida de $10 en octubre",
+   "resumen": "El blue cerró el miércoles en $1.530/$1.550 y suma tres ruedas sin caer, aunque en el mes acumula una baja de $10. El MEP terminó en $1.538 y el CCL en $1.616.",
    "fuente": "Ámbito",
-   "fecha": "2026-10-13",
-   "url": "https://www.ambito.com/finanzas/el-bcra-concreto-la-mayor-compra-diaria-casi-tres-meses-y-ya-acumulo-mas-us15000-millones-el-ano-n6333352"
-  },
-  {
-   "titulo": "El dólar volvió a caer y tocó su valor más bajo en cuatro semanas",
-   "resumen": "El mayorista bajó $4,50 (0,3%) el martes y cerró en $1.512,50, su menor nivel desde el 17 de septiembre. En el Banco Nación el minorista quedó en $1.535 para la venta.",
-   "fuente": "Infobae",
-   "fecha": "2026-10-13",
-   "url": "https://www.infobae.com/economia/2026/10/13/el-dolar-volvio-a-caer-y-toco-su-valor-mas-bajo-en-cuatro-semanas/"
+   "fecha": "2026-10-14",
+   "url": "https://www.ambito.com/finanzas/el-dolar-blue-encadeno-tres-ruedas-bajas-pero-acumula-una-perdida-10-lo-que-va-octubre-n6333838"
   }
  ]
 }
