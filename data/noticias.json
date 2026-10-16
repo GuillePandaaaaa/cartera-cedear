@@ -1,10 +1,17 @@
 {
- "actualizado": "2026-10-15T08:29-03:00",
+ "actualizado": "2026-10-16T08:29-03:00",
  "cedears": [
   {
    "ticker": "NVDA",
    "nombre": "Nvidia",
    "noticias": [
+    {
+     "titulo": "Nvidia cae en una ola global de ventas de tecnológicas por dudas sobre el financiamiento de la IA",
+     "resumen": "Nvidia, AMD y Dell bajaron el jueves en una caída global de las acciones ligadas a la IA: las 20 mayores del sector perdieron más de US$1 billón de valor en la semana. Más tarde los chips recortaron pérdidas.",
+     "fuente": "CNBC",
+     "fecha": "2026-10-15",
+     "url": "https://www.cnbc.com/2026/10/15/sk-hynix-samsung-softbank-stocks-asia-tech-rout-ai-funding-worries.html"
+    },
     {
      "titulo": "Nvidia cae cerca de 3% en una ola de ventas de chips tras el dato de inflación",
      "resumen": "La acción bajó alrededor de 3% el miércoles, en una caída general de los semiconductores por la suba de los rendimientos de los bonos y el temor a que la Fed tenga que subir tasas tras una inflación más alta de lo esperado.",
@@ -18,13 +25,6 @@
      "fuente": "CNBC",
      "fecha": "2026-10-09",
      "url": "https://www.cnbc.com/2026/10/09/two-massive-trades-just-happened-in-micron-and-nvidia-what-they-could-mean-for-chips.html"
-    },
-    {
-     "titulo": "Caen los chips por un informe de ingresos de OpenAI por debajo de lo esperado",
-     "resumen": "El Nasdaq 100 cerró en baja el jueves después de un reporte de que los ingresos anualizados de OpenAI quedaron muy por debajo de lo estimado, lo que golpeó a los fabricantes de chips. El índice de semiconductores de Filadelfia cayó 3,4% y Nvidia, muy expuesta a la demanda de IA, quedó en el foco.",
-     "fuente": "Yahoo Finance",
-     "fecha": "2026-10-08",
-     "url": "https://finance.yahoo.com/markets/stocks/articles/nasdaq-100-ends-lower-report-225519360.html"
     }
    ]
   },
@@ -71,6 +71,13 @@
    "nombre": "S&P 500 (ETF)",
    "noticias": [
     {
+     "titulo": "Wall Street rebota con la baja de los rendimientos de los bonos y el Dow sube 1,1%",
+     "resumen": "El jueves el S&P 500 subió 0,3% hasta 7.744 y el Dow 1,1%, mientras el Nasdaq apenas ganó 0,1% tras caer más de 1% en la rueda. Los inversores rotaron de tecnología a sectores defensivos; en la semana el S&P 500 baja 0,9%.",
+     "fuente": "Yahoo Finance",
+     "fecha": "2026-10-15",
+     "url": "https://finance.yahoo.com/markets/live/stock-market-today-dow-sp-500-rise-nasdaq-trims-losses-as-treasury-yields-sink-153611834.html"
+    },
+    {
      "titulo": "El S&P 500 cae 1,1% por una inflación más alta de lo esperado y ventas en acciones de IA",
      "resumen": "El miércoles el S&P 500 bajó 1,11% hasta 7.719 y el Nasdaq 1,88%, su peor día desde julio. La inflación de septiembre fue de 3,7% anual, por encima del 3,6% esperado, y reavivó el temor a otra suba de tasas de la Fed.",
      "fuente": "CNBC",
@@ -83,13 +90,6 @@
      "fuente": "CNBC",
      "fecha": "2026-10-13",
      "url": "https://www.cnbc.com/2026/10/12/stock-market-today-live-updates.html"
-    },
-    {
-     "titulo": "El S&P 500 cierra casi plano por la suba del petróleo y la caída de los chips de memoria",
-     "resumen": "El lunes el S&P 500 bajó 0,06% hasta 7.807 y el Nasdaq 0,44%, arrastrado por Micron, mientras el Dow subió 0,38%. El petróleo saltó casi US$2 tras ataques a un aeropuerto saudí; esta semana arrancan los balances de los grandes bancos.",
-     "fuente": "CNBC",
-     "fecha": "2026-10-12",
-     "url": "https://www.cnbc.com/2026/10/11/stock-market-today-live-updates.html"
     }
    ]
   },
@@ -107,6 +107,13 @@
    "ticker": "XOM",
    "nombre": "ExxonMobil",
    "noticias": [
+    {
+     "titulo": "ExxonMobil sube cerca de 51% en el año con el petróleo cerca de US$96",
+     "resumen": "La acción acumula una suba de alrededor de 51% en 2026, con el WTI cotizando cerca de US$96 por barril. El análisis sostiene que el dividendo seguiría cubierto aun con el crudo a US$79.",
+     "fuente": "Yahoo Finance",
+     "fecha": "2026-10-15",
+     "url": "https://finance.yahoo.com/energy/articles/exxon-dividend-stays-safe-even-134553099.html"
+    },
     {
      "titulo": "Exxon bloqueó una propuesta para cerrar la disputa de US$5.000 millones en Kazajistán",
      "resumen": "Según fuentes, ExxonMobil frenó la propuesta de los socios del yacimiento Kashagan de llegar a un acuerdo con el gobierno por una multa ambiental de US$5.000 millones. La empresa condiciona una posible inversión de US$80.000 millones en el campo a resolver esa disputa.",
@@ -141,43 +148,43 @@
    "nombre": "Visa",
    "noticias": [
     {
+     "titulo": "Visa toca un nuevo máximo histórico tras una suba de objetivo de BMO",
+     "resumen": "BMO Capital elevó su precio objetivo de US$405 a US$425 y mantuvo la recomendación de compra; la acción subió cerca de 2% hasta un récord. Visa presenta su balance anual el 27 de octubre.",
+     "fuente": "Yahoo Finance",
+     "fecha": "2026-10-15",
+     "url": "https://finance.yahoo.com/markets/stocks/articles/visa-stock-hits-fresh-record-164519715.html"
+    },
+    {
      "titulo": "Visa recibe el visto bueno de China para preparar su entrada al mercado local de pagos",
      "resumen": "El Banco Popular de China aprobó que Visa prepare una entidad de compensación de tarjetas en el país, y la acción subió cerca de 1%. Evercore advirtió que todavía es temprano para proyectar ingresos de ese mercado.",
      "fuente": "Yahoo Finance",
      "fecha": "2026-10-13",
      "url": "https://finance.yahoo.com/markets/stocks/articles/v-stock-gains-overnight-visa-074554133.html"
-    },
-    {
-     "titulo": "Visa sube 2,8% y cierra en máximo histórico",
-     "resumen": "La acción cerró el viernes en US$385,45, por encima del avance del S&P 500. Visa presenta su balance del cuarto trimestre fiscal el 27 de octubre.",
-     "fuente": "Yahoo Finance",
-     "fecha": "2026-10-09",
-     "url": "https://finance.yahoo.com/markets/stocks/articles/visa-v-beats-stock-market-204507760.html"
     }
    ]
   }
  ],
  "dolar": [
   {
-   "titulo": "Dólar hoy: a cuánto cotiza este jueves 15 de octubre",
-   "resumen": "El oficial sigue en $1.485/$1.535 en el Banco Nación y el mayorista en $1.513. El blue cotiza a $1.530/$1.550, el MEP a $1.535 y el CCL a $1.613.",
+   "titulo": "Dólar hoy: a cuánto cotiza este viernes 16 de octubre",
+   "resumen": "El mayorista se ubica en $1.513 y el blue en $1.525/$1.545. El MEP ronda los $1.532 y el CCL los $1.613.",
+   "fuente": "Ámbito",
+   "fecha": "2026-10-16",
+   "url": "https://www.ambito.com/finanzas/dolar-hoy-cuanto-cotiza-este-viernes-16-octubre-n6334422"
+  },
+  {
+   "titulo": "Las reservas del BCRA volvieron a superar los u$s50.000 millones con otra fuerte compra",
+   "resumen": "El Central compró u$s182 millones el jueves y las reservas brutas llegaron a u$s50.040 millones; en octubre ya suma u$s915 millones de compras. El mayorista cerró sin cambios en $1.513.",
    "fuente": "Ámbito",
    "fecha": "2026-10-15",
-   "url": "https://www.ambito.com/finanzas/dolar-hoy-cuanto-cotiza-este-jueves-15-octubre-n6333948"
+   "url": "https://www.ambito.com/finanzas/las-reservas-del-bcra-volvieron-superar-los-us50000-millones-apoyadas-otra-fuerte-compra-n6334321"
   },
   {
-   "titulo": "El BCRA compró más de u$s100 millones, pero las reservas cayeron por primera vez en 9 ruedas",
-   "resumen": "El Central compró u$s101 millones el miércoles, pero las reservas brutas bajaron u$s117 millones hasta u$s49.722 millones por pagos a organismos y la valuación de activos. El mayorista subió $0,50 a $1.513.",
+   "titulo": "El dólar blue volvió a ceder después de tres ruedas sin retrocesos",
+   "resumen": "El blue bajó $5 el jueves y cerró en $1.525/$1.545, cortando una racha de tres ruedas sin caídas. El oficial en el Banco Nación siguió en $1.535 para la venta.",
    "fuente": "Ámbito",
-   "fecha": "2026-10-14",
-   "url": "https://www.ambito.com/finanzas/el-bcra-compro-mas-us100-millones-pero-las-reservas-cayeron-primera-vez-9-ruedas-n6333844"
-  },
-  {
-   "titulo": "El dólar blue encadenó tres ruedas sin bajas, pero acumula una pérdida de $10 en octubre",
-   "resumen": "El blue cerró el miércoles en $1.530/$1.550 y suma tres ruedas sin caer, aunque en el mes acumula una baja de $10. El MEP terminó en $1.538 y el CCL en $1.616.",
-   "fuente": "Ámbito",
-   "fecha": "2026-10-14",
-   "url": "https://www.ambito.com/finanzas/el-dolar-blue-encadeno-tres-ruedas-bajas-pero-acumula-una-perdida-10-lo-que-va-octubre-n6333838"
+   "fecha": "2026-10-15",
+   "url": "https://www.ambito.com/finanzas/el-dolar-blue-volvio-ceder-despues-tres-ruedas-retrocesos-n6334324"
   }
  ]
 }
