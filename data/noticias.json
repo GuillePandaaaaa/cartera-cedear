@@ -1,10 +1,17 @@
 {
- "actualizado": "2026-10-16T08:29-03:00",
+ "actualizado": "2026-10-19T08:29-03:00",
  "cedears": [
   {
    "ticker": "NVDA",
    "nombre": "Nvidia",
    "noticias": [
+    {
+     "titulo": "Huang dice que la volatilidad del mercado de IA 'va a pasar'",
+     "resumen": "El CEO de Nvidia aseguró en Berlín que la turbulencia de las acciones de IA es pasajera y destacó los beneficios de largo plazo. El viernes Nvidia bajó 1,4%, mucho menos que AMD e Intel, que cayeron cerca de 6%.",
+     "fuente": "Bloomberg",
+     "fecha": "2026-10-16",
+     "url": "https://www.bloomberg.com/news/articles/2026-10-16/nvidia-ceo-on-ai-market-turmoil-all-of-this-is-going-to-pass"
+    },
     {
      "titulo": "Nvidia cae en una ola global de ventas de tecnológicas por dudas sobre el financiamiento de la IA",
      "resumen": "Nvidia, AMD y Dell bajaron el jueves en una caída global de las acciones ligadas a la IA: las 20 mayores del sector perdieron más de US$1 billón de valor en la semana. Más tarde los chips recortaron pérdidas.",
@@ -18,13 +25,6 @@
      "fuente": "Yahoo Finance",
      "fecha": "2026-10-14",
      "url": "https://finance.yahoo.com/markets/stocks/article/nvidia-stock-sinks-as-chip-sell-off-deepens-on-hot-inflation-data-203235137.html"
-    },
-    {
-     "titulo": "Una apuesta gigante a la baja contra Nvidia con opciones",
-     "resumen": "Un operador compró 100.000 puts de Nvidia con precio de ejercicio de US$180 y vencimiento el 15 de enero, por unos US$21 millones. Para ganar, la acción tendría que caer cerca de 22%, en un momento de dudas sobre cuánto puede durar el gasto en IA.",
-     "fuente": "CNBC",
-     "fecha": "2026-10-09",
-     "url": "https://www.cnbc.com/2026/10/09/two-massive-trades-just-happened-in-micron-and-nvidia-what-they-could-mean-for-chips.html"
     }
    ]
   },
@@ -71,6 +71,13 @@
    "nombre": "S&P 500 (ETF)",
    "noticias": [
     {
+     "titulo": "El Nasdaq cae 2% y cierra su peor semana desde junio por la venta de acciones de IA",
+     "resumen": "El viernes el S&P 500 bajó 1,09% hasta 7.659 y el Nasdaq 2,14%, con la tecnología castigada y el petróleo en suba; en la semana el S&P perdió 1,9% y el Nasdaq 4,5%. El Dow cayó 0,34% pero cerró la semana con una ganancia de 0,7%.",
+     "fuente": "CNBC",
+     "fecha": "2026-10-16",
+     "url": "https://www.cnbc.com/2026/10/15/stock-market-today-live-updates.html"
+    },
+    {
      "titulo": "Wall Street rebota con la baja de los rendimientos de los bonos y el Dow sube 1,1%",
      "resumen": "El jueves el S&P 500 subió 0,3% hasta 7.744 y el Dow 1,1%, mientras el Nasdaq apenas ganó 0,1% tras caer más de 1% en la rueda. Los inversores rotaron de tecnología a sectores defensivos; en la semana el S&P 500 baja 0,9%.",
      "fuente": "Yahoo Finance",
@@ -83,13 +90,6 @@
      "fuente": "CNBC",
      "fecha": "2026-10-14",
      "url": "https://www.cnbc.com/2026/10/13/stock-market-today-live-updates-.html"
-    },
-    {
-     "titulo": "El S&P 500 cierra casi plano en el arranque de los balances de los grandes bancos",
-     "resumen": "El martes el S&P 500 bajó 0,02% hasta 7.805 y el Dow 0,35%. JPMorgan quedó por debajo de lo esperado pero subió su guía de ingresos por intereses, mientras Citigroup y Wells Fargo cayeron y los chips de memoria siguieron en baja.",
-     "fuente": "CNBC",
-     "fecha": "2026-10-13",
-     "url": "https://www.cnbc.com/2026/10/12/stock-market-today-live-updates.html"
     }
    ]
   },
@@ -108,18 +108,18 @@
    "nombre": "ExxonMobil",
    "noticias": [
     {
+     "titulo": "Exxon anticipa un salto en las ganancias de refinación con el diésel en récord",
+     "resumen": "En su presentación preliminar del tercer trimestre, ExxonMobil estimó que los márgenes de refinación sumarán US$4.500 millones a las ganancias de Energy Products frente al trimestre anterior, mientras los menores precios de crudo restan US$1.300 millones en Upstream.",
+     "fuente": "Bloomberg",
+     "fecha": "2026-10-16",
+     "url": "https://www.bloomberg.com/news/articles/2026-10-16/exxon-signals-knockout-refining-earnings-as-diesel-prices-soar"
+    },
+    {
      "titulo": "ExxonMobil sube cerca de 51% en el año con el petróleo cerca de US$96",
      "resumen": "La acción acumula una suba de alrededor de 51% en 2026, con el WTI cotizando cerca de US$96 por barril. El análisis sostiene que el dividendo seguiría cubierto aun con el crudo a US$79.",
      "fuente": "Yahoo Finance",
      "fecha": "2026-10-15",
      "url": "https://finance.yahoo.com/energy/articles/exxon-dividend-stays-safe-even-134553099.html"
-    },
-    {
-     "titulo": "Exxon bloqueó una propuesta para cerrar la disputa de US$5.000 millones en Kazajistán",
-     "resumen": "Según fuentes, ExxonMobil frenó la propuesta de los socios del yacimiento Kashagan de llegar a un acuerdo con el gobierno por una multa ambiental de US$5.000 millones. La empresa condiciona una posible inversión de US$80.000 millones en el campo a resolver esa disputa.",
-     "fuente": "Bloomberg",
-     "fecha": "2026-10-09",
-     "url": "https://bloomberg.com/news/articles/2026-10-09/exxon-blocked-proposal-to-settle-5-billion-kashagan-dispute"
     }
    ]
   },
@@ -166,25 +166,25 @@
  ],
  "dolar": [
   {
-   "titulo": "Dólar hoy: a cuánto cotiza este viernes 16 de octubre",
-   "resumen": "El mayorista se ubica en $1.513 y el blue en $1.525/$1.545. El MEP ronda los $1.532 y el CCL los $1.613.",
+   "titulo": "Dólar hoy: a cuánto cotiza este lunes 19 de octubre",
+   "resumen": "El mayorista arranca la semana en $1.518 y el blue en $1.535/$1.555. El MEP cotiza a $1.537 y el CCL a $1.613.",
+   "fuente": "Ámbito",
+   "fecha": "2026-10-19",
+   "url": "https://www.ambito.com/finanzas/dolar-hoy-cuanto-cotiza-este-lunes-19-octubre-n6335147"
+  },
+  {
+   "titulo": "El BCRA cerró la mejor semana de compras desde julio y en octubre ya acumula más del doble que en septiembre",
+   "resumen": "El Central compró u$s68 millones el viernes y u$s642 millones en la semana; en octubre suma u$s982 millones. Las reservas brutas subieron a u$s50.236 millones y el mayorista cerró en $1.518, con una suba de $5.",
    "fuente": "Ámbito",
    "fecha": "2026-10-16",
-   "url": "https://www.ambito.com/finanzas/dolar-hoy-cuanto-cotiza-este-viernes-16-octubre-n6334422"
+   "url": "https://www.ambito.com/finanzas/el-bcra-cerro-la-mejor-semana-compras-julio-y-el-mes-ya-acumulo-mas-del-doble-que-septiembre-n6334781"
   },
   {
-   "titulo": "Las reservas del BCRA volvieron a superar los u$s50.000 millones con otra fuerte compra",
-   "resumen": "El Central compró u$s182 millones el jueves y las reservas brutas llegaron a u$s50.040 millones; en octubre ya suma u$s915 millones de compras. El mayorista cerró sin cambios en $1.513.",
+   "titulo": "El dólar blue registró el mayor ascenso semanal de los últimos dos meses",
+   "resumen": "El blue cerró el viernes en $1.555 para la venta, con una suba semanal cercana al 1%, la mayor desde mediados de agosto. El CCL terminó en $1.620 y el MEP en $1.536.",
    "fuente": "Ámbito",
-   "fecha": "2026-10-15",
-   "url": "https://www.ambito.com/finanzas/las-reservas-del-bcra-volvieron-superar-los-us50000-millones-apoyadas-otra-fuerte-compra-n6334321"
-  },
-  {
-   "titulo": "El dólar blue volvió a ceder después de tres ruedas sin retrocesos",
-   "resumen": "El blue bajó $5 el jueves y cerró en $1.525/$1.545, cortando una racha de tres ruedas sin caídas. El oficial en el Banco Nación siguió en $1.535 para la venta.",
-   "fuente": "Ámbito",
-   "fecha": "2026-10-15",
-   "url": "https://www.ambito.com/finanzas/el-dolar-blue-volvio-ceder-despues-tres-ruedas-retrocesos-n6334324"
+   "fecha": "2026-10-16",
+   "url": "https://www.ambito.com/finanzas/el-dolar-blue-registro-el-mayor-ascenso-semanal-los-ultimos-dos-meses-n6334751"
   }
  ]
 }
