@@ -22,6 +22,7 @@
   --s1:#2563EB; --s2:#F97316; --s3:#16A34A; --s4:#DC2626; --s5:#7C3AED; --s6:#EAB308; --s7:#0891B2; --s8:#DB2777; --s9:#8296a3; --s10:#92400E; --s11:#65A30D; --s12:#1E3A8A; --s13:#C084FC; --s14:#0F766E; --s15:#FB7185;
   --shadow:0 1px 2px rgba(16,32,42,.06), 0 8px 24px -16px rgba(16,32,42,.30);
   --d-mep:#2563EB; --d-ccl:#DB2777; --d-of:#92400E;
+  --good-bg:#DBEAFE; --good-ink:#1E40AF; --bad-bg:#FEF3C7; --bad-ink:#854D0E;
 }
 @media (prefers-color-scheme: dark){
   :root:not([data-theme="light"]){
@@ -33,6 +34,7 @@
     --s1:#3B82F6; --s2:#FB923C; --s3:#22C55E; --s4:#EF4444; --s5:#A78BFA; --s6:#FACC15; --s7:#22D3EE; --s8:#F472B6; --s9:#7b8c98; --s10:#D97706; --s11:#A3E635; --s12:#818CF8; --s13:#E879F9; --s14:#2DD4BF; --s15:#FDA4AF;
     --shadow:0 1px 2px rgba(0,0,0,.4), 0 10px 28px -18px rgba(0,0,0,.8);
   --d-mep:#3B82F6; --d-ccl:#EC4899; --d-of:#D97706;
+  --good-bg:#17304F; --good-ink:#93C5FD; --bad-bg:#3D2A06; --bad-ink:#FCD34D;
   }
 }
 :root[data-theme="dark"]{
@@ -44,6 +46,7 @@
   --s1:#3B82F6; --s2:#FB923C; --s3:#22C55E; --s4:#EF4444; --s5:#A78BFA; --s6:#FACC15; --s7:#22D3EE; --s8:#F472B6; --s9:#7b8c98; --s10:#D97706; --s11:#A3E635; --s12:#818CF8; --s13:#E879F9; --s14:#2DD4BF; --s15:#FDA4AF;
   --shadow:0 1px 2px rgba(0,0,0,.4), 0 10px 28px -18px rgba(0,0,0,.8);
   --d-mep:#3B82F6; --d-ccl:#EC4899; --d-of:#D97706;
+  --good-bg:#17304F; --good-ink:#93C5FD; --bad-bg:#3D2A06; --bad-ink:#FCD34D;
 }
 
 *{box-sizing:border-box}
@@ -275,6 +278,25 @@ body{background:var(--bg); margin:0}
 .news-it .meta{color:var(--muted); font-size:12px}
 @media (max-width:820px){ .tiles3{grid-template-columns:1fr 1fr 1fr} }
 @media (max-width:430px){ .tiles3{grid-template-columns:1fr} .news-it{padding-left:16px} }
+
+/* info acción */
+.info-sel{width:auto; min-width:12em; padding:7px 10px; font-size:13.5px}
+.info-head{padding:12px 16px 4px; display:flex; flex-wrap:wrap; align-items:baseline; gap:4px 12px}
+.info-head b{font-size:16px}
+.info-head .nm{color:var(--muted); font-size:13px}
+.info-head .px{margin-left:auto; font-size:13.5px; color:var(--ink-2)}
+.info-tbl{font-size:13.5px}
+.info-tbl tr.sec td{background:var(--surface-2); font-weight:600; font-size:12.5px; letter-spacing:.02em; color:var(--ink-2); text-align:left; padding-top:10px}
+.info-tbl td:first-child{white-space:normal}
+.info-tbl td:last-child, .info-tbl th:last-child{position:static; box-shadow:none; background:transparent}
+.info-tbl tr.sec td:last-child{background:var(--surface-2)}
+.info-tbl .mt{border-bottom:1px dotted var(--muted); cursor:help}
+.info-tbl td.val{text-align:right; white-space:normal}
+.info-tbl .ex{display:block; font-size:11px; color:var(--muted); margin-top:1px}
+.chip{display:inline-block; padding:2px 8px; border-radius:6px; font-weight:600}
+.chip.good{background:var(--good-bg); color:var(--good-ink)}
+.chip.bad{background:var(--bad-bg); color:var(--bad-ink)}
+.info-leg{display:flex; flex-wrap:wrap; gap:6px 14px; padding:0 16px 12px; font-size:12px; color:var(--muted)}
 </style>
 </head>
 <body>
@@ -299,6 +321,7 @@ body{background:var(--bg); margin:0}
     <button type="button" data-tab="hist" aria-pressed="false">Historial</button>
     <button type="button" data-tab="dolar" aria-pressed="false">Dólar</button>
     <button type="button" data-tab="news" aria-pressed="false">Noticias</button>
+    <button type="button" data-tab="info" aria-pressed="false">Info Acción</button>
   </nav>
 
   <div class="tab" data-tab="cartera">
@@ -456,6 +479,23 @@ body{background:var(--bg); margin:0}
   </section>
   </div>
 
+  <div class="tab" data-tab="info" hidden>
+  <section class="panel">
+    <div class="panel-h">
+      <h2>Info Acción</h2>
+      <select id="infoSel" class="info-sel" aria-label="Elegí un CEDEAR"></select>
+    </div>
+    <div class="info-head" id="infoHead"></div>
+    <div class="tbl-scroll">
+      <table class="info-tbl">
+        <tbody id="infoBody"></tbody>
+      </table>
+    </div>
+    <div class="empty" id="infoEmpty" hidden></div>
+    <p class="cal-note pad" id="infoNote"></p>
+  </section>
+  </div>
+
   <footer>
     <p><b>Cómo se calcula.</b> Acciones = cantidad de CEDEARs × el ratio de conversión del papel (por ejemplo, 20 CEDEARs de AAPL equivalen a 1 acción). El valor en dólares usa el MEP de arriba. La ganancia en pesos compara tu precio promedio de compra contra la cotización de hoy.</p>
     <p><b>Sobre la ganancia en dólares.</b> Es ganancia real en dólares: cuántos USD pusiste contra cuántos valen hoy. Cada compra se pasa a dólares con el MEP de ese momento (el que muestra la app al cargarla, o el que escribas en "MEP de compra") y queda anotado en el Historial. Al vender, el costo en dólares baja en proporción a lo vendido. Lo que ya tenías antes del 25/09/2026 usa el MEP promedio de agosto y septiembre de 2026 ($ 1.535,50).</p>
@@ -492,6 +532,7 @@ let state = {
   hist: {},       // cierres diarios por ticker (data/hist/<T>.json)
   dolar: null,
   noticias: null,
+  fund: null,     // métricas de las empresas (data/fundamentales.json)
   demo: true,
   mode: "valor",
   editing: null,
@@ -629,6 +670,7 @@ function render(){
   drawCalendario(rows);
   renderHistorial();
   renderNoticias();
+  renderInfo();
   renderRendimientos();
 }
 function editando(id, modo){ return !!state.editing && state.editing.id === id && state.editing.modo === modo; }
@@ -1428,12 +1470,133 @@ function renderNoticias(){
 }
 
 async function cargarExtras(){
-  const [dl, nw, dv] = await Promise.all([bajarDato("data/dolar.json"), bajarDato("data/noticias.json"), bajarDato("data/dividendos.json")]);
+  const [dl, nw, dv, fu] = await Promise.all([bajarDato("data/dolar.json"), bajarDato("data/noticias.json"), bajarDato("data/dividendos.json"), bajarDato("data/fundamentales.json")]);
+  if(fu){ state.fund = fu; renderInfo(); }
   // Los dividendos del repo pisan a los que vienen dentro de la app (así se suman papeles sin re-publicarla).
   if(dv && dv.dps){ Object.assign(state.dps, dv.dps); render(); }
   if(dl){ state.dolar = dl; drawDolar(); renderRendimientos(); }
   if(nw){ state.noticias = nw; renderNoticias(); }
 }
+
+/* ---------- info acción ---------- */
+const nfR = new Intl.NumberFormat("es-AR",{minimumFractionDigits:2,maximumFractionDigits:2});
+function grande(v){   // USD en millones / miles de millones / billones
+  if(v === null || v === undefined) return "—";
+  const a = Math.abs(v), sg = v < 0 ? "− " : "";
+  if(a >= 1e12) return sg + "US$ " + nfR.format(a/1e12) + " billones";
+  if(a >= 1e9) return sg + "US$ " + nfR.format(a/1e9) + " mil millones";
+  if(a >= 1e6) return sg + "US$ " + nfArs.format(Math.round(a/1e6)) + " millones";
+  return sg + "US$ " + nfArs.format(Math.round(a));
+}
+const pc1 = v => (v < 0 ? "−" : "") + nfR.format(Math.abs(v*100)) + " %";
+const rat = v => (v < 0 ? "−" : "") + nfR.format(Math.abs(v));
+// Cada métrica: qué es (lo que se lee al apoyar el mouse), cómo se muestra y cuándo es buena (azul) o mala (amarillo).
+const METRICAS = [
+  {sec:"📊 Datos y métricas actuales"},
+  {k:"marketCap", n:"Capitalización de mercado", f:grande, c:null, crit:"",
+   d:"Valuación total: el valor de la empresa en bolsa (precio de la acción × acciones en circulación). Indica el tamaño de la compañía."},
+  {k:"eps", n:"Ganancia por acción (GPA / EPS)", f:v => "US$ " + rat(v), c:v => v > 0 ? "good" : "bad", crit:"Azul si es positiva; amarillo si la empresa pierde plata.",
+   d:"La utilidad neta de la empresa dividida por la cantidad de acciones. Mide cuánta ganancia genera por cada acción, en los últimos 12 meses."},
+  {k:"pe", n:"Ratio P/E (precio / ganancia)", f:rat, c:v => v < 0 ? "bad" : v < 15 ? "good" : v > 30 ? "bad" : null, crit:"Azul si es menor a 15; amarillo si es mayor a 30 o negativo.",
+   d:"Compara el precio de la acción con su ganancia por acción de los últimos 12 meses. Indica cuántos años de ganancias pagás al comprarla hoy: ayuda a ver si está cara o barata."},
+  {k:"pb", n:"Ratio P/B (precio / valor libros)", f:rat, c:v => v < 0 ? "bad" : v < 1 ? "good" : v > 5 ? "bad" : null, crit:"Azul si es menor a 1; amarillo si es mayor a 5 o negativo.",
+   d:"Compara el precio de mercado con el valor contable (de balance) de la empresa. Un P/B menor a 1 suele indicar que cotiza por debajo de sus activos netos."},
+  {k:"divYield", n:"Rendimiento por dividendo", f:pc1, c:v => v >= 0.03 ? "good" : null, crit:"Azul si es 3 % o más.",
+   d:"El porcentaje que la empresa devuelve por año a sus accionistas en dividendos, en relación con el precio actual de la acción."},
+  {k:"deudaCapital", n:"Deuda / capital propio", f:rat, c:v => v < 0 ? "bad" : v < 1 ? "good" : v > 2 ? "bad" : null, crit:"Azul si es menor a 1; amarillo si es mayor a 2 o el patrimonio es negativo.",
+   d:"Nivel de apalancamiento: pasivos totales divididos por el patrimonio neto. Sirve para evaluar el riesgo de solvencia."},
+  {k:"margen", n:"Margen de beneficio neto", f:pc1, c:v => v >= 0.15 ? "good" : v < 0.05 ? "bad" : null, crit:"Azul si es 15 % o más; amarillo si es menor a 5 %.",
+   d:"El porcentaje de los ingresos que queda como ganancia después de todos los costos e impuestos. Mide la eficiencia de la empresa."},
+  {sec:"📈 Proyecciones"},
+  {k:"forwardPe", n:"P/E futuro (forward P/E)", f:rat, c:v => v < 0 ? "bad" : v < 15 ? "good" : v > 30 ? "bad" : null, crit:"Azul si es menor a 15; amarillo si es mayor a 30 o negativo.",
+   d:"Como el P/E, pero con las ganancias que proyectan los analistas para los próximos 12 meses. Ayuda a ver si el precio se justifica con el crecimiento esperado."},
+  {k:"peg", n:"Ratio PEG", f:rat, c:v => v < 0 ? "bad" : v <= 1 ? "good" : v > 2 ? "bad" : null, crit:"Azul si es 1 o menos; amarillo si es mayor a 2.",
+   d:"El P/E dividido por el crecimiento proyectado de las ganancias. Cerca o por debajo de 1 sugiere un precio justo o barato considerando su crecimiento."},
+  {k:"revGrowth", n:"Crecimiento proyectado de ingresos", f:pc1, c:v => v >= 0.10 ? "good" : v < 0 ? "bad" : null, crit:"Azul si es 10 % o más; amarillo si se esperan menos ventas.",
+   ex:d => d.revGrowthPer || "",
+   d:"Cuánto estiman los analistas que van a crecer las ventas totales de la empresa."},
+  {k:"target", n:"Precio objetivo de consenso", f:v => "US$ " + rat(v),
+   c:(v, d) => d.precio ? (v / d.precio - 1 >= 0.10 ? "good" : v < d.precio ? "bad" : null) : null,
+   crit:"Azul si está 10 % o más arriba del precio de hoy; amarillo si está por debajo.",
+   ex:d => [d.precio ? pc1(d.target / d.precio - 1) + " vs. hoy" : "", d.analistas ? d.analistas + " analistas" : ""].filter(Boolean).join(" · "),
+   d:"El precio que los analistas de Wall Street estiman que alcanzará la acción en 12 meses (promedio)."},
+  {k:"beta", n:"Beta", f:rat, c:v => v <= 1 ? "good" : v > 1.5 ? "bad" : null, crit:"Azul si es 1 o menos (se mueve igual o menos que el mercado); amarillo si es mayor a 1,5.",
+   d:"Mide la volatilidad de la acción comparada con el mercado (S&P 500). Mayor a 1: tiende a moverse más fuerte que el mercado, para arriba y para abajo."},
+  {k:"fcf", n:"Flujo de caja libre", f:grande, c:v => v > 0 ? "good" : "bad", crit:"Azul si es positivo; amarillo si es negativo.",
+   ex:() => "últimos 12 meses (no hay proyección gratuita)",
+   d:"El efectivo que le queda a la empresa para crecer, pagar deudas o recomprar acciones, después de cubrir gastos operativos e inversiones. Yahoo Finance no publica la proyección, así que se muestra el de los últimos 12 meses."}
+];
+const LS_INFO = "cedear_info_sel";
+function renderInfo(){
+  const sel = document.getElementById("infoSel");
+  const body = document.getElementById("infoBody");
+  const head = document.getElementById("infoHead");
+  const empty = document.getElementById("infoEmpty");
+  const note = document.getElementById("infoNote");
+  const fd = state.fund && state.fund.datos || {};
+  const mias = state.pos.filter(p => !esDemo(p.id))
+    .sort((a,b) => b.cantidad*(state.precios[b.ticker]||0) - a.cantidad*(state.precios[a.ticker]||0)).map(p => p.ticker);
+  const lista = state.demo ? Object.keys(fd) : mias;
+  let elegido = sel.value;
+  if(!elegido){ try{ elegido = localStorage.getItem(LS_INFO) || ""; }catch(e){} }
+  if(!lista.includes(elegido)) elegido = lista[0] || "";
+  sel.textContent = "";
+  lista.forEach(t => {
+    const o = document.createElement("option"); o.value = t;
+    o.textContent = t + " · " + (BY_TICKER.get(t)?.n || "") + (fd[t] ? "" : " (sin datos)");
+    sel.appendChild(o);
+  });
+  sel.value = elegido;
+  body.textContent = ""; head.textContent = "";
+  const d = fd[elegido];
+  empty.hidden = !!d;
+  if(!d){
+    empty.textContent = !lista.length ? "No tenés posiciones cargadas."
+      : !state.fund ? "Cargando los datos…"
+      : "Todavía no hay datos de " + elegido + ". Se bajan una vez por día para los CEDEARs de la lista de noticias: avisale a Claude para sumarlo.";
+    note.textContent = ""; return;
+  }
+  const b = document.createElement("b"); b.textContent = elegido;
+  const nm = document.createElement("span"); nm.className = "nm"; nm.textContent = d.nombre || BY_TICKER.get(elegido)?.n || "";
+  const px = document.createElement("span"); px.className = "px num";
+  px.textContent = d.precio ? "Acción en EE.UU.: US$ " + rat(d.precio) : "";
+  head.append(b, nm, px);
+  METRICAS.forEach(m => {
+    const tr = document.createElement("tr");
+    if(m.sec){
+      tr.className = "sec";
+      const c = document.createElement("td"); c.colSpan = 2; c.textContent = m.sec;
+      tr.appendChild(c); body.appendChild(tr); return;
+    }
+    const c1 = document.createElement("td");
+    const nmx = document.createElement("span"); nmx.className = "mt"; nmx.tabIndex = 0;
+    nmx.textContent = m.n;
+    nmx.dataset.tip = m.d + (m.crit ? " " + m.crit : "");
+    c1.appendChild(nmx);
+    const c2 = document.createElement("td"); c2.className = "val num";
+    const v = d[m.k];
+    if(v === null || v === undefined){
+      c2.textContent = "—";
+      if(d.tipo === "ETF") c2.dataset.tip = "No aplica o no se publica para un ETF.";
+    } else {
+      const chip = document.createElement("span");
+      const cls = m.c ? m.c(v, d) : null;
+      chip.className = "chip" + (cls ? " " + cls : "");
+      chip.textContent = m.f(v);
+      c2.appendChild(chip);
+      const ex = m.ex ? m.ex(d) : "";
+      if(ex){ const e = document.createElement("span"); e.className = "ex"; e.textContent = ex; c2.appendChild(e); }
+    }
+    tr.append(c1, c2); body.appendChild(tr);
+  });
+  note.textContent = "Azul: dato favorable · Amarillo: para mirar con cuidado. Apoyá el mouse (o tocá) el nombre de cada dato para ver qué significa y el criterio de colores. " +
+    "Son datos de la empresa en EE.UU. (en dólares), no del CEDEAR. Fuente: " + (state.fund.fuente || "Yahoo Finance") +
+    (d.fecha ? ", al " + fechaHora(d.fecha) : "") + ". Se actualizan una vez por día.";
+}
+document.getElementById("infoSel").addEventListener("change", ev => {
+  try{ localStorage.setItem(LS_INFO, ev.target.value); }catch(e){}
+  renderInfo();
+});
 
 /* ---------- pestañas ---------- */
 const LS_TAB = "cedear_tab";

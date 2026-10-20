@@ -8,4 +8,5 @@ App (PWA) para seguir una cartera de CEDEARs en pesos y dólares MEP.
 - `data/hist/<TICKER>.json` — cierre diario de cada CEDEAR desde el 25/09/2026, para los rendimientos.
 - `data/noticias.json` — noticias resumidas en español; las escribe una tarea programada de Claude cada día hábil a la mañana.
 - `data/tickers-noticias.json` — CEDEARs de los que se buscan noticias (y cuyo histórico se completa desde data912).
+- `data/fundamentales.json` — métricas de las empresas (P/E, P/B, deuda, márgenes, proyecciones…) de Yahoo Finance para los tickers de `data/tickers-noticias.json`. `scripts/fundamentales.py`, una vez por día.
 - Para instalarla: abrir la página en Chrome (Android) → menú ⋮ → Instalar app.
