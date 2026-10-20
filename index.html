@@ -328,7 +328,7 @@ body{background:var(--bg); margin:0}
         </div>
         <div class="field">
           <label for="fMep">MEP de compra <span class="hint">(opcional)</span></label>
-          <input id="fMep" class="num-in" type="number" inputmode="decimal" min="0" step="any" placeholder="dejá vacío si no lo sabés">
+          <input id="fMep" class="num-in" type="number" inputmode="decimal" min="0" step="any" placeholder="vacío = el de ahora">
         </div>
         <div class="field f-btn"><button class="btn-main" type="submit" id="addBtn">Agregar</button></div>
       </form>
@@ -458,7 +458,7 @@ body{background:var(--bg); margin:0}
 
   <footer>
     <p><b>Cómo se calcula.</b> Acciones = cantidad de CEDEARs × el ratio de conversión del papel (por ejemplo, 20 CEDEARs de AAPL equivalen a 1 acción). El valor en dólares usa el MEP de arriba. La ganancia en pesos compara tu precio promedio de compra contra la cotización de hoy.</p>
-    <p><b>Sobre la ganancia en dólares.</b> Si cargás el MEP al que compraste, se calcula de verdad en dólares: cuántos USD pusiste contra cuántos valen hoy. Si lo dejás vacío, es la ganancia en pesos convertida al MEP de hoy, así que el porcentaje da igual que el de pesos.</p>
+    <p><b>Sobre la ganancia en dólares.</b> Es ganancia real en dólares: cuántos USD pusiste contra cuántos valen hoy. Cada compra se pasa a dólares con el MEP de ese momento (el que muestra la app al cargarla, o el que escribas en "MEP de compra") y queda anotado en el Historial. Al vender, el costo en dólares baja en proporción a lo vendido. Lo que ya tenías antes del 25/09/2026 usa el MEP promedio de agosto y septiembre de 2026 ($ 1.535,50).</p>
     <p><b>La columna D</b> dice si la empresa o el ETF paga dividendos. Pasá el cursor por encima de un SI y te muestra en qué meses suele pagarlos; son los meses habituales del ciclo y pueden correrse una o dos semanas. El CEDEAR cobra ese dividendo en pesos, neto de retenciones. <b>El botón de información</b> abre la ficha del CEDEAR en TradingView, en una pestaña nueva.</p>
     <p id="fuente"></p>
     <p><b>Respaldo.</b> Tus posiciones y el historial de operaciones se guardan en este celular. Copiá el respaldo de vez en cuando (por ejemplo, a un chat de WhatsApp con vos mismo) para poder recuperarlas si cambiás de teléfono.</p>
@@ -517,6 +517,25 @@ const pct = v => (v>=0?"+":"−") + nfArs2.format(Math.abs(v*100)) + " %";
 const acc = v => v>=100 ? nfArs.format(v) : nfArs2.format(v);
 
 /* ---------- cálculo ---------- */
+// MEP para lo que ya se tenía antes del historial: promedio de agosto y septiembre de 2026 (dólar bolsa).
+const MEP_BASE = 1535.5;
+// Costo en USD de la posición: suma cada compra en dólares con su MEP; al vender baja en proporción
+// (como el PPC en pesos, que no cambia al vender). Devuelve null si el historial no cuadra con la posición.
+function costoUsd(p){
+  const fl = [];
+  state.bases.filter(b => b.t === p.ticker).forEach(b => fl.push({f:"", s:1, q:b.q, p:b.p, m:b.m || MEP_BASE}));
+  state.ops.filter(o => o.t === p.ticker).forEach(o => fl.push({f:String(o.f), s:o.k === "C" ? 1 : -1, q:o.q, p:o.p, m:o.m}));
+  if(!fl.length) return null;
+  fl.sort((a, b) => a.f < b.f ? -1 : a.f > b.f ? 1 : 0);
+  let q = 0, cu = 0;
+  for(const x of fl){
+    if(x.s > 0){ if(!(x.m > 0)) return null; q += x.q; cu += x.q * x.p / x.m; }
+    else if(q > 0){ cu *= Math.max(0, q - x.q) / q; q -= x.q; }
+  }
+  if(Math.abs(q - p.cantidad) > 1e-6 || q <= 0) return null;
+  return cu;
+}
+
 function compute(){
   const rows = state.pos.map(p => {
     const c = BY_TICKER.get(p.ticker);
@@ -526,12 +545,14 @@ function compute(){
     const costoAr = p.cantidad * p.ppc;
     const valAr = px ? p.cantidad * px : null;
     const valUs = valAr !== null && state.mep ? valAr / state.mep : null;
+    // Costo en USD real: cada compra con el MEP de su momento (ver costoUsd).
+    const cu = esDemo(p.id) ? null : costoUsd(p);
     const mepC = p.mepCompra && p.mepCompra > 0 ? p.mepCompra : null;
-    const costoUs = mepC ? costoAr / mepC : (state.mep ? costoAr / state.mep : null);
+    const costoUs = cu !== null ? cu : mepC ? costoAr / mepC : (state.mep ? costoAr / state.mep : null);
     const ganAr = valAr !== null ? valAr - costoAr : null;
     const ganUs = (valUs !== null && costoUs !== null) ? valUs - costoUs : null;
     return {
-      ...p, c, px, acciones, costoAr, valAr, valUs, costoUs, ganAr, ganUs, mepReal: !!mepC,
+      ...p, c, px, acciones, costoAr, valAr, valUs, costoUs, ganAr, ganUs, mepReal: cu !== null || !!mepC,
       ganArPct: (ganAr !== null && costoAr>0) ? ganAr/costoAr : null,
       ganUsPct: (ganUs !== null && costoUs>0) ? ganUs/costoUs : null
     };
@@ -667,22 +688,25 @@ function editRow(r){
   f1.innerHTML = '<label>Cantidad que compraste</label><input class="num-in" type="number" inputmode="decimal" min="0" step="any" required>';
   const f2 = document.createElement("div"); f2.className = "field";
   f2.innerHTML = '<label>Nuevo precio promedio <span class="hint">(el de tu broker)</span></label><input class="num-in" type="number" inputmode="decimal" min="0" step="any" required>';
-  const qIn = f1.querySelector("input"), pIn = f2.querySelector("input");
+  const f3 = document.createElement("div"); f3.className = "field";
+  f3.innerHTML = '<label>MEP de compra <span class="hint">(opcional)</span></label><input class="num-in" type="number" inputmode="decimal" min="0" step="any">';
+  const qIn = f1.querySelector("input"), pIn = f2.querySelector("input"), mIn = f3.querySelector("input");
   pIn.placeholder = "hoy: " + nfArs2.format(r.ppc);
+  mIn.placeholder = state.mep ? "ahora: " + nfArs2.format(state.mep) : "";
   const btns = document.createElement("div"); btns.className = "btns";
   const ok = document.createElement("button"); ok.type = "submit"; ok.className = "btn-main"; ok.textContent = "Guardar";
   const no = document.createElement("button"); no.type = "button"; no.className = "btn-ghost"; no.textContent = "Cancelar";
   no.addEventListener("click", () => { state.editing = null; render(); });
   btns.append(ok, no);
   const err = document.createElement("div"); err.className = "err";
-  box.append(ttl, f1, f2, btns, err);
+  box.append(ttl, f1, f2, f3, btns, err);
   box.addEventListener("submit", async ev => {
     ev.preventDefault();
-    const q = parseFloat(qIn.value), np = parseFloat(pIn.value);
+    const q = parseFloat(qIn.value), np = parseFloat(pIn.value), mp = parseFloat(mIn.value);
     if(!(q>0)){ err.textContent = "Poné cuántos CEDEARs compraste."; return; }
     if(!(np>0)){ err.textContent = "Poné el nuevo precio promedio que te muestra el broker."; return; }
     state.editing = null;
-    await sumarPos(r.id, q, np);
+    await sumarPos(r.id, q, np, mp > 0 ? mp : null);
   });
   cell.appendChild(box); tr.appendChild(cell);
   setTimeout(() => qIn.focus({preventScroll:true}), 0);
@@ -1086,7 +1110,8 @@ function renderHistorial(){
       ["tk", o.t],
       ["num", nfArs.format(o.q) + (o.q === 1 ? " CEDEAR" : " CEDEARs")],
       ["num", ars(valor)],
-      ["num us", o.m ? usd(valor / o.m) : "US$ —"]
+      ["num us", o.m ? usd(valor / o.m) : "US$ —"],
+      ["num us", o.m ? "MEP $ " + nfArs2.format(o.m) : "MEP —"]
     ];
     partes.forEach(([cls, txt], i) => {
       if(i){ const sp = document.createElement("span"); sp.className = "sep"; sp.textContent = "·"; li.appendChild(sp); }
@@ -1137,8 +1162,7 @@ function mepAntes(antes){
 function flujos(){
   const m = new Map();
   const add = (t, x) => { if(!m.has(t)) m.set(t, []); m.get(t).push(x); };
-  const mepBase = mepAntes(restarDias(FECHA_BASE, -1));
-  state.bases.forEach(b => add(b.t, {d:FECHA_BASE, s:1, q:b.q, p:b.p, m:b.m || mepBase || state.mep}));
+  state.bases.forEach(b => add(b.t, {d:FECHA_BASE, s:1, q:b.q, p:b.p, m:b.m || MEP_BASE}));
   state.ops.forEach(o => add(o.t, {d:String(o.f).slice(0,10), s:o.k === "C" ? 1 : -1, q:o.q, p:o.p, m:o.m || state.mep}));
   return m;
 }
@@ -1526,12 +1550,12 @@ async function addPos(p){
 }
 
 // Compra sobre una posición que ya existe: el broker da el nuevo PPC y de ahí sale el precio de esta compra.
-async function sumarPos(id, q, nuevoPpc){
+async function sumarPos(id, q, nuevoPpc, mep){
   const p = state.pos.find(x => x.id === id);
   if(!p) return;
   if(!esDemo(id)){
     const precio = ((p.cantidad + q) * nuevoPpc - p.cantidad * p.ppc) / q;
-    registrarOp("C", p.ticker, q, precio > 0 ? precio : nuevoPpc, null);
+    registrarOp("C", p.ticker, q, precio > 0 ? precio : nuevoPpc, mep);
   }
   p.cantidad += q; p.ppc = nuevoPpc;
   if(!esDemo(id)) saveLocal();
@@ -1571,7 +1595,7 @@ document.getElementById("addForm").addEventListener("submit", async ev => {
   if(!(ppc>0)){ err.textContent = "El precio promedio de compra tiene que ser mayor que cero."; return; }
   const existing = state.pos.find(p => p.ticker === c.t && !esDemo(p.id));
   if(existing){
-    await sumarPos(existing.id, cant, ppc);
+    await sumarPos(existing.id, cant, ppc, mepC > 0 ? mepC : null);
     err.className = "info";
     err.textContent = "Ya tenías " + c.t + ": sumé " + nfArs.format(cant) + " y el precio promedio quedó en $ " + nfArs2.format(ppc) + ".";
     setTimeout(() => { err.textContent = ""; err.className = "err"; }, 6000);
