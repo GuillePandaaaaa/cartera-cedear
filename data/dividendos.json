@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-10-15",
+ "actualizado": "2026-10-20",
  "nota": "Dividendo anual por acción en USD (último declarado × pagos por año).",
  "dps": {
   "O": 3.258,
@@ -10,7 +10,7 @@
   "PFE": 1.72,
   "NVDA": 1.0,
   "SPY": 7.254,
-  "AAPL": 1.0,
+  "AAPL": 1.08,
   "CVX": 6.84,
   "T": 1.11,
   "WMT": 0.94,
@@ -22,6 +22,8 @@
   "TXN": 5.2,
   "MRK": 3.08,
   "XOM": 4.12,
-  "JNJ": 5.36
+  "JNJ": 5.36,
+  "GOOGL": 0.88,
+  "MDLZ": 2.08
  }
 }

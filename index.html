@@ -1438,7 +1438,9 @@ function renderNoticias(){
   if(d && Array.isArray(d.cedears)){
     const mias = state.pos.filter(p => !esDemo(p.id)).map(p => p.ticker);
     const valor = t => { const p = state.pos.find(x => x.ticker === t); return p ? p.cantidad * (state.precios[t] || 0) : -1; };
-    d.cedears.filter(g => g && g.noticias && g.noticias.length && (state.demo || mias.includes(g.ticker)))
+    // Se ocultan solo los que vendió del todo; los que sigue sin tenerlos se muestran igual.
+    const vendidos = new Set(state.ops.map(o => o.t).concat(state.bases.map(b => b.t)).filter(t => !mias.includes(t)));
+    d.cedears.filter(g => g && g.noticias && g.noticias.length && (state.demo || !vendidos.has(g.ticker)))
       .sort((a,b) => (mias.includes(b.ticker) - mias.includes(a.ticker)) || (valor(b.ticker) - valor(a.ticker)))
       .forEach(g => grupos.push({titulo:g.ticker, nombre:g.nombre || BY_TICKER.get(g.ticker)?.n || "", items:g.noticias}));
   }
@@ -1536,15 +1538,23 @@ function renderInfo(){
   const fd = state.fund && state.fund.datos || {};
   const mias = state.pos.filter(p => !esDemo(p.id))
     .sort((a,b) => b.cantidad*(state.precios[b.ticker]||0) - a.cantidad*(state.precios[a.ticker]||0)).map(p => p.ticker);
-  const lista = state.demo ? Object.keys(fd) : mias;
+  // Primero los que tiene; después los que sigue en noticias (con datos) y no vendió.
+  const vendidos = new Set(state.ops.map(o => o.t).concat(state.bases.map(b => b.t)).filter(t => !mias.includes(t)));
+  const seguidos = state.demo ? Object.keys(fd) : Object.keys(fd).filter(t => !mias.includes(t) && !vendidos.has(t));
+  const lista = mias.concat(seguidos);
   let elegido = sel.value;
   if(!elegido){ try{ elegido = localStorage.getItem(LS_INFO) || ""; }catch(e){} }
   if(!lista.includes(elegido)) elegido = lista[0] || "";
   sel.textContent = "";
-  lista.forEach(t => {
-    const o = document.createElement("option"); o.value = t;
-    o.textContent = t + " · " + (BY_TICKER.get(t)?.n || "") + (fd[t] ? "" : " (sin datos)");
-    sel.appendChild(o);
+  [["En tu cartera", state.demo ? [] : mias], ["Otros que seguís", seguidos]].forEach(([nombre, ts]) => {
+    if(!ts.length) return;
+    const g = document.createElement("optgroup"); g.label = nombre;
+    ts.forEach(t => {
+      const o = document.createElement("option"); o.value = t;
+      o.textContent = t + " · " + (BY_TICKER.get(t)?.n || "") + (fd[t] ? "" : " (sin datos)");
+      g.appendChild(o);
+    });
+    sel.appendChild(g);
   });
   sel.value = elegido;
   body.textContent = ""; head.textContent = "";
