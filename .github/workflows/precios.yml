@@ -30,6 +30,9 @@ jobs:
       - name: Dólar e históricos
         run: python scripts/historicos.py
         continue-on-error: true
+      - name: Datos de las empresas (una vez por día)
+        run: python scripts/fundamentales.py --check || (pip install -q yfinance && python scripts/fundamentales.py)
+        continue-on-error: true
       - name: Guardar cambios
         run: |
           git config user.name "actualizador"
