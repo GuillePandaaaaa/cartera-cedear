@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-10-20T08:29-03:00",
+ "actualizado": "2026-10-21T08:29-03:00",
  "cedears": [
   {
    "ticker": "NVDA",
@@ -44,33 +44,24 @@
   {
    "ticker": "MSFT",
    "nombre": "Microsoft",
-   "noticias": [
-    {
-     "titulo": "Microsoft marca su primer récord en casi un año tras un rally de US$1,4 billones",
-     "resumen": "La acción cerró el martes en máximo histórico por primera vez en casi 12 meses, impulsada por el optimismo con la IA y el lanzamiento de su chip Maia 300. Presenta su balance el 28 de octubre.",
-     "fuente": "Bloomberg",
-     "fecha": "2026-10-13",
-     "url": "https://www.bloomberg.com/news/articles/2026-10-13/microsoft-eyes-first-record-in-nearly-a-year-as-ai-rally-builds"
-    }
-   ]
+   "noticias": []
   },
   {
    "ticker": "PG",
    "nombre": "Procter & Gamble",
-   "noticias": [
-    {
-     "titulo": "P&G declara un dividendo trimestral de US$1,0885 por acción",
-     "resumen": "El directorio mantuvo el dividendo en US$1,0885, pagadero desde el 16 de noviembre a quienes tengan la acción al 23 de octubre. En la asamblea también se reeligieron los 12 directores.",
-     "fuente": "Yahoo Finance",
-     "fecha": "2026-10-13",
-     "url": "https://finance.yahoo.com/markets/stocks/articles/p-g-declares-quarterly-dividend-135700713.html"
-    }
-   ]
+   "noticias": []
   },
   {
    "ticker": "SPY",
    "nombre": "S&P 500 (ETF)",
    "noticias": [
+    {
+     "titulo": "El Dow sube más de 500 puntos impulsado por balances y la baja del petróleo",
+     "resumen": "El martes el Dow ganó 1,02% hasta 52.496 y el S&P 500 0,28% hasta 7.713, mientras el Nasdaq quedó casi plano. Ayudaron buenos balances, como el de 3M, y la baja del crudo; la volatilidad (VIX) cayó 6,1%.",
+     "fuente": "Yahoo Finance",
+     "fecha": "2026-10-20",
+     "url": "https://finance.yahoo.com/markets/stocks/articles/markets-news-oct-20-2026-103252254.html"
+    },
     {
      "titulo": "Rebotan la tecnología y los chips: el Nasdaq sube más de 1%",
      "resumen": "El lunes el S&P 500 subió 0,41% hasta 7.691 y el Nasdaq 1,11%, con un rebote de las acciones de IA y semiconductores tras la caída de 4,5% de la semana pasada; Nvidia ganó 1,4%. El Dow bajó 0,07% y los rendimientos de los bonos subieron.",
@@ -84,20 +75,21 @@
      "fuente": "CNBC",
      "fecha": "2026-10-16",
      "url": "https://www.cnbc.com/2026/10/15/stock-market-today-live-updates.html"
-    },
-    {
-     "titulo": "Wall Street rebota con la baja de los rendimientos de los bonos y el Dow sube 1,1%",
-     "resumen": "El jueves el S&P 500 subió 0,3% hasta 7.744 y el Dow 1,1%, mientras el Nasdaq apenas ganó 0,1% tras caer más de 1% en la rueda. Los inversores rotaron de tecnología a sectores defensivos; en la semana el S&P 500 baja 0,9%.",
-     "fuente": "Yahoo Finance",
-     "fecha": "2026-10-15",
-     "url": "https://finance.yahoo.com/markets/live/stock-market-today-dow-sp-500-rise-nasdaq-trims-losses-as-treasury-yields-sink-153611834.html"
     }
    ]
   },
   {
    "ticker": "MELI",
    "nombre": "MercadoLibre",
-   "noticias": []
+   "noticias": [
+    {
+     "titulo": "MercadoLibre lanza entregas en una hora en São Paulo y vende remedios con receta en Brasil",
+     "resumen": "La compañía empezó a ofrecer entregas en una hora en São Paulo y avanzó en la venta de medicamentos con receta en Brasil, además de colocar US$1.000 millones en bonos de largo plazo. La acción subía cerca de 2%.",
+     "fuente": "Yahoo Finance",
+     "fecha": "2026-10-20",
+     "url": "https://finance.yahoo.com/markets/stocks/articles/investors-may-respond-mercadolibre-meli-200839649.html"
+    }
+   ]
   },
   {
    "ticker": "O",
@@ -127,22 +119,7 @@
   {
    "ticker": "JNJ",
    "nombre": "Johnson & Johnson",
-   "noticias": [
-    {
-     "titulo": "La acción de J&J cae cerca de 6% pese al buen balance, por la debilidad de MedTech",
-     "resumen": "Aunque cumplió con lo esperado y subió su guía 2026, la acción bajó alrededor de 6% el martes por ventas de dispositivos médicos más flojas. RBC calificó la caída como 'excesiva'.",
-     "fuente": "Yahoo Finance",
-     "fecha": "2026-10-13",
-     "url": "https://finance.yahoo.com/markets/article/johnson--johnson-stock-falls-despite-strong-earnings-as-investors-focus-on-medtech-unit-161450981.html"
-    },
-    {
-     "titulo": "J&J supera la estimación de ganancias, queda corta en ventas y mejora su guía anual",
-     "resumen": "En el tercer trimestre ganó US$2,59 ajustado por acción, por encima de lo esperado, con ventas de US$25.400 millones (+5,9%), algo por debajo de lo previsto por la debilidad de MedTech y de algunos oncológicos. Subió su guía de ganancia ajustada 2026 a US$11,05-11,15 por acción.",
-     "fuente": "Yahoo Finance",
-     "fecha": "2026-10-13",
-     "url": "https://finance.yahoo.com/healthcare/articles/j-j-q3-earnings-beat-135700661.html"
-    }
-   ]
+   "noticias": []
   },
   {
    "ticker": "V",
@@ -154,38 +131,88 @@
      "fuente": "Yahoo Finance",
      "fecha": "2026-10-15",
      "url": "https://finance.yahoo.com/markets/stocks/articles/visa-stock-hits-fresh-record-164519715.html"
-    },
+    }
+   ]
+  },
+  {
+   "ticker": "GOOGL",
+   "nombre": "Alphabet",
+   "noticias": [
     {
-     "titulo": "Visa recibe el visto bueno de China para preparar su entrada al mercado local de pagos",
-     "resumen": "El Banco Popular de China aprobó que Visa prepare una entidad de compensación de tarjetas en el país, y la acción subió cerca de 1%. Evercore advirtió que todavía es temprano para proyectar ingresos de ese mercado.",
+     "titulo": "Alphabet baja 1,1% a una semana de su balance",
+     "resumen": "La acción cayó el martes pese a la suba del S&P 500. Alphabet presenta resultados del tercer trimestre el 28 de octubre.",
      "fuente": "Yahoo Finance",
-     "fecha": "2026-10-13",
-     "url": "https://finance.yahoo.com/markets/stocks/articles/v-stock-gains-overnight-visa-074554133.html"
+     "fecha": "2026-10-20",
+     "url": "https://finance.yahoo.com/markets/stocks/articles/why-alphabet-inc-goog-dipped-204504877.html"
+    }
+   ]
+  },
+  {
+   "ticker": "MDLZ",
+   "nombre": "Mondelez",
+   "noticias": []
+  },
+  {
+   "ticker": "AMZN",
+   "nombre": "Amazon",
+   "noticias": [
+    {
+     "titulo": "Amazon salta hasta 5% tras ser elegida 'top pick' por Morgan Stanley",
+     "resumen": "Morgan Stanley la puso como su acción favorita y subió el precio objetivo de US$350 desde US$335; espera que AWS crezca 47% en 2027. Fue la que más subió del Dow; presenta balance el 29 de octubre.",
+     "fuente": "Yahoo Finance",
+     "fecha": "2026-10-19",
+     "url": "https://finance.yahoo.com/markets/stocks/article/amazon-stock-pops-after-morgan-stanley-details-5-catalysts-lifts-price-target-140841569.html"
+    }
+   ]
+  },
+  {
+   "ticker": "AAPL",
+   "nombre": "Apple",
+   "noticias": [
+    {
+     "titulo": "Loop Capital baja a Apple a 'mantener' por dudas con los envíos de iPhone",
+     "resumen": "La firma recortó la recomendación y el precio objetivo de US$370 a US$330 por preocupaciones con los planes de envío de iPhone y la suba del costo de la memoria. La acción cerró con una baja cercana a 1%.",
+     "fuente": "Yahoo Finance",
+     "fecha": "2026-10-20",
+     "url": "https://finance.yahoo.com/markets/stocks/articles/aapl-stock-downgraded-iphone-shipment-123814814.html"
+    }
+   ]
+  },
+  {
+   "ticker": "SNDK",
+   "nombre": "Sandisk",
+   "noticias": [
+    {
+     "titulo": "Sandisk cae 18% en una semana por el temor a la competencia china en memorias",
+     "resumen": "La acción pasó de US$1.582 a US$1.299 en la semana al 16 de octubre, después de que la china CXMT anunciara memorias de servidor más densas para fin de año. Sandisk presenta balance el 29 de octubre.",
+     "fuente": "Yahoo Finance",
+     "fecha": "2026-10-19",
+     "url": "https://finance.yahoo.com/markets/stocks/articles/sandisk-stock-fell-18-dram-104331842.html"
     }
    ]
   }
  ],
  "dolar": [
   {
-   "titulo": "Dólar hoy: a cuánto cotiza este martes 20 de octubre",
-   "resumen": "El mayorista arranca en $1.524,50 y el oficial en el Banco Nación en $1.490/$1.540. El blue cotiza a $1.540/$1.560, el MEP a $1.541 y el CCL a $1.624.",
+   "titulo": "Dólar hoy: a cuánto cotiza este miércoles 21 de octubre",
+   "resumen": "El oficial sube a $1.495/$1.545 en el Banco Nación y el mayorista se ubica en $1.525. El blue cotiza a $1.550/$1.570, el MEP a $1.546 y el CCL a $1.624.",
+   "fuente": "Ámbito",
+   "fecha": "2026-10-21",
+   "url": "https://www.ambito.com/finanzas/dolar-hoy-cuanto-cotiza-este-miercoles-21-octubre-n6336095"
+  },
+  {
+   "titulo": "El BCRA volvió a acelerar las compras y las reservas se sostuvieron sobre los u$s50.000 millones",
+   "resumen": "El Central compró u$s103 millones el martes, sumó 16 ruedas seguidas de compras y u$s1.103 millones en octubre. Las reservas brutas subieron a u$s50.201 millones y el mayorista cerró en $1.525, cerca de su máximo nominal.",
    "fuente": "Ámbito",
    "fecha": "2026-10-20",
-   "url": "https://www.ambito.com/finanzas/dolar-hoy-cuanto-cotiza-este-martes-20-octubre-n6335600"
+   "url": "https://www.ambito.com/finanzas/el-bcra-volvio-acelerar-las-compras-dolares-y-las-reservas-se-sostuvieron-los-us50000-millones-n6336012"
   },
   {
-   "titulo": "El BCRA desaceleró las compras, pero ya acumuló u$s1.000 millones en octubre",
-   "resumen": "El Central compró apenas u$s18 millones el lunes, aunque suma 15 ruedas seguidas de compras y u$s1.000 millones en el mes. Las reservas bajaron u$s84 millones hasta u$s50.152 millones por la valuación de activos.",
+   "titulo": "El dólar blue escaló otros $10 y alcanzó su máximo histórico nominal",
+   "resumen": "El blue cerró el martes en $1.570 para la venta, un récord nominal. El MEP terminó en $1.544 y el CCL en $1.627.",
    "fuente": "Ámbito",
-   "fecha": "2026-10-19",
-   "url": "https://www.ambito.com/finanzas/el-bcra-desacelero-las-compras-pero-ya-acumulo-us1000-millones-octubre-n6335523"
-  },
-  {
-   "titulo": "El dólar blue volvió a máximos de octubre, pero la brecha se achicó por el salto del mayorista",
-   "resumen": "El blue cerró el lunes en $1.540/$1.560, en máximos del mes, mientras el mayorista subió $6,50 hasta $1.524,50, su mayor alza diaria desde el 1 de octubre.",
-   "fuente": "Ámbito",
-   "fecha": "2026-10-19",
-   "url": "https://www.ambito.com/finanzas/dolar-blue-hoy-cuanto-cerro-este-lunes-19-octubre-n6335467"
+   "fecha": "2026-10-20",
+   "url": "https://www.ambito.com/finanzas/el-dolar-blue-escalo-otros-10-y-alcanzo-su-maximo-historico-nominal-n6335947"
   }
  ]
 }
