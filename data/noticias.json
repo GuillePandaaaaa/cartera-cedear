@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-10-21T08:29-03:00",
+ "actualizado": "2026-10-22T08:29-03:00",
  "cedears": [
   {
    "ticker": "NVDA",
@@ -18,13 +18,6 @@
      "fuente": "CNBC",
      "fecha": "2026-10-15",
      "url": "https://www.cnbc.com/2026/10/15/sk-hynix-samsung-softbank-stocks-asia-tech-rout-ai-funding-worries.html"
-    },
-    {
-     "titulo": "Nvidia cae cerca de 3% en una ola de ventas de chips tras el dato de inflación",
-     "resumen": "La acción bajó alrededor de 3% el miércoles, en una caída general de los semiconductores por la suba de los rendimientos de los bonos y el temor a que la Fed tenga que subir tasas tras una inflación más alta de lo esperado.",
-     "fuente": "Yahoo Finance",
-     "fecha": "2026-10-14",
-     "url": "https://finance.yahoo.com/markets/stocks/article/nvidia-stock-sinks-as-chip-sell-off-deepens-on-hot-inflation-data-203235137.html"
     }
    ]
   },
@@ -32,6 +25,13 @@
    "ticker": "KO",
    "nombre": "Coca-Cola",
    "noticias": [
+    {
+     "titulo": "Cómo salió mal la compra de Costa Coffee por US$5.000 millones",
+     "resumen": "La adquisición de Costa iba a crear un imperio global de máquinas de espresso y café en lata, pero según Bloomberg terminó siendo sobre todo una cadena de cafeterías en el Reino Unido. Coca-Cola presenta su balance el 27 de octubre.",
+     "fuente": "Bloomberg",
+     "fecha": "2026-10-21",
+     "url": "https://www.bloomberg.com/news/features/2026-10-21/how-coca-cola-s-5-billion-costa-coffee-deal-went-wrong"
+    },
     {
      "titulo": "Coca-Cola rinde 38,9% en un año, más del doble que el S&P 500",
      "resumen": "La acción subió 38,9% en los doce meses al 16 de octubre, contra 15,5% del S&P 500. Presenta su balance trimestral alrededor del 27 de octubre.",
@@ -49,12 +49,27 @@
   {
    "ticker": "PG",
    "nombre": "Procter & Gamble",
-   "noticias": []
+   "noticias": [
+    {
+     "titulo": "P&G vende 4% más en su primer trimestre fiscal y mantiene la guía",
+     "resumen": "Las ventas netas fueron de US$23.300 millones (+4%), con ventas orgánicas también +4%, y la ganancia core por acción subió 1% a US$2,00. Mantuvo la guía anual de ventas orgánicas, ganancias y retorno al accionista, y ajustó la de ventas netas por la compra de Thorne.",
+     "fuente": "P&G (SEC 8-K)",
+     "fecha": "2026-10-22",
+     "url": "https://www.sec.gov/Archives/edgar/data/0000080424/000008042426000250/fy2627q1jas8-kexhibit991.htm"
+    }
+   ]
   },
   {
    "ticker": "SPY",
    "nombre": "S&P 500 (ETF)",
    "noticias": [
+    {
+     "titulo": "El S&P 500 suma tres subas seguidas y el Nasdaq gana 1% de la mano de SpaceX y Tesla",
+     "resumen": "El miércoles el S&P 500 subió 0,58% hasta 7.757, el Dow 0,69% y el Nasdaq 1,05%, con Nvidia como mayor aporte. Tras el cierre, los futuros bajaban antes de los balances de Meta y Tesla.",
+     "fuente": "CNBC",
+     "fecha": "2026-10-21",
+     "url": "https://www.cnbc.com/2026/10/20/stock-market-today-live-updates.html"
+    },
     {
      "titulo": "El Dow sube más de 500 puntos impulsado por balances y la baja del petróleo",
      "resumen": "El martes el Dow ganó 1,02% hasta 52.496 y el S&P 500 0,28% hasta 7.713, mientras el Nasdaq quedó casi plano. Ayudaron buenos balances, como el de 3M, y la baja del crudo; la volatilidad (VIX) cayó 6,1%.",
@@ -68,13 +83,6 @@
      "fuente": "CNBC",
      "fecha": "2026-10-19",
      "url": "https://www.cnbc.com/2026/10/18/stock-market-today-live-updates.html"
-    },
-    {
-     "titulo": "El Nasdaq cae 2% y cierra su peor semana desde junio por la venta de acciones de IA",
-     "resumen": "El viernes el S&P 500 bajó 1,09% hasta 7.659 y el Nasdaq 2,14%, con la tecnología castigada y el petróleo en suba; en la semana el S&P perdió 1,9% y el Nasdaq 4,5%. El Dow cayó 0,34% pero cerró la semana con una ganancia de 0,7%.",
-     "fuente": "CNBC",
-     "fecha": "2026-10-16",
-     "url": "https://www.cnbc.com/2026/10/15/stock-market-today-live-updates.html"
     }
    ]
   },
@@ -194,25 +202,25 @@
  ],
  "dolar": [
   {
-   "titulo": "Dólar hoy: a cuánto cotiza este miércoles 21 de octubre",
-   "resumen": "El oficial sube a $1.495/$1.545 en el Banco Nación y el mayorista se ubica en $1.525. El blue cotiza a $1.550/$1.570, el MEP a $1.546 y el CCL a $1.624.",
+   "titulo": "Dólar hoy: a cuánto cotiza este jueves 22 de octubre",
+   "resumen": "El oficial se mantiene en $1.495/$1.545 en el Banco Nación y el mayorista en $1.526. El blue cotiza a $1.545/$1.565, el MEP a $1.548 y el CCL a $1.637.",
+   "fuente": "Ámbito",
+   "fecha": "2026-10-22",
+   "url": "https://www.ambito.com/finanzas/dolar-hoy-cuanto-cotiza-este-jueves-22-octubre-n6336588"
+  },
+  {
+   "titulo": "El BCRA moderó las compras y las reservas se mantuvieron arriba de los u$s50.000 millones por quinta rueda",
+   "resumen": "El Central compró u$s46 millones el miércoles, menos de la mitad que el martes, y suma u$s1.149 millones en octubre con 17 ruedas seguidas de compras. Las reservas subieron a u$s50.225 millones.",
    "fuente": "Ámbito",
    "fecha": "2026-10-21",
-   "url": "https://www.ambito.com/finanzas/dolar-hoy-cuanto-cotiza-este-miercoles-21-octubre-n6336095"
+   "url": "https://www.ambito.com/finanzas/el-bcra-modero-las-compras-y-las-reservas-se-mantuvieron-arriba-los-us50000-millones-quinta-rueda-n6336482"
   },
   {
-   "titulo": "El BCRA volvió a acelerar las compras y las reservas se sostuvieron sobre los u$s50.000 millones",
-   "resumen": "El Central compró u$s103 millones el martes, sumó 16 ruedas seguidas de compras y u$s1.103 millones en octubre. Las reservas brutas subieron a u$s50.201 millones y el mayorista cerró en $1.525, cerca de su máximo nominal.",
+   "titulo": "El dólar blue bajó por primera vez en cuatro jornadas luego de tocar su máximo histórico nominal",
+   "resumen": "El blue cedió $5 (0,3%) el miércoles y cerró en $1.565 para la venta. El mayorista tocó un nuevo récord nominal en $1.526 y el CCL cerró en $1.633, con una brecha de 7%.",
    "fuente": "Ámbito",
-   "fecha": "2026-10-20",
-   "url": "https://www.ambito.com/finanzas/el-bcra-volvio-acelerar-las-compras-dolares-y-las-reservas-se-sostuvieron-los-us50000-millones-n6336012"
-  },
-  {
-   "titulo": "El dólar blue escaló otros $10 y alcanzó su máximo histórico nominal",
-   "resumen": "El blue cerró el martes en $1.570 para la venta, un récord nominal. El MEP terminó en $1.544 y el CCL en $1.627.",
-   "fuente": "Ámbito",
-   "fecha": "2026-10-20",
-   "url": "https://www.ambito.com/finanzas/el-dolar-blue-escalo-otros-10-y-alcanzo-su-maximo-historico-nominal-n6335947"
+   "fecha": "2026-10-21",
+   "url": "https://www.ambito.com/finanzas/el-dolar-blue-primera-vez-cuatro-jornadas-luego-tocar-su-maximo-historico-nominal-n6336493"
   }
  ]
 }
