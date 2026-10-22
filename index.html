@@ -451,6 +451,7 @@ body{background:var(--bg); margin:0}
     <div class="panel-h">
       <h2>Evolución del dólar</h2>
       <div class="seg" id="rangoSeg">
+        <button type="button" data-r="7" aria-pressed="false">1S</button>
         <button type="button" data-r="30" aria-pressed="false">1M</button>
         <button type="button" data-r="182" aria-pressed="false">6M</button>
         <button type="button" data-r="365" aria-pressed="true">1A</button>
@@ -1366,12 +1367,12 @@ function drawDolar(){
     const lb = el("text", {x:padL-8, y:y(v)+3.5, "text-anchor":"end", "font-size":9.5, "font-family":"Tahoma, Verdana, sans-serif", fill:cssv("--muted")});
     lb.textContent = "$ " + nfArs.format(v); svg.appendChild(lb);
   }
-  // Marcas de tiempo: meses o años según el rango
-  const largo = n > 400;
+  // Marcas de tiempo: días, meses o años según el rango
+  const largo = n > 400, corto = n <= 45;
   let ultimo = "";
   const marcas = [];
   fechas.forEach((f, i) => {
-    const clave = largo ? f.slice(0,4) : f.slice(0,7);
+    const clave = largo ? f.slice(0,4) : corto ? f : f.slice(0,7);
     if(clave !== ultimo){ marcas.push([i, clave]); ultimo = clave; }
   });
   const salto = Math.max(1, Math.ceil(marcas.length / (W < 500 ? 4 : 7)));
@@ -1379,7 +1380,7 @@ function drawDolar(){
     if(i === 0 && marcas.length > 1 && j % salto) return;
     if(j % salto) return;
     const lb = el("text", {x:x(i), y:H-padB+16, "text-anchor":"middle", "font-size":10, fill:cssv("--muted")});
-    lb.textContent = largo ? clave : MESES[+clave.slice(5,7)] + (clave.endsWith("-01") || j === 0 ? " " + clave.slice(2,4) : "");
+    lb.textContent = largo ? clave : corto ? clave.slice(8,10) + "/" + clave.slice(5,7) : MESES[+clave.slice(5,7)] + (clave.endsWith("-01") || j === 0 ? " " + clave.slice(2,4) : "");
     svg.appendChild(lb);
   });
   // Líneas (orden fijo: oficial abajo, MEP arriba)
@@ -1390,6 +1391,7 @@ function drawDolar(){
       else abierto = false;
     });
     svg.appendChild(el("path", {d:dpath, fill:"none", stroke:cssv(sr.color), "stroke-width":2, "stroke-linejoin":"round", "stroke-linecap":"round"}));
+    if(n <= 12) sr.v.forEach((v, i) => { if(v) svg.appendChild(el("circle", {cx:x(i), cy:y(v), r:3.5, fill:cssv(sr.color), stroke:cssv("--surface"), "stroke-width":1.5})); });
   });
   // Leyenda con el último valor
   ser.forEach(sr => {
