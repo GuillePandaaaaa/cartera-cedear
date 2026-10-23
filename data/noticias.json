@@ -1,23 +1,23 @@
 {
- "actualizado": "2026-10-22T08:29-03:00",
+ "actualizado": "2026-10-23T08:29-03:00",
  "cedears": [
   {
    "ticker": "NVDA",
    "nombre": "Nvidia",
    "noticias": [
     {
+     "titulo": "Nvidia cae 4,4% en una nueva ola de dudas sobre el gasto en IA",
+     "resumen": "El sector tecnológico bajó 3% el jueves por la preocupación por el gasto en inteligencia artificial: Nvidia perdió 4,4%, Alphabet 3,2% y AMD 8,1%. Según Yahoo Finance, Nvidia ya resignó más de US$600.000 millones de valor desde el 6 de octubre.",
+     "fuente": "CNBC",
+     "fecha": "2026-10-22",
+     "url": "https://www.cnbc.com/2026/10/22/stock-market-today-live-update.html"
+    },
+    {
      "titulo": "Huang dice que la volatilidad del mercado de IA 'va a pasar'",
      "resumen": "El CEO de Nvidia aseguró en Berlín que la turbulencia de las acciones de IA es pasajera y destacó los beneficios de largo plazo. El viernes Nvidia bajó 1,4%, mucho menos que AMD e Intel, que cayeron cerca de 6%.",
      "fuente": "Bloomberg",
      "fecha": "2026-10-16",
      "url": "https://www.bloomberg.com/news/articles/2026-10-16/nvidia-ceo-on-ai-market-turmoil-all-of-this-is-going-to-pass"
-    },
-    {
-     "titulo": "Nvidia cae en una ola global de ventas de tecnológicas por dudas sobre el financiamiento de la IA",
-     "resumen": "Nvidia, AMD y Dell bajaron el jueves en una caída global de las acciones ligadas a la IA: las 20 mayores del sector perdieron más de US$1 billón de valor en la semana. Más tarde los chips recortaron pérdidas.",
-     "fuente": "CNBC",
-     "fecha": "2026-10-15",
-     "url": "https://www.cnbc.com/2026/10/15/sk-hynix-samsung-softbank-stocks-asia-tech-rout-ai-funding-worries.html"
     }
    ]
   },
@@ -51,6 +51,13 @@
    "nombre": "Procter & Gamble",
    "noticias": [
     {
+     "titulo": "P&G supera las estimaciones y la acción sube cerca de 6%",
+     "resumen": "La ganancia ajustada de US$2 por acción superó los US$1,89 esperados y las ventas de US$23.280 millones también quedaron por encima del consenso. La acción subía alrededor de 6% en la rueda del jueves.",
+     "fuente": "Yahoo Finance",
+     "fecha": "2026-10-22",
+     "url": "https://finance.yahoo.com/markets/stocks/articles/procter-gamble-pg-q1-earnings-111502516.html"
+    },
+    {
      "titulo": "P&G vende 4% más en su primer trimestre fiscal y mantiene la guía",
      "resumen": "Las ventas netas fueron de US$23.300 millones (+4%), con ventas orgánicas también +4%, y la ganancia core por acción subió 1% a US$2,00. Mantuvo la guía anual de ventas orgánicas, ganancias y retorno al accionista, y ajustó la de ventas netas por la compra de Thorne.",
      "fuente": "P&G (SEC 8-K)",
@@ -64,6 +71,13 @@
    "nombre": "S&P 500 (ETF)",
    "noticias": [
     {
+     "titulo": "El S&P 500 y el Nasdaq caen fuerte por nuevas dudas sobre la IA",
+     "resumen": "El jueves el S&P 500 bajó 1,21% hasta 7.663 y el Nasdaq 2,6%, su peor caída desde junio, mientras el Dow quedó plano. Meta cayó cerca de 7% por su gasto en IA y el índice de semiconductores se hundió 6,7%; el petróleo subió por la tensión en Medio Oriente.",
+     "fuente": "Yahoo Finance",
+     "fecha": "2026-10-22",
+     "url": "https://finance.yahoo.com/markets/stocks/articles/nasdaq-futures-drop-over-1-093849296.html"
+    },
+    {
      "titulo": "El S&P 500 suma tres subas seguidas y el Nasdaq gana 1% de la mano de SpaceX y Tesla",
      "resumen": "El miércoles el S&P 500 subió 0,58% hasta 7.757, el Dow 0,69% y el Nasdaq 1,05%, con Nvidia como mayor aporte. Tras el cierre, los futuros bajaban antes de los balances de Meta y Tesla.",
      "fuente": "CNBC",
@@ -76,13 +90,6 @@
      "fuente": "Yahoo Finance",
      "fecha": "2026-10-20",
      "url": "https://finance.yahoo.com/markets/stocks/articles/markets-news-oct-20-2026-103252254.html"
-    },
-    {
-     "titulo": "Rebotan la tecnología y los chips: el Nasdaq sube más de 1%",
-     "resumen": "El lunes el S&P 500 subió 0,41% hasta 7.691 y el Nasdaq 1,11%, con un rebote de las acciones de IA y semiconductores tras la caída de 4,5% de la semana pasada; Nvidia ganó 1,4%. El Dow bajó 0,07% y los rendimientos de los bonos subieron.",
-     "fuente": "CNBC",
-     "fecha": "2026-10-19",
-     "url": "https://www.cnbc.com/2026/10/18/stock-market-today-live-updates.html"
     }
    ]
   },
@@ -109,18 +116,18 @@
    "nombre": "ExxonMobil",
    "noticias": [
     {
+     "titulo": "Shell y ExxonMobil exploran vender su unidad química Infineum por US$8.000 millones",
+     "resumen": "Según el Financial Times, las dos petroleras contrataron a Bank of America para vender Infineum, su empresa química conjunta con base en el Reino Unido, en un proceso que arrancaría en días.",
+     "fuente": "Bloomberg",
+     "fecha": "2026-10-22",
+     "url": "https://www.bloomberg.com/news/articles/2026-10-22/shell-and-exxon-put-8-billion-chemical-unit-on-block-ft-says"
+    },
+    {
      "titulo": "Exxon anticipa un salto en las ganancias de refinación con el diésel en récord",
      "resumen": "En su presentación preliminar del tercer trimestre, ExxonMobil estimó que los márgenes de refinación sumarán US$4.500 millones a las ganancias de Energy Products frente al trimestre anterior, mientras los menores precios de crudo restan US$1.300 millones en Upstream.",
      "fuente": "Bloomberg",
      "fecha": "2026-10-16",
      "url": "https://www.bloomberg.com/news/articles/2026-10-16/exxon-signals-knockout-refining-earnings-as-diesel-prices-soar"
-    },
-    {
-     "titulo": "ExxonMobil sube cerca de 51% en el año con el petróleo cerca de US$96",
-     "resumen": "La acción acumula una suba de alrededor de 51% en 2026, con el WTI cotizando cerca de US$96 por barril. El análisis sostiene que el dividendo seguiría cubierto aun con el crudo a US$79.",
-     "fuente": "Yahoo Finance",
-     "fecha": "2026-10-15",
-     "url": "https://finance.yahoo.com/energy/articles/exxon-dividend-stays-safe-even-134553099.html"
     }
    ]
   },
@@ -132,20 +139,19 @@
   {
    "ticker": "V",
    "nombre": "Visa",
-   "noticias": [
-    {
-     "titulo": "Visa toca un nuevo máximo histórico tras una suba de objetivo de BMO",
-     "resumen": "BMO Capital elevó su precio objetivo de US$405 a US$425 y mantuvo la recomendación de compra; la acción subió cerca de 2% hasta un récord. Visa presenta su balance anual el 27 de octubre.",
-     "fuente": "Yahoo Finance",
-     "fecha": "2026-10-15",
-     "url": "https://finance.yahoo.com/markets/stocks/articles/visa-stock-hits-fresh-record-164519715.html"
-    }
-   ]
+   "noticias": []
   },
   {
    "ticker": "GOOGL",
    "nombre": "Alphabet",
    "noticias": [
+    {
+     "titulo": "Alphabet cae 3,2% en la venta de tecnológicas por el gasto en IA",
+     "resumen": "La acción bajó el jueves junto con Nvidia y AMD, en una jornada en la que la tecnología cayó 3% por dudas sobre las inversiones en IA tras el balance de Meta. Alphabet presenta resultados el 28 de octubre.",
+     "fuente": "CNBC",
+     "fecha": "2026-10-22",
+     "url": "https://www.cnbc.com/2026/10/22/stock-market-today-live-update.html"
+    },
     {
      "titulo": "Alphabet baja 1,1% a una semana de su balance",
      "resumen": "La acción cayó el martes pese a la suba del S&P 500. Alphabet presenta resultados del tercer trimestre el 28 de octubre.",
@@ -202,25 +208,25 @@
  ],
  "dolar": [
   {
-   "titulo": "Dólar hoy: a cuánto cotiza este jueves 22 de octubre",
-   "resumen": "El oficial se mantiene en $1.495/$1.545 en el Banco Nación y el mayorista en $1.526. El blue cotiza a $1.545/$1.565, el MEP a $1.548 y el CCL a $1.637.",
+   "titulo": "Dólar hoy: a cuánto cotiza este viernes 23 de octubre",
+   "resumen": "El oficial sube a $1.500/$1.550 en el Banco Nación y el mayorista se ubica en $1.528, en máximos nominales. El blue cotiza a $1.545/$1.565.",
+   "fuente": "Ámbito",
+   "fecha": "2026-10-23",
+   "url": "https://www.ambito.com/finanzas/dolar-hoy-cuanto-cotiza-este-viernes-23-octubre-n6337044"
+  },
+  {
+   "titulo": "El BCRA aceleró las compras y acumuló más de u$s200 millones en la semana, pero bajaron las reservas",
+   "resumen": "El Central compró u$s61 millones el jueves y suma u$s228 millones en la semana y u$s1.210 millones en octubre. Las reservas brutas bajaron u$s59 millones hasta u$s50.166 millones y el mayorista subió por quinta rueda a $1.528.",
    "fuente": "Ámbito",
    "fecha": "2026-10-22",
-   "url": "https://www.ambito.com/finanzas/dolar-hoy-cuanto-cotiza-este-jueves-22-octubre-n6336588"
+   "url": "https://www.ambito.com/finanzas/el-bcra-acelero-las-compras-y-acumulo-mas-us200-millones-la-semana-pero-bajaron-las-reservas-n6336918"
   },
   {
-   "titulo": "El BCRA moderó las compras y las reservas se mantuvieron arriba de los u$s50.000 millones por quinta rueda",
-   "resumen": "El Central compró u$s46 millones el miércoles, menos de la mitad que el martes, y suma u$s1.149 millones en octubre con 17 ruedas seguidas de compras. Las reservas subieron a u$s50.225 millones.",
+   "titulo": "El dólar blue se encamina hacia su segundo incremento semanal consecutivo",
+   "resumen": "El blue cerró el jueves en $1.545/$1.565 y va camino a su segunda semana seguida de suba. El MEP terminó en $1.556 y el CCL en $1.650.",
    "fuente": "Ámbito",
-   "fecha": "2026-10-21",
-   "url": "https://www.ambito.com/finanzas/el-bcra-modero-las-compras-y-las-reservas-se-mantuvieron-arriba-los-us50000-millones-quinta-rueda-n6336482"
-  },
-  {
-   "titulo": "El dólar blue bajó por primera vez en cuatro jornadas luego de tocar su máximo histórico nominal",
-   "resumen": "El blue cedió $5 (0,3%) el miércoles y cerró en $1.565 para la venta. El mayorista tocó un nuevo récord nominal en $1.526 y el CCL cerró en $1.633, con una brecha de 7%.",
-   "fuente": "Ámbito",
-   "fecha": "2026-10-21",
-   "url": "https://www.ambito.com/finanzas/el-dolar-blue-primera-vez-cuatro-jornadas-luego-tocar-su-maximo-historico-nominal-n6336493"
+   "fecha": "2026-10-22",
+   "url": "https://www.ambito.com/finanzas/el-dolar-blue-se-encamina-su-segundo-incremento-semanal-consecutivo-n6336897"
   }
  ]
 }
