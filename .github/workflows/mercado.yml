@@ -1,0 +1,47 @@
+name: Precios en horario de mercado
+# GitHub demora o saltea los horarios programados cada 5 minutos. En vez de eso, una corrida
+# larga se queda prendida y actualiza ella misma cada 5 minutos hasta las 18:20 (hora argentina).
+# Se programa cada 30 minutos para que, si GitHub demora o saltea alguna, igual arranque otra;
+# como comparten el grupo de concurrencia, nunca corren dos a la vez.
+on:
+  schedule:
+    - cron: "*/30 13-20 * * 1-5"   # 10:00 a 17:30 hora argentina (UTC-3)
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: precios-mercado
+  cancel-in-progress: false
+jobs:
+  actualizar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 358
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - name: Instalar yfinance
+        run: pip install -q yfinance
+        continue-on-error: true
+      - name: Actualizar cada 5 minutos
+        run: |
+          git config user.name "actualizador"
+          git config user.email "actions@users.noreply.github.com"
+          fin=$(( $(date +%s) + 350*60 ))          # margen antes del límite de 6 h de GitHub
+          while :; do
+            hhmm=$(TZ=America/Argentina/Buenos_Aires date +%H%M)
+            [ "$hhmm" -gt 1820 ] && break
+            [ "$(date +%s)" -gt "$fin" ] && break
+            if [ "$hhmm" -ge 1055 ]; then
+              git pull -q --rebase origin main || true
+              python scripts/actualizar.py || true
+              python scripts/historicos.py || true
+              python scripts/fundamentales.py --check || python scripts/fundamentales.py || true
+              git add -A data
+              if ! git diff --cached --quiet; then
+                git commit -q -m "Precios $(TZ=America/Argentina/Buenos_Aires date '+%d/%m %H:%M')"
+                git push -q || (git pull -q --rebase origin main && git push -q) || echo "No pude pushear; sigo"
+              fi
+            fi
+            sleep 300
+          done

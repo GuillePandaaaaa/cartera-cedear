@@ -1,11 +1,8 @@
 name: Actualizar precios y publicar
+# Corre con cada push (publica la app). Los precios en horario de mercado los actualiza mercado.yml.
 on:
   push:
     branches: [main]
-  schedule:
-    # Lunes a viernes, cada 5 min entre 11:00 y 17:55 hora argentina, y un cierre 18:15.
-    - cron: "*/5 14-20 * * 1-5"
-    - cron: "15 21 * * 1-5"
   workflow_dispatch:
 permissions:
   contents: write
