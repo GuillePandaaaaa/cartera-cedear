@@ -1,23 +1,23 @@
 {
- "actualizado": "2026-10-23T08:29-03:00",
+ "actualizado": "2026-10-26T08:30-03:00",
  "cedears": [
   {
    "ticker": "NVDA",
    "nombre": "Nvidia",
    "noticias": [
     {
+     "titulo": "Apple está por recuperar de Nvidia el título de empresa más valiosa",
+     "resumen": "Apple llegó a superar brevemente a Nvidia en valor de mercado el viernes, aunque Nvidia volvió a quedar adelante por poco. Nvidia está unos 11% debajo de su récord del 6 de octubre tras la caída de los chips.",
+     "fuente": "CNBC",
+     "fecha": "2026-10-23",
+     "url": "https://www.cnbc.com/2026/10/23/apple-nvidia-market-cap-earnings.html"
+    },
+    {
      "titulo": "Nvidia cae 4,4% en una nueva ola de dudas sobre el gasto en IA",
      "resumen": "El sector tecnológico bajó 3% el jueves por la preocupación por el gasto en inteligencia artificial: Nvidia perdió 4,4%, Alphabet 3,2% y AMD 8,1%. Según Yahoo Finance, Nvidia ya resignó más de US$600.000 millones de valor desde el 6 de octubre.",
      "fuente": "CNBC",
      "fecha": "2026-10-22",
      "url": "https://www.cnbc.com/2026/10/22/stock-market-today-live-update.html"
-    },
-    {
-     "titulo": "Huang dice que la volatilidad del mercado de IA 'va a pasar'",
-     "resumen": "El CEO de Nvidia aseguró en Berlín que la turbulencia de las acciones de IA es pasajera y destacó los beneficios de largo plazo. El viernes Nvidia bajó 1,4%, mucho menos que AMD e Intel, que cayeron cerca de 6%.",
-     "fuente": "Bloomberg",
-     "fecha": "2026-10-16",
-     "url": "https://www.bloomberg.com/news/articles/2026-10-16/nvidia-ceo-on-ai-market-turmoil-all-of-this-is-going-to-pass"
     }
    ]
   },
@@ -71,6 +71,13 @@
    "nombre": "S&P 500 (ETF)",
    "noticias": [
     {
+     "titulo": "El Dow cae más de 600 puntos con el petróleo arriba de US$100; S&P 500 y Nasdaq cierran la semana en baja",
+     "resumen": "El viernes el Dow bajó 1,23%, el S&P 500 0,52% hasta 7.624 y el Nasdaq 0,21%, con el crudo sobre US$100 por el temor a un rebrote del conflicto entre EE.UU. e Irán. En la semana el S&P perdió cerca de 0,5% y el Dow ganó 0,4%; la Fed se reúne esta semana.",
+     "fuente": "Yahoo Finance",
+     "fecha": "2026-10-23",
+     "url": "https://finance.yahoo.com/markets/stocks/articles/stock-market-today-futures-head-102959138.html"
+    },
+    {
      "titulo": "El S&P 500 y el Nasdaq caen fuerte por nuevas dudas sobre la IA",
      "resumen": "El jueves el S&P 500 bajó 1,21% hasta 7.663 y el Nasdaq 2,6%, su peor caída desde junio, mientras el Dow quedó plano. Meta cayó cerca de 7% por su gasto en IA y el índice de semiconductores se hundió 6,7%; el petróleo subió por la tensión en Medio Oriente.",
      "fuente": "Yahoo Finance",
@@ -83,13 +90,6 @@
      "fuente": "CNBC",
      "fecha": "2026-10-21",
      "url": "https://www.cnbc.com/2026/10/20/stock-market-today-live-updates.html"
-    },
-    {
-     "titulo": "El Dow sube más de 500 puntos impulsado por balances y la baja del petróleo",
-     "resumen": "El martes el Dow ganó 1,02% hasta 52.496 y el S&P 500 0,28% hasta 7.713, mientras el Nasdaq quedó casi plano. Ayudaron buenos balances, como el de 3M, y la baja del crudo; la volatilidad (VIX) cayó 6,1%.",
-     "fuente": "Yahoo Finance",
-     "fecha": "2026-10-20",
-     "url": "https://finance.yahoo.com/markets/stocks/articles/markets-news-oct-20-2026-103252254.html"
     }
    ]
   },
@@ -121,13 +121,6 @@
      "fuente": "Bloomberg",
      "fecha": "2026-10-22",
      "url": "https://www.bloomberg.com/news/articles/2026-10-22/shell-and-exxon-put-8-billion-chemical-unit-on-block-ft-says"
-    },
-    {
-     "titulo": "Exxon anticipa un salto en las ganancias de refinación con el diésel en récord",
-     "resumen": "En su presentación preliminar del tercer trimestre, ExxonMobil estimó que los márgenes de refinación sumarán US$4.500 millones a las ganancias de Energy Products frente al trimestre anterior, mientras los menores precios de crudo restan US$1.300 millones en Upstream.",
-     "fuente": "Bloomberg",
-     "fecha": "2026-10-16",
-     "url": "https://www.bloomberg.com/news/articles/2026-10-16/exxon-signals-knockout-refining-earnings-as-diesel-prices-soar"
     }
    ]
   },
@@ -184,6 +177,13 @@
    "nombre": "Apple",
    "noticias": [
     {
+     "titulo": "Apple se acerca a recuperar de Nvidia el puesto de empresa más valiosa",
+     "resumen": "Tras cerrar en récord el jueves, Apple pasó brevemente a Nvidia en capitalización el viernes, el mismo día que llegó a las tiendas el iPhone Duo. Su balance del 2 de noviembre podría terminar de darle el primer puesto.",
+     "fuente": "CNBC",
+     "fecha": "2026-10-23",
+     "url": "https://www.cnbc.com/2026/10/23/apple-nvidia-market-cap-earnings.html"
+    },
+    {
      "titulo": "Loop Capital baja a Apple a 'mantener' por dudas con los envíos de iPhone",
      "resumen": "La firma recortó la recomendación y el precio objetivo de US$370 a US$330 por preocupaciones con los planes de envío de iPhone y la suba del costo de la memoria. La acción cerró con una baja cercana a 1%.",
      "fuente": "Yahoo Finance",
@@ -208,25 +208,25 @@
  ],
  "dolar": [
   {
-   "titulo": "Dólar hoy: a cuánto cotiza este viernes 23 de octubre",
-   "resumen": "El oficial sube a $1.500/$1.550 en el Banco Nación y el mayorista se ubica en $1.528, en máximos nominales. El blue cotiza a $1.545/$1.565.",
+   "titulo": "Dólar hoy: a cuánto cotiza este lunes 26 de octubre",
+   "resumen": "El mayorista abre en $1.529,50, un nuevo máximo nominal, y el oficial en el Banco Nación sigue en $1.500/$1.550. El blue cotiza a $1.545/$1.565, el MEP a $1.562 (brecha 2,1%) y el CCL a $1.649 (7,8%).",
+   "fuente": "Ámbito",
+   "fecha": "2026-10-26",
+   "url": "https://www.ambito.com/finanzas/dolar-hoy-cuanto-cotiza-este-lunes-26-octubre-n6337787"
+  },
+  {
+   "titulo": "El BCRA desaceleró el ritmo semanal de compras, pero las reservas se consolidaron arriba de los u$s50.000 millones",
+   "resumen": "El Central compró u$s42 millones el viernes y u$s270 millones en la semana; en octubre suma u$s1.252 millones. Las reservas brutas cerraron en u$s50.203 millones.",
    "fuente": "Ámbito",
    "fecha": "2026-10-23",
-   "url": "https://www.ambito.com/finanzas/dolar-hoy-cuanto-cotiza-este-viernes-23-octubre-n6337044"
+   "url": "https://www.ambito.com/finanzas/el-bcra-desacelero-el-ritmo-semanal-compras-pero-las-reservas-se-consolidaron-arriba-los-us50000-millones-n6337384"
   },
   {
-   "titulo": "El BCRA aceleró las compras y acumuló más de u$s200 millones en la semana, pero bajaron las reservas",
-   "resumen": "El Central compró u$s61 millones el jueves y suma u$s228 millones en la semana y u$s1.210 millones en octubre. Las reservas brutas bajaron u$s59 millones hasta u$s50.166 millones y el mayorista subió por quinta rueda a $1.528.",
+   "titulo": "Dólar hoy: a cuánto cerró este viernes 23 de octubre",
+   "resumen": "El mayorista cerró en $1.529,50, con seis ruedas seguidas de suba y un alza semanal de $11,50. El Banco Nación quedó en $1.550 para la venta, el blue en $1.565 y el MEP en $1.554.",
    "fuente": "Ámbito",
-   "fecha": "2026-10-22",
-   "url": "https://www.ambito.com/finanzas/el-bcra-acelero-las-compras-y-acumulo-mas-us200-millones-la-semana-pero-bajaron-las-reservas-n6336918"
-  },
-  {
-   "titulo": "El dólar blue se encamina hacia su segundo incremento semanal consecutivo",
-   "resumen": "El blue cerró el jueves en $1.545/$1.565 y va camino a su segunda semana seguida de suba. El MEP terminó en $1.556 y el CCL en $1.650.",
-   "fuente": "Ámbito",
-   "fecha": "2026-10-22",
-   "url": "https://www.ambito.com/finanzas/el-dolar-blue-se-encamina-su-segundo-incremento-semanal-consecutivo-n6336897"
+   "fecha": "2026-10-23",
+   "url": "https://www.ambito.com/finanzas/dolar-hoy-cuanto-cerro-este-viernes-23-octubre-n6337337"
   }
  ]
 }
