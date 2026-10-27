@@ -1,10 +1,17 @@
 {
- "actualizado": "2026-10-26T08:30-03:00",
+ "actualizado": "2026-10-27T08:35-03:00",
  "cedears": [
   {
    "ticker": "NVDA",
    "nombre": "Nvidia",
    "noticias": [
+    {
+     "titulo": "Nvidia invertirá US$3.000 millones en Meta y amplían su alianza en IA",
+     "resumen": "Nvidia comprará US$3.000 millones de la emisión de acciones de Meta, que busca financiar su infraestructura de IA. Meta va a ampliar el uso de chips y redes de Nvidia (Vera Rubin, CPUs Vera) y ambas trabajarán en mejorar sus modelos Muse.",
+     "fuente": "CNBC",
+     "fecha": "2026-10-27",
+     "url": "https://www.cnbc.com/2026/10/27/nvidia-invest-meta.html"
+    },
     {
      "titulo": "Apple está por recuperar de Nvidia el título de empresa más valiosa",
      "resumen": "Apple llegó a superar brevemente a Nvidia en valor de mercado el viernes, aunque Nvidia volvió a quedar adelante por poco. Nvidia está unos 11% debajo de su récord del 6 de octubre tras la caída de los chips.",
@@ -31,20 +38,21 @@
      "fuente": "Bloomberg",
      "fecha": "2026-10-21",
      "url": "https://www.bloomberg.com/news/features/2026-10-21/how-coca-cola-s-5-billion-costa-coffee-deal-went-wrong"
-    },
-    {
-     "titulo": "Coca-Cola rinde 38,9% en un año, más del doble que el S&P 500",
-     "resumen": "La acción subió 38,9% en los doce meses al 16 de octubre, contra 15,5% del S&P 500. Presenta su balance trimestral alrededor del 27 de octubre.",
-     "fuente": "Yahoo Finance",
-     "fecha": "2026-10-19",
-     "url": "https://finance.yahoo.com/markets/stocks/articles/coca-cola-stock-bulls-not-174401748.html"
     }
    ]
   },
   {
    "ticker": "MSFT",
    "nombre": "Microsoft",
-   "noticias": []
+   "noticias": [
+    {
+     "titulo": "Microsoft presenta resultados el miércoles: el foco está en Azure",
+     "resumen": "Microsoft reporta su primer trimestre fiscal el 28 de octubre tras el cierre. Se espera que los ingresos suban 17% a US$90.750 millones y la ganancia ajustada 14% a US$4,72 por acción; el mercado mira el crecimiento de la nube y el gasto en IA.",
+     "fuente": "CNBC",
+     "fecha": "2026-10-25",
+     "url": "https://www.cnbc.com/2026/10/25/earnings-week-alphabet-microsoft-amazon.html"
+    }
+   ]
   },
   {
    "ticker": "PG",
@@ -71,6 +79,13 @@
    "nombre": "S&P 500 (ETF)",
    "noticias": [
     {
+     "titulo": "Wall Street sube impulsada por la salida a bolsa de Anthropic",
+     "resumen": "El lunes el S&P 500 ganó 0,7% hasta 7.677, el Nasdaq 0,8% y el Dow 0,3%, con las tecnológicas recuperándose tras el anuncio del IPO de Anthropic. La semana trae balances de Big Tech y la decisión de la Fed del miércoles.",
+     "fuente": "CNBC",
+     "fecha": "2026-10-26",
+     "url": "https://www.cnbc.com/2026/10/25/stock-market-today-live-updates.html"
+    },
+    {
      "titulo": "El Dow cae más de 600 puntos con el petróleo arriba de US$100; S&P 500 y Nasdaq cierran la semana en baja",
      "resumen": "El viernes el Dow bajó 1,23%, el S&P 500 0,52% hasta 7.624 y el Nasdaq 0,21%, con el crudo sobre US$100 por el temor a un rebrote del conflicto entre EE.UU. e Irán. En la semana el S&P perdió cerca de 0,5% y el Dow ganó 0,4%; la Fed se reúne esta semana.",
      "fuente": "Yahoo Finance",
@@ -83,13 +98,6 @@
      "fuente": "Yahoo Finance",
      "fecha": "2026-10-22",
      "url": "https://finance.yahoo.com/markets/stocks/articles/nasdaq-futures-drop-over-1-093849296.html"
-    },
-    {
-     "titulo": "El S&P 500 suma tres subas seguidas y el Nasdaq gana 1% de la mano de SpaceX y Tesla",
-     "resumen": "El miércoles el S&P 500 subió 0,58% hasta 7.757, el Dow 0,69% y el Nasdaq 1,05%, con Nvidia como mayor aporte. Tras el cierre, los futuros bajaban antes de los balances de Meta y Tesla.",
-     "fuente": "CNBC",
-     "fecha": "2026-10-21",
-     "url": "https://www.cnbc.com/2026/10/20/stock-market-today-live-updates.html"
     }
    ]
   },
@@ -139,18 +147,18 @@
    "nombre": "Alphabet",
    "noticias": [
     {
+     "titulo": "Alphabet reporta el miércoles con expectativa de ingresos +25%",
+     "resumen": "Alphabet presenta su tercer trimestre el 28 de octubre tras el cierre. Los analistas esperan ingresos de US$127.830 millones (+25%) y ganancia ajustada de US$2,97 por acción; la clave es si el gasto en IA rinde.",
+     "fuente": "CNBC",
+     "fecha": "2026-10-25",
+     "url": "https://www.cnbc.com/2026/10/25/earnings-week-alphabet-microsoft-amazon.html"
+    },
+    {
      "titulo": "Alphabet cae 3,2% en la venta de tecnológicas por el gasto en IA",
      "resumen": "La acción bajó el jueves junto con Nvidia y AMD, en una jornada en la que la tecnología cayó 3% por dudas sobre las inversiones en IA tras el balance de Meta. Alphabet presenta resultados el 28 de octubre.",
      "fuente": "CNBC",
      "fecha": "2026-10-22",
      "url": "https://www.cnbc.com/2026/10/22/stock-market-today-live-update.html"
-    },
-    {
-     "titulo": "Alphabet baja 1,1% a una semana de su balance",
-     "resumen": "La acción cayó el martes pese a la suba del S&P 500. Alphabet presenta resultados del tercer trimestre el 28 de octubre.",
-     "fuente": "Yahoo Finance",
-     "fecha": "2026-10-20",
-     "url": "https://finance.yahoo.com/markets/stocks/articles/why-alphabet-inc-goog-dipped-204504877.html"
     }
    ]
   },
@@ -164,11 +172,11 @@
    "nombre": "Amazon",
    "noticias": [
     {
-     "titulo": "Amazon salta hasta 5% tras ser elegida 'top pick' por Morgan Stanley",
-     "resumen": "Morgan Stanley la puso como su acción favorita y subió el precio objetivo de US$350 desde US$335; espera que AWS crezca 47% en 2027. Fue la que más subió del Dow; presenta balance el 29 de octubre.",
-     "fuente": "Yahoo Finance",
-     "fecha": "2026-10-19",
-     "url": "https://finance.yahoo.com/markets/stocks/article/amazon-stock-pops-after-morgan-stanley-details-5-catalysts-lifts-price-target-140841569.html"
+     "titulo": "Amazon presenta resultados el jueves",
+     "resumen": "Amazon reporta su tercer trimestre el 29 de octubre. Se esperan ingresos de US$202.200 millones (+12%) y ganancia ajustada de US$1,98 por acción, con atención en la nube y en el gasto de capital.",
+     "fuente": "CNBC",
+     "fecha": "2026-10-25",
+     "url": "https://www.cnbc.com/2026/10/25/earnings-week-alphabet-microsoft-amazon.html"
     }
    ]
   },
@@ -195,38 +203,30 @@
   {
    "ticker": "SNDK",
    "nombre": "Sandisk",
-   "noticias": [
-    {
-     "titulo": "Sandisk cae 18% en una semana por el temor a la competencia china en memorias",
-     "resumen": "La acción pasó de US$1.582 a US$1.299 en la semana al 16 de octubre, después de que la china CXMT anunciara memorias de servidor más densas para fin de año. Sandisk presenta balance el 29 de octubre.",
-     "fuente": "Yahoo Finance",
-     "fecha": "2026-10-19",
-     "url": "https://finance.yahoo.com/markets/stocks/articles/sandisk-stock-fell-18-dram-104331842.html"
-    }
-   ]
+   "noticias": []
   }
  ],
  "dolar": [
   {
-   "titulo": "Dólar hoy: a cuánto cotiza este lunes 26 de octubre",
-   "resumen": "El mayorista abre en $1.529,50, un nuevo máximo nominal, y el oficial en el Banco Nación sigue en $1.500/$1.550. El blue cotiza a $1.545/$1.565, el MEP a $1.562 (brecha 2,1%) y el CCL a $1.649 (7,8%).",
+   "titulo": "Dólar hoy: a cuánto cotiza este martes 27 de octubre",
+   "resumen": "En el Banco Nación el oficial abre a $1.510/$1.560 y el mayorista ronda $1.541. El blue está en $1.555/$1.575, el MEP en $1.574 y el CCL en $1.683.",
+   "fuente": "Ámbito",
+   "fecha": "2026-10-27",
+   "url": "https://www.ambito.com/finanzas/dolar-hoy-cuanto-cotiza-este-martes-27-octubre-n6338213"
+  },
+  {
+   "titulo": "Efecto Brasil: el BCRA cortó una racha de 19 ruedas con compras",
+   "resumen": "Ante la presión cambiaria por la caída del real tras las elecciones brasileñas, el Central no compró dólares el lunes. Las reservas igual subieron unos u$s278 millones por valuación y un desembolso del BID.",
    "fuente": "Ámbito",
    "fecha": "2026-10-26",
-   "url": "https://www.ambito.com/finanzas/dolar-hoy-cuanto-cotiza-este-lunes-26-octubre-n6337787"
+   "url": "https://www.ambito.com/finanzas/efecto-brasil-el-bcra-corto-una-racha-19-ruedas-compras-la-mayor-presion-cambiaria-n6338113"
   },
   {
-   "titulo": "El BCRA desaceleró el ritmo semanal de compras, pero las reservas se consolidaron arriba de los u$s50.000 millones",
-   "resumen": "El Central compró u$s42 millones el viernes y u$s270 millones en la semana; en octubre suma u$s1.252 millones. Las reservas brutas cerraron en u$s50.203 millones.",
-   "fuente": "Ámbito",
-   "fecha": "2026-10-23",
-   "url": "https://www.ambito.com/finanzas/el-bcra-desacelero-el-ritmo-semanal-compras-pero-las-reservas-se-consolidaron-arriba-los-us50000-millones-n6337384"
-  },
-  {
-   "titulo": "Dólar hoy: a cuánto cerró este viernes 23 de octubre",
-   "resumen": "El mayorista cerró en $1.529,50, con seis ruedas seguidas de suba y un alza semanal de $11,50. El Banco Nación quedó en $1.550 para la venta, el blue en $1.565 y el MEP en $1.554.",
-   "fuente": "Ámbito",
-   "fecha": "2026-10-23",
-   "url": "https://www.ambito.com/finanzas/dolar-hoy-cuanto-cerro-este-viernes-23-octubre-n6337337"
+   "titulo": "El Banco Central no compró reservas y el Tesoro habría vendido dólares",
+   "resumen": "En el mercado creen que hubo ventas oficiales para frenar la suba del tipo de cambio en un día agitado por el efecto Brasil. Es una estimación del mercado, no un dato oficial.",
+   "fuente": "La Nación",
+   "fecha": "2026-10-26",
+   "url": "https://www.lanacion.com.ar/economia/el-banco-central-no-compro-reservas-y-el-tesoro-habria-vendido-dolares-nid26102026/"
   }
  ]
 }
