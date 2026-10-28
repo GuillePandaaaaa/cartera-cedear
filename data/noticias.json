@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-10-27T08:35-03:00",
+ "actualizado": "2026-10-28T08:35-03:00",
  "cedears": [
   {
    "ticker": "NVDA",
@@ -79,6 +79,13 @@
    "nombre": "S&P 500 (ETF)",
    "noticias": [
     {
+     "titulo": "El S&P 500 sube por segundo día con rebote de los chips antes de la Fed",
+     "resumen": "El martes el S&P 500 ganó 0,6% hasta 7.722,60, el Nasdaq 1,18% y el Dow quedó casi plano. Hoy la Fed termina su reunión de dos días y el mercado espera que mantenga las tasas.",
+     "fuente": "CNBC",
+     "fecha": "2026-10-27",
+     "url": "https://www.cnbc.com/2026/10/26/stock-market-today-live-updates.html"
+    },
+    {
      "titulo": "Wall Street sube impulsada por la salida a bolsa de Anthropic",
      "resumen": "El lunes el S&P 500 ganó 0,7% hasta 7.677, el Nasdaq 0,8% y el Dow 0,3%, con las tecnológicas recuperándose tras el anuncio del IPO de Anthropic. La semana trae balances de Big Tech y la decisión de la Fed del miércoles.",
      "fuente": "CNBC",
@@ -91,28 +98,13 @@
      "fuente": "Yahoo Finance",
      "fecha": "2026-10-23",
      "url": "https://finance.yahoo.com/markets/stocks/articles/stock-market-today-futures-head-102959138.html"
-    },
-    {
-     "titulo": "El S&P 500 y el Nasdaq caen fuerte por nuevas dudas sobre la IA",
-     "resumen": "El jueves el S&P 500 bajó 1,21% hasta 7.663 y el Nasdaq 2,6%, su peor caída desde junio, mientras el Dow quedó plano. Meta cayó cerca de 7% por su gasto en IA y el índice de semiconductores se hundió 6,7%; el petróleo subió por la tensión en Medio Oriente.",
-     "fuente": "Yahoo Finance",
-     "fecha": "2026-10-22",
-     "url": "https://finance.yahoo.com/markets/stocks/articles/nasdaq-futures-drop-over-1-093849296.html"
     }
    ]
   },
   {
    "ticker": "MELI",
    "nombre": "MercadoLibre",
-   "noticias": [
-    {
-     "titulo": "MercadoLibre lanza entregas en una hora en São Paulo y vende remedios con receta en Brasil",
-     "resumen": "La compañía empezó a ofrecer entregas en una hora en São Paulo y avanzó en la venta de medicamentos con receta en Brasil, además de colocar US$1.000 millones en bonos de largo plazo. La acción subía cerca de 2%.",
-     "fuente": "Yahoo Finance",
-     "fecha": "2026-10-20",
-     "url": "https://finance.yahoo.com/markets/stocks/articles/investors-may-respond-mercadolibre-meli-200839649.html"
-    }
-   ]
+   "noticias": []
   },
   {
    "ticker": "O",
@@ -140,7 +132,15 @@
   {
    "ticker": "V",
    "nombre": "Visa",
-   "noticias": []
+   "noticias": [
+    {
+     "titulo": "Visa supera las expectativas en su cuarto trimestre fiscal",
+     "resumen": "Los ingresos netos subieron 13% a US$12.100 millones y la ganancia ajustada fue de US$3,48 por acción, por encima de lo esperado. El volumen de pagos creció 9% y el transfronterizo 12%; la guía para el año fiscal 2027 apunta a un crecimiento de dos dígitos bajos.",
+     "fuente": "Yahoo Finance",
+     "fecha": "2026-10-27",
+     "url": "https://finance.yahoo.com/news/visa-q4-results-beat-wall-205243024.html"
+    }
+   ]
   },
   {
    "ticker": "GOOGL",
@@ -190,13 +190,6 @@
      "fuente": "CNBC",
      "fecha": "2026-10-23",
      "url": "https://www.cnbc.com/2026/10/23/apple-nvidia-market-cap-earnings.html"
-    },
-    {
-     "titulo": "Loop Capital baja a Apple a 'mantener' por dudas con los envíos de iPhone",
-     "resumen": "La firma recortó la recomendación y el precio objetivo de US$370 a US$330 por preocupaciones con los planes de envío de iPhone y la suba del costo de la memoria. La acción cerró con una baja cercana a 1%.",
-     "fuente": "Yahoo Finance",
-     "fecha": "2026-10-20",
-     "url": "https://finance.yahoo.com/markets/stocks/articles/aapl-stock-downgraded-iphone-shipment-123814814.html"
     }
    ]
   },
@@ -208,25 +201,25 @@
  ],
  "dolar": [
   {
-   "titulo": "Dólar hoy: a cuánto cotiza este martes 27 de octubre",
-   "resumen": "En el Banco Nación el oficial abre a $1.510/$1.560 y el mayorista ronda $1.541. El blue está en $1.555/$1.575, el MEP en $1.574 y el CCL en $1.683.",
+   "titulo": "Dólar hoy: a cuánto cotiza este miércoles 28 de octubre",
+   "resumen": "El blue arranca en $1.555/$1.575 y el mayorista en $1.538. El MEP cotiza a $1.563 y el CCL a $1.656, mientras el mercado espera la decisión de la Fed.",
+   "fuente": "Ámbito",
+   "fecha": "2026-10-28",
+   "url": "https://www.ambito.com/finanzas/dolar-hoy-cuanto-cotiza-este-miercoles-28-octubre-n6338653"
+  },
+  {
+   "titulo": "El BCRA no compró dólares por segunda rueda consecutiva, aunque las reservas volvieron a subir",
+   "resumen": "Es la primera vez en el año que el Central pasa dos ruedas sin comprar; en octubre acumula u$s1.252 millones. Las reservas subieron u$s99 millones y el mayorista cortó siete subas seguidas al cerrar en $1.538.",
    "fuente": "Ámbito",
    "fecha": "2026-10-27",
-   "url": "https://www.ambito.com/finanzas/dolar-hoy-cuanto-cotiza-este-martes-27-octubre-n6338213"
+   "url": "https://www.ambito.com/economia/el-bcra-no-compro-dolares-segunda-rueda-consecutiva-aunque-las-reservas-volvieron-subir-n6338558"
   },
   {
-   "titulo": "Efecto Brasil: el BCRA cortó una racha de 19 ruedas con compras",
-   "resumen": "Ante la presión cambiaria por la caída del real tras las elecciones brasileñas, el Central no compró dólares el lunes. Las reservas igual subieron unos u$s278 millones por valuación y un desembolso del BID.",
-   "fuente": "Ámbito",
-   "fecha": "2026-10-26",
-   "url": "https://www.ambito.com/finanzas/efecto-brasil-el-bcra-corto-una-racha-19-ruedas-compras-la-mayor-presion-cambiaria-n6338113"
-  },
-  {
-   "titulo": "El Banco Central no compró reservas y el Tesoro habría vendido dólares",
-   "resumen": "En el mercado creen que hubo ventas oficiales para frenar la suba del tipo de cambio en un día agitado por el efecto Brasil. Es una estimación del mercado, no un dato oficial.",
-   "fuente": "La Nación",
-   "fecha": "2026-10-26",
-   "url": "https://www.lanacion.com.ar/economia/el-banco-central-no-compro-reservas-y-el-tesoro-habria-vendido-dolares-nid26102026/"
+   "titulo": "Bajó el riesgo país y el dólar se estabilizó, pero vuelven a subir las tasas en EE.UU.",
+   "resumen": "El MEP retrocedió $11 (-0,7%) hasta $1.563 y el CCL cayó 1,5%. El BCRA no compró por segunda rueda seguida.",
+   "fuente": "Infobae",
+   "fecha": "2026-10-28",
+   "url": "https://www.infobae.com/economia/2026/10/28/bajo-el-riesgo-pais-y-el-dolar-se-estabilizo-pero-sigue-el-viento-de-frente-vuelven-a-subir-las-tasas-en-eeuu/"
   }
  ]
 }
