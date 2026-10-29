@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-10-28T08:35-03:00",
+ "actualizado": "2026-10-29T08:35-03:00",
  "cedears": [
   {
    "ticker": "NVDA",
@@ -31,26 +31,18 @@
   {
    "ticker": "KO",
    "nombre": "Coca-Cola",
-   "noticias": [
-    {
-     "titulo": "Cómo salió mal la compra de Costa Coffee por US$5.000 millones",
-     "resumen": "La adquisición de Costa iba a crear un imperio global de máquinas de espresso y café en lata, pero según Bloomberg terminó siendo sobre todo una cadena de cafeterías en el Reino Unido. Coca-Cola presenta su balance el 27 de octubre.",
-     "fuente": "Bloomberg",
-     "fecha": "2026-10-21",
-     "url": "https://www.bloomberg.com/news/features/2026-10-21/how-coca-cola-s-5-billion-costa-coffee-deal-went-wrong"
-    }
-   ]
+   "noticias": []
   },
   {
    "ticker": "MSFT",
    "nombre": "Microsoft",
    "noticias": [
     {
-     "titulo": "Microsoft presenta resultados el miércoles: el foco está en Azure",
-     "resumen": "Microsoft reporta su primer trimestre fiscal el 28 de octubre tras el cierre. Se espera que los ingresos suban 17% a US$90.750 millones y la ganancia ajustada 14% a US$4,72 por acción; el mercado mira el crecimiento de la nube y el gasto en IA.",
+     "titulo": "Microsoft sube 4% fuera de hora: Azure crece 48% y supera expectativas",
+     "resumen": "Los ingresos subieron 19% a US$92.300 millones y la ganancia ajustada fue US$4,89 por acción, arriba de lo esperado. Azure facturó US$33.200 millones (+48%) y la empresa proyecta 49-50% para el próximo trimestre; el flujo de caja libre cayó 27%.",
      "fuente": "CNBC",
-     "fecha": "2026-10-25",
-     "url": "https://www.cnbc.com/2026/10/25/earnings-week-alphabet-microsoft-amazon.html"
+     "fecha": "2026-10-28",
+     "url": "https://www.cnbc.com/2026/10/28/microsoft-msft-q1-earnings-report-2027.html"
     }
    ]
   },
@@ -79,25 +71,25 @@
    "nombre": "S&P 500 (ETF)",
    "noticias": [
     {
+     "titulo": "La Fed mantiene las tasas en 3,75%-4% en una votación dividida",
+     "resumen": "La decisión fue 10 a 2: Lisa Cook y Beth Hammack votaron por una suba de un cuarto de punto. Tras el anuncio, los futuros asignan 85% de probabilidad a una suba en diciembre.",
+     "fuente": "CNBC",
+     "fecha": "2026-10-28",
+     "url": "https://www.cnbc.com/2026/10/28/fed-interest-rate-decision-october-2026.html"
+    },
+    {
+     "titulo": "El S&P 500 y el Dow suben por tercer día tras la decisión de la Fed",
+     "resumen": "El S&P 500 ganó 0,28% hasta 7.743,98, el Nasdaq 0,27% y el Dow 0,19%. El rendimiento del bono a 10 años subió a cerca de 5,04%.",
+     "fuente": "CNBC",
+     "fecha": "2026-10-28",
+     "url": "https://www.cnbc.com/2026/10/27/stock-market-today-live-updates.html"
+    },
+    {
      "titulo": "El S&P 500 sube por segundo día con rebote de los chips antes de la Fed",
      "resumen": "El martes el S&P 500 ganó 0,6% hasta 7.722,60, el Nasdaq 1,18% y el Dow quedó casi plano. Hoy la Fed termina su reunión de dos días y el mercado espera que mantenga las tasas.",
      "fuente": "CNBC",
      "fecha": "2026-10-27",
      "url": "https://www.cnbc.com/2026/10/26/stock-market-today-live-updates.html"
-    },
-    {
-     "titulo": "Wall Street sube impulsada por la salida a bolsa de Anthropic",
-     "resumen": "El lunes el S&P 500 ganó 0,7% hasta 7.677, el Nasdaq 0,8% y el Dow 0,3%, con las tecnológicas recuperándose tras el anuncio del IPO de Anthropic. La semana trae balances de Big Tech y la decisión de la Fed del miércoles.",
-     "fuente": "CNBC",
-     "fecha": "2026-10-26",
-     "url": "https://www.cnbc.com/2026/10/25/stock-market-today-live-updates.html"
-    },
-    {
-     "titulo": "El Dow cae más de 600 puntos con el petróleo arriba de US$100; S&P 500 y Nasdaq cierran la semana en baja",
-     "resumen": "El viernes el Dow bajó 1,23%, el S&P 500 0,52% hasta 7.624 y el Nasdaq 0,21%, con el crudo sobre US$100 por el temor a un rebrote del conflicto entre EE.UU. e Irán. En la semana el S&P perdió cerca de 0,5% y el Dow ganó 0,4%; la Fed se reúne esta semana.",
-     "fuente": "Yahoo Finance",
-     "fecha": "2026-10-23",
-     "url": "https://finance.yahoo.com/markets/stocks/articles/stock-market-today-futures-head-102959138.html"
     }
    ]
   },
@@ -147,18 +139,11 @@
    "nombre": "Alphabet",
    "noticias": [
     {
-     "titulo": "Alphabet reporta el miércoles con expectativa de ingresos +25%",
-     "resumen": "Alphabet presenta su tercer trimestre el 28 de octubre tras el cierre. Los analistas esperan ingresos de US$127.830 millones (+25%) y ganancia ajustada de US$2,97 por acción; la clave es si el gasto en IA rinde.",
+     "titulo": "Alphabet se desploma tras los resultados pese al boom de Google Cloud",
+     "resumen": "Los ingresos subieron 25% a US$127.600 millones y Google Cloud creció 103%, pero la ganancia por acción quedó por debajo de lo esperado y el flujo de caja libre fue negativo por el gasto en IA. La empresa anticipa un aumento significativo del gasto de capital en 2027 y la acción cayó más de 10% fuera de hora.",
      "fuente": "CNBC",
-     "fecha": "2026-10-25",
-     "url": "https://www.cnbc.com/2026/10/25/earnings-week-alphabet-microsoft-amazon.html"
-    },
-    {
-     "titulo": "Alphabet cae 3,2% en la venta de tecnológicas por el gasto en IA",
-     "resumen": "La acción bajó el jueves junto con Nvidia y AMD, en una jornada en la que la tecnología cayó 3% por dudas sobre las inversiones en IA tras el balance de Meta. Alphabet presenta resultados el 28 de octubre.",
-     "fuente": "CNBC",
-     "fecha": "2026-10-22",
-     "url": "https://www.cnbc.com/2026/10/22/stock-market-today-live-update.html"
+     "fecha": "2026-10-28",
+     "url": "https://www.cnbc.com/2026/10/28/alphabet-googl-earnings-q3-2026.html"
     }
    ]
   },
@@ -201,25 +186,25 @@
  ],
  "dolar": [
   {
-   "titulo": "Dólar hoy: a cuánto cotiza este miércoles 28 de octubre",
-   "resumen": "El blue arranca en $1.555/$1.575 y el mayorista en $1.538. El MEP cotiza a $1.563 y el CCL a $1.656, mientras el mercado espera la decisión de la Fed.",
+   "titulo": "Dólar hoy: a cuánto cotiza este jueves 29 de octubre",
+   "resumen": "El mayorista opera en $1.542 y el oficial en el Banco Nación en $1.510/$1.560. El MEP ronda $1.571 (brecha 1,9%) y el CCL $1.658 (7,5%).",
    "fuente": "Ámbito",
-   "fecha": "2026-10-28",
-   "url": "https://www.ambito.com/finanzas/dolar-hoy-cuanto-cotiza-este-miercoles-28-octubre-n6338653"
+   "fecha": "2026-10-29",
+   "url": "https://www.ambito.com/finanzas/dolar-hoy-cuanto-cotiza-este-jueves-29-octubre-n6339140"
   },
   {
-   "titulo": "El BCRA no compró dólares por segunda rueda consecutiva, aunque las reservas volvieron a subir",
-   "resumen": "Es la primera vez en el año que el Central pasa dos ruedas sin comprar; en octubre acumula u$s1.252 millones. Las reservas subieron u$s99 millones y el mayorista cortó siete subas seguidas al cerrar en $1.538.",
+   "titulo": "Por tercera rueda al hilo, el BCRA no compró dólares, aunque las reservas siguen arriba de u$s50.000 millones",
+   "resumen": "El Central no compra desde el lunes por la presión del efecto Brasil y la demanda de cobertura; en octubre lleva u$s1.252 millones. Las reservas subieron igual, en parte por el oro.",
    "fuente": "Ámbito",
-   "fecha": "2026-10-27",
-   "url": "https://www.ambito.com/economia/el-bcra-no-compro-dolares-segunda-rueda-consecutiva-aunque-las-reservas-volvieron-subir-n6338558"
+   "fecha": "2026-10-28",
+   "url": "https://www.ambito.com/finanzas/por-tercera-rueda-al-hilo-el-bcra-no-compro-dolares-aunque-las-reservas-siguen-arriba-los-us50000-millones-n6339045"
   },
   {
-   "titulo": "Bajó el riesgo país y el dólar se estabilizó, pero vuelven a subir las tasas en EE.UU.",
-   "resumen": "El MEP retrocedió $11 (-0,7%) hasta $1.563 y el CCL cayó 1,5%. El BCRA no compró por segunda rueda seguida.",
-   "fuente": "Infobae",
+   "titulo": "Con un dólar más demandado, el Banco Central pausa la compra de reservas",
+   "resumen": "Es la primera vez desde que arrancó el plan de acumulación en enero que el BCRA pasa tres días sin intervenir en el mercado de cambios.",
+   "fuente": "La Nación",
    "fecha": "2026-10-28",
-   "url": "https://www.infobae.com/economia/2026/10/28/bajo-el-riesgo-pais-y-el-dolar-se-estabilizo-pero-sigue-el-viento-de-frente-vuelven-a-subir-las-tasas-en-eeuu/"
+   "url": "https://www.lanacion.com.ar/economia/con-un-dolar-mas-demandado-el-banco-central-pausa-la-compra-de-reservas-nid28102026/"
   }
  ]
 }
