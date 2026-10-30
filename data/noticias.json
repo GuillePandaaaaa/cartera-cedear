@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-10-29T08:35-03:00",
+ "actualizado": "2026-10-30T08:35-03:00",
  "cedears": [
   {
    "ticker": "NVDA",
@@ -18,13 +18,6 @@
      "fuente": "CNBC",
      "fecha": "2026-10-23",
      "url": "https://www.cnbc.com/2026/10/23/apple-nvidia-market-cap-earnings.html"
-    },
-    {
-     "titulo": "Nvidia cae 4,4% en una nueva ola de dudas sobre el gasto en IA",
-     "resumen": "El sector tecnológico bajó 3% el jueves por la preocupación por el gasto en inteligencia artificial: Nvidia perdió 4,4%, Alphabet 3,2% y AMD 8,1%. Según Yahoo Finance, Nvidia ya resignó más de US$600.000 millones de valor desde el 6 de octubre.",
-     "fuente": "CNBC",
-     "fecha": "2026-10-22",
-     "url": "https://www.cnbc.com/2026/10/22/stock-market-today-live-update.html"
     }
    ]
   },
@@ -49,27 +42,19 @@
   {
    "ticker": "PG",
    "nombre": "Procter & Gamble",
-   "noticias": [
-    {
-     "titulo": "P&G supera las estimaciones y la acción sube cerca de 6%",
-     "resumen": "La ganancia ajustada de US$2 por acción superó los US$1,89 esperados y las ventas de US$23.280 millones también quedaron por encima del consenso. La acción subía alrededor de 6% en la rueda del jueves.",
-     "fuente": "Yahoo Finance",
-     "fecha": "2026-10-22",
-     "url": "https://finance.yahoo.com/markets/stocks/articles/procter-gamble-pg-q1-earnings-111502516.html"
-    },
-    {
-     "titulo": "P&G vende 4% más en su primer trimestre fiscal y mantiene la guía",
-     "resumen": "Las ventas netas fueron de US$23.300 millones (+4%), con ventas orgánicas también +4%, y la ganancia core por acción subió 1% a US$2,00. Mantuvo la guía anual de ventas orgánicas, ganancias y retorno al accionista, y ajustó la de ventas netas por la compra de Thorne.",
-     "fuente": "P&G (SEC 8-K)",
-     "fecha": "2026-10-22",
-     "url": "https://www.sec.gov/Archives/edgar/data/0000080424/000008042426000250/fy2627q1jas8-kexhibit991.htm"
-    }
-   ]
+   "noticias": []
   },
   {
    "ticker": "SPY",
    "nombre": "S&P 500 (ETF)",
    "noticias": [
+    {
+     "titulo": "Wall Street cae arrastrada por Alphabet y vuelven los temores con la IA",
+     "resumen": "El jueves el S&P 500 bajó 0,30% hasta 7.720, el Dow 0,25% y el Nasdaq 1,4%, con Alphabet hundiéndose tras su balance. Los resultados dispares de las Big Tech reavivaron las dudas sobre el gasto en IA.",
+     "fuente": "Yahoo Finance",
+     "fecha": "2026-10-29",
+     "url": "https://finance.yahoo.com/markets/live/stock-market-today-thursday-october-29-dow-sp-500-nasdaq-alphabet-microsoft-earnings-130305714.html"
+    },
     {
      "titulo": "La Fed mantiene las tasas en 3,75%-4% en una votación dividida",
      "resumen": "La decisión fue 10 a 2: Lisa Cook y Beth Hammack votaron por una suba de un cuarto de punto. Tras el anuncio, los futuros asignan 85% de probabilidad a una suba en diciembre.",
@@ -83,13 +68,6 @@
      "fuente": "CNBC",
      "fecha": "2026-10-28",
      "url": "https://www.cnbc.com/2026/10/27/stock-market-today-live-updates.html"
-    },
-    {
-     "titulo": "El S&P 500 sube por segundo día con rebote de los chips antes de la Fed",
-     "resumen": "El martes el S&P 500 ganó 0,6% hasta 7.722,60, el Nasdaq 1,18% y el Dow quedó casi plano. Hoy la Fed termina su reunión de dos días y el mercado espera que mantenga las tasas.",
-     "fuente": "CNBC",
-     "fecha": "2026-10-27",
-     "url": "https://www.cnbc.com/2026/10/26/stock-market-today-live-updates.html"
     }
    ]
   },
@@ -108,11 +86,11 @@
    "nombre": "ExxonMobil",
    "noticias": [
     {
-     "titulo": "Shell y ExxonMobil exploran vender su unidad química Infineum por US$8.000 millones",
-     "resumen": "Según el Financial Times, las dos petroleras contrataron a Bank of America para vender Infineum, su empresa química conjunta con base en el Reino Unido, en un proceso que arrancaría en días.",
-     "fuente": "Bloomberg",
-     "fecha": "2026-10-22",
-     "url": "https://www.bloomberg.com/news/articles/2026-10-22/shell-and-exxon-put-8-billion-chemical-unit-on-block-ft-says"
+     "titulo": "ExxonMobil supera expectativas con récord de refinación y sube el dividendo",
+     "resumen": "Ganó US$15.400 millones en el tercer trimestre (US$4,23 por acción ajustado), por encima del consenso, gracias a los márgenes de refinación por el diésel caro. Declaró un dividendo trimestral de US$1,07, por encima de los US$1,03 anteriores.",
+     "fuente": "ExxonMobil (SEC 8-K)",
+     "fecha": "2026-10-30",
+     "url": "https://www.sec.gov/Archives/edgar/data/0002115436/000211543626000018/livef8k3q26991.htm"
     }
    ]
   },
@@ -139,6 +117,13 @@
    "nombre": "Alphabet",
    "noticias": [
     {
+     "titulo": "Alphabet se hunde cerca de 13%, su peor día desde que cotiza",
+     "resumen": "La acción cayó tras el balance del tercer trimestre y arrastró al Nasdaq, que perdió 1,4%. Fue la peor rueda para Alphabet desde su salida a bolsa en 2004.",
+     "fuente": "Yahoo Finance",
+     "fecha": "2026-10-29",
+     "url": "https://finance.yahoo.com/markets/live/stock-market-today-thursday-october-29-dow-sp-500-nasdaq-alphabet-microsoft-earnings-130305714.html"
+    },
+    {
      "titulo": "Alphabet se desploma tras los resultados pese al boom de Google Cloud",
      "resumen": "Los ingresos subieron 25% a US$127.600 millones y Google Cloud creció 103%, pero la ganancia por acción quedó por debajo de lo esperado y el flujo de caja libre fue negativo por el gasto en IA. La empresa anticipa un aumento significativo del gasto de capital en 2027 y la acción cayó más de 10% fuera de hora.",
      "fuente": "CNBC",
@@ -150,12 +135,27 @@
   {
    "ticker": "MDLZ",
    "nombre": "Mondelez",
-   "noticias": []
+   "noticias": [
+    {
+     "titulo": "Mondelez sube tras superar las estimaciones de ganancias",
+     "resumen": "La ganancia ajustada fue US$0,78 por acción (+6,8%), contra US$0,71 esperado, con ingresos de US$10.000 millones (+2,3%). El margen operativo mejoró por menores costos de materias primas y la empresa ratificó su guía 2026.",
+     "fuente": "Yahoo Finance",
+     "fecha": "2026-10-29",
+     "url": "https://finance.yahoo.com/markets/stocks/articles/mondelez-climbs-earnings-beat-213340700.html"
+    }
+   ]
   },
   {
    "ticker": "AMZN",
    "nombre": "Amazon",
    "noticias": [
+    {
+     "titulo": "Amazon cae fuerte tras quedar debajo de lo esperado, aunque AWS crece 39%",
+     "resumen": "Ganó US$1,89 por acción ajustado (se esperaba US$1,96) con ingresos de US$201.900 millones, y la guía del cuarto trimestre también quedó por debajo. AWS facturó cerca de US$46.000 millones (+39%), pero el flujo de caja libre fue negativo en US$42.400 millones por el gasto en IA; la acción bajó más de 6% fuera de hora.",
+     "fuente": "CNBC",
+     "fecha": "2026-10-29",
+     "url": "https://www.cnbc.com/2026/10/29/amazon-amzn-q3-earnings-report-2026.html"
+    },
     {
      "titulo": "Amazon presenta resultados el jueves",
      "resumen": "Amazon reporta su tercer trimestre el 29 de octubre. Se esperan ingresos de US$202.200 millones (+12%) y ganancia ajustada de US$1,98 por acción, con atención en la nube y en el gasto de capital.",
@@ -181,30 +181,38 @@
   {
    "ticker": "SNDK",
    "nombre": "Sandisk",
-   "noticias": []
+   "noticias": [
+    {
+     "titulo": "Sandisk supera expectativas y anuncia un split de 8 a 1",
+     "resumen": "Facturó US$11.030 millones, arriba de su propia guía, impulsado por la demanda de centros de datos, y mejoró la proyección para el próximo trimestre. Además anunció un desdoblamiento de acciones de 8 por 1 y recompró unos US$5.000 millones en acciones.",
+     "fuente": "Yahoo Finance",
+     "fecha": "2026-10-29",
+     "url": "https://finance.yahoo.com/markets/stocks/live/earnings-live-updates-sandisk-posts-solid-earnings-announces-8-for-1-stock-split-202935679.html"
+    }
+   ]
   }
  ],
  "dolar": [
   {
-   "titulo": "Dólar hoy: a cuánto cotiza este jueves 29 de octubre",
-   "resumen": "El mayorista opera en $1.542 y el oficial en el Banco Nación en $1.510/$1.560. El MEP ronda $1.571 (brecha 1,9%) y el CCL $1.658 (7,5%).",
+   "titulo": "Dólar hoy: a cuánto cotiza este viernes 30 de octubre",
+   "resumen": "El oficial en el Banco Nación sigue en $1.510/$1.560 y el mayorista en $1.539. El blue está en $1.545/$1.565, el MEP en $1.561 y el CCL en $1.644.",
+   "fuente": "Ámbito",
+   "fecha": "2026-10-30",
+   "url": "https://www.ambito.com/finanzas/dolar-hoy-cuanto-cotiza-este-viernes-30-octubre-n6339597"
+  },
+  {
+   "titulo": "El BCRA volvió a comprar dólares tras 3 ruedas sin intervenir, pero las reservas bajaron casi u$s450 millones",
+   "resumen": "El Central compró u$s47 millones el jueves y en octubre acumula u$s1.299 millones. Las reservas igual cayeron cerca de u$s450 millones.",
    "fuente": "Ámbito",
    "fecha": "2026-10-29",
-   "url": "https://www.ambito.com/finanzas/dolar-hoy-cuanto-cotiza-este-jueves-29-octubre-n6339140"
+   "url": "https://www.ambito.com/finanzas/el-bcra-volvio-comprar-dolares-luego-3-ruedas-intervenciones-pero-las-reservas-bajaron-casi-us450-millones-n6339503"
   },
   {
-   "titulo": "Por tercera rueda al hilo, el BCRA no compró dólares, aunque las reservas siguen arriba de u$s50.000 millones",
-   "resumen": "El Central no compra desde el lunes por la presión del efecto Brasil y la demanda de cobertura; en octubre lleva u$s1.252 millones. Las reservas subieron igual, en parte por el oro.",
-   "fuente": "Ámbito",
-   "fecha": "2026-10-28",
-   "url": "https://www.ambito.com/finanzas/por-tercera-rueda-al-hilo-el-bcra-no-compro-dolares-aunque-las-reservas-siguen-arriba-los-us50000-millones-n6339045"
-  },
-  {
-   "titulo": "Con un dólar más demandado, el Banco Central pausa la compra de reservas",
-   "resumen": "Es la primera vez desde que arrancó el plan de acumulación en enero que el BCRA pasa tres días sin intervenir en el mercado de cambios.",
-   "fuente": "La Nación",
-   "fecha": "2026-10-28",
-   "url": "https://www.lanacion.com.ar/economia/con-un-dolar-mas-demandado-el-banco-central-pausa-la-compra-de-reservas-nid28102026/"
+   "titulo": "Subieron los bonos argentinos y cayó el riesgo país, pero las acciones cedieron por cuarto día seguido",
+   "resumen": "Los bonos en dólares rebotaron y bajó el riesgo país, mientras el panel de acciones locales encadenó su cuarta baja consecutiva.",
+   "fuente": "Infobae",
+   "fecha": "2026-10-29",
+   "url": "https://www.infobae.com/economia/2026/10/29/jornada-financiera-subieron-los-bonos-argentinos-y-cayo-el-riesgo-pais-pero-las-acciones-cedieron-por-cuarto-dia-seguido/"
   }
  ]
 }
