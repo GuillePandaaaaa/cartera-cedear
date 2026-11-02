@@ -615,7 +615,7 @@ function render(){
 
   document.getElementById("mepVal").textContent = state.mep ? "$ " + nfArs2.format(state.mep) : "—";
   document.getElementById("mepStamp").textContent = state.fechaMep || "";
-  document.getElementById("pxStamp").textContent = state.fechaPx ? "Precios al " + state.fechaPx : "";
+  document.getElementById("pxStamp").textContent = state.fechaPx ? "Precios al " + state.fechaPx + (preciosDemorados() ? " · demorados, tocá Actualizar precios" : "") : "";
   document.getElementById("fuente").innerHTML =
     "<b>Los precios</b> son la última cotización disponible en BYMA al " + (state.fechaPx||"—") +
     ", y el MEP sale de la cotización de bonos del mismo panel (fuente: data912 / BYMA). Se actualizan solos cada 5 minutos en horario de mercado.";
@@ -673,6 +673,14 @@ function render(){
   renderNoticias();
   renderInfo();
   renderRendimientos();
+}
+// En horario de mercado (L a V, 11:15 a 17:30 de este celular), avisa si los precios tienen más de 20 minutos.
+function preciosDemorados(){
+  const k = claveFecha(state.fechaPx); if(!k) return false;
+  const a = new Date(), hm = a.getHours()*100 + a.getMinutes();
+  if(a.getDay() === 0 || a.getDay() === 6 || hm < 1115 || hm > 1730) return false;
+  const px = new Date(+k.slice(0,4), +k.slice(4,6)-1, +k.slice(6,8), +k.slice(8,10), +k.slice(10,12));
+  return a - px > 20*60*1000;
 }
 function editando(id, modo){ return !!state.editing && state.editing.id === id && state.editing.modo === modo; }
 
@@ -1843,17 +1851,30 @@ function aplicarMercado(d){
   state.fechaMep = d.fechaMep || state.fechaMep;
   render();
 }
+// "dd/mm/aaaa hh:mm" -> "aaaammddhhmm", para comparar cuál dato es más nuevo.
+function claveFecha(f){
+  const m = String(f || "").match(/(\d{2})\/(\d{2})\/(\d{4}) (\d{2}):(\d{2})/);
+  return m ? m[3] + m[2] + m[1] + m[4] + m[5] : "";
+}
+// Pide los precios a todas las copias a la vez (repo, CDN jsDelivr y la página publicada) y se queda
+// con la más nueva: si una falla o está atrasada (por ejemplo, raw.githubusercontent limita pedidos), sirve otra.
 async function bajarMercado(){
-  for(const url of urlsDato("data/mercado.json")){
-    try{ const r = await fetch(url, {cache:"no-store"}); if(r.ok) return r; }catch(e){}
-  }
-  throw 0;
+  const urls = urlsDato("data/mercado.json");
+  const m = location.hostname.match(/^([^.]+)\.github\.io$/);
+  const repo = location.pathname.split("/").filter(Boolean)[0];
+  if(m && repo) urls.splice(1, 0, "https://cdn.jsdelivr.net/gh/" + m[1] + "/" + repo + "@main/data/mercado.json?t=" + Date.now());
+  const res = await Promise.allSettled(urls.map(async url => {
+    const ctl = new AbortController(); const t = setTimeout(() => ctl.abort(), 15000);
+    try{ const r = await fetch(url, {cache:"no-store", signal:ctl.signal}); if(!r.ok) throw 0; return await r.json(); }
+    finally{ clearTimeout(t); }
+  }));
+  const ok = res.filter(x => x.status === "fulfilled" && x.value && x.value.precios).map(x => x.value);
+  if(!ok.length) throw 0;
+  return ok.sort((a, b) => claveFecha(b.fechaPx) < claveFecha(a.fechaPx) ? -1 : 1)[0];
 }
 async function cargarMercado(){
   try{
-    const r = await bajarMercado();
-    if(!r.ok) throw 0;
-    const d = await r.json();
+    const d = await bajarMercado();
     aplicarMercado(d);
     try{ localStorage.setItem(MK, JSON.stringify(d)); }catch(e){}
     return true;
@@ -1861,7 +1882,7 @@ async function cargarMercado(){
 }
 cargarMercado();
 document.addEventListener("visibilitychange", () => { if(!document.hidden){ cargarMercado(); cargarExtras(); } });
-setInterval(() => { if(!document.hidden) cargarMercado(); }, 2*60*1000);
+setInterval(() => { if(!document.hidden) cargarMercado(); }, 3*60*1000);
 
 document.getElementById("bkRefresh").addEventListener("click", async ev => {
   const b = ev.currentTarget; b.textContent = "Actualizando…";
