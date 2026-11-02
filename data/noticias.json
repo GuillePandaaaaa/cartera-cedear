@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-10-30T08:35-03:00",
+ "actualizado": "2026-11-02T08:35-03:00",
  "cedears": [
   {
    "ticker": "NVDA",
@@ -11,13 +11,6 @@
      "fuente": "CNBC",
      "fecha": "2026-10-27",
      "url": "https://www.cnbc.com/2026/10/27/nvidia-invest-meta.html"
-    },
-    {
-     "titulo": "Apple está por recuperar de Nvidia el título de empresa más valiosa",
-     "resumen": "Apple llegó a superar brevemente a Nvidia en valor de mercado el viernes, aunque Nvidia volvió a quedar adelante por poco. Nvidia está unos 11% debajo de su récord del 6 de octubre tras la caída de los chips.",
-     "fuente": "CNBC",
-     "fecha": "2026-10-23",
-     "url": "https://www.cnbc.com/2026/10/23/apple-nvidia-market-cap-earnings.html"
     }
    ]
   },
@@ -49,6 +42,13 @@
    "nombre": "S&P 500 (ETF)",
    "noticias": [
     {
+     "titulo": "El S&P 500 tiene su peor día desde junio por la venta de tecnológicas",
+     "resumen": "El viernes el S&P 500 cayó 1,8% hasta 7.580, el Nasdaq 2,9% y el Dow 1,1%, con Intel desplomándose 29% por su guía débil. En el año, el S&P todavía sube 10,7%.",
+     "fuente": "Yahoo Finance",
+     "fecha": "2026-10-30",
+     "url": "https://finance.yahoo.com/markets/stocks/articles/major-us-stock-indexes-fared-202111310.html"
+    },
+    {
      "titulo": "Wall Street cae arrastrada por Alphabet y vuelven los temores con la IA",
      "resumen": "El jueves el S&P 500 bajó 0,30% hasta 7.720, el Dow 0,25% y el Nasdaq 1,4%, con Alphabet hundiéndose tras su balance. Los resultados dispares de las Big Tech reavivaron las dudas sobre el gasto en IA.",
      "fuente": "Yahoo Finance",
@@ -61,20 +61,21 @@
      "fuente": "CNBC",
      "fecha": "2026-10-28",
      "url": "https://www.cnbc.com/2026/10/28/fed-interest-rate-decision-october-2026.html"
-    },
-    {
-     "titulo": "El S&P 500 y el Dow suben por tercer día tras la decisión de la Fed",
-     "resumen": "El S&P 500 ganó 0,28% hasta 7.743,98, el Nasdaq 0,27% y el Dow 0,19%. El rendimiento del bono a 10 años subió a cerca de 5,04%.",
-     "fuente": "CNBC",
-     "fecha": "2026-10-28",
-     "url": "https://www.cnbc.com/2026/10/27/stock-market-today-live-updates.html"
     }
    ]
   },
   {
    "ticker": "MELI",
    "nombre": "MercadoLibre",
-   "noticias": []
+   "noticias": [
+    {
+     "titulo": "MercadoLibre presenta su balance del tercer trimestre el 4 de noviembre",
+     "resumen": "La compañía publicará los resultados del trimestre cerrado el 30 de septiembre el miércoles 4, con conferencia a las 17 h de Nueva York. En el segundo trimestre los ingresos habían crecido 50%, pero el margen operativo bajó a 6,7%.",
+     "fuente": "Yahoo Finance",
+     "fecha": "2026-10-29",
+     "url": "https://finance.yahoo.com/markets/stocks/articles/mercadolibre-inc-report-third-quarter-142600759.html"
+    }
+   ]
   },
   {
    "ticker": "O",
@@ -155,13 +156,6 @@
      "fuente": "CNBC",
      "fecha": "2026-10-29",
      "url": "https://www.cnbc.com/2026/10/29/amazon-amzn-q3-earnings-report-2026.html"
-    },
-    {
-     "titulo": "Amazon presenta resultados el jueves",
-     "resumen": "Amazon reporta su tercer trimestre el 29 de octubre. Se esperan ingresos de US$202.200 millones (+12%) y ganancia ajustada de US$1,98 por acción, con atención en la nube y en el gasto de capital.",
-     "fuente": "CNBC",
-     "fecha": "2026-10-25",
-     "url": "https://www.cnbc.com/2026/10/25/earnings-week-alphabet-microsoft-amazon.html"
     }
    ]
   },
@@ -170,11 +164,11 @@
    "nombre": "Apple",
    "noticias": [
     {
-     "titulo": "Apple se acerca a recuperar de Nvidia el puesto de empresa más valiosa",
-     "resumen": "Tras cerrar en récord el jueves, Apple pasó brevemente a Nvidia en capitalización el viernes, el mismo día que llegó a las tiendas el iPhone Duo. Su balance del 2 de noviembre podría terminar de darle el primer puesto.",
-     "fuente": "CNBC",
-     "fecha": "2026-10-23",
-     "url": "https://www.cnbc.com/2026/10/23/apple-nvidia-market-cap-earnings.html"
+     "titulo": "Apple presenta resultados hoy con el iPhone en el centro",
+     "resumen": "Apple reporta su cuarto trimestre fiscal este lunes tras el cierre; el consenso espera US$2 por acción e ingresos de US$113.460 millones. Se proyectan ventas de iPhone por US$56.480 millones (+15%) y será la primera conferencia con John Ternus como CEO.",
+     "fuente": "Yahoo Finance",
+     "fecha": "2026-10-31",
+     "url": "https://finance.yahoo.com/technology/article/apple-to-report-q4-earnings-monday-with-iphone-18-sales-in-the-spotlight-190138409.html"
     }
    ]
   },
@@ -194,25 +188,25 @@
  ],
  "dolar": [
   {
-   "titulo": "Dólar hoy: a cuánto cotiza este viernes 30 de octubre",
-   "resumen": "El oficial en el Banco Nación sigue en $1.510/$1.560 y el mayorista en $1.539. El blue está en $1.545/$1.565, el MEP en $1.561 y el CCL en $1.644.",
+   "titulo": "Dólar hoy: a cuánto cotiza este lunes 2 de noviembre",
+   "resumen": "El oficial en el Banco Nación arranca en $1.510/$1.560 y el mayorista en $1.534. El blue está en $1.545/$1.565, el MEP en $1.574 y el CCL en $1.654.",
    "fuente": "Ámbito",
-   "fecha": "2026-10-30",
-   "url": "https://www.ambito.com/finanzas/dolar-hoy-cuanto-cotiza-este-viernes-30-octubre-n6339597"
+   "fecha": "2026-11-02",
+   "url": "https://www.ambito.com/finanzas/dolar-hoy-cuanto-cotiza-este-lunes-2-noviembre-n6340367"
   },
   {
-   "titulo": "El BCRA volvió a comprar dólares tras 3 ruedas sin intervenir, pero las reservas bajaron casi u$s450 millones",
-   "resumen": "El Central compró u$s47 millones el jueves y en octubre acumula u$s1.299 millones. Las reservas igual cayeron cerca de u$s450 millones.",
+   "titulo": "El BCRA compró en octubre casi tres veces más dólares que en septiembre, pese al shock de Brasil",
+   "resumen": "El Central cerró el mes con compras por u$s1.395 millones y en 2026 ya suma u$s15.963 millones. El viernes compró u$s96 millones, pero las reservas cayeron, en parte por la baja del oro.",
    "fuente": "Ámbito",
-   "fecha": "2026-10-29",
-   "url": "https://www.ambito.com/finanzas/el-bcra-volvio-comprar-dolares-luego-3-ruedas-intervenciones-pero-las-reservas-bajaron-casi-us450-millones-n6339503"
+   "fecha": "2026-10-31",
+   "url": "https://www.ambito.com/finanzas/el-bcra-compro-octubre-casi-tres-veces-mas-dolares-que-septiembre-pese-al-shock-cambiario-brasil-n6339956"
   },
   {
-   "titulo": "Subieron los bonos argentinos y cayó el riesgo país, pero las acciones cedieron por cuarto día seguido",
-   "resumen": "Los bonos en dólares rebotaron y bajó el riesgo país, mientras el panel de acciones locales encadenó su cuarta baja consecutiva.",
+   "titulo": "El riesgo país subió a 790 puntos, un nuevo máximo del año",
+   "resumen": "Los bonos argentinos sufrieron el viernes y el riesgo país marcó su nivel más alto de 2026, en un contexto de volatilidad regional.",
    "fuente": "Infobae",
-   "fecha": "2026-10-29",
-   "url": "https://www.infobae.com/economia/2026/10/29/jornada-financiera-subieron-los-bonos-argentinos-y-cayo-el-riesgo-pais-pero-las-acciones-cedieron-por-cuarto-dia-seguido/"
+   "fecha": "2026-10-30",
+   "url": "https://www.infobae.com/economia/2026/10/30/el-riesgo-pais-argentino-subio-a-777-puntos-un-nuevo-maximo-en-lo-que-va-del-ano/"
   }
  ]
 }
