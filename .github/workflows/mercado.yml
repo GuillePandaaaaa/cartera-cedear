@@ -36,6 +36,7 @@ jobs:
           git config user.name "actualizador"
           git config user.email "actions@users.noreply.github.com"
           fin=$(( $(date +%s) + 340*60 ))          # margen antes del límite de 6 h de GitHub (y para relanzar)
+          ultima_pub=0
           while :; do
             hhmm=$(TZ=America/Argentina/Buenos_Aires date +%H%M)
             [ "$hhmm" -gt 1820 ] && break
@@ -50,14 +51,15 @@ jobs:
                 git commit -q -m "Precios $(TZ=America/Argentina/Buenos_Aires date '+%d/%m %H:%M')"
                 if git push -q || (git pull -q --rebase origin main && git push -q); then
                   # La app también lee la copia de jsDelivr: se limpia su caché para que tome el dato nuevo.
-                  curl -s -m 20 "https://purge.jsdelivr.net/gh/${{ github.repository }}@main/data/mercado.json" >/dev/null || true
+                  echo "jsDelivr: $(curl -s -m 20 -o /dev/null -w '%{http_code}' "https://purge.jsdelivr.net/gh/${{ github.repository }}@main/data/mercado.json")"
                 else
                   echo "No pude pushear; sigo"
                 fi
               fi
               # Cada 30 minutos re-publica la página, que es la copia de respaldo de la app.
-              if [ $(( 10#${hhmm:2:2} % 30 )) -lt 5 ]; then
-                gh workflow run precios.yml --ref main --repo "${{ github.repository }}" || true
+              if [ $(( $(date +%s) - ultima_pub )) -ge 1740 ]; then
+                gh workflow run precios.yml --ref main --repo "${{ github.repository }}" && echo "Página re-publicada" || true
+                ultima_pub=$(date +%s)
               fi
             fi
             sleep 300
