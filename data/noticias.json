@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-02T08:35-03:00",
+ "actualizado": "2026-11-03T08:35-03:00",
  "cedears": [
   {
    "ticker": "NVDA",
@@ -42,6 +42,13 @@
    "nombre": "S&P 500 (ETF)",
    "noticias": [
     {
+     "titulo": "El Nasdaq 100 entra en corrección por las dudas con la IA antes de las elecciones de medio término",
+     "resumen": "El lunes el S&P 500 cayó 0,51% hasta 7.541 y el Nasdaq 1,07%, mientras el Dow subió 0,41% ayudado por la baja del petróleo. El Nasdaq 100 ya acumula 10% de caída desde su pico de octubre.",
+     "fuente": "Yahoo Finance",
+     "fecha": "2026-11-02",
+     "url": "https://finance.yahoo.com/markets/world-indices/articles/major-us-stock-indexes-fared-212103580.html"
+    },
+    {
      "titulo": "El S&P 500 tiene su peor día desde junio por la venta de tecnológicas",
      "resumen": "El viernes el S&P 500 cayó 1,8% hasta 7.580, el Nasdaq 2,9% y el Dow 1,1%, con Intel desplomándose 29% por su guía débil. En el año, el S&P todavía sube 10,7%.",
      "fuente": "Yahoo Finance",
@@ -54,13 +61,6 @@
      "fuente": "Yahoo Finance",
      "fecha": "2026-10-29",
      "url": "https://finance.yahoo.com/markets/live/stock-market-today-thursday-october-29-dow-sp-500-nasdaq-alphabet-microsoft-earnings-130305714.html"
-    },
-    {
-     "titulo": "La Fed mantiene las tasas en 3,75%-4% en una votación dividida",
-     "resumen": "La decisión fue 10 a 2: Lisa Cook y Beth Hammack votaron por una suba de un cuarto de punto. Tras el anuncio, los futuros asignan 85% de probabilidad a una suba en diciembre.",
-     "fuente": "CNBC",
-     "fecha": "2026-10-28",
-     "url": "https://www.cnbc.com/2026/10/28/fed-interest-rate-decision-october-2026.html"
     }
    ]
   },
@@ -80,7 +80,15 @@
   {
    "ticker": "O",
    "nombre": "Realty Income",
-   "noticias": []
+   "noticias": [
+    {
+     "titulo": "Realty Income sube 3,7% su AFFO por acción en el tercer trimestre",
+     "resumen": "El AFFO por acción llegó a US$1,12 y la ganancia neta a US$0,43 por acción. Invirtió US$2.600 millones con un rendimiento inicial de 6,8% y entró en un joint venture con KKR en Europa.",
+     "fuente": "Realty Income (SEC 8-K)",
+     "fecha": "2026-11-02",
+     "url": "https://www.sec.gov/Archives/edgar/data/0000726728/000072672826000056/o-991q32026.htm"
+    }
+   ]
   },
   {
    "ticker": "XOM",
@@ -164,11 +172,11 @@
    "nombre": "Apple",
    "noticias": [
     {
-     "titulo": "Apple presenta resultados hoy con el iPhone en el centro",
-     "resumen": "Apple reporta su cuarto trimestre fiscal este lunes tras el cierre; el consenso espera US$2 por acción e ingresos de US$113.460 millones. Se proyectan ventas de iPhone por US$56.480 millones (+15%) y será la primera conferencia con John Ternus como CEO.",
+     "titulo": "Apple supera expectativas por el iPhone, pero preocupan China y los costos de memoria",
+     "resumen": "Ganó US$2,10 por acción con ingresos de US$114.480 millones, arriba de lo esperado, y el iPhone facturó US$57.600 millones (+17%). Pero las ventas en China quedaron cortas y proyectó un margen bruto de 45-46% para diciembre, por debajo de lo esperado por el costo de la memoria.",
      "fuente": "Yahoo Finance",
-     "fecha": "2026-10-31",
-     "url": "https://finance.yahoo.com/technology/article/apple-to-report-q4-earnings-monday-with-iphone-18-sales-in-the-spotlight-190138409.html"
+     "fecha": "2026-11-02",
+     "url": "https://finance.yahoo.com/markets/stocks/article/apple-q4-earnings-live-iphone-18-sales-in-the-spotlight-183000820.html"
     }
    ]
   },
@@ -188,25 +196,25 @@
  ],
  "dolar": [
   {
-   "titulo": "Dólar hoy: a cuánto cotiza este lunes 2 de noviembre",
-   "resumen": "El oficial en el Banco Nación arranca en $1.510/$1.560 y el mayorista en $1.534. El blue está en $1.545/$1.565, el MEP en $1.574 y el CCL en $1.654.",
+   "titulo": "Dólar hoy: a cuánto cotiza este martes 3 de noviembre",
+   "resumen": "El oficial en el Banco Nación sube a $1.515/$1.565 y el mayorista a $1.545,50. El blue está en $1.545/$1.565, el MEP en $1.565 (brecha 1,3%) y el CCL en $1.654.",
+   "fuente": "Ámbito",
+   "fecha": "2026-11-03",
+   "url": "https://www.ambito.com/finanzas/dolar-hoy-cuanto-cotiza-este-martes-3-noviembre-n6340783"
+  },
+  {
+   "titulo": "El BCRA inició noviembre sin compras, pero las reservas volvieron a superar los u$s50.000 millones",
+   "resumen": "El Central no compró dólares el lunes y en el año mantiene u$s15.963 millones acumulados. Las reservas subieron a unos u$s50.441 millones, en parte por la suba del oro.",
    "fuente": "Ámbito",
    "fecha": "2026-11-02",
-   "url": "https://www.ambito.com/finanzas/dolar-hoy-cuanto-cotiza-este-lunes-2-noviembre-n6340367"
+   "url": "https://www.ambito.com/finanzas/el-bcra-inicio-noviembre-compras-dolares-pero-las-reservas-volvieron-superar-los-us50000-millones-n6340682"
   },
   {
-   "titulo": "El BCRA compró en octubre casi tres veces más dólares que en septiembre, pese al shock de Brasil",
-   "resumen": "El Central cerró el mes con compras por u$s1.395 millones y en 2026 ya suma u$s15.963 millones. El viernes compró u$s96 millones, pero las reservas cayeron, en parte por la baja del oro.",
-   "fuente": "Ámbito",
-   "fecha": "2026-10-31",
-   "url": "https://www.ambito.com/finanzas/el-bcra-compro-octubre-casi-tres-veces-mas-dolares-que-septiembre-pese-al-shock-cambiario-brasil-n6339956"
-  },
-  {
-   "titulo": "El riesgo país subió a 790 puntos, un nuevo máximo del año",
-   "resumen": "Los bonos argentinos sufrieron el viernes y el riesgo país marcó su nivel más alto de 2026, en un contexto de volatilidad regional.",
+   "titulo": "Las acciones argentinas cayeron por sexta rueda seguida y el riesgo país superó los 800 puntos",
+   "resumen": "El panel local siguió en baja y el riesgo país pasó los 800 puntos, en una jornada en la que el BCRA tampoco compró reservas.",
    "fuente": "Infobae",
-   "fecha": "2026-10-30",
-   "url": "https://www.infobae.com/economia/2026/10/30/el-riesgo-pais-argentino-subio-a-777-puntos-un-nuevo-maximo-en-lo-que-va-del-ano/"
+   "fecha": "2026-11-02",
+   "url": "https://www.infobae.com/economia/2026/11/02/las-acciones-argentinas-cayeron-por-sexta-rueda-seguida-el-riesgo-pais-supero-los-800-puntos-y-el-bcra-no-compro-reservas/"
   }
  ]
 }
