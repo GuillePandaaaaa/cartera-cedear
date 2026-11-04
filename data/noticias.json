@@ -1,16 +1,16 @@
 {
- "actualizado": "2026-11-03T08:35-03:00",
+ "actualizado": "2026-11-04T08:35-03:00",
  "cedears": [
   {
    "ticker": "NVDA",
    "nombre": "Nvidia",
    "noticias": [
     {
-     "titulo": "Nvidia invertirá US$3.000 millones en Meta y amplían su alianza en IA",
-     "resumen": "Nvidia comprará US$3.000 millones de la emisión de acciones de Meta, que busca financiar su infraestructura de IA. Meta va a ampliar el uso de chips y redes de Nvidia (Vera Rubin, CPUs Vera) y ambas trabajarán en mejorar sus modelos Muse.",
-     "fuente": "CNBC",
-     "fecha": "2026-10-27",
-     "url": "https://www.cnbc.com/2026/10/27/nvidia-invest-meta.html"
+     "titulo": "Nvidia rebota tras cuatro días de caída; pide a clientes de nube limitar exposición a China",
+     "resumen": "Las acciones de chips se recuperaron el martes y Nvidia subió cerca de 2%. Según el FT, la empresa pidió a sus clientes de nube reducir su exposición a compañías chinas en contratos futuros; Nvidia presenta resultados el 17 de noviembre.",
+     "fuente": "Yahoo Finance",
+     "fecha": "2026-11-03",
+     "url": "https://finance.yahoo.com/markets/stocks/articles/nvda-shares-inch-higher-overnight-085557639.html"
     }
    ]
   },
@@ -42,25 +42,25 @@
    "nombre": "S&P 500 (ETF)",
    "noticias": [
     {
+     "titulo": "Caen los futuros tras el triunfo demócrata en ambas cámaras del Congreso",
+     "resumen": "Los demócratas ganaron el control de la Cámara de Representantes y el Senado en las elecciones de medio término. Los futuros de Wall Street bajaban, con el mercado evaluando posibles restricciones a la construcción de centros de datos.",
+     "fuente": "Yahoo Finance",
+     "fecha": "2026-11-04",
+     "url": "https://finance.yahoo.com/markets/live/stock-market-today-dow-sp-500-nasdaq-midterm-elections-091834396.html"
+    },
+    {
+     "titulo": "El S&P 500 corta tres días de baja en el día de elecciones gracias a los chips",
+     "resumen": "El martes el S&P 500 subió 0,4% hasta 7.569 y el Nasdaq 0,8%, mientras el Dow cayó 0,4%. Apple restó tras su guía de márgenes.",
+     "fuente": "CNBC",
+     "fecha": "2026-11-03",
+     "url": "https://www.cnbc.com/2026/11/02/stock-market-today-live-updates.html"
+    },
+    {
      "titulo": "El Nasdaq 100 entra en corrección por las dudas con la IA antes de las elecciones de medio término",
      "resumen": "El lunes el S&P 500 cayó 0,51% hasta 7.541 y el Nasdaq 1,07%, mientras el Dow subió 0,41% ayudado por la baja del petróleo. El Nasdaq 100 ya acumula 10% de caída desde su pico de octubre.",
      "fuente": "Yahoo Finance",
      "fecha": "2026-11-02",
      "url": "https://finance.yahoo.com/markets/world-indices/articles/major-us-stock-indexes-fared-212103580.html"
-    },
-    {
-     "titulo": "El S&P 500 tiene su peor día desde junio por la venta de tecnológicas",
-     "resumen": "El viernes el S&P 500 cayó 1,8% hasta 7.580, el Nasdaq 2,9% y el Dow 1,1%, con Intel desplomándose 29% por su guía débil. En el año, el S&P todavía sube 10,7%.",
-     "fuente": "Yahoo Finance",
-     "fecha": "2026-10-30",
-     "url": "https://finance.yahoo.com/markets/stocks/articles/major-us-stock-indexes-fared-202111310.html"
-    },
-    {
-     "titulo": "Wall Street cae arrastrada por Alphabet y vuelven los temores con la IA",
-     "resumen": "El jueves el S&P 500 bajó 0,30% hasta 7.720, el Dow 0,25% y el Nasdaq 1,4%, con Alphabet hundiéndose tras su balance. Los resultados dispares de las Big Tech reavivaron las dudas sobre el gasto en IA.",
-     "fuente": "Yahoo Finance",
-     "fecha": "2026-10-29",
-     "url": "https://finance.yahoo.com/markets/live/stock-market-today-thursday-october-29-dow-sp-500-nasdaq-alphabet-microsoft-earnings-130305714.html"
     }
    ]
   },
@@ -111,15 +111,7 @@
   {
    "ticker": "V",
    "nombre": "Visa",
-   "noticias": [
-    {
-     "titulo": "Visa supera las expectativas en su cuarto trimestre fiscal",
-     "resumen": "Los ingresos netos subieron 13% a US$12.100 millones y la ganancia ajustada fue de US$3,48 por acción, por encima de lo esperado. El volumen de pagos creció 9% y el transfronterizo 12%; la guía para el año fiscal 2027 apunta a un crecimiento de dos dígitos bajos.",
-     "fuente": "Yahoo Finance",
-     "fecha": "2026-10-27",
-     "url": "https://finance.yahoo.com/news/visa-q4-results-beat-wall-205243024.html"
-    }
-   ]
+   "noticias": []
   },
   {
    "ticker": "GOOGL",
@@ -172,6 +164,13 @@
    "nombre": "Apple",
    "noticias": [
     {
+     "titulo": "Apple cae 1,9% por la advertencia sobre márgenes y el costo de la memoria",
+     "resumen": "Pese a superar las estimaciones, la acción bajó el martes porque la guía de margen bruto (45-46%) quedó debajo de lo esperado por la suba de precios de memoria. Goldman Sachs y Morgan Stanley recortaron sus precios objetivo, aunque la mayoría de los analistas sigue positiva.",
+     "fuente": "CNBC",
+     "fecha": "2026-11-03",
+     "url": "https://www.cnbc.com/2026/11/03/apple-earnings-analysts-margin-outlook.html"
+    },
+    {
      "titulo": "Apple supera expectativas por el iPhone, pero preocupan China y los costos de memoria",
      "resumen": "Ganó US$2,10 por acción con ingresos de US$114.480 millones, arriba de lo esperado, y el iPhone facturó US$57.600 millones (+17%). Pero las ventas en China quedaron cortas y proyectó un margen bruto de 45-46% para diciembre, por debajo de lo esperado por el costo de la memoria.",
      "fuente": "Yahoo Finance",
@@ -196,25 +195,25 @@
  ],
  "dolar": [
   {
-   "titulo": "Dólar hoy: a cuánto cotiza este martes 3 de noviembre",
-   "resumen": "El oficial en el Banco Nación sube a $1.515/$1.565 y el mayorista a $1.545,50. El blue está en $1.545/$1.565, el MEP en $1.565 (brecha 1,3%) y el CCL en $1.654.",
+   "titulo": "Dólar hoy: a cuánto cotiza este miércoles 4 de noviembre",
+   "resumen": "El oficial en el Banco Nación sube a $1.520/$1.570 y el mayorista a $1.551. El blue está en $1.545/$1.565, el MEP en $1.574 y el CCL en $1.674.",
+   "fuente": "Ámbito",
+   "fecha": "2026-11-04",
+   "url": "https://www.ambito.com/finanzas/dolar-hoy-cuanto-cotiza-este-miercoles-4-noviembre-n6341264"
+  },
+  {
+   "titulo": "El BCRA no compró dólares en 5 de las últimas 7 ruedas y las reservas bajaron u$s148 millones",
+   "resumen": "El Central volvió a quedarse afuera para no presionar al dólar, que en el mayorista cerró en $1.551, máximo nominal. Las reservas quedaron en u$s50.293 millones, con el oro explicando parte de la baja.",
    "fuente": "Ámbito",
    "fecha": "2026-11-03",
-   "url": "https://www.ambito.com/finanzas/dolar-hoy-cuanto-cotiza-este-martes-3-noviembre-n6340783"
+   "url": "https://www.ambito.com/finanzas/el-bcra-no-compro-dolares-5-las-ultimas-7-ruedas-y-las-reservas-bajaron-us148-millones-n6341129"
   },
   {
-   "titulo": "El BCRA inició noviembre sin compras, pero las reservas volvieron a superar los u$s50.000 millones",
-   "resumen": "El Central no compró dólares el lunes y en el año mantiene u$s15.963 millones acumulados. Las reservas subieron a unos u$s50.441 millones, en parte por la suba del oro.",
-   "fuente": "Ámbito",
-   "fecha": "2026-11-02",
-   "url": "https://www.ambito.com/finanzas/el-bcra-inicio-noviembre-compras-dolares-pero-las-reservas-volvieron-superar-los-us50000-millones-n6340682"
-  },
-  {
-   "titulo": "Las acciones argentinas cayeron por sexta rueda seguida y el riesgo país superó los 800 puntos",
-   "resumen": "El panel local siguió en baja y el riesgo país pasó los 800 puntos, en una jornada en la que el BCRA tampoco compró reservas.",
+   "titulo": "Riesgo país arriba de 800 puntos: acciones y bonos argentinos tocan mínimos en un año",
+   "resumen": "Los activos locales siguieron en baja y el riesgo país se mantuvo por encima de los 800 puntos. Esta semana el Tesoro debe afrontar un pago de USD 877 millones al FMI.",
    "fuente": "Infobae",
-   "fecha": "2026-11-02",
-   "url": "https://www.infobae.com/economia/2026/11/02/las-acciones-argentinas-cayeron-por-sexta-rueda-seguida-el-riesgo-pais-supero-los-800-puntos-y-el-bcra-no-compro-reservas/"
+   "fecha": "2026-11-03",
+   "url": "https://www.infobae.com/economia/2026/11/03/riesgo-pais-arriba-de-800-puntos-y-activos-en-baja-por-que-las-acciones-y-los-bonos-argentinos-tocaron-minimos-en-un-ano/"
   }
  ]
 }
