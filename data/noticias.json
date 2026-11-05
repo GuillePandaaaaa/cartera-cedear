@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-04T08:35-03:00",
+ "actualizado": "2026-11-05T08:35-03:00",
  "cedears": [
   {
    "ticker": "NVDA",
@@ -22,15 +22,7 @@
   {
    "ticker": "MSFT",
    "nombre": "Microsoft",
-   "noticias": [
-    {
-     "titulo": "Microsoft sube 4% fuera de hora: Azure crece 48% y supera expectativas",
-     "resumen": "Los ingresos subieron 19% a US$92.300 millones y la ganancia ajustada fue US$4,89 por acción, arriba de lo esperado. Azure facturó US$33.200 millones (+48%) y la empresa proyecta 49-50% para el próximo trimestre; el flujo de caja libre cayó 27%.",
-     "fuente": "CNBC",
-     "fecha": "2026-10-28",
-     "url": "https://www.cnbc.com/2026/10/28/microsoft-msft-q1-earnings-report-2027.html"
-    }
-   ]
+   "noticias": []
   },
   {
    "ticker": "PG",
@@ -42,11 +34,11 @@
    "nombre": "S&P 500 (ETF)",
    "noticias": [
     {
-     "titulo": "Caen los futuros tras el triunfo demócrata en ambas cámaras del Congreso",
-     "resumen": "Los demócratas ganaron el control de la Cámara de Representantes y el Senado en las elecciones de medio término. Los futuros de Wall Street bajaban, con el mercado evaluando posibles restricciones a la construcción de centros de datos.",
+     "titulo": "El Dow sube 3%, su mayor rally post elecciones de medio término en 44 años",
+     "resumen": "El miércoles el S&P 500 ganó 1,58% hasta 7.689, el Nasdaq 1,44% y el Dow 3,03%, tras el triunfo demócrata en el Congreso y con el petróleo en fuerte baja. Analistas señalaron que el mercado valora el bloqueo legislativo porque hace menos probables nuevas regulaciones.",
      "fuente": "Yahoo Finance",
      "fecha": "2026-11-04",
-     "url": "https://finance.yahoo.com/markets/live/stock-market-today-dow-sp-500-nasdaq-midterm-elections-091834396.html"
+     "url": "https://finance.yahoo.com/markets/stocks/articles/stock-market-today-nov-4-221001197.html"
     },
     {
      "titulo": "El S&P 500 corta tres días de baja en el día de elecciones gracias a los chips",
@@ -69,11 +61,11 @@
    "nombre": "MercadoLibre",
    "noticias": [
     {
-     "titulo": "MercadoLibre presenta su balance del tercer trimestre el 4 de noviembre",
-     "resumen": "La compañía publicará los resultados del trimestre cerrado el 30 de septiembre el miércoles 4, con conferencia a las 17 h de Nueva York. En el segundo trimestre los ingresos habían crecido 50%, pero el margen operativo bajó a 6,7%.",
-     "fuente": "Yahoo Finance",
-     "fecha": "2026-10-29",
-     "url": "https://finance.yahoo.com/markets/stocks/articles/mercadolibre-inc-report-third-quarter-142600759.html"
+     "titulo": "MercadoLibre cae fuera de hora: la ganancia quedó debajo de lo esperado",
+     "resumen": "Los ingresos crecieron 45% a US$10.750 millones, en línea con lo esperado, pero la ganancia neta de US$448 millones quedó por debajo de los US$473 millones estimados. El margen operativo bajó a 6,3% por más envíos gratis, nueva capacidad logística y mayor gasto en marketing en Brasil; la acción llegó a caer 9% fuera de hora.",
+     "fuente": "Bloomberg",
+     "fecha": "2026-11-04",
+     "url": "https://www.bloomberg.com/news/articles/2026-11-04/mercadolibre-results-meet-estimates-as-fintech-e-commerce-grow"
     }
    ]
   },
@@ -123,13 +115,6 @@
      "fuente": "Yahoo Finance",
      "fecha": "2026-10-29",
      "url": "https://finance.yahoo.com/markets/live/stock-market-today-thursday-october-29-dow-sp-500-nasdaq-alphabet-microsoft-earnings-130305714.html"
-    },
-    {
-     "titulo": "Alphabet se desploma tras los resultados pese al boom de Google Cloud",
-     "resumen": "Los ingresos subieron 25% a US$127.600 millones y Google Cloud creció 103%, pero la ganancia por acción quedó por debajo de lo esperado y el flujo de caja libre fue negativo por el gasto en IA. La empresa anticipa un aumento significativo del gasto de capital en 2027 y la acción cayó más de 10% fuera de hora.",
-     "fuente": "CNBC",
-     "fecha": "2026-10-28",
-     "url": "https://www.cnbc.com/2026/10/28/alphabet-googl-earnings-q3-2026.html"
     }
    ]
   },
@@ -195,25 +180,25 @@
  ],
  "dolar": [
   {
-   "titulo": "Dólar hoy: a cuánto cotiza este miércoles 4 de noviembre",
-   "resumen": "El oficial en el Banco Nación sube a $1.520/$1.570 y el mayorista a $1.551. El blue está en $1.545/$1.565, el MEP en $1.574 y el CCL en $1.674.",
+   "titulo": "Dólar hoy: a cuánto cotiza este jueves 5 de noviembre",
+   "resumen": "El oficial en el Banco Nación está en $1.520/$1.570 y el mayorista en $1.546. El blue opera cerca de $1.565 y el CCL en $1.676.",
+   "fuente": "Ámbito",
+   "fecha": "2026-11-05",
+   "url": "https://www.ambito.com/finanzas/dolar-hoy-cuanto-cotiza-este-jueves-5-noviembre-n6341737"
+  },
+  {
+   "titulo": "El BCRA volvió a comprar tras una pausa de dos ruedas y las reservas se recuperaron gracias al oro",
+   "resumen": "El Central compró u$s9 millones el miércoles y las reservas subieron u$s142 millones hasta u$s50.435 millones. Hoy vence un pago de intereses al FMI de unos u$s877 millones.",
    "fuente": "Ámbito",
    "fecha": "2026-11-04",
-   "url": "https://www.ambito.com/finanzas/dolar-hoy-cuanto-cotiza-este-miercoles-4-noviembre-n6341264"
+   "url": "https://www.ambito.com/finanzas/el-bcra-volvio-comprar-una-pausa-dos-ruedas-y-las-reservas-se-recuperaron-gracias-al-oro-n6341633"
   },
   {
-   "titulo": "El BCRA no compró dólares en 5 de las últimas 7 ruedas y las reservas bajaron u$s148 millones",
-   "resumen": "El Central volvió a quedarse afuera para no presionar al dólar, que en el mayorista cerró en $1.551, máximo nominal. Las reservas quedaron en u$s50.293 millones, con el oro explicando parte de la baja.",
-   "fuente": "Ámbito",
-   "fecha": "2026-11-03",
-   "url": "https://www.ambito.com/finanzas/el-bcra-no-compro-dolares-5-las-ultimas-7-ruedas-y-las-reservas-bajaron-us148-millones-n6341129"
-  },
-  {
-   "titulo": "Riesgo país arriba de 800 puntos: acciones y bonos argentinos tocan mínimos en un año",
-   "resumen": "Los activos locales siguieron en baja y el riesgo país se mantuvo por encima de los 800 puntos. Esta semana el Tesoro debe afrontar un pago de USD 877 millones al FMI.",
+   "titulo": "Tras dos días sin sumar divisas, el Banco Central volvió a comprar dólares",
+   "resumen": "El BCRA retomó las compras en el mercado oficial, aunque por un monto chico de USD 9 millones, y las reservas brutas se acercaron a USD 50.500 millones.",
    "fuente": "Infobae",
-   "fecha": "2026-11-03",
-   "url": "https://www.infobae.com/economia/2026/11/03/riesgo-pais-arriba-de-800-puntos-y-activos-en-baja-por-que-las-acciones-y-los-bonos-argentinos-tocaron-minimos-en-un-ano/"
+   "fecha": "2026-11-04",
+   "url": "https://www.infobae.com/economia/2026/11/04/tras-dos-dias-sin-sumar-divisas-el-banco-central-volvio-a-comprar-dolares/"
   }
  ]
 }
