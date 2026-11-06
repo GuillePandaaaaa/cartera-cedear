@@ -22,20 +22,27 @@ jobs:
       - uses: actions/setup-python@v5
         with: { python-version: "3.12" }
       - name: Bajar precios y MEP
+        if: github.event_name == 'push'   # al re-publicar desde mercado.yml solo se publica
         run: python scripts/actualizar.py
-        continue-on-error: ${{ github.event_name == 'push' }}
+        continue-on-error: true
       - name: Dólar e históricos
+        if: github.event_name == 'push'   # al re-publicar desde mercado.yml solo se publica
         run: python scripts/historicos.py
         continue-on-error: true
       - name: Datos de las empresas (una vez por día)
+        if: github.event_name == 'push'   # al re-publicar desde mercado.yml solo se publica
         run: python scripts/fundamentales.py --check || (pip install -q yfinance && python scripts/fundamentales.py)
         continue-on-error: true
       - name: Guardar cambios
+        if: github.event_name == 'push'   # al re-publicar desde mercado.yml solo se publica
         run: |
           git config user.name "actualizador"
           git config user.email "actions@users.noreply.github.com"
           git add -A data
-          git diff --cached --quiet || (git commit -m "Precios $(TZ=America/Argentina/Buenos_Aires date '+%d/%m %H:%M')" && (git push || (git pull --rebase origin main && git push)))
+          git diff --cached --quiet && exit 0
+          git commit -m "Precios $(TZ=America/Argentina/Buenos_Aires date '+%d/%m %H:%M')"
+          # Si main avanzó (otra corrida subió precios), no es un error: se descarta y sigue la publicación.
+          git push || { git rebase --abort 2>/dev/null; echo "main avanzó; los precios los sube mercado.yml"; }
       - uses: actions/configure-pages@v5
         if: github.event_name != 'schedule'
       - uses: actions/upload-pages-artifact@v3

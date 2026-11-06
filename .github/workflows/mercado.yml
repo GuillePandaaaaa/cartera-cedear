@@ -42,18 +42,20 @@ jobs:
             [ "$hhmm" -gt 1820 ] && break
             [ "$(date +%s)" -gt "$fin" ] && break
             if [ "$hhmm" -ge 1055 ]; then
-              git pull -q --rebase origin main || true
+              # Parte siempre de la última versión del repo (los datos se recalculan en cada vuelta).
+              git fetch -q origin main && git reset -q --hard origin/main || true
               python scripts/actualizar.py || true
               python scripts/historicos.py || true
               python scripts/fundamentales.py --check || python scripts/fundamentales.py || true
               git add -A data
               if ! git diff --cached --quiet; then
                 git commit -q -m "Precios $(TZ=America/Argentina/Buenos_Aires date '+%d/%m %H:%M')"
-                if git push -q || (git pull -q --rebase origin main && git push -q); then
+                if git push -q; then
                   # La app también lee la copia de jsDelivr: se limpia su caché para que tome el dato nuevo.
                   echo "jsDelivr: $(curl -s -m 20 -o /dev/null -w '%{http_code}' "https://purge.jsdelivr.net/gh/${{ github.repository }}@main/data/mercado.json")"
                 else
-                  echo "No pude pushear; sigo"
+                  echo "main avanzó mientras tanto; descarto esta vuelta y sigo"
+                  git reset -q --hard origin/main || true
                 fi
               fi
               # Cada 30 minutos re-publica la página, que es la copia de respaldo de la app.
