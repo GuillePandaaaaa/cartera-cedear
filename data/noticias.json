@@ -1,10 +1,17 @@
 {
- "actualizado": "2026-11-06T08:35-03:00",
+ "actualizado": "2026-11-09T08:35-03:00",
  "cedears": [
   {
    "ticker": "NVDA",
    "nombre": "Nvidia",
    "noticias": [
+    {
+     "titulo": "El directorio de Nvidia investiga a Jensen Huang por su relación con una presunta espía china",
+     "resumen": "Un comité de directores independientes, con abogados externos, revisará el caso; el directorio dice que no tiene motivos para creer que se comprometieron secretos y que Huang sigue como CEO. Huang admitió una relación extramatrimonial y la acción caía cerca de 4-5% antes de la apertura del lunes.",
+     "fuente": "CNBC",
+     "fecha": "2026-11-09",
+     "url": "https://www.cnbc.com/2026/11/09/nvidia-jensen-huang-chinese-spy-investigation.html"
+    },
     {
      "titulo": "Nvidia cae en una fuerte venta de acciones de chips de IA",
      "resumen": "Los chips lideraron la caída del jueves por el temor a moratorias para centros de datos tras el triunfo demócrata en el Congreso. Nvidia reporta resultados el 17 de noviembre.",
@@ -41,25 +48,25 @@
    "nombre": "S&P 500 (ETF)",
    "noticias": [
     {
+     "titulo": "El S&P 500 tiene su peor semana desde la crisis de aranceles de abril de 2025",
+     "resumen": "El índice cerró el viernes en 7.376,86 (+0,31%), pero perdió 2,68% en la semana y suma cuatro semanas seguidas de baja. El golpe fuerte fue el jueves, con la venta masiva de acciones de IA tras las elecciones.",
+     "fuente": "Yahoo Finance",
+     "fecha": "2026-11-07",
+     "url": "https://finance.yahoo.com/markets/stocks/articles/p-500-just-had-worst-173339298.html"
+    },
+    {
+     "titulo": "Qué mirar esta semana: podría haber más turbulencia para las tecnológicas",
+     "resumen": "El mercado espera el dato de inflación de octubre; FactSet prevé 3,9% anual contra 3,7% del mes anterior. Algunos estrategas creen que la venta puede seguir unos días más antes de tocar fondo.",
+     "fuente": "CNBC",
+     "fecha": "2026-11-06",
+     "url": "https://www.cnbc.com/2026/11/06/stock-market-next-week-outlook-for-nov-9-13-2026.html"
+    },
+    {
      "titulo": "El Nasdaq tiene su peor día en 18 meses y el S&P 500 cae 4,4%",
      "resumen": "El jueves el S&P 500 bajó 4,36% hasta 7.354, el Nasdaq cerca de 5,5% y el Dow 1.833 puntos (-3,4%), borrando la suba post electoral. El temor a restricciones a los centros de datos golpeó a la IA y el VIX saltó a 28,18.",
      "fuente": "Yahoo Finance",
      "fecha": "2026-11-05",
      "url": "https://finance.yahoo.com/markets/stocks/articles/stock-market-today-nov-5-221502761.html"
-    },
-    {
-     "titulo": "El Dow sube 3%, su mayor rally post elecciones de medio término en 44 años",
-     "resumen": "El miércoles el S&P 500 ganó 1,58% hasta 7.689, el Nasdaq 1,44% y el Dow 3,03%, tras el triunfo demócrata en el Congreso y con el petróleo en fuerte baja. Analistas señalaron que el mercado valora el bloqueo legislativo porque hace menos probables nuevas regulaciones.",
-     "fuente": "Yahoo Finance",
-     "fecha": "2026-11-04",
-     "url": "https://finance.yahoo.com/markets/stocks/articles/stock-market-today-nov-4-221001197.html"
-    },
-    {
-     "titulo": "El S&P 500 corta tres días de baja en el día de elecciones gracias a los chips",
-     "resumen": "El martes el S&P 500 subió 0,4% hasta 7.569 y el Nasdaq 0,8%, mientras el Dow cayó 0,4%. Apple restó tras su guía de márgenes.",
-     "fuente": "CNBC",
-     "fecha": "2026-11-03",
-     "url": "https://www.cnbc.com/2026/11/02/stock-market-today-live-updates.html"
     }
    ]
   },
@@ -99,15 +106,7 @@
   {
    "ticker": "XOM",
    "nombre": "ExxonMobil",
-   "noticias": [
-    {
-     "titulo": "ExxonMobil supera expectativas con récord de refinación y sube el dividendo",
-     "resumen": "Ganó US$15.400 millones en el tercer trimestre (US$4,23 por acción ajustado), por encima del consenso, gracias a los márgenes de refinación por el diésel caro. Declaró un dividendo trimestral de US$1,07, por encima de los US$1,03 anteriores.",
-     "fuente": "ExxonMobil (SEC 8-K)",
-     "fecha": "2026-10-30",
-     "url": "https://www.sec.gov/Archives/edgar/data/0002115436/000211543626000018/livef8k3q26991.htm"
-    }
-   ]
+   "noticias": []
   },
   {
    "ticker": "JNJ",
@@ -162,25 +161,25 @@
  ],
  "dolar": [
   {
-   "titulo": "Dólar hoy: a cuánto cotiza este viernes 6 de noviembre",
-   "resumen": "El oficial en el Banco Nación sigue en $1.520/$1.570 y el mayorista en $1.545,50. El blue baja a $1.535/$1.555, el MEP ronda $1.576 y el CCL $1.679; el dólar se mantuvo estable pese al derrumbe de Wall Street.",
+   "titulo": "Dólar hoy: a cuánto cotiza este lunes 9 de noviembre",
+   "resumen": "Hoy es feriado nacional y las cotizaciones repiten el cierre del viernes: oficial en el Banco Nación a $1.520/$1.570 y mayorista en $1.545,50. El blue está en $1.535/$1.555, el MEP en $1.584 y el CCL en $1.674.",
    "fuente": "Ámbito",
-   "fecha": "2026-11-06",
-   "url": "https://www.ambito.com/finanzas/dolar-hoy-cuanto-cotiza-este-viernes-6-noviembre-n6342234"
+   "fecha": "2026-11-09",
+   "url": "https://www.ambito.com/finanzas/dolar-hoy-cuanto-cotiza-este-lunes-9-noviembre-n6343074"
   },
   {
-   "titulo": "El BCRA ya compró más de u$s16.000 millones en el año, pero las reservas cayeron por un pago al FMI",
-   "resumen": "El Central compró u$s42 millones el jueves y en 2026 acumula u$s16.019 millones. Las reservas bajaron u$s793 millones hasta u$s49.642 millones por un pago de u$s880 millones al Fondo.",
-   "fuente": "Ámbito",
-   "fecha": "2026-11-05",
-   "url": "https://www.ambito.com/finanzas/el-bcra-ya-compro-mas-us16000-millones-el-ano-pero-las-reservas-cayeron-un-pago-al-fmi-n6342144"
-  },
-  {
-   "titulo": "El Banco Central ya compró más de USD 16.000 millones en 2026, pero las reservas cayeron por un pago al FMI",
-   "resumen": "Según fuentes oficiales, la baja de reservas se explicó por el pago de USD 880 millones al FMI; la suba del oro compensó parte de la baja.",
+   "titulo": "El Gobierno mantiene la sintonía fina con el dólar en medio de la volatilidad financiera",
+   "resumen": "El mayorista subió 0,7% en la primera semana de noviembre y la brecha entre el oficial y el paralelo volvió a rondar el 8%.",
    "fuente": "Infobae",
-   "fecha": "2026-11-05",
-   "url": "https://www.infobae.com/economia/2026/11/05/el-banco-central-ya-compro-mas-de-usd-16000-millones-en-2026-pero-las-reservas-cayeron-por-un-pago-al-fmi/"
+   "fecha": "2026-11-09",
+   "url": "https://www.infobae.com/economia/2026/11/09/el-gobierno-mantiene-la-sintonia-fina-con-el-dolar-en-medio-de-la-volatilidad-financiera/"
+  },
+  {
+   "titulo": "El BCRA desacelera las compras y el mercado le pone precio al dólar de fin de año",
+   "resumen": "En noviembre el Central lleva compras por u$s51 millones y las reservas quedaron en u$s49.642 millones tras el pago al FMI.",
+   "fuente": "El Cronista",
+   "fecha": "2026-11-06",
+   "url": "https://www.cronista.com/finanzas-mercados/el-bcra-desacelera-las-compras-y-el-mercado-le-pone-precio-al-dolar-hacia-fin-de-ano/"
   }
  ]
 }
