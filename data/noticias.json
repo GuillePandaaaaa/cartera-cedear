@@ -1,30 +1,23 @@
 {
- "actualizado": "2026-11-09T08:35-03:00",
+ "actualizado": "2026-11-10T08:35-03:00",
  "cedears": [
   {
    "ticker": "NVDA",
    "nombre": "Nvidia",
    "noticias": [
     {
+     "titulo": "Nvidia cae 4,3% y queda en negativo en el año por la investigación a Huang",
+     "resumen": "La acción cerró el lunes en US$178,67 mientras el resto de la tecnología rebotaba, por la investigación del directorio sobre la relación de Jensen Huang con una presunta espía china. El próximo catalizador es el balance del 17 de noviembre.",
+     "fuente": "Yahoo Finance",
+     "fecha": "2026-11-09",
+     "url": "https://finance.yahoo.com/markets/stocks/articles/stock-market-today-nov-9-223002061.html"
+    },
+    {
      "titulo": "El directorio de Nvidia investiga a Jensen Huang por su relación con una presunta espía china",
      "resumen": "Un comité de directores independientes, con abogados externos, revisará el caso; el directorio dice que no tiene motivos para creer que se comprometieron secretos y que Huang sigue como CEO. Huang admitió una relación extramatrimonial y la acción caía cerca de 4-5% antes de la apertura del lunes.",
      "fuente": "CNBC",
      "fecha": "2026-11-09",
      "url": "https://www.cnbc.com/2026/11/09/nvidia-jensen-huang-chinese-spy-investigation.html"
-    },
-    {
-     "titulo": "Nvidia cae en una fuerte venta de acciones de chips de IA",
-     "resumen": "Los chips lideraron la caída del jueves por el temor a moratorias para centros de datos tras el triunfo demócrata en el Congreso. Nvidia reporta resultados el 17 de noviembre.",
-     "fuente": "Yahoo Finance",
-     "fecha": "2026-11-05",
-     "url": "https://finance.yahoo.com/markets/stocks/articles/stock-market-today-nov-5-220938210.html"
-    },
-    {
-     "titulo": "Nvidia rebota tras cuatro días de caída; pide a clientes de nube limitar exposición a China",
-     "resumen": "Las acciones de chips se recuperaron el martes y Nvidia subió cerca de 2%. Según el FT, la empresa pidió a sus clientes de nube reducir su exposición a compañías chinas en contratos futuros; Nvidia presenta resultados el 17 de noviembre.",
-     "fuente": "Yahoo Finance",
-     "fecha": "2026-11-03",
-     "url": "https://finance.yahoo.com/markets/stocks/articles/nvda-shares-inch-higher-overnight-085557639.html"
     }
    ]
   },
@@ -48,6 +41,13 @@
    "nombre": "S&P 500 (ETF)",
    "noticias": [
     {
+     "titulo": "Wall Street rebota fuerte: el S&P 500 sube 2,35% y el Nasdaq sale de la corrección",
+     "resumen": "El lunes el S&P 500 cerró en 7.549,94, el Nasdaq ganó 2,74% y el Dow 1.104 puntos, con los 11 sectores en alza y el petróleo en baja. Nvidia fue la excepción por la investigación a su CEO.",
+     "fuente": "Yahoo Finance",
+     "fecha": "2026-11-09",
+     "url": "https://finance.yahoo.com/markets/stocks/articles/dow-adds-1-104-points-211123350.html"
+    },
+    {
      "titulo": "El S&P 500 tiene su peor semana desde la crisis de aranceles de abril de 2025",
      "resumen": "El índice cerró el viernes en 7.376,86 (+0,31%), pero perdió 2,68% en la semana y suma cuatro semanas seguidas de baja. El golpe fuerte fue el jueves, con la venta masiva de acciones de IA tras las elecciones.",
      "fuente": "Yahoo Finance",
@@ -60,13 +60,6 @@
      "fuente": "CNBC",
      "fecha": "2026-11-06",
      "url": "https://www.cnbc.com/2026/11/06/stock-market-next-week-outlook-for-nov-9-13-2026.html"
-    },
-    {
-     "titulo": "El Nasdaq tiene su peor día en 18 meses y el S&P 500 cae 4,4%",
-     "resumen": "El jueves el S&P 500 bajó 4,36% hasta 7.354, el Nasdaq cerca de 5,5% y el Dow 1.833 puntos (-3,4%), borrando la suba post electoral. El temor a restricciones a los centros de datos golpeó a la IA y el VIX saltó a 28,18.",
-     "fuente": "Yahoo Finance",
-     "fecha": "2026-11-05",
-     "url": "https://finance.yahoo.com/markets/stocks/articles/stock-market-today-nov-5-221502761.html"
     }
    ]
   },
@@ -93,15 +86,7 @@
   {
    "ticker": "O",
    "nombre": "Realty Income",
-   "noticias": [
-    {
-     "titulo": "Realty Income sube 3,7% su AFFO por acción en el tercer trimestre",
-     "resumen": "El AFFO por acción llegó a US$1,12 y la ganancia neta a US$0,43 por acción. Invirtió US$2.600 millones con un rendimiento inicial de 6,8% y entró en un joint venture con KKR en Europa.",
-     "fuente": "Realty Income (SEC 8-K)",
-     "fecha": "2026-11-02",
-     "url": "https://www.sec.gov/Archives/edgar/data/0000726728/000072672826000056/o-991q32026.htm"
-    }
-   ]
+   "noticias": []
   },
   {
    "ticker": "XOM",
@@ -131,7 +116,15 @@
   {
    "ticker": "AMZN",
    "nombre": "Amazon",
-   "noticias": []
+   "noticias": [
+    {
+     "titulo": "Amazon sube 5% tras ser elegida por JPMorgan como una de sus favoritas",
+     "resumen": "JPMorgan sumó a Amazon a su lista de acciones preferidas por el crecimiento esperado de la nube, y el papel rebotó después de la caída post balance.",
+     "fuente": "Yahoo Finance",
+     "fecha": "2026-11-09",
+     "url": "https://finance.yahoo.com/markets/stocks/articles/meta-amazon-rise-5-jpmorgan-144819847.html"
+    }
+   ]
   },
   {
    "ticker": "AAPL",
@@ -143,13 +136,6 @@
      "fuente": "CNBC",
      "fecha": "2026-11-03",
      "url": "https://www.cnbc.com/2026/11/03/apple-earnings-analysts-margin-outlook.html"
-    },
-    {
-     "titulo": "Apple supera expectativas por el iPhone, pero preocupan China y los costos de memoria",
-     "resumen": "Ganó US$2,10 por acción con ingresos de US$114.480 millones, arriba de lo esperado, y el iPhone facturó US$57.600 millones (+17%). Pero las ventas en China quedaron cortas y proyectó un margen bruto de 45-46% para diciembre, por debajo de lo esperado por el costo de la memoria.",
-     "fuente": "Yahoo Finance",
-     "fecha": "2026-11-02",
-     "url": "https://finance.yahoo.com/markets/stocks/article/apple-q4-earnings-live-iphone-18-sales-in-the-spotlight-183000820.html"
     }
    ]
   },
@@ -161,11 +147,18 @@
  ],
  "dolar": [
   {
-   "titulo": "Dólar hoy: a cuánto cotiza este lunes 9 de noviembre",
-   "resumen": "Hoy es feriado nacional y las cotizaciones repiten el cierre del viernes: oficial en el Banco Nación a $1.520/$1.570 y mayorista en $1.545,50. El blue está en $1.535/$1.555, el MEP en $1.584 y el CCL en $1.674.",
+   "titulo": "Dólar hoy: a cuánto cotiza este martes 10 de noviembre",
+   "resumen": "El oficial en el Banco Nación sigue en $1.520/$1.570 y el mayorista en $1.545,50. El blue está en $1.535/$1.555, el MEP en $1.584 y el CCL en $1.637.",
    "fuente": "Ámbito",
-   "fecha": "2026-11-09",
-   "url": "https://www.ambito.com/finanzas/dolar-hoy-cuanto-cotiza-este-lunes-9-noviembre-n6343074"
+   "fecha": "2026-11-10",
+   "url": "https://www.ambito.com/finanzas/dolar-hoy-cuanto-cotiza-este-martes-10-noviembre-n6343411"
+  },
+  {
+   "titulo": "Dólar blue hoy: a cuánto cotiza el martes 10 de noviembre",
+   "resumen": "El blue se vende a $1.555 y se mantuvo estable en los últimos cinco días hábiles, con una variación menor al 1%.",
+   "fuente": "La Nación",
+   "fecha": "2026-11-10",
+   "url": "https://www.lanacion.com.ar/economia/dolar/dolar-blue-hoy-a-cuanto-cotiza-el-martes-10-de-noviembre-nid10112026/"
   },
   {
    "titulo": "El Gobierno mantiene la sintonía fina con el dólar en medio de la volatilidad financiera",
@@ -173,13 +166,6 @@
    "fuente": "Infobae",
    "fecha": "2026-11-09",
    "url": "https://www.infobae.com/economia/2026/11/09/el-gobierno-mantiene-la-sintonia-fina-con-el-dolar-en-medio-de-la-volatilidad-financiera/"
-  },
-  {
-   "titulo": "Dólar blue hoy: a cuánto cotiza el viernes 6 de noviembre con el MEP y el CCL",
-   "resumen": "El BCRA compró u$s42 millones el jueves y en noviembre acumula u$s51 millones. Las reservas totales quedaron en u$s49.642 millones.",
-   "fuente": "El Cronista",
-   "fecha": "2026-11-06",
-   "url": "https://www.cronista.com/finanzas-mercados/dolar-blue-hoy-a-cuanto-cotiza-el-viernes-6-de-noviembre-con-el-mep-y-el-ccl/"
   }
  ]
 }
