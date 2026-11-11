@@ -1,10 +1,17 @@
 {
- "actualizado": "2026-11-10T08:35-03:00",
+ "actualizado": "2026-11-11T08:35-03:00",
  "cedears": [
   {
    "ticker": "NVDA",
    "nombre": "Nvidia",
    "noticias": [
+    {
+     "titulo": "Nvidia se hunde 5,5% más por el escándalo de su CEO a días del balance",
+     "resumen": "La acción siguió cayendo el martes y arrastró al sector tecnológico, el peor del S&P 500. La investigación sobre Jensen Huang eclipsa el balance que la empresa presenta el 17 de noviembre.",
+     "fuente": "Yahoo Finance",
+     "fecha": "2026-11-10",
+     "url": "https://finance.yahoo.com/markets/stocks/articles/stock-market-today-nov-10-223502212.html"
+    },
     {
      "titulo": "Nvidia cae 4,3% y queda en negativo en el año por la investigación a Huang",
      "resumen": "La acción cerró el lunes en US$178,67 mientras el resto de la tecnología rebotaba, por la investigación del directorio sobre la relación de Jensen Huang con una presunta espía china. El próximo catalizador es el balance del 17 de noviembre.",
@@ -41,6 +48,13 @@
    "nombre": "S&P 500 (ETF)",
    "noticias": [
     {
+     "titulo": "Wall Street cae por una inflación más alta de lo esperado que alimenta la chance de suba de tasas",
+     "resumen": "El martes el S&P 500 bajó 0,38% hasta 7.520,93, el Dow 0,30% y el Nasdaq 0,74%. El dato de inflación aumentó las apuestas a una suba de tasas de la Fed el mes próximo y la tecnología fue el peor sector por la caída de Nvidia.",
+     "fuente": "Yahoo Finance",
+     "fecha": "2026-11-10",
+     "url": "https://finance.yahoo.com/markets/stocks/articles/p-500-dow-futures-climb-102635174.html"
+    },
+    {
      "titulo": "Wall Street rebota fuerte: el S&P 500 sube 2,35% y el Nasdaq sale de la corrección",
      "resumen": "El lunes el S&P 500 cerró en 7.549,94, el Nasdaq ganó 2,74% y el Dow 1.104 puntos, con los 11 sectores en alza y el petróleo en baja. Nvidia fue la excepción por la investigación a su CEO.",
      "fuente": "Yahoo Finance",
@@ -53,13 +67,6 @@
      "fuente": "Yahoo Finance",
      "fecha": "2026-11-07",
      "url": "https://finance.yahoo.com/markets/stocks/articles/p-500-just-had-worst-173339298.html"
-    },
-    {
-     "titulo": "Qué mirar esta semana: podría haber más turbulencia para las tecnológicas",
-     "resumen": "El mercado espera el dato de inflación de octubre; FactSet prevé 3,9% anual contra 3,7% del mes anterior. Algunos estrategas creen que la venta puede seguir unos días más antes de tocar fondo.",
-     "fuente": "CNBC",
-     "fecha": "2026-11-06",
-     "url": "https://www.cnbc.com/2026/11/06/stock-market-next-week-outlook-for-nov-9-13-2026.html"
     }
    ]
   },
@@ -129,15 +136,7 @@
   {
    "ticker": "AAPL",
    "nombre": "Apple",
-   "noticias": [
-    {
-     "titulo": "Apple cae 1,9% por la advertencia sobre márgenes y el costo de la memoria",
-     "resumen": "Pese a superar las estimaciones, la acción bajó el martes porque la guía de margen bruto (45-46%) quedó debajo de lo esperado por la suba de precios de memoria. Goldman Sachs y Morgan Stanley recortaron sus precios objetivo, aunque la mayoría de los analistas sigue positiva.",
-     "fuente": "CNBC",
-     "fecha": "2026-11-03",
-     "url": "https://www.cnbc.com/2026/11/03/apple-earnings-analysts-margin-outlook.html"
-    }
-   ]
+   "noticias": []
   },
   {
    "ticker": "SNDK",
@@ -147,18 +146,18 @@
  ],
  "dolar": [
   {
-   "titulo": "Dólar hoy: a cuánto cotiza este martes 10 de noviembre",
-   "resumen": "El oficial en el Banco Nación sigue en $1.520/$1.570 y el mayorista en $1.545,50. El blue está en $1.535/$1.555, el MEP en $1.584 y el CCL en $1.637.",
+   "titulo": "Dólar hoy: a cuánto cotiza este miércoles 11 de noviembre",
+   "resumen": "El mercado vuelve a operar tras los feriados por la visita del papa León XIV. El oficial en el Banco Nación está en $1.520/$1.570, el mayorista en $1.545,50, el blue en $1.535/$1.555 y el MEP en $1.584.",
    "fuente": "Ámbito",
-   "fecha": "2026-11-10",
-   "url": "https://www.ambito.com/finanzas/dolar-hoy-cuanto-cotiza-este-martes-10-noviembre-n6343411"
+   "fecha": "2026-11-11",
+   "url": "https://www.ambito.com/finanzas/dolar-hoy-cuanto-cotiza-este-miercoles-11-noviembre-n6343777"
   },
   {
-   "titulo": "Dólar blue hoy: a cuánto cotiza el martes 10 de noviembre",
-   "resumen": "El blue se vende a $1.555 y se mantuvo estable en los últimos cinco días hábiles, con una variación menor al 1%.",
+   "titulo": "A cuánto abre el dólar este miércoles tras los feriados bancarios",
+   "resumen": "Los bancos vuelven a abrir después de varios días de feriados bancarios y de la visita del papa. El blue sigue en $1.555 para la venta.",
    "fuente": "La Nación",
    "fecha": "2026-11-10",
-   "url": "https://www.lanacion.com.ar/economia/dolar/dolar-blue-hoy-a-cuanto-cotiza-el-martes-10-de-noviembre-nid10112026/"
+   "url": "https://www.lanacion.com.ar/economia/dolar/a-cuanto-abre-el-dolar-este-miercoles-11-de-noviembre-tras-los-feriados-bancarios-y-la-visita-del-nid10112026/"
   },
   {
    "titulo": "El Gobierno mantiene la sintonía fina con el dólar en medio de la volatilidad financiera",
