@@ -1,10 +1,17 @@
 {
- "actualizado": "2026-11-11T08:35-03:00",
+ "actualizado": "2026-11-12T08:35-03:00",
  "cedears": [
   {
    "ticker": "NVDA",
    "nombre": "Nvidia",
    "noticias": [
+    {
+     "titulo": "Nvidia cae más de 9% fuera de hora por versiones de que el directorio prepara la salida de Huang",
+     "resumen": "Según The Wall Street Journal, el directorio se preparaba para desplazar al CEO Jensen Huang; la acción, que había rebotado en la rueda, se desplomó fuera de hora. Analistas citados por CNBC estiman que su salida podría hacer caer el papel 20%; el balance sigue previsto para el 17 de noviembre.",
+     "fuente": "CNBC",
+     "fecha": "2026-11-11",
+     "url": "https://www.cnbc.com/2026/11/11/stock-market-today-live-updates.html"
+    },
     {
      "titulo": "Nvidia se hunde 5,5% más por el escándalo de su CEO a días del balance",
      "resumen": "La acción siguió cayendo el martes y arrastró al sector tecnológico, el peor del S&P 500. La investigación sobre Jensen Huang eclipsa el balance que la empresa presenta el 17 de noviembre.",
@@ -18,13 +25,6 @@
      "fuente": "Yahoo Finance",
      "fecha": "2026-11-09",
      "url": "https://finance.yahoo.com/markets/stocks/articles/stock-market-today-nov-9-223002061.html"
-    },
-    {
-     "titulo": "El directorio de Nvidia investiga a Jensen Huang por su relación con una presunta espía china",
-     "resumen": "Un comité de directores independientes, con abogados externos, revisará el caso; el directorio dice que no tiene motivos para creer que se comprometieron secretos y que Huang sigue como CEO. Huang admitió una relación extramatrimonial y la acción caía cerca de 4-5% antes de la apertura del lunes.",
-     "fuente": "CNBC",
-     "fecha": "2026-11-09",
-     "url": "https://www.cnbc.com/2026/11/09/nvidia-jensen-huang-chinese-spy-investigation.html"
     }
    ]
   },
@@ -48,6 +48,13 @@
    "nombre": "S&P 500 (ETF)",
    "noticias": [
     {
+     "titulo": "El S&P 500 sube 1,3% impulsado por CoreWeave y el rebote de los chips",
+     "resumen": "El miércoles el S&P 500 cerró en 7.619,38, el Nasdaq ganó 1,6% y el Dow 0,49%, con los balances de CoreWeave reavivando la apuesta por la IA. El mercado de bonos estuvo cerrado por el Día de los Veteranos.",
+     "fuente": "Yahoo Finance",
+     "fecha": "2026-11-11",
+     "url": "https://finance.yahoo.com/markets/stocks/articles/stock-market-today-nasdaq-futures-131247889.html"
+    },
+    {
      "titulo": "Wall Street cae por una inflación más alta de lo esperado que alimenta la chance de suba de tasas",
      "resumen": "El martes el S&P 500 bajó 0,38% hasta 7.520,93, el Dow 0,30% y el Nasdaq 0,74%. El dato de inflación aumentó las apuestas a una suba de tasas de la Fed el mes próximo y la tecnología fue el peor sector por la caída de Nvidia.",
      "fuente": "Yahoo Finance",
@@ -60,13 +67,6 @@
      "fuente": "Yahoo Finance",
      "fecha": "2026-11-09",
      "url": "https://finance.yahoo.com/markets/stocks/articles/dow-adds-1-104-points-211123350.html"
-    },
-    {
-     "titulo": "El S&P 500 tiene su peor semana desde la crisis de aranceles de abril de 2025",
-     "resumen": "El índice cerró el viernes en 7.376,86 (+0,31%), pero perdió 2,68% en la semana y suma cuatro semanas seguidas de baja. El golpe fuerte fue el jueves, con la venta masiva de acciones de IA tras las elecciones.",
-     "fuente": "Yahoo Finance",
-     "fecha": "2026-11-07",
-     "url": "https://finance.yahoo.com/markets/stocks/articles/p-500-just-had-worst-173339298.html"
     }
    ]
   },
@@ -80,13 +80,6 @@
      "fuente": "Yahoo Finance",
      "fecha": "2026-11-05",
      "url": "https://finance.yahoo.com/markets/stocks/articles/mercadolibre-nasdaqgs-meli-stock-price-232050594.html"
-    },
-    {
-     "titulo": "MercadoLibre cae fuera de hora: la ganancia quedó debajo de lo esperado",
-     "resumen": "Los ingresos crecieron 45% a US$10.750 millones, en línea con lo esperado, pero la ganancia neta de US$448 millones quedó por debajo de los US$473 millones estimados. El margen operativo bajó a 6,3% por más envíos gratis, nueva capacidad logística y mayor gasto en marketing en Brasil; la acción llegó a caer 9% fuera de hora.",
-     "fuente": "Bloomberg",
-     "fecha": "2026-11-04",
-     "url": "https://www.bloomberg.com/news/articles/2026-11-04/mercadolibre-results-meet-estimates-as-fintech-e-commerce-grow"
     }
    ]
   },
@@ -136,7 +129,15 @@
   {
    "ticker": "AAPL",
    "nombre": "Apple",
-   "noticias": []
+   "noticias": [
+    {
+     "titulo": "Apple toca un nuevo máximo histórico",
+     "resumen": "La acción marcó récord el miércoles, beneficiada por la rotación de inversores que salen de Nvidia hacia otras tecnológicas grandes.",
+     "fuente": "Yahoo Finance",
+     "fecha": "2026-11-11",
+     "url": "https://sg.finance.yahoo.com/news/stock-market-today-nov-11-145236026.html"
+    }
+   ]
   },
   {
    "ticker": "SNDK",
@@ -146,25 +147,25 @@
  ],
  "dolar": [
   {
-   "titulo": "Dólar hoy: a cuánto cotiza este miércoles 11 de noviembre",
-   "resumen": "El mercado vuelve a operar tras los feriados por la visita del papa León XIV. El oficial en el Banco Nación está en $1.520/$1.570, el mayorista en $1.545,50, el blue en $1.535/$1.555 y el MEP en $1.584.",
+   "titulo": "El dólar cayó tras los feriados, pero subió el blue y crece la atención sobre las tasas",
+   "resumen": "El mayorista bajó $1,50 a $1.544 y el blue subió $15 hasta $1.570, su primer aumento tras diez ruedas sin subas. El MEP cerró en $1.578 y el CCL en $1.666, lejos del techo de la banda en $1.965,55.",
    "fuente": "Ámbito",
    "fecha": "2026-11-11",
-   "url": "https://www.ambito.com/finanzas/dolar-hoy-cuanto-cotiza-este-miercoles-11-noviembre-n6343777"
+   "url": "https://www.ambito.com/finanzas/el-dolar-cayo-los-feriados-pero-subio-el-blue-y-crece-la-atencion-las-tasas-n6344297"
   },
   {
-   "titulo": "A cuánto abre el dólar este miércoles tras los feriados bancarios",
-   "resumen": "Los bancos vuelven a abrir después de varios días de feriados bancarios y de la visita del papa León XIV.",
+   "titulo": "Las reservas del BCRA cayeron a mínimos en más de un mes, pero se mantuvieron las compras",
+   "resumen": "El Central compró u$s29 millones y en noviembre suma u$s80 millones, con un promedio diario muy por debajo del de octubre. Las reservas cayeron u$s312 millones, en parte por la baja del oro.",
+   "fuente": "Ámbito",
+   "fecha": "2026-11-11",
+   "url": "https://www.ambito.com/finanzas/las-reservas-del-bcra-cayeron-minimos-mas-un-mes-pero-se-mantuvieron-las-compras-pese-al-feriado-eeuu-n6344161"
+  },
+  {
+   "titulo": "El Banco Central aprovechó un dólar ofrecido para comprar US$29 millones",
+   "resumen": "El BCRA compró aprovechando la oferta de divisas en la rueda y en el año acumula US$16.043 millones.",
    "fuente": "La Nación",
-   "fecha": "2026-11-10",
-   "url": "https://www.lanacion.com.ar/economia/dolar/a-cuanto-abre-el-dolar-este-miercoles-11-de-noviembre-tras-los-feriados-bancarios-y-la-visita-del-nid10112026/"
-  },
-  {
-   "titulo": "El Gobierno mantiene la sintonía fina con el dólar en medio de la volatilidad financiera",
-   "resumen": "El mayorista subió 0,7% en la primera semana de noviembre y la brecha entre el oficial y el paralelo volvió a rondar el 8%.",
-   "fuente": "Infobae",
-   "fecha": "2026-11-09",
-   "url": "https://www.infobae.com/economia/2026/11/09/el-gobierno-mantiene-la-sintonia-fina-con-el-dolar-en-medio-de-la-volatilidad-financiera/"
+   "fecha": "2026-11-11",
+   "url": "https://www.lanacion.com.ar/economia/el-banco-central-aprovecho-un-dolar-ofrecido-para-comprar-us29-millones-nid11112026/"
   }
  ]
 }
