@@ -1,10 +1,17 @@
 {
- "actualizado": "2026-11-12T08:35-03:00",
+ "actualizado": "2026-11-13T08:35-03:00",
  "cedears": [
   {
    "ticker": "NVDA",
    "nombre": "Nvidia",
    "noticias": [
+    {
+     "titulo": "Renuncia Jensen Huang: Colette Kress asume como CEO interina de Nvidia",
+     "resumen": "Nvidia anunció la renuncia de su CEO y fundador y nombró a la directora financiera Colette Kress como CEO interina. La acción llegó a caer 14% y cerró con baja de 4,34% en US$166,19, mínimo de 52 semanas; el balance sigue previsto para el 17 de noviembre.",
+     "fuente": "Yahoo Finance",
+     "fecha": "2026-11-12",
+     "url": "https://finance.yahoo.com/markets/stocks/articles/stock-market-today-nov-12-221840920.html"
+    },
     {
      "titulo": "Nvidia cae más de 9% fuera de hora por versiones de que el directorio prepara la salida de Huang",
      "resumen": "Según The Wall Street Journal, el directorio se preparaba para desplazar al CEO Jensen Huang; la acción, que había rebotado en la rueda, se desplomó fuera de hora. Analistas citados por CNBC estiman que su salida podría hacer caer el papel 20%; el balance sigue previsto para el 17 de noviembre.",
@@ -18,13 +25,6 @@
      "fuente": "Yahoo Finance",
      "fecha": "2026-11-10",
      "url": "https://finance.yahoo.com/markets/stocks/articles/stock-market-today-nov-10-223502212.html"
-    },
-    {
-     "titulo": "Nvidia cae 4,3% y queda en negativo en el año por la investigación a Huang",
-     "resumen": "La acción cerró el lunes en US$178,67 mientras el resto de la tecnología rebotaba, por la investigación del directorio sobre la relación de Jensen Huang con una presunta espía china. El próximo catalizador es el balance del 17 de noviembre.",
-     "fuente": "Yahoo Finance",
-     "fecha": "2026-11-09",
-     "url": "https://finance.yahoo.com/markets/stocks/articles/stock-market-today-nov-9-223002061.html"
     }
    ]
   },
@@ -48,6 +48,13 @@
    "nombre": "S&P 500 (ETF)",
    "noticias": [
     {
+     "titulo": "Wall Street cae por la salida del CEO de Nvidia y la suba de tasas de los bonos",
+     "resumen": "El jueves el S&P 500 bajó 0,35% hasta 7.592,40, el Nasdaq 0,39% y el Dow 0,36%. El bono a 10 años subió a 5,09% por las apuestas a una suba de la Fed en diciembre, aunque los índices igual van camino a su mejor semana desde agosto.",
+     "fuente": "Yahoo Finance",
+     "fecha": "2026-11-12",
+     "url": "https://finance.yahoo.com/markets/stocks/articles/stocks-slip-nvidias-ceo-crisis-210901997.html"
+    },
+    {
      "titulo": "El S&P 500 sube 1,3% impulsado por CoreWeave y el rebote de los chips",
      "resumen": "El miércoles el S&P 500 cerró en 7.619,38, el Nasdaq ganó 1,6% y el Dow 0,49%, con los balances de CoreWeave reavivando la apuesta por la IA. El mercado de bonos estuvo cerrado por el Día de los Veteranos.",
      "fuente": "Yahoo Finance",
@@ -60,28 +67,13 @@
      "fuente": "Yahoo Finance",
      "fecha": "2026-11-10",
      "url": "https://finance.yahoo.com/markets/stocks/articles/p-500-dow-futures-climb-102635174.html"
-    },
-    {
-     "titulo": "Wall Street rebota fuerte: el S&P 500 sube 2,35% y el Nasdaq sale de la corrección",
-     "resumen": "El lunes el S&P 500 cerró en 7.549,94, el Nasdaq ganó 2,74% y el Dow 1.104 puntos, con los 11 sectores en alza y el petróleo en baja. Nvidia fue la excepción por la investigación a su CEO.",
-     "fuente": "Yahoo Finance",
-     "fecha": "2026-11-09",
-     "url": "https://finance.yahoo.com/markets/stocks/articles/dow-adds-1-104-points-211123350.html"
     }
    ]
   },
   {
    "ticker": "MELI",
    "nombre": "MercadoLibre",
-   "noticias": [
-    {
-     "titulo": "MercadoLibre se hunde cerca de 13% tras su balance",
-     "resumen": "La acción cayó fuerte el jueves por la ganancia debajo de lo esperado y el achique del margen operativo a 6,3%. El volumen de ventas creció 38% y los usuarios fintech 29%; varios analistas recortaron sus precios objetivo pero mantuvieron la recomendación de compra.",
-     "fuente": "Yahoo Finance",
-     "fecha": "2026-11-05",
-     "url": "https://finance.yahoo.com/markets/stocks/articles/mercadolibre-nasdaqgs-meli-stock-price-232050594.html"
-    }
-   ]
+   "noticias": []
   },
   {
    "ticker": "O",
@@ -147,25 +139,25 @@
  ],
  "dolar": [
   {
-   "titulo": "El dólar cayó tras los feriados, pero subió el blue y crece la atención sobre las tasas",
-   "resumen": "El mayorista bajó $1,50 a $1.544 y el blue subió $15 hasta $1.570, su primer aumento tras diez ruedas sin subas. El MEP cerró en $1.578 y el CCL en $1.666, lejos del techo de la banda en $1.965,55.",
+   "titulo": "Dólar hoy: a cuánto cotiza este viernes 13 de noviembre",
+   "resumen": "El mayorista cerró el jueves en $1.545,50 y el oficial en el Banco Nación sigue en $1.520/$1.570. El blue está en $1.545/$1.565, el MEP en $1.574 y el CCL en $1.679, con una brecha de 8,7%.",
    "fuente": "Ámbito",
-   "fecha": "2026-11-11",
-   "url": "https://www.ambito.com/finanzas/el-dolar-cayo-los-feriados-pero-subio-el-blue-y-crece-la-atencion-las-tasas-n6344297"
+   "fecha": "2026-11-13",
+   "url": "https://www.ambito.com/finanzas/dolar-hoy-cuanto-cotiza-este-viernes-13-noviembre-n6344747"
   },
   {
-   "titulo": "Las reservas del BCRA cayeron a mínimos en más de un mes, pero se mantuvieron las compras",
-   "resumen": "El Central compró u$s29 millones y en noviembre suma u$s80 millones, con un promedio diario muy por debajo del de octubre. Las reservas cayeron u$s312 millones, en parte por la baja del oro.",
-   "fuente": "Ámbito",
-   "fecha": "2026-11-11",
-   "url": "https://www.ambito.com/finanzas/las-reservas-del-bcra-cayeron-minimos-mas-un-mes-pero-se-mantuvieron-las-compras-pese-al-feriado-eeuu-n6344161"
+   "titulo": "El Banco Central compró más de USD 100 millones, el mayor monto de noviembre",
+   "resumen": "El BCRA sumó US$103 millones el jueves y en el mes lleva US$183 millones. Las reservas brutas igual cayeron, por la baja de 2,8% del oro.",
+   "fuente": "Infobae",
+   "fecha": "2026-11-12",
+   "url": "https://www.infobae.com/economia/2026/11/12/el-banco-central-compro-mas-de-usd-100-millones-el-mayor-monto-de-noviembre/"
   },
   {
-   "titulo": "El Banco Central aprovechó un dólar ofrecido para comprar US$29 millones",
-   "resumen": "El BCRA compró aprovechando la oferta de divisas en la rueda y en el año acumula US$16.043 millones.",
-   "fuente": "La Nación",
-   "fecha": "2026-11-11",
-   "url": "https://www.lanacion.com.ar/economia/el-banco-central-aprovecho-un-dolar-ofrecido-para-comprar-us29-millones-nid11112026/"
+   "titulo": "Nueva banda cambiaria: hasta qué precio puede subir el dólar en diciembre sin que intervenga el BCRA",
+   "resumen": "Infobae repasa cómo se actualizan los límites de la banda cambiaria para diciembre de 2026.",
+   "fuente": "Infobae",
+   "fecha": "2026-11-13",
+   "url": "https://www.infobae.com/economia/2026/11/13/nueva-banda-cambiaria-hasta-que-precio-puede-subir-el-dolar-en-diciembre-2026-sin-que-intervenga-el-bcra/"
   }
  ]
 }
