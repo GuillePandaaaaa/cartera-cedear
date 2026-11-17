@@ -1,10 +1,17 @@
 {
- "actualizado": "2026-11-16T08:35-03:00",
+ "actualizado": "2026-11-17T08:35-03:00",
  "cedears": [
   {
    "ticker": "NVDA",
    "nombre": "Nvidia",
    "noticias": [
+    {
+     "titulo": "Nvidia cae 4% a su menor cierre desde julio de 2025, en la previa del balance",
+     "resumen": "La acción cerró el lunes en torno a US$156 por la salida de Huang y las nuevas restricciones de EE.UU. a la venta de chips de IA a China. Hoy presenta resultados tras el cierre: se esperan ingresos de US$109.150 millones y ganancia de US$2,47 por acción.",
+     "fuente": "CNBC",
+     "fecha": "2026-11-17",
+     "url": "https://www.cnbc.com/2026/11/17/nvidia-stock-earnings-jensen-huang-resignation.html"
+    },
     {
      "titulo": "Bessent pide un 'cambio drástico' en Nvidia y un CEO de afuera",
      "resumen": "El secretario del Tesoro, Scott Bessent, dijo que el directorio debería buscar un CEO externo y planteó dudas sobre el cumplimiento de los controles de exportación.",
@@ -18,13 +25,6 @@
      "fuente": "Yahoo Finance",
      "fecha": "2026-11-15",
      "url": "https://finance.yahoo.com/markets/options/articles/nvidia-q3-earnings-preview-options-205720323.html"
-    },
-    {
-     "titulo": "Renuncia Jensen Huang: Colette Kress asume como CEO interina de Nvidia",
-     "resumen": "Nvidia anunció la renuncia de su CEO y fundador y nombró a la directora financiera Colette Kress como CEO interina. La acción llegó a caer 14% y cerró con baja de 4,34% en US$166,19, mínimo de 52 semanas; el balance sigue previsto para el 17 de noviembre.",
-     "fuente": "Yahoo Finance",
-     "fecha": "2026-11-12",
-     "url": "https://finance.yahoo.com/markets/stocks/articles/stock-market-today-nov-12-221840920.html"
     }
    ]
   },
@@ -48,6 +48,13 @@
    "nombre": "S&P 500 (ETF)",
    "noticias": [
     {
+     "titulo": "El Nasdaq cae 2,5% y el S&P 500 encadena tres bajas por la crisis en la IA",
+     "resumen": "El lunes el S&P 500 bajó 1,92% hasta 7.416,59 y el Nasdaq 2,49%, con tecnología y comunicaciones como los peores sectores; solo subió consumo básico. Pesaron la crisis en Nvidia, la suba de los bonos y nuevas restricciones a chips para China.",
+     "fuente": "Yahoo Finance",
+     "fecha": "2026-11-16",
+     "url": "https://finance.yahoo.com/markets/stocks/articles/stock-market-today-nov-16-222502139.html"
+    },
+    {
      "titulo": "El S&P 500 cierra la semana con suba de 2,5% pese a la caída del viernes",
      "resumen": "El viernes el S&P 500 bajó 0,40% hasta 7.561,67 y el Nasdaq 0,91%, presionados por el dato de precios mayoristas, el más alto en casi cuatro años, que alimentó el temor a subas de la Fed. En la semana el S&P ganó 2,51% y el Dow 2,07%.",
      "fuente": "Yahoo Finance",
@@ -60,13 +67,6 @@
      "fuente": "Yahoo Finance",
      "fecha": "2026-11-15",
      "url": "https://finance.yahoo.com/markets/article/nvidias-first-post-jensen-earnings-and-anthropics-ipo-what-to-watch-this-week-110000732.html"
-    },
-    {
-     "titulo": "Wall Street cae por la salida del CEO de Nvidia y la suba de tasas de los bonos",
-     "resumen": "El jueves el S&P 500 bajó 0,35% hasta 7.592,40, el Nasdaq 0,39% y el Dow 0,36%. El bono a 10 años subió a 5,09% por las apuestas a una suba de la Fed en diciembre, aunque los índices igual van camino a su mejor semana desde agosto.",
-     "fuente": "Yahoo Finance",
-     "fecha": "2026-11-12",
-     "url": "https://finance.yahoo.com/markets/stocks/articles/stocks-slip-nvidias-ceo-crisis-210901997.html"
     }
    ]
   },
@@ -110,11 +110,11 @@
    "nombre": "Amazon",
    "noticias": [
     {
-     "titulo": "Amazon sube 5% tras ser elegida por JPMorgan como una de sus favoritas",
-     "resumen": "JPMorgan sumó a Amazon a su lista de acciones preferidas por el crecimiento esperado de la nube, y el papel rebotó después de la caída post balance.",
+     "titulo": "Amazon cae por la nueva regla de exportación de chips de IA y la falla de un lanzamiento de Leo",
+     "resumen": "La acción bajó el lunes afectada por las nuevas restricciones a la exportación de chips de IA y el fallo en el lanzamiento de satélites de su red Leo.",
      "fuente": "Yahoo Finance",
-     "fecha": "2026-11-09",
-     "url": "https://finance.yahoo.com/markets/stocks/articles/meta-amazon-rise-5-jpmorgan-144819847.html"
+     "fecha": "2026-11-16",
+     "url": "https://finance.yahoo.com/markets/stocks/articles/stock-market-today-nov-16-222033796.html"
     }
    ]
   },
@@ -139,25 +139,25 @@
  ],
  "dolar": [
   {
-   "titulo": "Dólar blue hoy: a cuánto cotiza este lunes 16 de noviembre con el MEP y el CCL",
-   "resumen": "El oficial en el Banco Nación arranca en $1.520/$1.570 y el blue en $1.555/$1.575. El MEP ronda $1.576 y el CCL $1.677; el techo de la banda está en $1.971,72.",
-   "fuente": "El Cronista",
-   "fecha": "2026-11-16",
-   "url": "https://www.cronista.com/finanzas-mercados/dolar-blue-hoy-a-cuanto-cotiza-este-lunes-16-de-noviembre-con-el-mep-y-el-ccl/"
-  },
-  {
-   "titulo": "El BCRA sostuvo las compras durante la semana y ya acumuló más de u$s200 millones en noviembre",
-   "resumen": "El Central compró u$s40 millones el viernes y u$s172 millones en la semana; las reservas subieron u$s524 millones hasta u$s49.597 millones. El mayorista cerró en $1.543,50.",
+   "titulo": "El dólar oficial extendió las subas y quebró un nuevo récord, mientras el blue llegó a $1.600",
+   "resumen": "El mayorista marcó un nuevo máximo nominal y el blue saltó a $1.580/$1.600. Hoy el oficial en el Banco Nación abre en $1.525/$1.575 y el MEP ronda $1.585.",
    "fuente": "Ámbito",
-   "fecha": "2026-11-13",
-   "url": "https://www.ambito.com/finanzas/el-bcra-sostuvo-las-compras-dolares-la-semana-y-ya-acumulo-mas-us200-millones-noviembre-n6345123"
+   "fecha": "2026-11-16",
+   "url": "https://www.ambito.com/finanzas/dolar-el-mercado-pone-la-lupa-la-brecha-cambiaria-la-suba-del-blue-y-la-baja-del-oficial-n6345542"
   },
   {
-   "titulo": "Los depósitos en dólares del Gobierno en el BCRA tocaron un piso, pero la entidad sigue comprando reservas",
-   "resumen": "El Banco Central compró US$172 millones en la semana mientras los depósitos en dólares del Tesoro en la entidad quedaron en niveles mínimos.",
-   "fuente": "La Nación",
-   "fecha": "2026-11-13",
-   "url": "https://www.lanacion.com.ar/economia/los-depositos-en-dolares-del-gobierno-en-el-bcra-tocaron-un-piso-pero-la-entidad-sigue-comprando-nid13112026/"
+   "titulo": "El BCRA ya compró más de u$s250 millones en noviembre, pero las reservas siguen sin recuperarse",
+   "resumen": "El Central compró u$s33 millones el lunes y suma u$s256 millones en el mes. Las reservas cayeron u$s133 millones hasta u$s49.464 millones, en parte por la baja del oro.",
+   "fuente": "Ámbito",
+   "fecha": "2026-11-16",
+   "url": "https://www.ambito.com/finanzas/el-bcra-ya-compro-mas-us250-millones-noviembre-pero-las-reservas-siguen-recuperarse-n6345865"
+  },
+  {
+   "titulo": "Dólar blue hoy: a cuánto cotiza este martes 17 de noviembre con el MEP y el CCL",
+   "resumen": "El blue arranca en $1.580/$1.600 y el MEP en $1.585,50 para la venta. El techo de la banda cambiaria está en $1.971,80.",
+   "fuente": "El Cronista",
+   "fecha": "2026-11-17",
+   "url": "https://www.cronista.com/finanzas-mercados/dolar-blue-hoy-a-cuanto-cotiza-este-martes-17-de-noviembre-con-el-mep-y-el-ccl/"
   }
  ]
 }
