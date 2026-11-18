@@ -1,10 +1,17 @@
 {
- "actualizado": "2026-11-17T08:35-03:00",
+ "actualizado": "2026-11-18T08:35-03:00",
  "cedears": [
   {
    "ticker": "NVDA",
    "nombre": "Nvidia",
    "noticias": [
+    {
+     "titulo": "Nvidia supera expectativas en su primer balance sin Huang y sube fuera de hora",
+     "resumen": "Los ingresos del tercer trimestre fiscal treparon 103% a unos US$115.800 millones, arriba de los US$109.000 millones esperados, con margen bruto cercano a 75%. Proyectó US$130.000 millones para el próximo trimestre y elevó a 75% el crecimiento esperado para el año fiscal 2028.",
+     "fuente": "Yahoo Finance",
+     "fecha": "2026-11-17",
+     "url": "https://uk.finance.yahoo.com/news/nvidia-beats-third-quarter-estimates-214100513.html"
+    },
     {
      "titulo": "Nvidia cae 4% a su menor cierre desde julio de 2025, en la previa del balance",
      "resumen": "La acción cerró el lunes en torno a US$156 por la salida de Huang y las nuevas restricciones de EE.UU. a la venta de chips de IA a China. Hoy presenta resultados tras el cierre: se esperan ingresos de US$109.150 millones y ganancia de US$2,47 por acción.",
@@ -18,13 +25,6 @@
      "fuente": "CNBC",
      "fecha": "2026-11-15",
      "url": "https://www.cnbc.com/2026/11/15/bessent-nvidia-ceo-lutnick-megaspeed.html"
-    },
-    {
-     "titulo": "Nvidia presenta su primer balance sin Huang: qué esperar el martes 17",
-     "resumen": "El consenso espera ganancia de US$2,47 por acción con ingresos de US$109.200 millones, y las opciones descuentan un movimiento de cerca de 9,7% en cualquier dirección. La acción cayó cerca de 13% en la semana y suma seis semanas seguidas de baja.",
-     "fuente": "Yahoo Finance",
-     "fecha": "2026-11-15",
-     "url": "https://finance.yahoo.com/markets/options/articles/nvidia-q3-earnings-preview-options-205720323.html"
     }
    ]
   },
@@ -48,6 +48,13 @@
    "nombre": "S&P 500 (ETF)",
    "noticias": [
     {
+     "titulo": "El Dow cae más de 800 puntos y el S&P 500 marca su menor cierre desde julio",
+     "resumen": "El martes el S&P 500 bajó 1,03% hasta cerca de 7.340, cuarta caída seguida, y el Dow 1,64%, mientras el VIX llegó a subir 21%. Después del cierre, el balance de Nvidia impulsó los futuros.",
+     "fuente": "CNBC",
+     "fecha": "2026-11-17",
+     "url": "https://www.cnbc.com/2026/11/16/stock-market-today-live-updates.html"
+    },
+    {
      "titulo": "El Nasdaq cae 2,5% y el S&P 500 encadena tres bajas por la crisis en la IA",
      "resumen": "El lunes el S&P 500 bajó 1,92% hasta 7.416,59 y el Nasdaq 2,49%, con tecnología y comunicaciones como los peores sectores; solo subió consumo básico. Pesaron la crisis en Nvidia, la suba de los bonos y nuevas restricciones a chips para China.",
      "fuente": "Yahoo Finance",
@@ -60,13 +67,6 @@
      "fuente": "Yahoo Finance",
      "fecha": "2026-11-13",
      "url": "https://finance.yahoo.com/markets/stocks/articles/nasdaq-futures-dip-nvidia-tumult-103901600.html"
-    },
-    {
-     "titulo": "Qué mirar esta semana: el balance de Nvidia y la salida a bolsa de Anthropic",
-     "resumen": "Los inversores esperan el primer balance de Nvidia tras la renuncia de Huang y la salida a bolsa de Anthropic.",
-     "fuente": "Yahoo Finance",
-     "fecha": "2026-11-15",
-     "url": "https://finance.yahoo.com/markets/article/nvidias-first-post-jensen-earnings-and-anthropics-ipo-what-to-watch-this-week-110000732.html"
     }
    ]
   },
@@ -139,25 +139,25 @@
  ],
  "dolar": [
   {
-   "titulo": "El dólar oficial extendió las subas y quebró un nuevo récord, mientras el blue llegó a $1.600",
-   "resumen": "El mayorista marcó un nuevo máximo nominal y el blue saltó a $1.580/$1.600. Hoy el oficial en el Banco Nación abre en $1.525/$1.575 y el MEP ronda $1.585.",
+   "titulo": "Dólar hoy: a cuánto cotiza este miércoles 18 de noviembre",
+   "resumen": "El oficial en el Banco Nación está en $1.525/$1.575 y el mayorista en $1.552. El MEP ronda $1.600 y el CCL $1.697.",
    "fuente": "Ámbito",
-   "fecha": "2026-11-16",
-   "url": "https://www.ambito.com/finanzas/dolar-el-mercado-pone-la-lupa-la-brecha-cambiaria-la-suba-del-blue-y-la-baja-del-oficial-n6345542"
+   "fecha": "2026-11-18",
+   "url": "https://www.ambito.com/finanzas/dolar-hoy-cuanto-cotiza-este-miercoles-18-noviembre-n6346462"
   },
   {
-   "titulo": "El BCRA ya compró más de u$s250 millones en noviembre, pero las reservas siguen sin recuperarse",
-   "resumen": "El Central compró u$s33 millones el lunes y suma u$s256 millones en el mes. Las reservas cayeron u$s133 millones hasta u$s49.464 millones, en parte por la baja del oro.",
+   "titulo": "El BCRA aceleró las compras de dólares y las reservas subieron más de u$s275 millones",
+   "resumen": "El Central compró u$s74 millones el martes, más del doble que el lunes, y en noviembre ya suma unos u$s330 millones. El mayorista subió $1 y cerró en $1.552, su máximo nominal.",
    "fuente": "Ámbito",
-   "fecha": "2026-11-16",
-   "url": "https://www.ambito.com/finanzas/el-bcra-ya-compro-mas-us250-millones-noviembre-pero-las-reservas-siguen-recuperarse-n6345865"
-  },
-  {
-   "titulo": "Dólar blue hoy: a cuánto cotiza este martes 17 de noviembre con el MEP y el CCL",
-   "resumen": "El blue arranca en $1.580/$1.600 y el MEP en $1.585,50 para la venta. El techo de la banda cambiaria está en $1.971,80.",
-   "fuente": "El Cronista",
    "fecha": "2026-11-17",
-   "url": "https://www.cronista.com/finanzas-mercados/dolar-blue-hoy-a-cuanto-cotiza-este-martes-17-de-noviembre-con-el-mep-y-el-ccl/"
+   "url": "https://www.ambito.com/finanzas/el-bcra-acelero-las-compras-dolares-y-las-reservas-subieron-mas-us275-millones-n6346345"
+  },
+  {
+   "titulo": "Dólar blue hoy: a cuánto cotiza este miércoles 18 de noviembre con el MEP y el CCL",
+   "resumen": "El blue sigue en alza y cotiza a $1.585/$1.605, por encima de los $1.600.",
+   "fuente": "El Cronista",
+   "fecha": "2026-11-18",
+   "url": "https://www.cronista.com/finanzas-mercados/dolar-blue-hoy-a-cuanto-cotiza-este-miercoles-18-de-noviembre-con-el-mep-y-el-ccl/"
   }
  ]
 }
