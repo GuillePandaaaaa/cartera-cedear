@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-19T08:35-03:00",
+ "actualizado": "2026-11-20T08:35-03:00",
  "cedears": [
   {
    "ticker": "NVDA",
@@ -56,6 +56,13 @@
    "nombre": "S&P 500 (ETF)",
    "noticias": [
     {
+     "titulo": "El S&P 500 cae 2% y encadena su peor racha desde 2024; el Dow pierde los 50.000",
+     "resumen": "El jueves el S&P 500 bajó 2,02% hasta 7.175,83 y el Nasdaq 2,25%, mientras el Dow cayó cerca de 2,2% por debajo de los 50.000 puntos. La salida a bolsa de Anthropic, que subió 17% en su debut, no alcanzó para reanimar a las acciones de IA.",
+     "fuente": "CNBC",
+     "fecha": "2026-11-19",
+     "url": "https://www.cnbc.com/2026/11/19/anthropic-ipo-ai-stocks-selloff.html"
+    },
+    {
      "titulo": "El S&P 500 cae por quinto día y queda debajo de su media de 200 ruedas",
      "resumen": "El miércoles el S&P 500 bajó 0,23% hasta 7.323,63, su racha bajista más larga desde junio, y el Dow perdió 561 puntos (-1,11%); el Nasdaq subió 0,42%. Energía fue el peor sector por la baja del petróleo.",
      "fuente": "CNBC",
@@ -68,13 +75,6 @@
      "fuente": "CNBC",
      "fecha": "2026-11-17",
      "url": "https://www.cnbc.com/2026/11/16/stock-market-today-live-updates.html"
-    },
-    {
-     "titulo": "El Nasdaq cae 2,5% y el S&P 500 encadena tres bajas por la crisis en la IA",
-     "resumen": "El lunes el S&P 500 bajó 1,92% hasta 7.416,59 y el Nasdaq 2,49%, con tecnología y comunicaciones como los peores sectores; solo subió consumo básico. Pesaron la crisis en Nvidia, la suba de los bonos y nuevas restricciones a chips para China.",
-     "fuente": "Yahoo Finance",
-     "fecha": "2026-11-16",
-     "url": "https://finance.yahoo.com/markets/stocks/articles/stock-market-today-nov-16-222502139.html"
     }
    ]
   },
@@ -106,7 +106,15 @@
   {
    "ticker": "GOOGL",
    "nombre": "Alphabet",
-   "noticias": []
+   "noticias": [
+    {
+     "titulo": "Alphabet cae mientras el debut de Anthropic pone nuevo valor a la participación de Google",
+     "resumen": "Anthropic, en la que Google es accionista, debutó en el Nasdaq y cerró su primer día en US$97,17, unos 17% arriba del precio de salida de US$83. Las acciones de Alphabet igual bajaron en una rueda negativa para las tecnológicas.",
+     "fuente": "Yahoo Finance",
+     "fecha": "2026-11-19",
+     "url": "https://finance.yahoo.com/markets/stocks/articles/stock-market-today-nov-19-221830024.html"
+    }
+   ]
   },
   {
    "ticker": "MDLZ",
@@ -139,25 +147,25 @@
  ],
  "dolar": [
   {
-   "titulo": "El dólar oficial quebró un nuevo récord nominal, mientras el CCL superó los $1.700 y la brecha tocó el 10%",
-   "resumen": "El oficial en el Banco Nación está en $1.530/$1.580 y el mayorista en $1.559,50. El blue sube a $1.610/$1.630, el MEP a $1.630 y el CCL a $1.717.",
+   "titulo": "El dólar blue subió por quinta rueda consecutiva y va camino a su mayor avance semanal en más de un año",
+   "resumen": "El blue llegó a $1.620/$1.640, nuevo récord nominal. Hoy el oficial en el Banco Nación está en $1.535/$1.585, el mayorista en $1.565, el MEP en $1.644 y el CCL en $1.743.",
    "fuente": "Ámbito",
    "fecha": "2026-11-19",
-   "url": "https://www.ambito.com/finanzas/el-dolar-oficial-alcanzo-un-nuevo-record-nominal-pero-2026-sube-apenas-una-cuarta-parte-la-inflacion-n6346484"
+   "url": "https://www.ambito.com/finanzas/el-dolar-blue-subio-quinta-rueda-consecutiva-y-va-camino-su-mayor-avance-semanal-mas-un-ano-n6347338"
   },
   {
-   "titulo": "El BCRA moderó fuerte el ritmo de compras y las reservas bajaron casi u$s200 millones",
-   "resumen": "El Central compró apenas u$s11 millones, contra u$s74 millones el día anterior. Las reservas cayeron u$s190 millones hasta u$s49.551 millones, sobre todo por la baja del oro.",
+   "titulo": "El BCRA realizó la menor compra desde el inicio del programa de acumulación y las reservas cayeron",
+   "resumen": "El Central compró apenas u$s3 millones el jueves, en una jornada de fuerte demanda de cobertura. Las reservas bajaron u$s108 millones hasta u$s49.443 millones, sobre todo por la baja del oro.",
    "fuente": "Ámbito",
-   "fecha": "2026-11-18",
-   "url": "https://www.ambito.com/finanzas/dolar-el-bcra-modero-fuerte-el-ritmo-compras-y-las-reservas-bajaron-casi-us200-millones-n6346854"
+   "fecha": "2026-11-19",
+   "url": "https://www.ambito.com/finanzas/el-bcra-realizo-la-menor-compra-el-inicio-del-programa-acumulacion-las-reservas-cayeron-mas-us100-millones-n6347308"
   },
   {
-   "titulo": "La incertidumbre empieza a contagiar al mercado cambiario y hay señales de menos oferta de dólares",
-   "resumen": "La Nación advierte señales de menor oferta de divisas mientras el mayorista sigue subiendo; el BCRA acumula US$118 millones en la semana.",
-   "fuente": "La Nación",
-   "fecha": "2026-11-18",
-   "url": "https://www.lanacion.com.ar/economia/la-incertidumbre-ya-contagio-al-mercado-cambiario-y-hay-senales-de-menos-oferta-de-dolares-nid18112026/"
+   "titulo": "Dólar hoy: todas las cotizaciones alcanzaron nuevos máximos y el real brasileño profundizó su baja",
+   "resumen": "Las distintas cotizaciones del dólar marcaron récords nominales el jueves, con el contado con liquidación también en máximos, mientras el real se siguió debilitando.",
+   "fuente": "Infobae",
+   "fecha": "2026-11-19",
+   "url": "https://www.infobae.com/economia/2026/11/19/dolar-hoy-a-cuanto-operan-todas-las-cotizaciones-tras-la-caida-del-real-brasileno-y-el-record-del-contado-con-liqui/"
   }
  ]
 }
