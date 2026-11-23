@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-20T08:35-03:00",
+ "actualizado": "2026-11-23T08:35-03:00",
  "cedears": [
   {
    "ticker": "NVDA",
@@ -56,6 +56,13 @@
    "nombre": "S&P 500 (ETF)",
    "noticias": [
     {
+     "titulo": "El S&P 500 y el Dow entran en corrección y el Nasdaq borra lo ganado en 2026",
+     "resumen": "El viernes el S&P 500 se desplomó 3,7% hasta 6.910 y el Nasdaq 5,28%; en la semana el S&P perdió 8,6%, su peor semana desde abril de 2025. El índice ya está 10% debajo de su récord del 6 de octubre, con la tecnología como el sector más golpeado.",
+     "fuente": "CNBC",
+     "fecha": "2026-11-20",
+     "url": "https://www.cnbc.com/2026/11/19/stock-market-today-live-updates.html"
+    },
+    {
      "titulo": "El S&P 500 cae 2% y encadena su peor racha desde 2024; el Dow pierde los 50.000",
      "resumen": "El jueves el S&P 500 bajó 2,02% hasta 7.175,83 y el Nasdaq 2,25%, mientras el Dow cayó cerca de 2,2% por debajo de los 50.000 puntos. La salida a bolsa de Anthropic, que subió 17% en su debut, no alcanzó para reanimar a las acciones de IA.",
      "fuente": "CNBC",
@@ -68,13 +75,6 @@
      "fuente": "CNBC",
      "fecha": "2026-11-18",
      "url": "https://www.cnbc.com/2026/11/17/stock-market-today-live-updates.html"
-    },
-    {
-     "titulo": "El Dow cae más de 800 puntos y el S&P 500 marca su menor cierre desde julio",
-     "resumen": "El martes el S&P 500 bajó 1,03% hasta cerca de 7.340, cuarta caída seguida, y el Dow 1,64%, mientras el VIX llegó a subir 21%. Después del cierre, el balance de Nvidia impulsó los futuros.",
-     "fuente": "CNBC",
-     "fecha": "2026-11-17",
-     "url": "https://www.cnbc.com/2026/11/16/stock-market-today-live-updates.html"
     }
    ]
   },
@@ -126,6 +126,13 @@
    "nombre": "Amazon",
    "noticias": [
     {
+     "titulo": "Amazon cae 4% en la venta masiva de tecnológicas",
+     "resumen": "La acción cerró el viernes en US$246,82 (-4,10%), con los inversores evaluando el fuerte gasto en IA y su impacto en márgenes y flujo de caja.",
+     "fuente": "Yahoo Finance",
+     "fecha": "2026-11-20",
+     "url": "https://finance.yahoo.com/markets/stocks/articles/stock-market-today-nov-20-225002397.html"
+    },
+    {
      "titulo": "Amazon cae por la nueva regla de exportación de chips de IA y la falla de un lanzamiento de Leo",
      "resumen": "La acción bajó el lunes afectada por las nuevas restricciones a la exportación de chips de IA y el fallo en el lanzamiento de satélites de su red Leo.",
      "fuente": "Yahoo Finance",
@@ -147,25 +154,25 @@
  ],
  "dolar": [
   {
-   "titulo": "El dólar blue subió por quinta rueda consecutiva y va camino a su mayor avance semanal en más de un año",
-   "resumen": "El blue llegó a $1.620/$1.640, nuevo récord nominal. Hoy el oficial en el Banco Nación está en $1.535/$1.585, el mayorista en $1.565, el MEP en $1.644 y el CCL en $1.743.",
+   "titulo": "Dólar hoy: a cuánto cotiza este lunes 23 de noviembre",
+   "resumen": "El mayorista arranca en $1.580 y el blue en $1.655/$1.675. El MEP ronda $1.701 y el CCL $1.799.",
    "fuente": "Ámbito",
-   "fecha": "2026-11-19",
-   "url": "https://www.ambito.com/finanzas/el-dolar-blue-subio-quinta-rueda-consecutiva-y-va-camino-su-mayor-avance-semanal-mas-un-ano-n6347338"
+   "fecha": "2026-11-23",
+   "url": "https://www.ambito.com/finanzas/dolar-hoy-cuanto-cotiza-este-lunes-23-noviembre-n6348176"
   },
   {
-   "titulo": "El BCRA realizó la menor compra desde el inicio del programa de acumulación y las reservas cayeron",
-   "resumen": "El Central compró apenas u$s3 millones el jueves, en una jornada de fuerte demanda de cobertura. Las reservas bajaron u$s108 millones hasta u$s49.443 millones, sobre todo por la baja del oro.",
+   "titulo": "El dólar blue no detiene la escalada: trepó $100 en la semana, el mayor avance en más de dos años",
+   "resumen": "El blue cerró el viernes en $1.675 y el mayorista en $1.580, ambos en máximos nominales. El BCRA no compró el viernes, cortó una racha de nueve ruedas compradoras y cerró la semana con u$s121 millones.",
    "fuente": "Ámbito",
-   "fecha": "2026-11-19",
-   "url": "https://www.ambito.com/finanzas/el-bcra-realizo-la-menor-compra-el-inicio-del-programa-acumulacion-las-reservas-cayeron-mas-us100-millones-n6347308"
+   "fecha": "2026-11-20",
+   "url": "https://www.ambito.com/finanzas/el-dolar-blue-no-detiene-la-escalada-trepo-100-la-semana-el-mayor-avance-mas-dos-anos-n6347748"
   },
   {
-   "titulo": "Dólar hoy: todas las cotizaciones alcanzaron nuevos máximos y el real brasileño profundizó su baja",
-   "resumen": "Las distintas cotizaciones del dólar marcaron récords nominales el jueves, con el contado con liquidación también en máximos, mientras el real se siguió debilitando.",
-   "fuente": "Infobae",
-   "fecha": "2026-11-19",
-   "url": "https://www.infobae.com/economia/2026/11/19/dolar-hoy-a-cuanto-operan-todas-las-cotizaciones-tras-la-caida-del-real-brasileno-y-el-record-del-contado-con-liqui/"
+   "titulo": "Dólar oficial: a cuánto cotiza en los bancos de la City hoy lunes 23 de noviembre",
+   "resumen": "El oficial en el Banco Nación sube a $1.550/$1.600 al inicio de la semana.",
+   "fuente": "El Cronista",
+   "fecha": "2026-11-23",
+   "url": "https://www.cronista.com/finanzas-mercados/dolar-oficial-a-cuanto-cotiza-en-los-bancos-de-la-city-hoy-lunes-23-de-noviembre/"
   }
  ]
 }
