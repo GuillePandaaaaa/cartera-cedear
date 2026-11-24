@@ -1,10 +1,17 @@
 {
- "actualizado": "2026-11-23T08:35-03:00",
+ "actualizado": "2026-11-24T08:35-03:00",
  "cedears": [
   {
    "ticker": "NVDA",
    "nombre": "Nvidia",
    "noticias": [
+    {
+     "titulo": "Nvidia vuela 31% tras el regreso de Jensen Huang como CEO",
+     "resumen": "El directorio aprobó la vuelta de Huang y la acción tuvo su mejor día desde mayo de 2003, recuperando casi US$1 billón de valor de mercado. Analistas advierten que las investigaciones por presunto espionaje chino siguen pesando; los futuros apuntaban a una baja de más de 3% hoy.",
+     "fuente": "CNBC",
+     "fecha": "2026-11-23",
+     "url": "https://www.cnbc.com/2026/11/23/anthropic-nvidia-shares.html"
+    },
     {
      "titulo": "Nvidia cae casi 3% pese al balance: pesan la sucesión y los riesgos en China",
      "resumen": "La acción abrió en alza tras los resultados, pero cerró en US$150,96 (-2,89%). Los inversores siguen preocupados por la salida de Huang, el rol interino de Colette Kress y reportes de una investigación de la SEC.",
@@ -18,13 +25,6 @@
      "fuente": "Yahoo Finance",
      "fecha": "2026-11-17",
      "url": "https://uk.finance.yahoo.com/news/nvidia-beats-third-quarter-estimates-214100513.html"
-    },
-    {
-     "titulo": "Nvidia cae 4% a su menor cierre desde julio de 2025, en la previa del balance",
-     "resumen": "La acción cerró el lunes en torno a US$156 por la salida de Huang y las nuevas restricciones de EE.UU. a la venta de chips de IA a China. Hoy presenta resultados tras el cierre: se esperan ingresos de US$109.150 millones y ganancia de US$2,47 por acción.",
-     "fuente": "CNBC",
-     "fecha": "2026-11-17",
-     "url": "https://www.cnbc.com/2026/11/17/nvidia-stock-earnings-jensen-huang-resignation.html"
     }
    ]
   },
@@ -56,6 +56,13 @@
    "nombre": "S&P 500 (ETF)",
    "noticias": [
     {
+     "titulo": "Wall Street tiene su mejor día desde abril de 2025 con el rebote de la IA",
+     "resumen": "El lunes el S&P 500 subió 4,73% hasta 7.237, el Nasdaq 6,5% y el Dow 3%, impulsados por el salto de Nvidia tras la vuelta de Huang. El rebote llega después de que el S&P entrara en corrección la semana pasada.",
+     "fuente": "Yahoo Finance",
+     "fecha": "2026-11-23",
+     "url": "https://finance.yahoo.com/markets/world-indices/articles/major-us-stock-indexes-fared-213053319.html"
+    },
+    {
      "titulo": "El S&P 500 y el Dow entran en corrección y el Nasdaq borra lo ganado en 2026",
      "resumen": "El viernes el S&P 500 se desplomó 3,7% hasta 6.910 y el Nasdaq 5,28%; en la semana el S&P perdió 8,6%, su peor semana desde abril de 2025. El índice ya está 10% debajo de su récord del 6 de octubre, con la tecnología como el sector más golpeado.",
      "fuente": "CNBC",
@@ -68,13 +75,6 @@
      "fuente": "CNBC",
      "fecha": "2026-11-19",
      "url": "https://www.cnbc.com/2026/11/19/anthropic-ipo-ai-stocks-selloff.html"
-    },
-    {
-     "titulo": "El S&P 500 cae por quinto día y queda debajo de su media de 200 ruedas",
-     "resumen": "El miércoles el S&P 500 bajó 0,23% hasta 7.323,63, su racha bajista más larga desde junio, y el Dow perdió 561 puntos (-1,11%); el Nasdaq subió 0,42%. Energía fue el peor sector por la baja del petróleo.",
-     "fuente": "CNBC",
-     "fecha": "2026-11-18",
-     "url": "https://www.cnbc.com/2026/11/17/stock-market-today-live-updates.html"
     }
    ]
   },
@@ -131,13 +131,6 @@
      "fuente": "Yahoo Finance",
      "fecha": "2026-11-20",
      "url": "https://finance.yahoo.com/markets/stocks/articles/stock-market-today-nov-20-225002397.html"
-    },
-    {
-     "titulo": "Amazon cae por la nueva regla de exportación de chips de IA y la falla de un lanzamiento de Leo",
-     "resumen": "La acción bajó el lunes afectada por las nuevas restricciones a la exportación de chips de IA y el fallo en el lanzamiento de satélites de su red Leo.",
-     "fuente": "Yahoo Finance",
-     "fecha": "2026-11-16",
-     "url": "https://finance.yahoo.com/markets/stocks/articles/stock-market-today-nov-16-222033796.html"
     }
    ]
   },
@@ -154,25 +147,25 @@
  ],
  "dolar": [
   {
-   "titulo": "Dólar hoy: a cuánto cotiza este lunes 23 de noviembre",
-   "resumen": "El mayorista arranca en $1.580 y el blue en $1.655/$1.675. El MEP ronda $1.701 y el CCL $1.799.",
+   "titulo": "Dólar hoy: a cuánto cotiza este martes 24 de noviembre",
+   "resumen": "El oficial en el Banco Nación está en $1.550/$1.600 y el mayorista en $1.580. El blue cotiza a $1.655/$1.675 y el MEP a $1.701, con una brecha de 7,7%.",
    "fuente": "Ámbito",
-   "fecha": "2026-11-23",
-   "url": "https://www.ambito.com/finanzas/dolar-hoy-cuanto-cotiza-este-lunes-23-noviembre-n6348176"
+   "fecha": "2026-11-24",
+   "url": "https://www.ambito.com/finanzas/dolar-hoy-cuanto-cotiza-este-martes-24-noviembre-n6348472"
   },
   {
-   "titulo": "El dólar blue no detiene la escalada: trepó $100 en la semana, el mayor avance en más de dos años",
-   "resumen": "El blue cerró el viernes en $1.675 y el mayorista en $1.580, ambos en máximos nominales. El BCRA no compró el viernes, cortó una racha de nueve ruedas compradoras y cerró la semana con u$s121 millones.",
-   "fuente": "Ámbito",
-   "fecha": "2026-11-20",
-   "url": "https://www.ambito.com/finanzas/el-dolar-blue-no-detiene-la-escalada-trepo-100-la-semana-el-mayor-avance-mas-dos-anos-n6347748"
+   "titulo": "Tensión con el dólar: crece la brecha cambiaria y se estancan las reservas",
+   "resumen": "Las compras del BCRA disminuyeron y las reservas se estancaron, mientras los bonos se desplomaron y el riesgo país superó los 1.000 puntos.",
+   "fuente": "Infobae",
+   "fecha": "2026-11-23",
+   "url": "https://www.infobae.com/economia/2026/11/23/tension-con-el-dolar-crece-la-brecha-cambiaria-y-se-estancan-las-reservas/"
   },
   {
-   "titulo": "Dólar oficial: a cuánto cotiza en los bancos de la City hoy lunes 23 de noviembre",
-   "resumen": "El oficial en el Banco Nación sube a $1.550/$1.600 al inicio de la semana.",
-   "fuente": "El Cronista",
+   "titulo": "Los ADRs rebotaron hasta 6,2% y el riesgo país cerró debajo de los 1.030 puntos",
+   "resumen": "Las acciones y bonos argentinos se recuperaron el lunes de la mano de la mejora del clima internacional.",
+   "fuente": "Ámbito",
    "fecha": "2026-11-23",
-   "url": "https://www.cronista.com/finanzas-mercados/dolar-oficial-a-cuanto-cotiza-en-los-bancos-de-la-city-hoy-lunes-23-de-noviembre/"
+   "url": "https://ambito.com/finanzas/los-adrs-rebotan-68-y-los-bonos-suben-la-mejora-del-clima-internacional-n6348259"
   }
  ]
 }
