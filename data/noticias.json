@@ -1,10 +1,17 @@
 {
- "actualizado": "2026-11-24T08:35-03:00",
+ "actualizado": "2026-11-25T08:35-03:00",
  "cedears": [
   {
    "ticker": "NVDA",
    "nombre": "Nvidia",
    "noticias": [
+    {
+     "titulo": "Nvidia cae más de 5% y se enfría el rally por la vuelta de Huang",
+     "resumen": "Después de volar 31% el lunes, la acción de Nvidia retrocedió casi 6% el martes. El rally por el regreso de Jensen Huang como CEO se enfrió y volvieron las dudas sobre la salud del negocio de IA.",
+     "fuente": "CNBC",
+     "fecha": "2026-11-24",
+     "url": "https://www.cnbc.com/2026/11/24/nvidia-stock-jensen-huang-return.html"
+    },
     {
      "titulo": "Nvidia vuela 31% tras el regreso de Jensen Huang como CEO",
      "resumen": "El directorio aprobó la vuelta de Huang y la acción tuvo su mejor día desde mayo de 2003, recuperando casi US$1 billón de valor de mercado. Analistas advierten que las investigaciones por presunto espionaje chino siguen pesando; los futuros apuntaban a una baja de más de 3% hoy.",
@@ -18,13 +25,6 @@
      "fuente": "Yahoo Finance",
      "fecha": "2026-11-18",
      "url": "https://finance.yahoo.com/markets/stocks/articles/stock-market-today-nov-18-221135469.html"
-    },
-    {
-     "titulo": "Nvidia supera expectativas en su primer balance sin Huang y sube fuera de hora",
-     "resumen": "Los ingresos del tercer trimestre fiscal treparon 103% a unos US$115.800 millones, arriba de los US$109.000 millones esperados, con margen bruto cercano a 75%. Proyectó US$130.000 millones para el próximo trimestre y elevó a 75% el crecimiento esperado para el año fiscal 2028.",
-     "fuente": "Yahoo Finance",
-     "fecha": "2026-11-17",
-     "url": "https://uk.finance.yahoo.com/news/nvidia-beats-third-quarter-estimates-214100513.html"
     }
    ]
   },
@@ -43,6 +43,13 @@
    "nombre": "Procter & Gamble",
    "noticias": [
     {
+     "titulo": "P&G apunta a ahorrar hasta US$10.000 millones con menos operarios en fábricas",
+     "resumen": "En su Investor Day, Procter & Gamble fijó una meta de hasta US$10.000 millones en ahorros de productividad entre los ejercicios 2027 y 2030, con plantas y depósitos que funcionen con menos trabajadores.",
+     "fuente": "Yahoo Finance",
+     "fecha": "2026-11-19",
+     "url": "https://finance.yahoo.com/markets/stocks/articles/procter-gamble-wants-10-billion-160736794.html"
+    },
+    {
      "titulo": "P&G presenta su Investor Day hoy en Cincinnati",
      "resumen": "El CEO Shailesh Jejurikar y el CFO Andre Schulten expondrán la estrategia y la transformación de largo plazo de la compañía. Para el año fiscal 2027, P&G proyecta ventas orgánicas de 1-3% y ganancia por acción de 0-3%.",
      "fuente": "Yahoo Finance",
@@ -56,6 +63,13 @@
    "nombre": "S&P 500 (ETF)",
    "noticias": [
     {
+     "titulo": "El S&P 500 y el Nasdaq caen por el derrumbe de los chips; el Dow sube",
+     "resumen": "El S&P 500 bajó 0,5% a 7.201 y el Nasdaq 1,5%, arrastrados por los semiconductores y una caída de 6% de Nvidia. El Dow, en cambio, subió 0,85% y superó los 50.000 puntos con la rotación hacia acciones de valor.",
+     "fuente": "Yahoo Finance",
+     "fecha": "2026-11-24",
+     "url": "https://finance.yahoo.com/markets/live/stock-market-today-tuesday-november-24-dow-sp-500-nasdaq-chip-stocks-nvidia-140629923.html"
+    },
+    {
      "titulo": "Wall Street tiene su mejor día desde abril de 2025 con el rebote de la IA",
      "resumen": "El lunes el S&P 500 subió 4,73% hasta 7.237, el Nasdaq 6,5% y el Dow 3%, impulsados por el salto de Nvidia tras la vuelta de Huang. El rebote llega después de que el S&P entrara en corrección la semana pasada.",
      "fuente": "Yahoo Finance",
@@ -68,20 +82,21 @@
      "fuente": "CNBC",
      "fecha": "2026-11-20",
      "url": "https://www.cnbc.com/2026/11/19/stock-market-today-live-updates.html"
-    },
-    {
-     "titulo": "El S&P 500 cae 2% y encadena su peor racha desde 2024; el Dow pierde los 50.000",
-     "resumen": "El jueves el S&P 500 bajó 2,02% hasta 7.175,83 y el Nasdaq 2,25%, mientras el Dow cayó cerca de 2,2% por debajo de los 50.000 puntos. La salida a bolsa de Anthropic, que subió 17% en su debut, no alcanzó para reanimar a las acciones de IA.",
-     "fuente": "CNBC",
-     "fecha": "2026-11-19",
-     "url": "https://www.cnbc.com/2026/11/19/anthropic-ipo-ai-stocks-selloff.html"
     }
    ]
   },
   {
    "ticker": "MELI",
    "nombre": "MercadoLibre",
-   "noticias": []
+   "noticias": [
+    {
+     "titulo": "Bank of America le recorta el precio objetivo a MercadoLibre pero sigue viendo 48% de suba",
+     "resumen": "BofA bajó su precio objetivo para MELI de US$2.400 a US$2.000, aunque mantuvo la recomendación de compra. La acción viene de un año flojo.",
+     "fuente": "Yahoo Finance",
+     "fecha": "2026-11-19",
+     "url": "https://finance.yahoo.com/markets/stocks/articles/mercadolibre-disappointed-why-bank-america-140844317.html"
+    }
+   ]
   },
   {
    "ticker": "O",
@@ -147,25 +162,25 @@
  ],
  "dolar": [
   {
-   "titulo": "Dólar hoy: a cuánto cotiza este martes 24 de noviembre",
-   "resumen": "El oficial en el Banco Nación está en $1.550/$1.600 y el mayorista en $1.580. El blue cotiza a $1.655/$1.675 y el MEP a $1.701, con una brecha de 7,7%.",
+   "titulo": "Dólar hoy: a cuánto cotiza este miércoles 25 de noviembre",
+   "resumen": "El oficial en el Banco Nación arranca a $1.565/$1.615 y el mayorista en $1.593. El blue está a $1.680/$1.700, el MEP cerca de $1.690 y el CCL en torno a $1.796.",
+   "fuente": "Ámbito",
+   "fecha": "2026-11-25",
+   "url": "https://www.ambito.com/finanzas/dolar-hoy-cuanto-cotiza-este-miercoles-25-noviembre-n6348992"
+  },
+  {
+   "titulo": "El BCRA no compró dólares por segunda rueda y las reservas cayeron",
+   "resumen": "El Central volvió a quedarse afuera del mercado el martes. Las reservas cerraron en u$s48.744 millones tras caer u$s618 millones, y las compras de noviembre suman u$s344 millones.",
    "fuente": "Ámbito",
    "fecha": "2026-11-24",
-   "url": "https://www.ambito.com/finanzas/dolar-hoy-cuanto-cotiza-este-martes-24-noviembre-n6348472"
+   "url": "https://www.ambito.com/finanzas/el-bcra-no-compro-dolares-segunda-rueda-fila-y-las-reservas-cayeron-al-menor-nivel-mas-un-mes-n6348885"
   },
   {
-   "titulo": "Tensión con el dólar: crece la brecha cambiaria y se estancan las reservas",
-   "resumen": "Las compras del BCRA disminuyeron y las reservas se estancaron, mientras los bonos se desplomaron y el riesgo país superó los 1.000 puntos.",
-   "fuente": "Infobae",
-   "fecha": "2026-11-23",
-   "url": "https://www.infobae.com/economia/2026/11/23/tension-con-el-dolar-crece-la-brecha-cambiaria-y-se-estancan-las-reservas/"
-  },
-  {
-   "titulo": "Los ADRs rebotaron hasta 6,2% y el riesgo país cerró debajo de los 1.030 puntos",
-   "resumen": "Las acciones y bonos argentinos se recuperaron el lunes de la mano de la mejora del clima internacional.",
-   "fuente": "Ámbito",
-   "fecha": "2026-11-23",
-   "url": "https://ambito.com/finanzas/los-adrs-rebotan-68-y-los-bonos-suben-la-mejora-del-clima-internacional-n6348259"
+   "titulo": "El dólar superó los $1.600 y el riesgo país rozó los 1.100 puntos",
+   "resumen": "El oficial volvió a subir el martes y pasó los $1.600, mientras los bonos cayeron y el riesgo país se acercó a los 1.100 puntos básicos.",
+   "fuente": "La Nación",
+   "fecha": "2026-11-24",
+   "url": "https://www.lanacion.com.ar/economia/dolar/el-dolar-vuelve-a-subir-y-supera-los-1600-nid24112026/"
   }
  ]
 }
