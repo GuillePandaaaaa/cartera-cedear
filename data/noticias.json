@@ -1,10 +1,17 @@
 {
- "actualizado": "2026-11-25T08:35-03:00",
+ "actualizado": "2026-11-26T08:35-03:00",
  "cedears": [
   {
    "ticker": "NVDA",
    "nombre": "Nvidia",
    "noticias": [
+    {
+     "titulo": "Nvidia encabeza la venta de tecnológicas y se diluye el rally por Huang",
+     "resumen": "Las tecnológicas se hundieron el miércoles, aunque cerraron lejos de los mínimos. Nvidia lideró la caída del sector de chips al volver las dudas sobre la IA, mientras se desinflaba el rally por el regreso de Huang.",
+     "fuente": "CNBC",
+     "fecha": "2026-11-25",
+     "url": "https://www.cnbc.com/2026/11/25/nvidia-ai-stock-tech-selloff.html"
+    },
     {
      "titulo": "Nvidia cae más de 5% y se enfría el rally por la vuelta de Huang",
      "resumen": "Después de volar 31% el lunes, la acción de Nvidia retrocedió casi 6% el martes. El rally por el regreso de Jensen Huang como CEO se enfrió y volvieron las dudas sobre la salud del negocio de IA.",
@@ -18,13 +25,6 @@
      "fuente": "CNBC",
      "fecha": "2026-11-23",
      "url": "https://www.cnbc.com/2026/11/23/anthropic-nvidia-shares.html"
-    },
-    {
-     "titulo": "Nvidia cae casi 3% pese al balance: pesan la sucesión y los riesgos en China",
-     "resumen": "La acción abrió en alza tras los resultados, pero cerró en US$150,96 (-2,89%). Los inversores siguen preocupados por la salida de Huang, el rol interino de Colette Kress y reportes de una investigación de la SEC.",
-     "fuente": "Yahoo Finance",
-     "fecha": "2026-11-18",
-     "url": "https://finance.yahoo.com/markets/stocks/articles/stock-market-today-nov-18-221135469.html"
     }
    ]
   },
@@ -63,6 +63,13 @@
    "nombre": "S&P 500 (ETF)",
    "noticias": [
     {
+     "titulo": "Wall Street recorta pérdidas: el S&P 500 cede 0,25% tras llegar a caer 3%",
+     "resumen": "El S&P 500 cerró en 7.182 y el Nasdaq perdió 0,6%, pero en el día llegaron a caer 3,2% y 4,6% por la venta de chips, nuevos aranceles de 20% y un PCE de octubre más alto. El Dow subió 0,33%. El jueves no opera por Acción de Gracias y el viernes cierra temprano.",
+     "fuente": "Yahoo Finance",
+     "fecha": "2026-11-25",
+     "url": "https://finance.yahoo.com/markets/live/stock-market-today-wednesday-november-25-dow-sp-500-nasdaq-pce-inflation-data-091428237.html"
+    },
+    {
      "titulo": "El S&P 500 y el Nasdaq caen por el derrumbe de los chips; el Dow sube",
      "resumen": "El S&P 500 bajó 0,5% a 7.201 y el Nasdaq 1,5%, arrastrados por los semiconductores y una caída de 6% de Nvidia. El Dow, en cambio, subió 0,85% y superó los 50.000 puntos con la rotación hacia acciones de valor.",
      "fuente": "Yahoo Finance",
@@ -75,13 +82,6 @@
      "fuente": "Yahoo Finance",
      "fecha": "2026-11-23",
      "url": "https://finance.yahoo.com/markets/world-indices/articles/major-us-stock-indexes-fared-213053319.html"
-    },
-    {
-     "titulo": "El S&P 500 y el Dow entran en corrección y el Nasdaq borra lo ganado en 2026",
-     "resumen": "El viernes el S&P 500 se desplomó 3,7% hasta 6.910 y el Nasdaq 5,28%; en la semana el S&P perdió 8,6%, su peor semana desde abril de 2025. El índice ya está 10% debajo de su récord del 6 de octubre, con la tecnología como el sector más golpeado.",
-     "fuente": "CNBC",
-     "fecha": "2026-11-20",
-     "url": "https://www.cnbc.com/2026/11/19/stock-market-today-live-updates.html"
     }
    ]
   },
@@ -162,25 +162,25 @@
  ],
  "dolar": [
   {
-   "titulo": "Dólar hoy: a cuánto cotiza este miércoles 25 de noviembre",
-   "resumen": "El oficial en el Banco Nación arranca a $1.565/$1.615 y el mayorista en $1.593. El blue está a $1.680/$1.700, el MEP cerca de $1.690 y el CCL en torno a $1.796.",
+   "titulo": "Dólar hoy: a cuánto cotiza este jueves 26 de noviembre",
+   "resumen": "El oficial en el Banco Nación está a $1.580/$1.630 y el mayorista en $1.604. El blue cotiza a $1.690/$1.710 y el MEP ronda los $1.669.",
+   "fuente": "Ámbito",
+   "fecha": "2026-11-26",
+   "url": "https://www.ambito.com/finanzas/dolar-hoy-cuanto-cotiza-este-jueves-26-noviembre-n6349464"
+  },
+  {
+   "titulo": "El dólar subió por séptimo día seguido y cayó el riesgo país",
+   "resumen": "El mayorista subió $11 (0,7%) y cerró en $1.604, nuevo máximo nominal, con su séptima suba consecutiva. El riesgo país bajó y las acciones recuperaron terreno.",
+   "fuente": "Infobae",
+   "fecha": "2026-11-25",
+   "url": "https://www.infobae.com/economia/2026/11/25/jornada-financiera-el-dolar-subio-por-septimo-dia-consecutivo-cayo-el-riesgo-pais-y-las-acciones-recuperaron-terreno/"
+  },
+  {
+   "titulo": "El BCRA dejó las compras en pausa por tercera rueda consecutiva",
+   "resumen": "En medio de la tensión cambiaria, el Central volvió a no comprar dólares el miércoles. Las compras de noviembre siguen en u$s344 millones.",
    "fuente": "Ámbito",
    "fecha": "2026-11-25",
-   "url": "https://www.ambito.com/finanzas/dolar-hoy-cuanto-cotiza-este-miercoles-25-noviembre-n6348992"
-  },
-  {
-   "titulo": "El BCRA no compró dólares por segunda rueda y las reservas cayeron",
-   "resumen": "El Central volvió a quedarse afuera del mercado el martes. Las reservas cerraron en u$s48.744 millones tras caer u$s618 millones, y las compras de noviembre suman u$s344 millones.",
-   "fuente": "Ámbito",
-   "fecha": "2026-11-24",
-   "url": "https://www.ambito.com/finanzas/el-bcra-no-compro-dolares-segunda-rueda-fila-y-las-reservas-cayeron-al-menor-nivel-mas-un-mes-n6348885"
-  },
-  {
-   "titulo": "El dólar superó los $1.600 y el riesgo país rozó los 1.100 puntos",
-   "resumen": "El oficial volvió a subir el martes y pasó los $1.600, mientras los bonos cayeron y el riesgo país se acercó a los 1.100 puntos básicos.",
-   "fuente": "La Nación",
-   "fecha": "2026-11-24",
-   "url": "https://www.lanacion.com.ar/economia/dolar/el-dolar-vuelve-a-subir-y-supera-los-1600-nid24112026/"
+   "url": "https://www.ambito.com/finanzas/en-medio-la-tension-cambiaria-el-bcra-dejo-las-compras-pausa-tecera-rueda-consecutiva-n6349347"
   }
  ]
 }
